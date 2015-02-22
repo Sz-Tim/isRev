@@ -7,6 +7,8 @@
 # - How the number of subfamilies changes with elevation
 # - How the number of species within each subfamily changes with elevation
 
+
+
 #######
 ## Load libraries, functions, data
 #######
@@ -18,6 +20,7 @@
   ivars.df <- read.xlsx("Sheets/intVars.xlsx", 1)  # Elev's sampled, env var's
   Transects <- levels(spRng.df$Transect)  # Transects w/species range data
   nTrans <- nlevels(spRng.df$Transect)
+
 
 
 #########
@@ -37,20 +40,10 @@
   ###--- Count number of species by subfamily ---###
 
   # Column for number of species in each subfamily
-  ivars.df$Agroecomyrmecinae <- rep(NA, nrow(ivars.df))
-  ivars.df$Amblyoponinae <- rep(NA, nrow(ivars.df))
-  ivars.df$Cerapachyinae <- rep(NA, nrow(ivars.df))
-  ivars.df$Dolichoderinae <- rep(NA, nrow(ivars.df))
-  ivars.df$Ecitoninae <- rep(NA, nrow(ivars.df))
-  ivars.df$Ectatomminae <- rep(NA, nrow(ivars.df))
-  ivars.df$Formicinae <- rep(NA, nrow(ivars.df))
-  ivars.df$Heteroponerinae <- rep(NA, nrow(ivars.df))
-  ivars.df$Myrmeciinae <- rep(NA, nrow(ivars.df))
-  ivars.df$Myrmicinae <- rep(NA, nrow(ivars.df))
-  ivars.df$Ponerinae <- rep(NA, nrow(ivars.df))
-  ivars.df$Proceratiinae <- rep(NA, nrow(ivars.df))
-  ivars.df$Pseudomyrmecinae <- rep(NA, nrow(ivars.df))
-  ivars.df$Unknown <- rep(NA, nrow(ivars.df))
+  sfToCount <- levels(spRng.df$Subfamily)
+  newCols <- (length(ivars.df)+1):(length(ivars.df)+length(sfToCount))
+  ivars.df[, newCols] <- NA
+  names(ivars.df)[newCols] <- sfToCount
 
   for(tr in 1:nTrans) {
     
@@ -65,45 +58,109 @@
       rngSF <- droplevels(subset(rngTran, rngTran$Subfamily==subfam))
       
       # Count number of species at each elevation
-      ivars.df[tranRows, 45+sf] <- spp.band(range.df=rngSF, 
+      ivars.df[tranRows, subfam] <- spp.band(range.df=rngSF, 
                                      els=ivars.df$Elband[tranRows])
     }
   }
-
   # Store updated dataframe
   write.xlsx(ivars.df, file="Sheets/intVars.xlsx")
 
+
   ###--- Visualize diversity patterns ---###
 
-  ggplot(ivars.df, aes(x=Elsamp, y=Agroecomyrmecinae)) + geom_point() + 
+  # Informative
+  ggplot(ivars.df, aes(x=Elsamp, y=Amblyoponinae)) + geom_line() + 
     facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Amblyoponinae)) + geom_point() + 
+  ggplot(ivars.df, aes(x=Elsamp, y=Cerapachyinae)) + geom_line() + 
     facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Cerapachyinae)) + geom_point() + 
+  ggplot(ivars.df, aes(x=Elsamp, y=Dolichoderinae)) + geom_line() + 
     facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Dolichoderinae)) + geom_point() + 
+  ggplot(ivars.df, aes(x=Elsamp, y=Ecitoninae)) + geom_line() + 
     facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Ecitoninae)) + geom_point() + 
+  ggplot(ivars.df, aes(x=Elsamp, y=Formicinae)) + geom_line() + 
     facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Ectatomminae)) + geom_point() + 
+  ggplot(ivars.df, aes(x=Elsamp, y=Myrmicinae)) + geom_line() + 
     facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Formicinae)) + geom_point() + 
+  ggplot(ivars.df, aes(x=Elsamp, y=Ponerinae)) + geom_line() + 
     facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Heteroponerinae)) + geom_point() + 
+  ggplot(ivars.df, aes(x=Elsamp, y=Proceratiinae)) + geom_line() + 
     facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Myrmeciinae)) + geom_point() + 
+
+  # Too rare to be informative
+  ggplot(ivars.df, aes(x=Elsamp, y=Agroecomyrmecinae)) + geom_line() + 
     facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Myrmicinae)) + geom_point() + 
+  ggplot(ivars.df, aes(x=Elsamp, y=Ectatomminae)) + geom_line() + 
     facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Ponerinae)) + geom_point() + 
+  ggplot(ivars.df, aes(x=Elsamp, y=Heteroponerinae)) + geom_line() + 
     facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Proceratiinae)) + geom_point() + 
+  ggplot(ivars.df, aes(x=Elsamp, y=Myrmeciinae)) + geom_line() + 
     facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Pseudomyrmecinae)) + geom_point() + 
+  ggplot(ivars.df, aes(x=Elsamp, y=Pseudomyrmecinae)) + geom_line() + 
     facet_wrap(~Transect)
+
+  # All together
+  ggplot(ivars.df, aes(x=Elsamp)) + facet_wrap(~Transect) +
+    geom_line(aes(y=S)) +
+    geom_line(aes(y=Cerapachyinae), colour="gray10") +
+    geom_line(aes(y=Dolichoderinae), colour="gray60") +
+    geom_line(aes(y=Formicinae), colour="blue") +
+    geom_line(aes(y=Myrmicinae), colour="green") +
+    geom_line(aes(y=Ponerinae), colour="red") 
 
 
 
 #######
 ## Does the most diverse subfamily drive species richness patterns?
 #######
+
+  ###--- Determine most diverse subfamily ---###
+
+  over.df$maxDivSF <- NA
+  over.df$mostDivSF <- NA
+  ivars.df$SmaxDivSF <- NA
+  ivars.df$mostDivSF <- NA
+  for(tr in 1:nTrans) {
+
+    # Subset each transect
+    rngTran <- droplevels(subset(spRng.df, spRng.df$Transect==Transects[tr]))
+    maxS <- max(summary(rngTran$Subfamily))
+    maxsf <- names(which.max(summary(rngTran$Subfamily)))
+    
+    # Store in over.df
+    over.df[over.df$Transect==Transects[tr], "maxDivSF"] <- maxS
+    over.df[over.df$Transect==Transects[tr], "mostDivSF"] <- maxsf
+    
+    # Store in ivars.df
+    iTrRows <- ivars.df$Transect==Transects[tr]
+    ivars.df[iTrRows, "mostDivSF"] <- maxsf
+    ivars.df[iTrRows, "SmaxDivSF"] <- ivars.df[iTrRows, maxsf]
+  }
+  write.xlsx(over.df, file="Sheets/datasetOverview.xlsx")
+  write.xlsx(ivars.df, file="Sheets/intVars.xlsx")
+
+
+  ###--- Visualize ---###
+  mean(over.df$maxDivSF/over.df$Stot, na.rm=TRUE) - 
+    2*se(over.df$maxDivSF/over.df$Stot)
+  mean(over.df$maxDivSF/over.df$Stot, na.rm=TRUE)
+  mean(over.df$maxDivSF/over.df$Stot, na.rm=TRUE) + 
+    2*se(over.df$maxDivSF/over.df$Stot) 
+  ggplot(over.df, aes(x=maxDivSF/Stot)) + geom_density() + xlim(0,1)
+
+  ggplot(ivars.df, aes(x=Elsamp)) + facet_wrap(~Transect) +
+    geom_line(aes(y=S, colour="Total diversity")) + 
+    geom_line(aes(y=S-SmaxDivSF, colour="All but most diverse sf")) +
+    geom_line(aes(y=SmaxDivSF, colour="Most diverse sf")) +
+    scale_colour_manual(name="", values=c('Total diversity'='black',
+                                          'Most diverse sf'='green',
+                                          'All but most diverse sf'='blue'))
+
+
+
+
+  summary(lm(ivars.df$S ~ ivars.df$Myrmicinae))
+  summary(lm(ivars.df$S ~ ivars.df$Formicinae))
+  summary(lm(ivars.df$S-ivars.df$SmaxDivSF ~ ivars.df$SmaxDivSF))
+  plot(ivars.df$S ~ ivars.df$Myrmicinae)
+  plot(ivars.df$S ~ ivars.df$Formicinae)
+  plot(ivars.df$S-ivars.df$SmaxDivSF ~ ivars.df$SmaxDivSF); abline(b=1, a=0)
