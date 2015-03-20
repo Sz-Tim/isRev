@@ -20,17 +20,8 @@
   ivars.df <- read.xlsx("Sheets/intVars.xlsx", 1)  # Elev's sampled, env var's
   Transects <- levels(spRng.df$Transect)  # Transects w/species range data
   nTrans <- nlevels(spRng.df$Transect)
+  tvars.df <- droplevels(ivars.df[ivars.df$Transect %in% Transects, ])
 
-
-
-#########
-## Number of genera by elevation
-#########
-
-  ggplot(ivars.df, aes(x=Elsamp, y=Gen)) + geom_line() + facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Gen/GenTot)) + geom_line() + 
-    facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=Gen)) + geom_point() + facet_grid(.~Climate)
 
 
 ##########
@@ -71,11 +62,7 @@
   }
   # Store updated dataframe
   
-  
-  ###--- Visualize diversity patterns ---###
-
-
-
+ 
 
 #######
 ## Does the most diverse genus drive species richness patterns?
@@ -114,21 +101,19 @@
   mean(over.df$maxDivGen/over.df$Stot, na.rm=TRUE) + 
     2*se(over.df$maxDivGen/over.df$Stot) 
   ggplot(over.df, aes(x=maxDivGen/Stot)) + geom_density() + xlim(0,1)
-  
-  ggplot(ivars.df, aes(x=Elsamp)) + facet_wrap(~Transect) +
-    geom_line(aes(y=S, colour="Total diversity")) + 
-    geom_line(aes(y=S-SmaxDivGen, colour="All but most diverse gn")) +
-    geom_line(aes(y=SmaxDivGen, colour="Most diverse gn")) +
-    scale_colour_manual(name="", values=c('Total diversity'='black',
-                                          'Most diverse gn'='green',
-                                          'All but most diverse gn'='blue'))
-  ggplot(ivars.df, aes(x=SmaxDivGen, y=S-SmaxDivGen, colour=Elband)) +
-    geom_point() + facet_wrap(~Transect)
 
-  summary(lm(ivars.df$S ~ ivars.df$Myrmicinae))
-  summary(lm(ivars.df$S ~ ivars.df$Formicinae))
-  summary(lm(ivars.df$S-ivars.df$SmaxDivGen ~ ivars.df$SmaxDivGen))
-  plot(ivars.df$S ~ ivars.df$Myrmicinae)
-  plot(ivars.df$S ~ ivars.df$Formicinae)
-  plot(ivars.df$S-ivars.df$SmaxDivGen ~ ivars.df$SmaxDivGen)
-  
+
+
+#############
+## Proportion of species in each subfamily
+#############
+  gen.bars <- tvars.df[, c(1:4, 62:81, 84)]
+  gen.bars <- reshape(gen.bars, 
+                     varying=c(as.character(genToCount), "OtherGenus"),
+                     v.names="GennumSpp",
+                     timevar="Genus",
+                     times=c(as.character(genToCount), "OtherGenus"),
+                     direction="long")
+  rownames(gen.bars) <- NULL
+  gen.bars <- gen.bars[!is.na(gen.bars$Elsamp),]
+  write.csv(gen.bars, file="Sheets/relDiversity_gen.csv")

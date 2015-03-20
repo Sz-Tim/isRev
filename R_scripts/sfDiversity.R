@@ -20,17 +20,8 @@
   ivars.df <- read.xlsx("Sheets/intVars.xlsx", 1)  # Elev's sampled, env var's
   Transects <- levels(spRng.df$Transect)  # Transects w/species range data
   nTrans <- nlevels(spRng.df$Transect)
+  tvars.df <- droplevels(ivars.df[ivars.df$Transect %in% Transects, ])
 
-
-
-#########
-## Number of subfamilies by elevation
-#########
-
-  ggplot(ivars.df, aes(x=Elsamp, y=SF)) + geom_line() + facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=SF/SFTot)) + geom_line() + 
-    facet_wrap(~Transect)
-  ggplot(ivars.df, aes(x=Elsamp, y=SF)) + geom_point() + facet_grid(.~Climate)
 
 
 ##########
@@ -98,15 +89,6 @@
   ggplot(ivars.df, aes(x=Elsamp, y=Pseudomyrmecinae)) + geom_line() + 
     facet_wrap(~Transect)
 
-  # All together
-  ggplot(ivars.df, aes(x=Elsamp)) + facet_wrap(~Transect) +
-    geom_line(aes(y=S)) +
-    geom_line(aes(y=Cerapachyinae), colour="gray10") +
-    geom_line(aes(y=Dolichoderinae), colour="gray60") +
-    geom_line(aes(y=Formicinae), colour="blue") +
-    geom_line(aes(y=Myrmicinae), colour="green") +
-    geom_line(aes(y=Ponerinae), colour="red") 
-
 
 
 #######
@@ -147,60 +129,19 @@
     2*se(over.df$maxDivSF/over.df$Stot) 
   ggplot(over.df, aes(x=maxDivSF/Stot)) + geom_density() + xlim(0,1)
 
-  ggplot(ivars.df, aes(x=Elsamp)) + facet_wrap(~Transect) +
-    geom_line(aes(y=S, colour="Total diversity")) + 
-    geom_line(aes(y=S-SmaxDivSF, colour="All but most diverse sf")) +
-    geom_line(aes(y=SmaxDivSF, colour="Most diverse sf")) +
-    scale_colour_manual(name="", values=c('Total diversity'='black',
-                                          'Most diverse sf'='green',
-                                          'All but most diverse sf'='blue'))
-  ggplot(ivars.df, aes(x=SmaxDivSF, y=S-SmaxDivSF, colour=Elband)) +
-    geom_point() + facet_wrap(~Transect)
-
-
-
-  summary(lm(ivars.df$S ~ ivars.df$Myrmicinae))
-  summary(lm(ivars.df$S ~ ivars.df$Formicinae))
-  summary(lm(ivars.df$S-ivars.df$SmaxDivSF ~ ivars.df$SmaxDivSF))
-  plot(ivars.df$S ~ ivars.df$Myrmicinae)
-  plot(ivars.df$S ~ ivars.df$Formicinae)
-  plot(ivars.df$S-ivars.df$SmaxDivSF ~ ivars.df$SmaxDivSF); abline(b=1, a=0)
-
-
 
 
 #############
 ## Proportion of species in each subfamily
 #############
 
-  sf.bars <- reshape(ivars.df, 
-                     varying=c("Agroecomyrmecinae", "Amblyoponinae", 
-                               "Cerapachyinae", "Dolichoderinae", "Ecitoninae",
-                               "Ectatomminae", "Formicinae", "Heteroponerinae",
-                               "Myrmeciinae", "Myrmicinae", "Ponerinae",
-                               "Proceratiinae", "Pseudomyrmecinae", "Unknown"),
+  sf.bars <- tvars.df[,c(1:3, 46:59)]
+  sf.bars <- reshape(sf.bars, 
+                     varying=as.character(sfToCount),
                      v.names="SFnumSpp",
                      timevar="Subfamily",
-                     times=c("Agroecomyrmecinae", "Amblyoponinae", 
-                             "Cerapachyinae", "Dolichoderinae", "Ecitoninae",
-                             "Ectatomminae", "Formicinae", "Heteroponerinae",
-                             "Myrmeciinae", "Myrmicinae", "Ponerinae",
-                             "Proceratiinae", "Pseudomyrmecinae", "Unknown"),
+                     times=as.character(sfToCount),
                      direction="long")
-  sf.bars <- droplevels(subset(sf.bars, !sf.bars$Transect %in% 
-                                 c("1994.Olson.A", 
-                                   "2006.Botes et al.A",
-                                   "2012.Munyai&Foord.A", 
-                                   "2012.Munyai&Foord.B")))
-  sf.bars <- sf.bars[,c(2:4, 70:71)]; rownames(sf.bars) <- NULL
+  rownames(sf.bars) <- NULL
   sf.bars <- sf.bars[!is.na(sf.bars$Elsamp),]
-  sf.trans <- sf.bars[sf.bars$Transect=="1963.Gregg.G",]
-  ggplot(sf.bars, aes(x=factor(Elsamp), y=SFnumSpp, fill=Subfamily)) + 
-    geom_bar(stat="identity", position="fill") + facet_wrap(~Transect)
-  ggplot(sf.bars, aes(x=Elsamp, y=SFnumSpp, fill=Subfamily)) + 
-    geom_area(position="fill", colour="gray50") + facet_wrap(~Transect) +
-    labs(x="Elevation (m)", y="Proportion species composition")
-
-
-
-
+  write.csv(sf.bars, file="Sheets/relDiversity_sf.csv")
