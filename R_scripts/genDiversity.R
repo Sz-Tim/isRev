@@ -122,17 +122,13 @@
     scale_colour_manual(name="", values=c('Total diversity'='black',
                                           'Most diverse gn'='green',
                                           'All but most diverse gn'='blue'))
-    
-  
-  ggplot(nmmaps, aes(x=date, y=o3))+geom_line(aes(color="Important line"))+
-  geom_point(aes(color="Point values"))+
-  scale_colour_manual(name='', values=c('Important line'='grey', 'Point values'='red'))
-
+  ggplot(ivars.df, aes(x=SmaxDivGen, y=S-SmaxDivGen, colour=Elband)) +
+    geom_point() + facet_wrap(~Transect)
 
   summary(lm(ivars.df$S ~ ivars.df$Myrmicinae))
   summary(lm(ivars.df$S ~ ivars.df$Formicinae))
   summary(lm(ivars.df$S-ivars.df$SmaxDivGen ~ ivars.df$SmaxDivGen))
   plot(ivars.df$S ~ ivars.df$Myrmicinae)
   plot(ivars.df$S ~ ivars.df$Formicinae)
-  plot(ivars.df$S-ivars.df$SmaxDivGen ~ ivars.df$SmaxDivGen); abline(b=1, a=0)
+  plot(ivars.df$S-ivars.df$SmaxDivGen ~ ivars.df$SmaxDivGen)
   
