@@ -154,7 +154,8 @@
     scale_colour_manual(name="", values=c('Total diversity'='black',
                                           'Most diverse sf'='green',
                                           'All but most diverse sf'='blue'))
-
+  ggplot(ivars.df, aes(x=SmaxDivSF, y=S-SmaxDivSF, colour=Elband)) +
+    geom_point() + facet_wrap(~Transect)
 
 
 
@@ -164,3 +165,42 @@
   plot(ivars.df$S ~ ivars.df$Myrmicinae)
   plot(ivars.df$S ~ ivars.df$Formicinae)
   plot(ivars.df$S-ivars.df$SmaxDivSF ~ ivars.df$SmaxDivSF); abline(b=1, a=0)
+
+
+
+
+#############
+## Proportion of species in each subfamily
+#############
+
+  sf.bars <- reshape(ivars.df, 
+                     varying=c("Agroecomyrmecinae", "Amblyoponinae", 
+                               "Cerapachyinae", "Dolichoderinae", "Ecitoninae",
+                               "Ectatomminae", "Formicinae", "Heteroponerinae",
+                               "Myrmeciinae", "Myrmicinae", "Ponerinae",
+                               "Proceratiinae", "Pseudomyrmecinae", "Unknown"),
+                     v.names="SFnumSpp",
+                     timevar="Subfamily",
+                     times=c("Agroecomyrmecinae", "Amblyoponinae", 
+                             "Cerapachyinae", "Dolichoderinae", "Ecitoninae",
+                             "Ectatomminae", "Formicinae", "Heteroponerinae",
+                             "Myrmeciinae", "Myrmicinae", "Ponerinae",
+                             "Proceratiinae", "Pseudomyrmecinae", "Unknown"),
+                     direction="long")
+  sf.bars <- droplevels(subset(sf.bars, !sf.bars$Transect %in% 
+                                 c("1994.Olson.A", 
+                                   "2006.Botes et al.A",
+                                   "2012.Munyai&Foord.A", 
+                                   "2012.Munyai&Foord.B")))
+  sf.bars <- sf.bars[,c(2:4, 70:71)]; rownames(sf.bars) <- NULL
+  sf.bars <- sf.bars[!is.na(sf.bars$Elsamp),]
+  sf.trans <- sf.bars[sf.bars$Transect=="1963.Gregg.G",]
+  ggplot(sf.bars, aes(x=factor(Elsamp), y=SFnumSpp, fill=Subfamily)) + 
+    geom_bar(stat="identity", position="fill") + facet_wrap(~Transect)
+  ggplot(sf.bars, aes(x=Elsamp, y=SFnumSpp, fill=Subfamily)) + 
+    geom_area(position="fill", colour="gray50") + facet_wrap(~Transect) +
+    labs(x="Elevation (m)", y="Proportion species composition")
+
+
+
+
