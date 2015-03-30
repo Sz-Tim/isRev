@@ -22,7 +22,7 @@
   library(ggplot2); theme_set(theme_bw()); 
   library(xlsx); library(plyr); library(vegan); library(betapart)
   source("R_scripts/FuncsGen.R")
-  spRng.df <- read.xlsx("Sheets/ranges_sf.xlsx", 1)  # Species ranges
+  spRng.df <- read.xlsx("Sheets/ranges_spp.xlsx", 1)  # Species ranges
   over.df <- read.xlsx("Sheets/datasetOverview.xlsx", 1)  # Dataset summaries
   ivars.df <- read.xlsx("Sheets/intVars.xlsx", 1)  # Elev's sampled, env var's
   Transects <- levels(spRng.df$Transect)  # Transects w/species range data
@@ -40,6 +40,7 @@
   sne.ls <- vector("list", nTrans); names(sne.ls) <- Transects
   sor.ls <- vector("list", nTrans); names(sor.ls) <- Transects
   el.ls <- vector("list", nTrans); names(el.ls) <- Transects
+  pair.ls <- vector("list", nTrans); names(pair.ls) <- Transects
 
   for(tr in 1:nTrans) {
     trans <- Transects[tr]
@@ -47,11 +48,11 @@
     els <- varTr$Elsamp[is.na(varTr$Elsamp)==FALSE]
     sppTr <- droplevels(subset(spRng.df, spRng.df$Transect==trans))
   
-    tr.pa <- matrix(nrow=length(els), ncol=nlevels(sppTr$Subfamily),
-                    dimnames=list(els, levels(sppTr$Subfamily)))
+    tr.pa <- matrix(nrow=length(els), ncol=nlevels(sppTr$Binomial),
+                    dimnames=list(els, levels(sppTr$Binomial)))
     for(e in 1:length(els)) {
-      for(s in 1:nlevels(sppTr$Subfamily)) {
-        r <- which(sppTr$Subfamily == levels(sppTr$Subfamily)[s])
+      for(s in 1:nlevels(sppTr$Binomial)) {
+        r <- which(sppTr$Binomial == levels(sppTr$Binomial)[s])
         el <- els[e]
         tr.pa[e,s] <- ifelse((sppTr$LowEl[r] <= el) & (sppTr$HighEl[r] >= el),
                              1, 
@@ -61,17 +62,33 @@
     el.ls[[tr]] <- els[rowSums(tr.pa) > 0]
     tr.pa <- tr.pa[rowSums(tr.pa) > 0, ]
     pa.ls[[tr]] <- tr.pa
+    
+    # Calculate all pairwise beta diversity metrics
     sim.ls[[tr]] <- as.dist(beta.pair(tr.pa)[[1]], upper=TRUE, diag=TRUE)
     sne.ls[[tr]] <- as.dist(beta.pair(tr.pa)[[2]], upper=TRUE, diag=TRUE)
     sor.ls[[tr]] <- as.dist(beta.pair(tr.pa)[[3]], upper=TRUE, diag=TRUE)
+    
+    # Pull out adjacent sites
+    pair.ls[[tr]] <- data.frame(El1=el.ls[[tr]][1:length(el.ls[[tr]])-1],
+                                El2=el.ls[[tr]][2:length(el.ls[[tr]])],
+                                sim=rep(NA, length(el.ls[[tr]])-1),
+                                sne=rep(NA, length(el.ls[[tr]])-1),
+                                sor=rep(NA, length(el.ls[[tr]])-1))
+    for(r in 1:( nrow(pair.ls[[tr]])) ) {
+      pair.ls[[tr]]$sim[r] <- as.matrix(sim.ls[[tr]])[r+1, r]
+      pair.ls[[tr]]$sne[r] <- as.matrix(sne.ls[[tr]])[r+1, r]
+      pair.ls[[tr]]$sor[r] <- as.matrix(sor.ls[[tr]])[r+1, r]
+    }
+    
     cat("Finished transect ", tr, " of ", nTrans, "\n")
   }
   
   
-  #########
-  ## Create a dataframe for faunal congruency curves
-  #########
+#########
+## Create a dataframe for faunal congruency curves & adjacent sites
+#########
   
+  # All sites
   df.ls <- vector("list", nTrans); names(df.ls) <- Labels
   
   for(tr in 1:nTrans) {
@@ -87,4 +104,21 @@
   diss.df <- ldply(df.ls)
   names(diss.df)[1] <- "Label"
   diss.df$ymin <- rep(0, nrow(diss.df))
-  write.csv(diss.df, file="Sheets/sf_Sorensen.csv")
+
+  # Adjacent sites  
+  names(pair.ls) <- Labels
+  pair.df <- ldply(pair.ls)
+  names(pair.df)[1] <- "Label"
+  pair.df$ymin <- rep(0, nrow(pair.df))
+
+
+########
+## Write csv's
+########
+
+  #write.csv(diss.df, file="Sheets/spp_Sorensen.csv")
+  write.csv(pair.df, file="Sheets/spp_SorAdjSites.csv")
+
+
+
+

@@ -19,6 +19,9 @@
   spSor.df <- read.csv("Sheets/spp_Sorensen.csv") # Species beta diversity
   genSor.df <- read.csv("Sheets/gen_Sorensen.csv") # Genus beta diversity
   sfSor.df <- read.csv("Sheets/sf_Sorensen.csv") # Subfamily beta diversity
+  spSorAdj.df <- read.csv("Sheets/spp_SorAdjSites.csv") # Spp beta adjacent
+  genSorAdj.df <- read.csv("Sheets/gen_SorAdjSites.csv") # Genus beta adjacent
+  sfSorAdj.df <- read.csv("Sheets/sf_SorAdjSites.csv") # Subfamily beta adjacent
   over.df <- read.xlsx("Sheets/datasetOverview.xlsx", 1)  # Dataset summaries
   ivars.df <- read.xlsx("Sheets/intVars.xlsx", 1)  # Elev's sampled, env var's
   gen.bars <- read.csv("Sheets/relDiversity_gen.csv")  # Richness by genus
@@ -140,77 +143,189 @@
 
 
 #######
-## Beta diversity
+## Beta diversity: All sites
 #######
 
   #--- species: overall beta diversity ---#
-  pdf(file="Plots/BetaSim_spp.pdf", width=w, height=h)
-    ggplot(spSor.df, aes(x=El2, y=El1, colour=sim)) + facet_wrap(~Label) +
+  pdf(file="Plots/BetaTotal_spp.pdf", width=w, height=h)
+    ggplot(spSor.df, aes(x=El2, y=El1, colour=sor)) + facet_wrap(~Label) +
       geom_point(size=2.75, shape=15) + 
-      scale_colour_gradient(name="sim", low="white", high="black") +
+      scale_colour_gradient(name="Beta diversity", low="white", high="black") +
       labs(x="Elevation (m)", y="Elevation (m)")
   dev.off()
 
   #--- species: turnover component ---#
-  pdf(file="Plots/BetaSor_spp.pdf", width=w, height=h)
-    ggplot(spSor.df, aes(x=El2, y=El1, colour=sor)) + facet_wrap(~Label) +
+  pdf(file="Plots/BetaTurnover_spp.pdf", width=w, height=h)
+    ggplot(spSor.df, aes(x=El2, y=El1, colour=sim)) + facet_wrap(~Label) +
       geom_point(size=2.75, shape=15) + 
-      scale_colour_gradient(name="sor", low="white", high="black") +
+      scale_colour_gradient(name="Turnover", low="white", high="black") +
       labs(x="Elevation (m)", y="Elevation (m)")
   dev.off()
   
   #--- species: nestedness component ---#
-  pdf(file="Plots/BetaSne_spp.pdf", width=w, height=h)
+  pdf(file="Plots/BetaNested_spp.pdf", width=w, height=h)
     ggplot(spSor.df, aes(x=El2, y=El1, colour=sne)) + facet_wrap(~Label) +
       geom_point(size=2.75, shape=15) + 
-      scale_colour_gradient(name="sne", low="white", high="black") +
+      scale_colour_gradient(name="Nestedness", low="white", high="black") +
       labs(x="Elevation (m)", y="Elevation (m)")
   dev.off()
 
   #--- genus: overall beta diversity ---#
-  pdf(file="Plots/BetaSim_gen.pdf", width=w, height=h)
-    ggplot(genSor.df, aes(x=El2, y=El1, colour=sim)) + facet_wrap(~Label) +
+  pdf(file="Plots/BetaTotal_gen.pdf", width=w, height=h)
+    ggplot(genSor.df, aes(x=El2, y=El1, colour=sor)) + facet_wrap(~Label) +
       geom_point(size=2.75, shape=15) + 
-      scale_colour_gradient(name="sim", low="white", high="black") +
+      scale_colour_gradient(name="Beta diversity", low="white", high="black") +
       labs(x="Elevation (m)", y="Elevation (m)")
   dev.off()
 
   #--- genus: turnover component ---#
-  pdf(file="Plots/BetaSor_gen.pdf", width=w, height=h)
-    ggplot(genSor.df, aes(x=El2, y=El1, colour=sor)) + facet_wrap(~Label) +
+  pdf(file="Plots/BetaTurnover_gen.pdf", width=w, height=h)
+    ggplot(genSor.df, aes(x=El2, y=El1, colour=sim)) + facet_wrap(~Label) +
       geom_point(size=2.75, shape=15) + 
-      scale_colour_gradient(name="sor", low="white", high="black") +
+      scale_colour_gradient(name="Turnover", low="white", high="black") +
       labs(x="Elevation (m)", y="Elevation (m)")
   dev.off()
 
   #--- genus: nestedness component ---#
-  pdf(file="Plots/BetaSne_gen.pdf", width=w, height=h)
+  pdf(file="Plots/BetaNested_gen.pdf", width=w, height=h)
     ggplot(genSor.df, aes(x=El2, y=El1, colour=sne)) + facet_wrap(~Label) +
       geom_point(size=2.75, shape=15) + 
-      scale_colour_gradient(name="sne", low="white", high="black") +
+      scale_colour_gradient(name="Nestedness", low="white", high="black") +
       labs(x="Elevation (m)", y="Elevation (m)")
   dev.off()
 
   #--- subfamily: overall beta diversity ---#
-  pdf(file="Plots/BetaSim_sf.pdf", width=w, height=h)
-    ggplot(sfSor.df, aes(x=El2, y=El1, colour=sim)) + facet_wrap(~Label) +
+  pdf(file="Plots/BetaTotal_sf.pdf", width=w, height=h)
+    ggplot(sfSor.df, aes(x=El2, y=El1, colour=sor)) + facet_wrap(~Label) +
       geom_point(size=2.75, shape=15) + 
-      scale_colour_gradient(name="sim", low="white", high="black") +
+      scale_colour_gradient(name="Beta diversity", low="white", high="black") +
       labs(x="Elevation (m)", y="Elevation (m)")
   dev.off()
 
   #--- subfamily: turnover component ---#
-  pdf(file="Plots/BetaSim_sf.pdf", width=w, height=h)
-    ggplot(sfSor.df, aes(x=El2, y=El1, colour=sor)) + facet_wrap(~Label) +
+  pdf(file="Plots/BetaTurnover_sf.pdf", width=w, height=h)
+    ggplot(sfSor.df, aes(x=El2, y=El1, colour=sim)) + facet_wrap(~Label) +
       geom_point(size=2.75, shape=15) + 
-      scale_colour_gradient(name="sor", low="white", high="black") +
+      scale_colour_gradient(name="Turnover", low="white", high="black") +
       labs(x="Elevation (m)", y="Elevation (m)")
   dev.off()
 
   #--- subfamily: nestedness component ---#
-  pdf(file="Plots/BetaSim_sf.pdf", width=w, height=h)
+  pdf(file="Plots/BetaNested_sf.pdf", width=w, height=h)
     ggplot(sfSor.df, aes(x=El2, y=El1, colour=sne)) + facet_wrap(~Label) +
       geom_point(size=2.75, shape=15) + 
-      scale_colour_gradient(name="sne", low="white", high="black") +
+      scale_colour_gradient(name="Nestedness", low="white", high="black") +
       labs(x="Elevation (m)", y="Elevation (m)")
   dev.off()
+
+
+#######
+## Beta diversity: Adjacent sites
+#######
+
+  #--- species: adjacent sites ---#
+  pdf(file="Plots/AdjBeta_spp.pdf", width=w, height=h)
+    ggplot(spSorAdj.df, aes(x=(El1 + El2)/2)) + facet_wrap(~Label) + 
+      geom_point(aes(y=sor, colour="Total beta"), size=3) +
+      stat_smooth(aes(y=sor), colour="black", size=1, 
+                  method="loess", span=1.75, se=F) +
+      geom_point(aes(y=sne, colour="Nestedness"), size=3) + 
+      stat_smooth(aes(y=sne), colour="red", size=1, 
+                  method="loess", span=1.75, se=F) +
+      geom_point(aes(y=sim, colour="Turnover"), size=3) + 
+      stat_smooth(aes(y=sim), colour="blue", size=1, 
+                  method="loess", span=1.75, se=F) +
+      scale_colour_manual(name="Sorensen Family", 
+                          values=c("Total beta"="black",
+                                   "Nestedness"="red",
+                                   "Turnover"="blue"),
+                          limits=c("Total beta", "Nestedness", "Turnover")) +
+      ylim(0,1) + labs(x="Elevation (m)", y=expression(beta), main="Species")
+  dev.off()
+
+  #--- genus: adjacent sites ---#
+  pdf(file="Plots/AdjBeta_gen.pdf", width=w, height=h)
+    ggplot(genSorAdj.df, aes(x=(El1 + El2)/2)) + facet_wrap(~Label) + 
+      geom_point(aes(y=sor, colour="Total beta"), size=3) +
+      stat_smooth(aes(y=sor), colour="black", size=1, 
+                  method="loess", span=1.75, se=F) +
+      geom_point(aes(y=sne, colour="Nestedness"), size=3) + 
+      stat_smooth(aes(y=sne), colour="red", size=1, 
+                  method="loess", span=1.75, se=F) +
+      geom_point(aes(y=sim, colour="Turnover"), size=3) + 
+      stat_smooth(aes(y=sim), colour="blue", size=1, 
+                  method="loess", span=1.75, se=F) +
+      scale_colour_manual(name="Sorensen Family", 
+                          values=c("Total beta"="black",
+                                   "Nestedness"="red",
+                                   "Turnover"="blue"),
+                          limits=c("Total beta", "Nestedness", "Turnover")) +
+      ylim(0,1) + labs(x="Elevation (m)", y=expression(beta), main="Genus")
+  dev.off()
+
+#--- subfamily: adjacent sites ---#
+  pdf(file="Plots/AdjBeta_sf.pdf", width=w, height=h)
+    ggplot(sfSorAdj.df, aes(x=(El1 + El2)/2)) + facet_wrap(~Label) + 
+      geom_point(aes(y=sor, colour="Total beta"), size=3) +
+      stat_smooth(aes(y=sor), colour="black", size=1, 
+                  method="loess", span=1.75, se=F) +
+      geom_point(aes(y=sne, colour="Nestedness"), size=3) + 
+      stat_smooth(aes(y=sne), colour="red", size=1, 
+                  method="loess", span=1.75, se=F) +
+      geom_point(aes(y=sim, colour="Turnover"), size=3) + 
+      stat_smooth(aes(y=sim), colour="blue", size=1, 
+                  method="loess", span=1.75, se=F) +
+      scale_colour_manual(name="Sorensen Family", 
+                          values=c("Total beta"="black",
+                                   "Nestedness"="red",
+                                   "Turnover"="blue"),
+                          limits=c("Total beta", "Nestedness", "Turnover")) +
+      ylim(0,1) + labs(x="Elevation (m)", y=expression(beta), main="Subfamily")
+  dev.off()
+
+
+
+#######
+## Beta diversity compared across taxonomic scales at adjacent sites
+#######
+  
+  taxcomp.df <- data.frame(spSorAdj.df[,2:4])
+  taxcomp.df$SpG.sim <- spSorAdj.df$sim - genSorAdj.df$sim
+  taxcomp.df$SpG.sne <- spSorAdj.df$sne - genSorAdj.df$sne
+  taxcomp.df$SpG.sor <- spSorAdj.df$sor - genSorAdj.df$sor
+
+  pdf(file="Plots/AdjBeta_SpG_Comp.pdf", width=w, height=h)
+    ggplot(taxcomp.df, aes(x=(El1 + El2)/2)) + facet_wrap(~Label) +
+      geom_hline(yintercept=0, linetype=2, colour="gray") + 
+      geom_point(aes(y=SpG.sor, colour="Total beta"), size=3) +
+      stat_smooth(aes(y=SpG.sor), colour="black", size=1, 
+                  method="loess", span=1.75, se=F) +
+      geom_point(aes(y=SpG.sne, colour="Nestedness"), size=3) + 
+      stat_smooth(aes(y=SpG.sne), colour="red", size=1, 
+                  method="loess", span=1.75, se=F) +
+      geom_point(aes(y=SpG.sim, colour="Turnover"), size=3) + 
+      stat_smooth(aes(y=SpG.sim), colour="blue", size=1, 
+                  method="loess", span=1.75, se=F) +
+      scale_colour_manual(name="Sorensen Family", 
+                          values=c("Total beta"="black",
+                                   "Nestedness"="red",
+                                   "Turnover"="blue"),
+                          limits=c("Total beta", "Nestedness", "Turnover")) +
+      labs(x="Elevation (m)", y=expression(beta['Species'] - beta['Genus']))
+  dev.off()
+########
+## Other doodles
+########
+
+ggplot(spSorAdj.df, aes(x=(El1 + El2)/2)) + facet_wrap(~Label) +
+  geom_line(aes(y=sor), size=1) + 
+  geom_ribbon(aes(ymin=ymin, ymax=sne), fill="red", alpha=0.5) +
+  geom_ribbon(aes(ymin=sne, ymax=sne+sim), fill="blue", alpha=0.5)
+
+ggplot(spSorAdj.df, aes(x=(El1 + El2)/2)) + facet_wrap(~Label) +
+  geom_ribbon(aes(ymin=ymin, ymax=sne/sor, fill="Nestedness"), alpha=0.65) +
+  geom_ribbon(aes(ymin=sne/sor, ymax=1, fill="Turnover"), alpha=0.65) +
+  geom_line(aes(y=sne/sor), colour="black") + 
+  labs(x="Elevation (m)", y="Proportion of beta diversity") + 
+  scale_fill_manual(name="Beta Component",
+                    values=c("Nestedness"="red", "Turnover"="blue"))
