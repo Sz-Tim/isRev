@@ -59,6 +59,40 @@
       geom_line() + labs(x="Elevation (m)", y="Number of subfamilies")
   dev.off()
 
+  #--- all taxonomic levels ---#
+  pdf(file="Plots/Diversity_ALL.pdf", width=w, height=h)
+    ggplot(tvars.df, aes(x=Elsamp)) + facet_wrap(~Label) +
+      geom_line(aes(y=Savgint, colour="Species")) +
+      geom_line(aes(y=Gen, colour="Genera")) +
+      geom_line(aes(y=SF, colour="Subfamilies")) +
+      scale_colour_manual(name="Richness", values=c('Species'="black",
+                                                    'Genera'="blue",
+                                                    'Subfamilies'="red"))
+  dev.off()
+
+  #--- species by genera ---#
+  pdf(file="Plots/SppModByGen.pdf", width=w, height=h)
+    ggplot(tvars.df, aes(x=Gen, y=Savgint, colour=Label, group=Label)) + 
+      geom_point(size=3) + labs(x="Number of genera", y="Number of species") +
+      stat_smooth(method="loess", se=FALSE, span=1.25, size=1)
+  dev.off()
+
+  #--- species by subfamily ---#
+  pdf(file="Plots/SppModBySF.pdf", width=w, height=h)
+    ggplot(tvars.df, aes(x=SF, y=Savgint, colour=Label, group=Label)) + 
+      geom_point(size=3) + 
+      labs(x="Number of subfamilies", y="Number of species") +
+      stat_smooth(method="loess", se=FALSE, span=1.25, size=1)
+  dev.off()
+
+  #--- genera by subfamily ---#
+  pdf(file="Plots/GenModBySF.pdf", width=w, height=h)
+  ggplot(tvars.df, aes(x=SF, y=Gen, colour=Label, group=Label)) + 
+      geom_point(size=3) + 
+      labs(x="Number of subfamilies", y="Number of genera") +
+      stat_smooth(method="loess", se=FALSE, span=1.25, size=1)
+  dev.off()
+
   #--- within-genus diversity ---#
   pdf(file="Plots/DiversityIn_gen.pdf", width=w, height=h)
     ggplot(tvars.df, aes(x=Elsamp)) + facet_wrap(~Label) +

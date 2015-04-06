@@ -8,9 +8,7 @@
   
 ## ii. Total studies  
   
-## iii. Publication dates  
-  
-## iv. Criteria for well-sampled studies  
+## iii. Criteria for well-sampled studies  
   
 \newpage  
   
