@@ -1,5 +1,6 @@
-**Author:** Tim Szewczyk^1^  
 **Title:** Ant diversity, taxonomy, and natural history across elevations  
+=======================
+**Author:** Tim Szewczyk^1^ 
   
 **Affiliation:** University of Colorado-Boulder, Department of Ecology and Evolutionary Biology  
 **Address:** ??  
@@ -11,19 +12,21 @@
   
 **Keywords:** 4–6 keywords. Formicidae, subfamily, genus, altitude, specialization, nesting    
   
+\newpage  
+    
 # I. Introduction  
 ## History or value of elevational studies generally  
 Blah blah.
   
 ## Value of studying insects  
-Despite comprising the majority of animal species (@CITE), insects have not received much focus in macroecological studies (@DF2010). 
+Despite comprising the majority of animal species **CITE**, insects have not received much focus in macroecological studies [@DF2010]. 
 However, the astonishing array of insect diversity suggests that no picture of biodiversity would be complete without insects. 
 Furthermore, understanding the processes underlying insect diversity may yield valuable insights into the processes that shape patterns biodiversity more broadly. 
 Ants have a number of advantages to global studies of diversity. 
-As predators, competitors, scavengers, and dispersers, they have major ecological impacts in a wide variety of systems (@HollWils1990). 
+As predators, competitors, scavengers, and dispersers, they have major ecological impacts in a wide variety of systems [@HollWils1990]. 
 In contrast to many insect taxa, the individuals used for identification are wingless, restricting their movement from the nest and reducing the impact of accidentals. 
-Additionally, because of the historic interest in ants across many decades (@CITE), there is a firmer baseline for comparisons across time and ants have been relatively well-described taxonomically. 
-Nevertheless, we know little about the ranges and less about the basic natural history of many species (@CITE; @Lanan2014). 
+Additionally, because of the historic interest in ants across many decades **CITE**, there is a firmer baseline for comparisons across time and ants have been relatively well-described taxonomically. 
+Nevertheless, we know little about the ranges and less about the basic natural history of many species **CITE**[@Lanan2014]. 
   
 ## Challenge  
 Understanding the patterns/distribution/characteristics of biodiversity necessitates a comprehensive, global perspective. 
@@ -50,8 +53,8 @@ To restrict the analysis to robust, well-sampled datasets, I required that a dat
 (3) sampling within the lowest 400m of the gradient; 
 (4) no elevational sampling gaps greater than 500m; and 
 (5) relatively little anthropogenic disturbance. 
-These criteria, adapted from previous studies (@McCain2009; @McCain2010), are required to ensure the accurate description of the naturally occurring pattern (@McCoy1990; @McCoy2002; @McCain2005; @Rahbek2005; @NB2008).
-The common richness patterns, however, differ primarily across the lower portion of the elevational gradient (@NB2008). 
+These criteria, adapted from previous studies [@McCain2009; @McCain2010], are required to ensure the accurate description of the naturally occurring pattern [@McCoy1990; @McCoy2002; @McCain2005b; @Rahbek2005; @NB2008].
+The common richness patterns, however, differ primarily across the lower portion of the elevational gradient [@NB2008]. 
 Consequently, violations of the second criterion were allowed when the majority of the unsampled region was at high elevations where declining richness had been demonstrated. 
   
   
@@ -64,14 +67,14 @@ Nevertheless, the robust datasets included local and regional scales, tropic and
   
   
 ## Pattern definitions  
-I classified the ant elevational richness and beta diversity into five categories using definitions from the literature (Fig. 1; @McCain2009; @McCain2010). 
+I classified the ant elevational richness and beta diversity into five categories using definitions from the literature (Fig. 1; [@McCain2009; @McCain2010]. 
 In decreasing patterns, diversity is highest at the lowest elevation and declines steadily with increasing elevation. 
 In low plateau patterns, diversity is consistently high across at least the lowest 300m before declining monotonically. 
 Mid-peaks show highest diversity >300m from the mountain base and with at least 25% greater diversity than at the base. 
 In increasing patterns, diversity increases with elevation. 
 U-shaped patterns show highest diversity toward the base and summit, with depressed diversity at intermediate elevations. 
 No pattern was recorded when none of these definitions were met and the richness showed no consistent pattern across elevations. 
-Though more patterns are possible (@McCain2009), the datasets here were characterized well by these five patterns.  
+Though more patterns are possible [@McCain2009], the datasets here were characterized well by these five patterns.  
       
 # III. Taxonomic richness patterns  
 ## Species richness  
@@ -111,8 +114,11 @@ As with species richness patterns in the most speciose genus, the species richne
 The elevational species richness pattern does not result from the richness pattern of the most speciose subfamily. 
 The richness patterns within the non-dominant subfamilies is less clear due to the lower total number of species. 
 However, the subfamilies with enough species tend to follow the same overall trend as the total species richness pattern.
-  
-  
+
+      
 # Figure Legends  
 **Figure 1.** Robust patterns of ant species richness across elevational gradients. 
 A variety of patterns have been observed, though mid-elevational peaks are most common. 
+  
+  
+# References  
