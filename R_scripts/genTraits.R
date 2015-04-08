@@ -13,18 +13,7 @@
   library(ggplot2); theme_set(theme_bw()); 
   library(xlsx); library(plyr); library(vegan); library(betapart)
   source("R_scripts/FuncsGen.R")
-  spRng.df <- read.xlsx("Sheets/ranges_spp.xlsx", 1)  # Species ranges
-  over.df <- read.xlsx("Sheets/datasetOverview.xlsx", 1)  # Dataset summaries
-  ivars.df <- read.xlsx("Sheets/intVars.xlsx", 1)  # Elev's sampled, env var's
-  traits.df <- read.table("Sheets/occ_traits.txt", header=TRUE, sep="\t")
-  Transects <- levels(spRng.df$Transect)  # Transects w/species range data
-  nTrans <- nlevels(spRng.df$Transect)
-  tvars.df <- droplevels(ivars.df[ivars.df$Transect %in% Transects, ])
-  Labels <- as.character(unique(tvars.df$Label))
-  nestSum.df <- ddply(traits.df, .(Transects, Elsamp, NestingSite), summarize,
-                       nSpp=length(unique(Binomial)))
-  feedSum.df <- ddply(traits.df, .(Transects, Elsamp, Specialization),
-                      summarize, nSpp=length(unique(Binomial)))
+  loadAll()
 
 
 #########

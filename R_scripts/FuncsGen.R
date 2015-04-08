@@ -3,6 +3,37 @@
 # Created: 2015 Feb 21
 
 
+# load all dataframes
+loadAll <- function() {
+  
+  require(plyr)
+  
+  #--- data sources ---#
+  spRng.df <<- read.xlsx("Sheets/ranges_spp.xlsx", 1)  # Species ranges
+  genRng.df <<- read.xlsx("Sheets/ranges_gen.xlsx", 1)  # Genus ranges
+  sfRng.df <<- read.xlsx("Sheets/ranges_sf.xlsx", 1)  # Subfam ranges
+  spSor.df <<- read.csv("Sheets/spp_Sorensen.csv") # Species beta diversity
+  genSor.df <<- read.csv("Sheets/gen_Sorensen.csv") # Genus beta diversity
+  sfSor.df <<- read.csv("Sheets/sf_Sorensen.csv") # Subfam beta diversity
+  spSorAdj.df <<- read.csv("Sheets/spp_SorAdjSites.csv") # Spp beta adjacent
+  genSorAdj.df <<- read.csv("Sheets/gen_SorAdjSites.csv") # Genus beta adjacent
+  sfSorAdj.df <<- read.csv("Sheets/sf_SorAdjSites.csv") # Subfam beta adjacent
+  over.df <<- read.xlsx("Sheets/datasetOverview.xlsx", 1)  # Dataset summaries
+  ivars.df <<- read.xlsx("Sheets/intVars.xlsx", 1)  # Elev's sampled, env var's
+  gen.bars <<- read.csv("Sheets/relDiversity_gen.csv")  # Richness by genus
+  sf.bars <<- read.csv("Sheets/relDiversity_sf.csv")  # Richness by sf
+  nestSum.df <<- ddply(traits.df, .(Transects, Elsamp, NestingSite), summarize,
+                      nSpp=length(unique(Binomial)))
+  feedSum.df <<- ddply(traits.df, .(Transects, Elsamp, Specialization),
+                      summarize, nSpp=length(unique(Binomial)))
+  
+  #--- useful summary objects ---#
+  Transects <<- levels(spRng.df$Transect)  # Transects w/species range data
+  nTrans <<- nlevels(spRng.df$Transect)
+  tvars.df <<- droplevels(ivars.df[ivars.df$Transect %in% Transects, ])
+  Labels <<- as.character(unique(tvars.df$Label))
+}
+
 
 # Standard error of the mean
 se <- function(x) { 

@@ -11,26 +11,7 @@
   library(ggplot2); theme_set(theme_bw()); 
   library(xlsx); library(plyr); library(vegan); library(betapart)
   source("R_scripts/FuncsGen.R")
-
-  #--- data sources ---#
-  spRng.df <- read.xlsx("Sheets/ranges_spp.xlsx", 1)  # Species ranges
-  genRng.df <- read.xlsx("Sheets/ranges_gen.xlsx", 1)  # Genus ranges
-  sfRng.df <- read.xlsx("Sheets/ranges_sf.xlsx", 1)  # Subfamily ranges
-  spSor.df <- read.csv("Sheets/spp_Sorensen.csv") # Species beta diversity
-  genSor.df <- read.csv("Sheets/gen_Sorensen.csv") # Genus beta diversity
-  sfSor.df <- read.csv("Sheets/sf_Sorensen.csv") # Subfamily beta diversity
-  spSorAdj.df <- read.csv("Sheets/spp_SorAdjSites.csv") # Spp beta adjacent
-  genSorAdj.df <- read.csv("Sheets/gen_SorAdjSites.csv") # Genus beta adjacent
-  sfSorAdj.df <- read.csv("Sheets/sf_SorAdjSites.csv") # Subfamily beta adjacent
-  over.df <- read.xlsx("Sheets/datasetOverview.xlsx", 1)  # Dataset summaries
-  ivars.df <- read.xlsx("Sheets/intVars.xlsx", 1)  # Elev's sampled, env var's
-  gen.bars <- read.csv("Sheets/relDiversity_gen.csv")  # Richness by genus
-  sf.bars <- read.csv("Sheets/relDiversity_sf.csv")  # Richness by sf
-
-  #--- useful summary objects ---#
-  Transects <- levels(spRng.df$Transect)  # Transects w/species range data
-  nTrans <- nlevels(spRng.df$Transect)
-  tvars.df <- droplevels(ivars.df[ivars.df$Transect %in% Transects, ])
+  loadAll()
 
   #--- graphical parameters ---#
   w <- 15  # width of pdf (inches)
@@ -43,20 +24,23 @@
 
   #--- species diversity ---#
   pdf(file="Plots/Diversity_spp.pdf", width=w, height=h)
-    ggplot(ivars.df, aes(x=Elsamp, y=Ssimpint)) + facet_wrap(~Label) +
-      geom_line() + labs(x="Elevation (m)", y="Number of species")
+    ggplot(tvars.df, aes(x=Elsamp, y=Ssimpint)) + facet_wrap(~Label) +
+      geom_point() + labs(x="Elevation (m)", y="Number of species") +
+      stat_smooth(se=FALSE, method="loess", span=1)
   dev.off()
 
   #--- genus diversity ---#
   pdf(file="Plots/Diversity_gen.pdf", width=w, height=h)
     ggplot(tvars.df, aes(x=Elsamp, y=Gen)) + facet_wrap(~Label) +
-      geom_line() + labs(x="Elevation (m)", y="Number of genera")
+      geom_point() + labs(x="Elevation (m)", y="Number of genera") +
+      stat_smooth(se=FALSE, method="loess", span=1)
   dev.off()
 
   #--- subfamily diversity ---#
   pdf(file="Plots/Diversity_sf.pdf", width=w, height=h)
     ggplot(tvars.df, aes(x=Elsamp, y=SF)) + facet_wrap(~Label) +
-      geom_line() + labs(x="Elevation (m)", y="Number of subfamilies")
+      geom_point() + labs(x="Elevation (m)", y="Number of subfamilies") +
+      stat_smooth(se=FALSE, method="loess", span=1)
   dev.off()
 
   #--- all taxonomic levels ---#
@@ -76,6 +60,13 @@
       geom_point(size=3) + labs(x="Number of genera", y="Number of species") +
       stat_smooth(method="loess", se=FALSE, span=1.25, size=1)
   dev.off()
+  pdf(file="Plots/SppModByGen_LOG.pdf", width=w, height=h)
+    ggplot(tvars.df, aes(x=log(Gen), y=log(Savgint), 
+                         colour=Label, group=Label)) + 
+      geom_point(size=3) + 
+      labs(x="log(Number of genera)", y="log(Number of species)") +
+      stat_smooth(method="lm", se=FALSE, span=1.25, size=1)    
+  dev.off()
 
   #--- species by subfamily ---#
   pdf(file="Plots/SppModBySF.pdf", width=w, height=h)
@@ -84,6 +75,13 @@
       labs(x="Number of subfamilies", y="Number of species") +
       stat_smooth(method="loess", se=FALSE, span=1.25, size=1)
   dev.off()
+  pdf(file="Plots/SppModBySF_LOG.pdf", width=w, height=h)
+    ggplot(tvars.df, aes(x=log(SF), y=log(Savgint), 
+                         colour=Label, group=Label)) + 
+      geom_point(size=3) + 
+      labs(x="log(Number of subfamilies)", y="log(Number of species)") +
+      stat_smooth(method="loess", se=FALSE, span=1.25, size=1)    
+  dev.off()
 
   #--- genera by subfamily ---#
   pdf(file="Plots/GenModBySF.pdf", width=w, height=h)
@@ -91,6 +89,13 @@
       geom_point(size=3) + 
       labs(x="Number of subfamilies", y="Number of genera") +
       stat_smooth(method="loess", se=FALSE, span=1.25, size=1)
+  dev.off()
+  pdf(file="Plots/GenModBySF_LOG.pdf", width=w, height=h)
+    ggplot(tvars.df, aes(x=log(SF), y=log(Gen), 
+                         colour=Label, group=Label)) + 
+      geom_point(size=3) + 
+      labs(x="log(Number of subfamilies)", y="log(Number of genera)") +
+      stat_smooth(method="loess", se=FALSE, span=1.25, size=1)    
   dev.off()
 
   #--- within-genus diversity ---#
@@ -129,6 +134,9 @@
       geom_line(aes(y=Ponerinae), colour="red") 
   dev.off()
 
+  #--- comparison of elevation of peaks ---#
+  pdf(file="Plots/ElPeaks.pdf", width=w, height=h)
+    ggplot(over.df, aes(x=Elpeak-GenPeakEl)) + geom_histogram()
 
 #######
 ## Most diverse genus/subfamily
@@ -141,11 +149,22 @@
       geom_line(aes(y=S-SmaxDivGen, colour="All but most diverse gn")) +
       geom_line(aes(y=SmaxDivGen, colour="Most diverse gn")) +
       scale_colour_manual(name="", values=c('Total diversity'='black',
-                                          'Most diverse genus'='green',
-                                          'All but most diverse genus'='blue'))
+                                          'Most diverse gn'='green',
+                                          'All but most diverse gn'='blue'))
   dev.off()
 
-  #--- genus: most diverse vs rest ---#
+  #--- genus: most diverse as proportion ---#
+  pdf(file="Plots/MostDivProp_gen.pdf", width=w, height=h)
+    ggplot(tvars.df, aes(x=Elsamp, y=SmaxDivGen/S)) + facet_wrap(~Label) +
+      geom_hline(yintercept=c(0,1), linetype=3, colour="gray60") + 
+      geom_point() + stat_smooth(se=FALSE, span=1.25, method="loess")
+  dev.off()
+  pdf(file="Plots/MostDivPropHist_gen.pdf", width=w, height=h)
+    ggplot(over.df, aes(x=maxDivGen/Stot)) + geom_histogram(binwidth=0.025) +
+      xlim(0,0.4) + labs(x=expression('S'['most speciose genus']/'S'['total']))
+  dev.off()
+
+  #--- subfamily: most diverse vs rest ---#
   pdf(file="Plots/MostDivVsRest_sf.pdf", width=w, height=h)
     ggplot(tvars.df, aes(x=Elsamp)) + facet_wrap(~Label) +
       geom_line(aes(y=S, colour="Total diversity")) + 
@@ -154,6 +173,17 @@
       scale_colour_manual(name="", values=c('Total diversity'='black',
                                       'Most diverse subfamily'='green',
                                       'All but most diverse subfamily'='blue'))
+  dev.off()
+
+  #--- subfamily: most diverse as proportion ---#
+  pdf(file="Plots/MostDivProp_sf.pdf", width=w, height=h)
+    ggplot(tvars.df, aes(x=Elsamp, y=SmaxDivSF/S)) + facet_wrap(~Label) +
+      geom_hline(yintercept=c(0,1), linetype=3, colour="gray60") + 
+      geom_point() + stat_smooth(se=FALSE, span=1.25, method="loess")
+  dev.off()
+  pdf(file="Plots/MostDivPropHist_sf.pdf", width=w, height=h)
+    ggplot(over.df, aes(x=maxDivSF/Stot)) + geom_histogram(binwidth=0.025) +
+      xlim(0,1) + labs(x=expression('S'['most speciose sf']/'S'['total']))
   dev.off()
 
 
@@ -363,3 +393,5 @@ ggplot(spSorAdj.df, aes(x=(El1 + El2)/2)) + facet_wrap(~Label) +
   labs(x="Elevation (m)", y="Proportion of beta diversity") + 
   scale_fill_manual(name="Beta Component",
                     values=c("Nestedness"="red", "Turnover"="blue"))
+ggplot(over.df, aes(x=Latsamp, y=maxDivSF/Stot)) + geom_point() + ylim(0,1)
+ggplot(over.df, aes(x=Latsamp, y=maxDivGen/Stot)) + geom_point() 

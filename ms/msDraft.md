@@ -11,14 +11,9 @@
   
 **Keywords:** 4–6 keywords. Formicidae, subfamily, genus, altitude, specialization, nesting    
   
-# Introduction  
-Two to three paragraphs. 
-Nice and short. 
-Wait until draft is more complete to set the context. 
-Not done trying to listen to the data yet. 
-Possibilities:  
+# I. Introduction  
 ## History or value of elevational studies generally  
-
+Blah blah.
   
 ## Value of studying insects  
 Despite comprising the majority of animal species (@CITE), insects have not received much focus in macroecological studies (@DF2010). 
@@ -37,7 +32,7 @@ Then, using well-sampled elevational datasets, I investigate patterns of ant ric
 Finally, I explore how ant nesting habits and dietary specialization varies across elevations. 
   
   
-# Datasets  
+# II. Datasets  
 ## Literature search  
 To identify ant elevational distribution datasets at local spatial scales, I performed a literature search with Web of Knowledge and Google Scholar, using combinations of the keywords 'ant', 'elevation\*', 'altitud\*', 'gradient', 'diversity', and 'insect'. 
 This search primarily returned studies along discrete elevational transects with sampling sites interspersed along the gradient. 
@@ -56,7 +51,7 @@ To restrict the analysis to robust, well-sampled datasets, I required that a dat
 (4) no elevational sampling gaps >500m; and 
 (5) relatively little anthropogenic disturbance. 
 These criteria, adapted from previous studies (@McCain2009; @McCain2010), are required to ensure the accurate description of the naturally occurring pattern (@McCoy1990; @McCoy2002; @McCain2005; @Rahbek2005; @NB2008).
-The common richness patterns, however, differ primarily across the lower portion of the elevational gradient (Fig. 1). 
+The common richness patterns, however, differ primarily across the lower portion of the elevational gradient (@NB2008). 
 Consequently, violations of the second criterion were allowed when the majority of the unsampled region was at high elevations where declining richness had been demonstrated. 
   
   
@@ -69,22 +64,36 @@ Nevertheless, the robust datasets included local and regional scales, tropic and
   
   
 ## Pattern definitions  
-I classified the ant elevational richness into five categories using definitions from the literature (Fig. 1; @McCain2009; @McCain2010). 
-In decreasing patterns, richness is highest at the lowest elevation and declines steadily with increasing elevation. 
-In low plateau patterns, richness is consistently high across at least the lowest 300m before declining monotonically. 
-Mid-peaks show highest richness >300m from the mountain base and with at least 25% greater diversity than at the base. 
+I classified the ant elevational richness and beta diversity into five categories using definitions from the literature (Fig. 1; @McCain2009; @McCain2010). 
+In decreasing patterns, diversity is highest at the lowest elevation and declines steadily with increasing elevation. 
+In low plateau patterns, diversity is consistently high across at least the lowest 300m before declining monotonically. 
+Mid-peaks show highest diversity >300m from the mountain base and with at least 25% greater diversity than at the base. 
 In increasing patterns, diversity increases with elevation. 
+U-shaped patterns show highest diversity toward the base and summit, with depressed diversity at intermediate elevations. 
 No pattern was recorded when none of these definitions were met and the richness showed no consistent pattern across elevations. 
-More patterns are possible (@McCain2009), but the datasets here were characterized well by these five patterns.  
+Though more patterns are possible (@McCain2009), the datasets here were characterized well by these five patterns.  
       
-# Taxonomic richness patterns  
+# III. Taxonomic richness patterns  
 ## Species richness  
+### Overall  
 In the robust datasets, ant species richness most often peaks at intermediate elevations (14/20), though decreasing (3/20) and low plateau (3/20) patterns also occur (Fig. 1). 
-Regional and local scale datasets showed nearly identical richness pattern distributions. 
+Regional and local scale datasets showed nearly identical species richness pattern distributions. 
+In the excluded datasets, the patterns were more variable. 
+In addition to the mid-peaks, decreases, and low plateaus seen in the robust datasets, there were also gradients with increasing richness and no identifiable richness pattern. 
+Furthermore, decreasing patterns were nearly as common as mid-peaks in the excluded datasets. 
+Some of these decreasing patterns, however, are likely an artefact of sampling bias. 
+The majority did not sample within the lowest 400m, potentially failing to capture the portion of the gradient across which the common patterns differ the most. 
+Ant species richness, therefore, shows a variety of elevational patterns, with richness often highest at intermediate elevations.  
+  
+## Genus richness  
+In the 16 robust datasets with species-level elevational ranges, the number of genera across elevations typically mirrors the number of species, and the number of species increases quite predictably with the number of genera (stats: lme?). 
+The most speciose genus in each dataset comprises between 7–31% of the total species richness along the gradient (mean ± SE: 0.200 ± 0.0157). 
+Elevationally, the dominance of the most speciose genus varies considerably both within and among gradients. 
+As elevation increases, the proportion of species within the most speciose genus may increase (5/16), decrease (4/16), remain constant (4/16), peak at intermediate elevations (2/16), or increase to a plateau (1/16). 
+Nevertheless, the species richness pattern of the most speciose genus is generally similar to the richness pattern of the remaining species. 
+That is, the most speciose genus does not appear to drive the overall richness pattern. 
+There is, however
 
-  
-  
-  
   
 # Figure Legends  
 **Figure 1.** Robust patterns of ant species richness across elevational gradients. 

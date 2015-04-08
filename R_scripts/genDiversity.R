@@ -15,12 +15,7 @@
 
   library(ggplot2); theme_set(theme_bw()); library(xlsx); library(plyr)
   source("R_scripts/FuncsGen.R")
-  spRng.df <- read.xlsx("Sheets/ranges_spp.xlsx", 1)  # Species ranges
-  over.df <- read.xlsx("Sheets/datasetOverview.xlsx", 1)  # Dataset summaries
-  ivars.df <- read.xlsx("Sheets/intVars.xlsx", 1)  # Elev's sampled, env var's
-  Transects <- levels(spRng.df$Transect)  # Transects w/species range data
-  nTrans <- nlevels(spRng.df$Transect)
-  tvars.df <- droplevels(ivars.df[ivars.df$Transect %in% Transects, ])
+  loadAll()
 
 
 
@@ -107,6 +102,7 @@
 #############
 ## Proportion of species in each subfamily
 #############
+
   gen.bars <- tvars.df[, c(1:4, 62:81, 84)]
   gen.bars <- reshape(gen.bars, 
                      varying=c(as.character(genToCount), "OtherGenus"),
@@ -117,3 +113,18 @@
   rownames(gen.bars) <- NULL
   gen.bars <- gen.bars[!is.na(gen.bars$Elsamp),]
   write.csv(gen.bars, file="Sheets/relDiversity_gen.csv")
+
+
+###########
+## Location of diversity peak
+###########
+  peak.df <- ddply(tvars.df, .(Transect, Label, mostDivGen), summarize, 
+                   GenPeak=max(Gen, na.rm=TRUE),
+                   GenPeakEl=Elsamp[which.max(Gen)],
+                   mostDivGenPeak=max(SmaxDivGen, na.rm=TRUE),
+                   mostDivGenPeakEl=Elsamp[which.max(SmaxDivGen)],
+                   SFPeak=max(SF, na.rm=TRUE),
+                   SFPeakEl=Elsamp[which.max(SF)],
+                   mostDivSFPeak=max(SmaxDivSF, na.rm=TRUE),
+                   mostDivSFPeakEl=Elsamp[which.max(SmaxDivSF)])
+  write.csv(peak.df, file="peak.csv")
