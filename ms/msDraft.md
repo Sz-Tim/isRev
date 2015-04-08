@@ -46,9 +46,9 @@ That is, each species was assumed present between the lowest and highest occurre
 ## Sampling criteria  
 To restrict the analysis to robust, well-sampled datasets, I required that a dataset provide ant elevational data within a mountainous region or along a gradient and meet five *a priori* criteria: 
 (1) sufficient, even sampling effort with standardized methods across the gradient; 
-(2) sampling of ≥70% of the gradient; 
+(2) sampling of at least 70% of the gradient; 
 (3) sampling within the lowest 400m of the gradient; 
-(4) no elevational sampling gaps >500m; and 
+(4) no elevational sampling gaps greater than 500m; and 
 (5) relatively little anthropogenic disturbance. 
 These criteria, adapted from previous studies (@McCain2009; @McCain2010), are required to ensure the accurate description of the naturally occurring pattern (@McCoy1990; @McCoy2002; @McCain2005; @Rahbek2005; @NB2008).
 The common richness patterns, however, differ primarily across the lower portion of the elevational gradient (@NB2008). 
@@ -87,13 +87,31 @@ Ant species richness, therefore, shows a variety of elevational patterns, with r
   
 ## Genus richness  
 In the 16 robust datasets with species-level elevational ranges, the number of genera across elevations typically mirrors the number of species, and the number of species increases quite predictably with the number of genera (stats: lme?). 
-The most speciose genus in each dataset comprises between 7–31% of the total species richness along the gradient (mean ± SE: 0.200 ± 0.0157). 
+Genus richness peaks at or below the elevation with the highest species richness. 
+The most speciose genus in each dataset comprises 7–31% of the total species richness along the gradient (mean ± SE: 0.200 ± 0.0157). 
 Elevationally, the dominance of the most speciose genus varies considerably both within and among gradients. 
 As elevation increases, the proportion of species within the most speciose genus may increase (5/16), decrease (4/16), remain constant (4/16), peak at intermediate elevations (2/16), or increase to a plateau (1/16). 
 Nevertheless, the species richness pattern of the most speciose genus is generally similar to the richness pattern of the remaining species. 
 That is, the most speciose genus does not appear to drive the overall richness pattern. 
-There is, however
+The elevation with highest species richness does, however, tend to coincide with the richness peak of the most speciose genus. 
+Therefore, though the general species richness pattern is not driven by one genus, some specific aspects may be. 
 
+## Subfamily richness  
+The number of ant subfamilies shows less distinct patterns elevationally than the number of species or the number of genera. 
+The most speciose subfamily along each gradient comprises 39–73% of the total species richness (mean ± SE: 0.545 ± 0.0204). 
+The proportion of species in the most speciose subfamily is highly variable across elevations and the pattern is not consistent among gradients. 
+increase to plateau (3/16)
+increase (3/16)
+flat (3/16)
+flat then increase (4/16)
+U-shaped (1/16)
+plateau then decrease (2/16)
+Generally, the most speciose subfamily is distributed more broadly (GET RANGE DATA) and persists in higher elevations than species in the other subfamilies. 
+As with species richness patterns in the most speciose genus, the species richness patterns of the most speciose subfamilies tend to be remarkably similar to both the overall species richness pattern and the richness pattern of the remaining species. 
+The elevational species richness pattern does not result from the richness pattern of the most speciose subfamily. 
+The richness patterns within the non-dominant subfamilies is less clear due to the lower total number of species. 
+However, the subfamilies with enough species tend to follow the same overall trend as the total species richness pattern.
+  
   
 # Figure Legends  
 **Figure 1.** Robust patterns of ant species richness across elevational gradients. 
