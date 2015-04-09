@@ -28,9 +28,15 @@
 # IV. Beta diversity    
 Split by components or by taxonomy?  
 How does this square with small range sizes? How is nestedness so high?  
-## i. Subfamily  
+## i. Species  
 ### Total beta diversity  
+U, I, flat. 
+Mostly U-shaped though. 
+Opposite of ecotone expectations - generally low at middle elevations.  
 ### Turnover vs Nestedness  
+Nestedness is often U-shaped, highest at the base and peak. 
+Nestedness is highest at high elevations - environmental filtering? 
+Turnover is more variable: D, LP, HP, MP, I, U.  
 ### Differences among mountain types/climates?  
   
 ## ii. Genus  
@@ -42,16 +48,10 @@ Nestedness is often U-shaped, highest at the base and peak.
 Nestedness makes up a larger component at most elevations along most transects. 
 Turnover is generally low, but somewhat variable.  
 ### Differences among mountain types/climates?  
-  
-## iii. Species  
+
+## i. Subfamily  
 ### Total beta diversity  
-U, I, flat. 
-Mostly U-shaped though. 
-Opposite of ecotone expectations - generally low at middle elevations.  
 ### Turnover vs Nestedness  
-Nestedness is often U-shaped, highest at the base and peak. 
-Nestedness is highest at high elevations - environmental filtering? 
-Turnover is more variable: D, LP, HP, MP, I, U.  
 ### Differences among mountain types/climates?  
   
 ## iv. Comparison across taxonomic levels (spp vs gen)   

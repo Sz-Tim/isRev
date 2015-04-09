@@ -16,7 +16,7 @@ Title: Ant taxonomy & natural history across elevations
     
 # I. Introduction  
 ## History or value of elevational studies generally  
-Blah blah.
+Blah blah. 
   
 ## Value of studying insects  
 Despite comprising the majority of animal species **CITE**, insects have not received much focus in macroecological studies [@DF2010]. 
@@ -43,8 +43,7 @@ To identify ant elevational distribution datasets at regional spatial scales, I 
 This search returned guides to the ant fauna of a particular geopolitical region. 
 Such guides typically compile museum records and collections from many years spread across the region, detailing the recorded occurrences of each ant species in the region. 
 The elevational range of each ant species was interpolated. 
-That is, each species was assumed present between the lowest and highest occurrence within a dataset.  
-  
+That is, each species was assumed present between the lowest and highest occurrence within a dataset. 
   
 ## Sampling criteria  
 To restrict the analysis to robust, well-sampled datasets, I required that a dataset provide ant elevational data within a mountainous region or along a gradient and meet five *a priori* criteria: 
@@ -57,14 +56,12 @@ These criteria, adapted from previous studies [@McCain2009; @McCain2010], are re
 The common richness patterns, however, differ primarily across the lower portion of the elevational gradient [@NB2008]. 
 Consequently, violations of the second criterion were allowed when the majority of the unsampled region was at high elevations where declining richness had been demonstrated. 
   
-  
 ## Study descriptions    
 A total of 68 candidate datasets were found (Appendix). 
 A number of publications used data from the literature, leaving 47 unique datasets that detailed ant distributions or richness within a single region or along a gradient. 
 There were 20 that met all five *a priori* sampling criteria, and 16 of those provided species-level elevational range data. 
 Thus, the majority of published studies describing ant richness across elevations did not employ sampling regimes sufficient to confidently capture the underlying richness pattern. 
 Nevertheless, the robust datasets included local and regional scales, tropic and temperate zones, mainland and island gradients, and wet and arid climates (Appendix). 
-  
   
 ## Pattern definitions  
 I classified the ant elevational richness and beta diversity into five categories using definitions from the literature (Fig. 1; [@McCain2009; @McCain2010]. 
@@ -75,10 +72,10 @@ In increasing patterns, diversity increases with elevation.
 U-shaped patterns show highest diversity toward the base and summit, with depressed diversity at intermediate elevations. 
 No pattern was recorded when none of these definitions were met and the richness showed no consistent pattern across elevations. 
 Though more patterns are possible [@McCain2009], the datasets here were characterized well by these five patterns.  
-      
+  
+  
 # III. Taxonomic richness patterns  
 ## Species richness  
-### Overall  
 In the robust datasets, ant species richness most often peaks at intermediate elevations (14/20), though decreasing (3/20) and low plateau (3/20) patterns also occur (Fig. 1). 
 Regional and local scale datasets showed nearly identical species richness pattern distributions. 
 In the excluded datasets, the patterns were more variable. 
@@ -86,7 +83,7 @@ In addition to the mid-peaks, decreases, and low plateaus seen in the robust dat
 Furthermore, decreasing patterns were nearly as common as mid-peaks in the excluded datasets. 
 Some of these decreasing patterns, however, are likely an artefact of sampling bias. 
 The majority did not sample within the lowest 400m, potentially failing to capture the portion of the gradient across which the common patterns differ the most. 
-Ant species richness, therefore, shows a variety of elevational patterns, with richness often highest at intermediate elevations.  
+Ant species richness, therefore, shows a variety of elevational patterns, with richness often highest at intermediate elevations. 
   
 ## Genus richness  
 In the 16 robust datasets with species-level elevational ranges, the number of genera across elevations typically mirrors the number of species, and the number of species increases quite predictably with the number of genera (stats: lme?). 
@@ -98,30 +95,62 @@ Nevertheless, the species richness pattern of the most speciose genus is general
 That is, the most speciose genus does not appear to drive the overall richness pattern. 
 The elevation with highest species richness does, however, tend to coincide with the richness peak of the most speciose genus. 
 Therefore, though the general species richness pattern is not driven by one genus, some specific aspects may be. 
-
+  
 ## Subfamily richness  
 The number of ant subfamilies shows less distinct patterns elevationally than the number of species or the number of genera. 
 The most speciose subfamily along each gradient comprises 39–73% of the total species richness (mean ± SE: 0.545 ± 0.0204). 
 The proportion of species in the most speciose subfamily is highly variable across elevations and the pattern is not consistent among gradients. 
-increase to plateau (3/16)
-increase (3/16)
-flat (3/16)
-flat then increase (4/16)
-U-shaped (1/16)
-plateau then decrease (2/16)
+Across elevations, that proportion may be constant at low and middle elevations and then increase toward the peak (4/16), remain constant across the gradient (3/16), increase consistently across the gradient (3/16), increase to a plateau (3/16), remain constant at low and middle elevations and then decrease toward the peak (2/16), or be U-shaped (1/16). 
 Generally, the most speciose subfamily is distributed more broadly (GET RANGE DATA) and persists in higher elevations than species in the other subfamilies. 
 As with species richness patterns in the most speciose genus, the species richness patterns of the most speciose subfamilies tend to be remarkably similar to both the overall species richness pattern and the richness pattern of the remaining species. 
 The elevational species richness pattern does not result from the richness pattern of the most speciose subfamily. 
 The richness patterns within the non-dominant subfamilies is less clear due to the lower total number of species. 
-However, the subfamilies with enough species tend to follow the same overall trend as the total species richness pattern.
-
-
+However, the subfamilies with enough species tend to follow the same overall trend as the total species richness pattern. 
+  
+## Takehome  
+  
+  
 # Beta Diversity  
+In a broad sense, beta diversity is quantifies the variation in the species composition across space or time [@Anderson2011]. 
+Species composition can vary, however, due to either the substitution of one species for another, called *turnover*, or due to the loss or addition of species, called *nestedness* [@Baselga2010; @Baselga2012; @Legendre2014]. 
+Differences in turnover and nestedness suggest variation in the ecological processes underlying the community composition. 
+To explore the change in ant communities across elevational gradients, I used the Sørensen-family metrics in the R package *betapart* to calculate the overall beta diversity, turnover, and nestedness between adjacent sites along each gradient [@Baselga2010; @Baselga2012; @BaseOrme2012]. 
+These indices allow for unbiased comparisons among communities of differing richness [@Baselga2012]. 
+I calculated each component using the species composition, genus composition, and subfamily composition at each elevation. 
+  
 ## Species  
-  
+
 ## Genus  
-  
+
 ## Subfamily    
+
+## Comparison across taxonomic levels  
+
+## Take home  
+
+  
+# Natural history  
+## Data  
+
+## Nesting  
+
+## Diet specialization  
+
+## Take home  
+  
+  
+# Into the unknown  
+## Habitat complexity  
+
+## Litter depth  
+
+## Other suggested drivers  
+
+## Changes through time  
+  
+  
+# Conclusion  
+  
   
 # Figure Legends  
 **Figure 1.** Robust patterns of ant species richness across elevational gradients. 
