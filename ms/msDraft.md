@@ -110,16 +110,22 @@ However, the subfamilies with enough species tend to follow the same overall tre
 ## Takehome  
   
   
-# Beta Diversity  
+# IV. Beta Diversity  
 In a broad sense, beta diversity is quantifies the variation in the species composition across space or time [@Anderson2011]. 
 Species composition can vary, however, due to either the substitution of one species for another, called *turnover*, or due to the loss or addition of species, called *nestedness* [@Baselga2010; @Baselga2012; @Legendre2014]. 
+Turnover and nestedness are likely driven by different processes and understanding the the pattern of each across elevations may yield insight into the importance of ecological filtering, biotic interactions, and neutral processes [@Svenning2011]. 
 Differences in turnover and nestedness suggest variation in the ecological processes underlying the community composition. 
 To explore the change in ant communities across elevational gradients, I used the Sørensen-family metrics in the R package *betapart* to calculate the overall beta diversity, turnover, and nestedness between adjacent sites along each gradient [@Baselga2010; @Baselga2012; @BaseOrme2012]. 
 These indices allow for unbiased comparisons among communities of differing richness [@Baselga2012]. 
 I calculated each component using the species composition, genus composition, and subfamily composition at each elevation. 
   
 ## Species  
-
+At the species-level, overall beta diversity between adjacent elevations is most often U-shaped (13/16), though it may also increase (2/16) or remain constant (1/16) across the gradient. 
+In these datasets, therefore, the change in species composition is generally lowest at middle elevations and greatest toward the summit or the base. 
+Along most gradients (12/16), most of the change is due to nestedness rather than turnover and turnover is, in fact, quite low (STATS). 
+The exceptions to this pattern are all in the tropics. 
+For instance, in Madagascar [@Fisher1998] and the Philippines [@Samson1996], overall beta diversity is high across the gradient, driven largely by the replacement of species across elevations. 
+This is consistent with the small elevational ranges of many taxa along these gradients. 
 ## Genus  
 
 ## Subfamily    
@@ -139,7 +145,7 @@ I calculated each component using the species composition, genus composition, an
 ## Take home  
   
   
-# Into the unknown  
+# Into the unknown: what data do we need?  
 ## Habitat complexity  
 
 ## Litter depth  

@@ -1,9 +1,12 @@
 # Makefile for Insectes Sociaux review 2015  
 
-all: output/msDraft.docx output/msDraft.pdf
+all: supportFiles/isRev.bib output/msDraft.docx output/msDraft.pdf
 
-output/msDraft.docx: msDraft.md supportFiles/InSoc_Review.bib  
-	pandoc -H supportFiles/format.sty -V fontsize=12pt --bibliography supportFiles/InSoc_Review.bib --csl=supportFiles/insectes-sociaux.csl msDraft.md -o output/msDraft.docx
+supportFiles/isRev.bib: ~/Dropbox/Thesis/Manuscripts/MendeleyBibTex/InSoc_Review.bib
+	cp ~/Dropbox/Thesis/Manuscripts/MendeleyBibTex/InSoc_Review.bib supportFiles/isRev.bib
 
-output/msDraft.pdf: msDraft.md supportFiles/InSoc_Review.bib  
-	pandoc -H supportFiles/format.sty -V fontsize=12pt --bibliography supportFiles/InSoc_Review.bib --csl=supportFiles/insectes-sociaux.csl msDraft.md -o output/msDraft.pdf
+output/msDraft.docx: msDraft.md supportFiles/isRev.bib  
+	pandoc -H supportFiles/format.sty -V fontsize=12pt --bibliography supportFiles/isRev.bib --csl=supportFiles/insectes-sociaux.csl msDraft.md -o output/msDraft.docx
+
+output/msDraft.pdf: msDraft.md supportFiles/isRev.bib  
+	pandoc -H supportFiles/format.sty -V fontsize=12pt --bibliography supportFiles/isRev.bib --csl=supportFiles/insectes-sociaux.csl msDraft.md -o output/msDraft.pdf
