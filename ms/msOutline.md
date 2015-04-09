@@ -79,3 +79,8 @@ Turnover drops heavily, esp at sf level.
 Patterns of ant richness are complex and varied. 
 Good foundation, much to uncover.   
   
+  
+  
+  
+  one ring to rule them all?
+  all sf's or all genera seem to behave similarly...

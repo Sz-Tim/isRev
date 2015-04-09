@@ -377,6 +377,7 @@
                           limits=c("Total beta", "Nestedness", "Turnover")) +
       labs(x="Elevation (m)", y=expression(beta['Species'] - beta['Genus']))
   dev.off()
+
 ########
 ## Other doodles
 ########
