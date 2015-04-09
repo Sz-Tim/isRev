@@ -116,7 +116,12 @@ The richness patterns within the non-dominant subfamilies is less clear due to t
 However, the subfamilies with enough species tend to follow the same overall trend as the total species richness pattern.
 
 
-# Beta Diversity    
+# Beta Diversity  
+## Species  
+  
+## Genus  
+  
+## Subfamily    
   
 # Figure Legends  
 **Figure 1.** Robust patterns of ant species richness across elevational gradients. 
