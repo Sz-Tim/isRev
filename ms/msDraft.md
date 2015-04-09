@@ -1,4 +1,4 @@
-**Title:** Ant diversity, taxonomy, and natural history across elevations  
+Title: Ant taxonomy & natural history across elevations  
 =======================
 **Author:** Tim Szewczyk^1^ 
   
@@ -8,7 +8,7 @@
 **Telephone:** ??  
 **Fax:** ??  
   
-**Abstract:** 150–250 words.  
+**Abstract:** 150–250 words.  The abstract abstract is rather abstract.
   
 **Keywords:** 4–6 keywords. Formicidae, subfamily, genus, altitude, specialization, nesting    
   
@@ -115,7 +115,9 @@ The elevational species richness pattern does not result from the richness patte
 The richness patterns within the non-dominant subfamilies is less clear due to the lower total number of species. 
 However, the subfamilies with enough species tend to follow the same overall trend as the total species richness pattern.
 
-      
+
+# Beta Diversity    
+  
 # Figure Legends  
 **Figure 1.** Robust patterns of ant species richness across elevational gradients. 
 A variety of patterns have been observed, though mid-elevational peaks are most common. 
