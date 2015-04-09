@@ -126,6 +126,9 @@ Patterns of nestedness mirror the pattern of overall beta diversity along most g
 In these gradients, most of the change is due to nestedness rather than turnover and turnover is, in fact, quite low (STATS). 
 The exceptions to this trend are all in the tropics. 
 For instance, the high overall beta diversity in Madagascar [@Fisher1998] and the Philippines [@Samson1997] is driven largely by the replacement of species across elevations. 
+Along most gradients (12/16), most of the change is due to nestedness rather than turnover and turnover is, in fact, quite low (STATS). 
+The exceptions to this pattern are all in the tropics. 
+For instance, in Madagascar [@Fisher1998] and the Philippines [@Samson1996], overall beta diversity is high across the gradient, driven largely by the replacement of species across elevations. 
 This is consistent with the small elevational ranges of many taxa along these gradients. 
 ## Genus  
 
