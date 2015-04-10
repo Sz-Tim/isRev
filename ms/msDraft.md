@@ -1,5 +1,4 @@
-Title: Ant taxonomy & natural history across elevations  
-=======================
+# The structure of ant communities across elevations  
 **Author:** Tim Szewczyk^1^ 
   
 **Affiliation:** University of Colorado-Boulder, Department of Ecology and Evolutionary Biology  
@@ -26,7 +25,7 @@ Ants have a number of advantages to global studies of diversity.
 As predators, competitors, scavengers, and dispersers, they have major ecological impacts in a wide variety of systems [@HollWils1990]. 
 In contrast to many insect taxa, the individuals used for identification are wingless, restricting their movement from the nest and reducing the impact of accidentals. 
 Additionally, because of the historic interest in ants across many decades **CITE**, there is a firmer baseline for comparisons across time and ants have been relatively well-described taxonomically. 
-Nevertheless, we know little about the ranges and less about the basic natural history of many species **CITE**[@Lanan2014]. 
+Nevertheless, we know little about the ranges and less about the basic natural history of many species [@Lanan2014]. 
   
 ## Challenge  
 Understanding the patterns/distribution/characteristics of biodiversity necessitates a comprehensive, global perspective. 
@@ -97,7 +96,7 @@ The elevation with highest species richness does, however, tend to coincide with
 Therefore, though the general species richness pattern is not driven by one genus, some specific aspects may be. 
   
 ## Subfamily richness  
-The number of ant subfamilies shows less distinct patterns elevationally than the number of species or the number of genera. 
+The number of ant subfamilies shows less distinct patterns elevationally than the number of species or the number of genera, though they are generally coarsely similar to the species and genus richness patterns. 
 The most speciose subfamily along each gradient comprises 39–73% of the total species richness (mean ± SE: 0.545 ± 0.0204). 
 The proportion of species in the most speciose subfamily is highly variable across elevations and the pattern is not consistent among gradients. 
 Across elevations, that proportion may be constant at low and middle elevations and then increase toward the peak (4/16), remain constant across the gradient (3/16), increase consistently across the gradient (3/16), increase to a plateau (3/16), remain constant at low and middle elevations and then decrease toward the peak (2/16), or be U-shaped (1/16). 
@@ -108,11 +107,11 @@ The richness patterns within the non-dominant subfamilies is less clear due to t
 However, the subfamilies with enough species tend to follow the same overall trend as the total species richness pattern. 
   
 ## Takehome  
-  
+Paragraph that wraps up, summarizes, and synthesizes the richness pattern results.  
   
 # IV. Beta Diversity  
 In a broad sense, beta diversity is quantifies the variation in the species composition across space or time [@Anderson2011]. 
-Species composition can vary, however, due to either the substitution of one species for another, called *turnover*, or due to the loss or addition of species, called *nestedness* [@Baselga2010; @Baselga2012; @Legendre2014]. 
+Species composition can vary, however, due to either the substitution or replacement of one species for another, called *turnover*, or due to the loss or addition of species, called *nestedness* [@Baselga2010; @Baselga2012; @Legendre2014]. 
 Turnover and nestedness are likely driven by different processes and understanding the the pattern of each across elevations may yield insight into the importance of ecological filtering, biotic interactions, and neutral processes [@Svenning2011]. 
 Differences in turnover and nestedness suggest variation in the ecological processes underlying the community composition. 
 To explore the change in ant communities across elevational gradients, I used the Sørensen-family metrics in the R package *betapart* to calculate the overall beta diversity, turnover, and nestedness between adjacent sites along each gradient [@Baselga2010; @Baselga2012; @BaseOrme2012]. 
@@ -130,6 +129,8 @@ Along most gradients (12/16), most of the change is due to nestedness rather tha
 The exceptions to this pattern are all in the tropics. 
 For instance, in Madagascar [@Fisher1998] and the Philippines [@Samson1997], overall beta diversity is high across the gradient, driven largely by the replacement of species across elevations. 
 This is consistent with the small elevational ranges of many ant species along gradients in the tropics (mean~temperate~ ± SE: 652m ± 68, mean~tropic~ ± SE: 381m ± 44; *t~13.5~* = 2.99; *P* = 0.01; figure?). 
+The higher species turnover along these tropical gradients suggests a possible role of biotic interactions in the species composition across elevations. 
+Along the majority of the gradients, however, nestedness dominates, consistent with the role of abiotic factors in determining the species composition. 
   
 ## Genus  
 Overall beta diversity between adjacent elevations at the genus-level is most commonly U-shaped (14/16), often with a low elevation truncation such that highest beta diversity occurs at high elevations. 
@@ -140,11 +141,23 @@ The primary exceptions are in the Philippines [@Samson1997], where turnover is h
 With common interpretations of turnover and nestedness **CITE**, the high nestedness and low turnover along most gradients suggest that environmental filtering is more important than biotic interactions in determining the ant genus community across elevations. 
 
 ## Subfamily    
-
+At the subfamily level, overall beta diversity is low between adjacent elevations. 
+There is no turnover in the subfamily composition in any of the datasets. 
+Rather, all changes between adjacent elevations are due to nestedness as subfamilies are added or lost. 
+Nestedness, and consequently overall beta diversity, commonly increases toward high elevations (12/16), though in some cases it is U-shaped (3/16) or high at the mountain base (1/16). 
+Thus, there is a high degree of elevational overlap across subfamilies, and subfamilies are progressively excluded as elevation increases, likely due to environmental filtering. 
+With vanishingly little subfamily turnover, there is little evidence for competitive exclusion at the subfamily level. 
+  
 ## Comparison across taxonomic levels  
-
+Beta diversity decreases as taxonomic resolution decreases. 
+That is, species dissimilarity is higher than genus dissimilarity between adjacent elevations (paired t-test btw *Beta~genus~* and *Beta~species~*?) which, in turn, is higher than subfamily dissimilarity (paired t-test btw *Beta~subfamily~* and *Beta~genus~*?). 
+Turnover declines most dramatically at higher taxonomic levels and is essentially non-existent between ant subfamilies. 
+Even in the tropical datasets, where species turnover is highest, the genus turnover is substantially lower. 
+This is consistent with competitive exclusion between congeners across elevations, though heightened sensitivity to abiotic conditions and consequent elevational specialization could also produce this pattern. 
+Nevertheless, high species turnover is not universal among the tropical gradients and turnover is consistently low in the temperate datasets. 
+  
 ## Take home  
-
+Paragraph that wraps up, summarizes, and synthesizes the beta diversity results.  
   
 # Natural history  
 ## Data  
