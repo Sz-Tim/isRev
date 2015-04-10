@@ -15,10 +15,13 @@
     
 # I. Introduction  
 ## History or value of elevational studies generally  
-Blah blah. 
+To disentangle the factors that shape species richness, it is essential to first thoroughly explore the patterns of richness [@Rahbek1995; @Lomolino2001]. 
+Elevational gradients provide useful study systems to investigate these patterns and drivers [@McCain2009; @McCain2010]. 
+Mountains, occurring on every continent, act as compact, globally replicated systems that vary across many characteristics hypothesized as richness drivers, including climate, history, and geography [@Rahbek1995; @Lomolino2001; @McCaGryt2010]. 
+Detailing how communities change across elevational gradients, and across taxonomic levels, can yield insight into the underlying processes shaping biodiversity at a broad scale. 
   
 ## Value of studying insects  
-Despite comprising the majority of animal species **CITE**, insects have not received much focus in macroecological studies [@DF2010]. 
+Despite comprising the majority of animal species, insects have not received much focus in such macroecological studies [@DF2010]. 
 However, the astonishing array of insect diversity suggests that no picture of biodiversity would be complete without insects. 
 Furthermore, understanding the processes underlying insect diversity may yield valuable insights into the processes that shape patterns biodiversity more broadly. 
 Ants have a number of advantages to global studies of diversity. 
@@ -134,10 +137,10 @@ Along the majority of the gradients, however, nestedness dominates, consistent w
   
 ## Genus  
 Overall beta diversity between adjacent elevations at the genus-level is most commonly U-shaped (14/16), often with a low elevation truncation such that highest beta diversity occurs at high elevations. 
-In the Philippines [@Samson1997] and Costa Rica [@LongColw2011], beta diversity increases monotonically across elevations. 
+In the Philippines [@Samson1997] and Costa Rica [C], beta diversity increases monotonically across elevations. 
 Turnover at the genus-level is typically lower than at the species-level. 
 Along many gradients, genus turnover is nearly zero across the majority of elevations and the change in genus composition is instead due to nestedness. 
-The primary exceptions are in the Philippines [@Samson1997], where turnover is higher than nestedness except at the highest elevations and increases to a peak at mid-to-upper elevations, and in the McPherson Range in Australia [@MunyFoor2012], where turnover decreases monotonically and is overtaken by nestedness at middle elevations. 
+The primary exceptions are in the Philippines [@Samson1997], where turnover is higher than nestedness except at the highest elevations and increases to a peak at mid-to-upper elevations, and in the McPherson Range in Australia [@BurwNaka2011], where turnover decreases monotonically and is overtaken by nestedness at middle elevations. 
 With common interpretations of turnover and nestedness **CITE**, the high nestedness and low turnover along most gradients suggest that environmental filtering is more important than biotic interactions in determining the ant genus community across elevations. 
 
 ## Subfamily    
@@ -180,7 +183,7 @@ Paragraph that wraps up, summarizes, and synthesizes the beta diversity results.
 
 ## Diet  
 
-## 
+## Any and all natural history  
 
 ## Changes through time  
   
