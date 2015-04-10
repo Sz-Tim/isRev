@@ -26,6 +26,10 @@ loadAll <- function() {
                       nSpp=length(unique(Binomial)))
   feedSum.df <<- ddply(traits.df, .(Transects, Elsamp, Specialization),
                       summarize, nSpp=length(unique(Binomial)))
+  taxcomp.df <- data.frame(spSorAdj.df[,2:4])
+  taxcomp.df$SpG.sim <- spSorAdj.df$sim - genSorAdj.df$sim
+  taxcomp.df$SpG.sne <- spSorAdj.df$sne - genSorAdj.df$sne
+  taxcomp.df$SpG.sor <- spSorAdj.df$sor - genSorAdj.df$sor
   
   #--- useful summary objects ---#
   Transects <<- levels(spRng.df$Transect)  # Transects w/species range data

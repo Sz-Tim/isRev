@@ -352,11 +352,6 @@
 #######
 ## Beta diversity compared across taxonomic scales at adjacent sites
 #######
-  
-  taxcomp.df <- data.frame(spSorAdj.df[,2:4])
-  taxcomp.df$SpG.sim <- spSorAdj.df$sim - genSorAdj.df$sim
-  taxcomp.df$SpG.sne <- spSorAdj.df$sne - genSorAdj.df$sne
-  taxcomp.df$SpG.sor <- spSorAdj.df$sor - genSorAdj.df$sor
 
   pdf(file="Plots/AdjBeta_SpG_Comp.pdf", width=w, height=h)
     ggplot(taxcomp.df, aes(x=(El1 + El2)/2)) + facet_wrap(~Label) +
@@ -394,5 +389,26 @@ ggplot(spSorAdj.df, aes(x=(El1 + El2)/2)) + facet_wrap(~Label) +
   labs(x="Elevation (m)", y="Proportion of beta diversity") + 
   scale_fill_manual(name="Beta Component",
                     values=c("Nestedness"="red", "Turnover"="blue"))
+
 ggplot(over.df, aes(x=Latsamp, y=maxDivSF/Stot)) + geom_point() + ylim(0,1)
 ggplot(over.df, aes(x=Latsamp, y=maxDivGen/Stot)) + geom_point() 
+
+ggplot(tvars.df, aes(x=Elsamp, y=AvgOfRngObs, fill=Zone)) + 
+  geom_ribbon(aes(ymin=AvgOfRngObs-StDevOfRngObs/sqrt(CountOfRngObs), 
+                  ymax=AvgOfRngObs+StDevOfRngObs/sqrt(CountOfRngObs)), 
+              alpha=0.5) + 
+  geom_point() + 
+  geom_segment(aes(y=AvgOfRngObs-StDevOfRngObs/sqrt(CountOfRngObs), 
+                   yend=AvgOfRngObs+StDevOfRngObs/sqrt(CountOfRngObs),
+                   xend=Elsamp)) + 
+  geom_rug(sides="l") + 
+  facet_wrap(~Label)
+
+ggplot(over.df, aes(x=Zone, y=mnRng)) + geom_boxplot()
+ggplot(over.df, aes(x=Zone, y=mnRng/(MtnPeak-MtnBase))) + geom_boxplot()
+ggplot(over.df, aes(x=Latsamp, y=mnRng, colour=Climate)) + geom_point() + 
+  geom_segment(aes(xend=Latsamp, y=mnRng+seRng, yend=mnRng-seRng))
+ggplot(over.df, aes(x=Latsamp, y=mnRng/(MtnPeak-MtnBase), colour=Climate)) + 
+  geom_point() + geom_segment(aes(xend=Latsamp, 
+                                  y=(mnRng+seRng)/(MtnPeak-MtnBase), 
+                                  yend=(mnRng-seRng)/(MtnPeak-MtnBase)))

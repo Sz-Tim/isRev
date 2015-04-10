@@ -40,6 +40,7 @@ Turnover is more variable: D, LP, HP, MP, I, U.
 ### Differences among mountain types/climates?  
   
 ## ii. Genus  
+worth it to look within genera?  
 ### Total beta diversity  
 U, I, flat (but flat maybe a U). 
 Mostly U or truncated U with a dip at middle elevations.   

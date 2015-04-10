@@ -128,9 +128,16 @@ The exceptions to this trend are all in the tropics.
 For instance, the high overall beta diversity in Madagascar [@Fisher1998] and the Philippines [@Samson1997] is driven largely by the replacement of species across elevations. 
 Along most gradients (12/16), most of the change is due to nestedness rather than turnover and turnover is, in fact, quite low (STATS). 
 The exceptions to this pattern are all in the tropics. 
-For instance, in Madagascar [@Fisher1998] and the Philippines [@Samson1996], overall beta diversity is high across the gradient, driven largely by the replacement of species across elevations. 
-This is consistent with the small elevational ranges of many taxa along these gradients. 
+For instance, in Madagascar [@Fisher1998] and the Philippines [@Samson1997], overall beta diversity is high across the gradient, driven largely by the replacement of species across elevations. 
+This is consistent with the small elevational ranges of many ant species along gradients in the tropics (mean~temperate~ ± SE: 652m ± 68, mean~tropic~ ± SE: 381m ± 44; *t~13.5~* = 2.99; *P* = 0.01; figure?). 
+  
 ## Genus  
+Overall beta diversity between adjacent elevations at the genus-level is most commonly U-shaped (14/16), often with a low elevation truncation such that highest beta diversity occurs at high elevations. 
+In the Philippines [@Samson1997] and Costa Rica [@LongColw2011], beta diversity increases monotonically across elevations. 
+Turnover at the genus-level is typically lower than at the species-level. 
+Along many gradients, genus turnover is nearly zero across the majority of elevations and the change in genus composition is instead due to nestedness. 
+The primary exceptions are in the Philippines [@Samson1997], where turnover is higher than nestedness except at the highest elevations and increases to a peak at mid-to-upper elevations, and in the McPherson Range in Australia [@MunyFoor2012], where turnover decreases monotonically and is overtaken by nestedness at middle elevations. 
+With common interpretations of turnover and nestedness **CITE**, the high nestedness and low turnover along most gradients suggest that environmental filtering is more important than biotic interactions in determining the ant genus community across elevations. 
 
 ## Subfamily    
 

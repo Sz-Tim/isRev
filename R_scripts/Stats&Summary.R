@@ -34,3 +34,27 @@
   summary(lSlG.lme)
   lSlG.anc <- lm(log(S) ~ log(Gen)*Label, data=tvars.df)
   anova(lSlG.anc)
+
+
+########
+## Range sizes
+########
+
+  #### SUMMARIES ####
+  #--- average range size across transects ---#
+  with(spRng.df, tapply(HighEl-LowEl, Transect, mean))
+  with(spRng.df, tapply(HighEl-LowEl, Transect, se))
+
+  with(over.df, tapply(mnRng, Zone, mean, na.rm=TRUE))
+  with(over.df, tapply(mnRng, Zone, se))
+
+  #### ANALYSES ####
+  t.test(over.df$mnRng ~ over.df$Zone)
+
+#######
+## Beta diversity
+#######
+
+  t.test(spSorAdj.df$sim, genSorAdj.df$sim, paired=TRUE)
+  t.test(spSorAdj.df$sne, genSorAdj.df$sne, paired=TRUE)
+  t.test(spSorAdj.df$sor, genSorAdj.df$sor, paired=TRUE)
