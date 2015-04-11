@@ -106,7 +106,7 @@ Across elevations, that proportion may be constant at low and middle elevations 
 Generally, the most speciose subfamily is distributed more broadly (GET RANGE DATA) and persists in higher elevations than species in the other subfamilies. 
 As with species richness patterns in the most speciose genus, the species richness patterns of the most speciose subfamilies tend to be remarkably similar to both the overall species richness pattern and the richness pattern of the remaining species. 
 The elevational species richness pattern does not result from the richness pattern of the most speciose subfamily. 
-The richness patterns within the non-dominant subfamilies is less clear due to the lower total number of species. 
+The richness patterns within the non-dominant subfamilies are less clear due to the lower total number of species. 
 However, the subfamilies with enough species tend to follow the same overall trend as the total species richness pattern. 
   
 ## Takehome  
@@ -153,7 +153,7 @@ With vanishingly little subfamily turnover, there is little evidence for competi
   
 ## Comparison across taxonomic levels  
 Beta diversity decreases as taxonomic resolution decreases. 
-That is, species dissimilarity is higher than genus dissimilarity between adjacent elevations (paired t-test btw *Beta~genus~* and *Beta~species~*?) which, in turn, is higher than subfamily dissimilarity (paired t-test btw *Beta~subfamily~* and *Beta~genus~*?). 
+That is, species dissimilarity is higher than genus dissimilarity between adjacent elevations (stats for *Beta~genus~* and *Beta~species~*) which, in turn, is higher than subfamily dissimilarity (stats for *Beta~subfamily~* and *Beta~genus~*). 
 Turnover declines most dramatically at higher taxonomic levels and is essentially non-existent between ant subfamilies. 
 Even in the tropical datasets, where species turnover is highest, the genus turnover is substantially lower. 
 This is consistent with competitive exclusion between congeners across elevations, though heightened sensitivity to abiotic conditions and consequent elevational specialization could also produce this pattern. 
@@ -162,7 +162,7 @@ Nevertheless, high species turnover is not universal among the tropical gradient
 ## Take home  
 Paragraph that wraps up, summarizes, and synthesizes the beta diversity results.  
   
-# Natural history  
+# V. Natural history  
 ## Data  
 
 ## Nesting  
@@ -172,21 +172,9 @@ Paragraph that wraps up, summarizes, and synthesizes the beta diversity results.
 ## Take home  
   
   
-# Into the unknown: what data do we need?  
-## Habitat complexity  
-
-## Litter depth  
-
-## Other suggested drivers  
-
-## Biotic interactions  
-
-## Diet  
-
-## Any and all natural history  
-
-## Changes through time  
-  
+# VI. Into the unknown: what data do we need?  
+Habitat complexity, litter depth, biotic interactions, diet, any and all natural history, changes through time  
+    
   
 # Conclusion  
   
