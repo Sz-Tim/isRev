@@ -26,5 +26,26 @@
   ggplot(nestSum.df, aes(x=Elsamp, y=nSpp, colour=NestingSite)) +
     geom_line(size=1) + facet_wrap(~Transects)
 
+  ggplot(nestSum.df, aes(x=Elsamp, y=nSpp, fill=NestingSite)) + 
+    geom_area(position="fill", colour="gray50") + facet_wrap(~Transects) +
+    labs(x="Elevation (m)", y="Proportion of species")
+
+  ggplot(nestSum.df[nestSum.df$NestingSite %in% c("Ar", "Gr, Ar"),], 
+         aes(x=Elsamp, y=nSpp)) + 
+    geom_point() + facet_wrap(~Transects)
+
+
+  ggplot(feedSum.df, aes(x=Elsamp, y=nSpp, fill=Specialization)) + 
+    geom_area(position="fill", colour="gray50") + facet_wrap(~Transects) +
+    labs(x="Elevation (m)", y="Proportion of species")
+
   ggplot(feedSum.df, aes(x=Elsamp, y=nSpp, colour=Specialization)) +
     geom_line(size=1) + facet_wrap(~Transects)
+
+
+
+  ggplot(nestSum.df, aes(x=Elsamp, y=nSpp, group=Transects)) + geom_point() + 
+    geom_line() + facet_wrap(~NestingSite)
+
+  ggplot(feedSum.df, aes(x=Elsamp, y=nSpp, group=Transects)) + geom_point() + 
+    geom_line() + facet_wrap(~Specialization)

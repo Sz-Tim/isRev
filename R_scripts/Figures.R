@@ -373,6 +373,20 @@
       labs(x="Elevation (m)", y=expression(beta['Species'] - beta['Genus']))
   dev.off()
 
+
+
+########
+## Range size
+########
+
+ggplot(over.df, aes(x=Zone, y=mnRng, fill=Scale)) + geom_boxplot() + 
+  geom_rug(aes(colour=Scale), sides="l") + 
+  labs(x="", y="Mean elevational range (m)") + ylim(0, 1000)
+
+ggplot(over.df, aes(x=Zone, y=mnRng/(MtnPeak-MtnBase), fill=Scale)) + 
+  geom_boxplot() + geom_rug(aes(colour=Scale), sides="l") + 
+  labs(x="", y="Mean elevational range (proportion of gradient)") + ylim(0, 0.5)
+
 ########
 ## Other doodles
 ########
@@ -404,11 +418,12 @@ ggplot(tvars.df, aes(x=Elsamp, y=AvgOfRngObs, fill=Zone)) +
   geom_rug(sides="l") + 
   facet_wrap(~Label)
 
-ggplot(over.df, aes(x=Zone, y=mnRng)) + geom_boxplot()
-ggplot(over.df, aes(x=Zone, y=mnRng/(MtnPeak-MtnBase))) + geom_boxplot()
-ggplot(over.df, aes(x=Latsamp, y=mnRng, colour=Climate)) + geom_point() + 
-  geom_segment(aes(xend=Latsamp, y=mnRng+seRng, yend=mnRng-seRng))
-ggplot(over.df, aes(x=Latsamp, y=mnRng/(MtnPeak-MtnBase), colour=Climate)) + 
-  geom_point() + geom_segment(aes(xend=Latsamp, 
+ggplot(over.df, aes(x=Zone, y=mnRng, fill=Scale)) + geom_boxplot()
+ggplot(over.df, aes(x=Zone, y=mnRng/(MtnPeak-MtnBase), fill=Scale)) + geom_boxplot()
+ggplot(over.df, aes(x=abs(Latsamp), y=mnRng, colour=Scale)) + geom_point() + 
+  geom_segment(aes(xend=abs(Latsamp), y=mnRng+seRng, yend=mnRng-seRng))
+ggplot(over.df, aes(x=abs(Latsamp), y=mnRng/(MtnPeak-MtnBase), colour=Scale)) + 
+  geom_point() + geom_segment(aes(xend=abs(Latsamp), 
                                   y=(mnRng+seRng)/(MtnPeak-MtnBase), 
-                                  yend=(mnRng-seRng)/(MtnPeak-MtnBase)))
+                                  yend=(mnRng-seRng)/(MtnPeak-MtnBase))) +
+  facet_wrap(~Scale)

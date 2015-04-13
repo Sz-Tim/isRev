@@ -22,6 +22,7 @@ loadAll <- function() {
   ivars.df <<- read.xlsx("Sheets/intVars.xlsx", 1)  # Elev's sampled, env var's
   gen.bars <<- read.csv("Sheets/relDiversity_gen.csv")  # Richness by genus
   sf.bars <<- read.csv("Sheets/relDiversity_sf.csv")  # Richness by sf
+  traits.df <<- read.csv("Sheets/occ_traits.txt") # Genus level traits
   nestSum.df <<- ddply(traits.df, .(Transects, Elsamp, NestingSite), summarize,
                       nSpp=length(unique(Binomial)))
   feedSum.df <<- ddply(traits.df, .(Transects, Elsamp, Specialization),

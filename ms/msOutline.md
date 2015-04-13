@@ -63,13 +63,25 @@ Turnover drops heavily, esp at sf level.
 ### Anything consistent?  
   
  
-# V. Nesting habits  
-  
+# V. Natural history (**CUT**)  
+## Nesting  
+Ant nests may be either underground, for instance in the soil, in decaying wood, or under rocks, or arboreal such as nests on epiphytes, in tree trunks, or as carton nests. 
+Nesting strategies vary among ant species and, in some cases, within species. 
+For many ant species, such basic natural history is not known. 
+## Diet specialization  
+## Take home  
 
-# VI. Specialization  
+# V. Range size  
+## Mean across whole gradient  
+Larger at regional scale than local scale.  
+Larger in temperate than tropics. 
+Both absolute and as a proportion of the gradient for temp vs tropic, but complicated with scale... 
+Latitude: increases absolutely, but  
+## Changes along the gradient  
     
 
 # VIII. Commonly suggested, seldom evaluated  
+Habitat complexity, litter depth, biotic interactions, diet, any and all natural history, changes through time
 ## Habitat complexity  
 ## Litter depth  
 ## Changes through time  

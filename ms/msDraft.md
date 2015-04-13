@@ -162,18 +162,24 @@ Nevertheless, high species turnover is not universal among the tropical gradient
 ## Take home  
 Paragraph that wraps up, summarizes, and synthesizes the beta diversity results.  
   
-# V. Natural history  
-## Data  
-
-## Nesting  
-
-## Diet specialization  
-
-## Take home  
+# V. Range size  
+## Mean across gradient  
+The mean ant species elevational range is larger in the regional datasets than in the local scale datasats (STATS). 
+The mean elevational range is also larger in temperate zones (STATS). 
+However, this may partly be an artifact of the total gradient height. 
+In fact, in the temperate datasets, the mean range size as a proportion of the gradient height in regional datasets is indistinguishable from the mean in local datasets. 
+However, mean range size is significantly smaller in tropical local datasets both absolutely and as a proportion of the gradient. 
+The only tropical dataset at a regional scale showed a large mean range size with both methods. 
+However, as there is only one such dataset and it is from the island of Fiji [@SarnEcon2012], no generalities can be drawn. 
+Absolute mean range size increases with distance from the equator (STATS). 
+However, scaled by the gradient size, a hump-shaped pattern emerges, with range size increasing with latitude in local datasets and decreasing with latitude in regional datasets. 
+  
+## Changes along the gradient  
   
   
 # VI. Into the unknown: what data do we need?  
-Habitat complexity, litter depth, biotic interactions, diet, any and all natural history, changes through time  
+
+  
     
   
 # Conclusion  
