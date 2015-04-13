@@ -137,7 +137,7 @@ Along the majority of the gradients, however, nestedness dominates, consistent w
   
 ## Genus  
 Overall beta diversity between adjacent elevations at the genus-level is most commonly U-shaped (14/16), often with a low elevation truncation such that highest beta diversity occurs at high elevations. 
-In the Philippines [@Samson1997] and Costa Rica [C], beta diversity increases monotonically across elevations. 
+In the Philippines [@Samson1997] and Costa Rica [@LongColw2011], beta diversity increases monotonically across elevations. 
 Turnover at the genus-level is typically lower than at the species-level. 
 Along many gradients, genus turnover is nearly zero across the majority of elevations and the change in genus composition is instead due to nestedness. 
 The primary exceptions are in the Philippines [@Samson1997], where turnover is higher than nestedness except at the highest elevations and increases to a peak at mid-to-upper elevations, and in the McPherson Range in Australia [@BurwNaka2011], where turnover decreases monotonically and is overtaken by nestedness at middle elevations. 
@@ -169,18 +169,28 @@ The mean elevational range is also larger in temperate zones (STATS).
 However, this may partly be an artifact of the total gradient height. 
 In fact, in the temperate datasets, the mean range size as a proportion of the gradient height in regional datasets is indistinguishable from the mean in local datasets. 
 However, mean range size is significantly smaller in tropical local datasets both absolutely and as a proportion of the gradient. 
-The only tropical dataset at a regional scale showed a large mean range size with both methods. 
-However, as there is only one such dataset and it is from the island of Fiji [@SarnEcon2012], no generalities can be drawn. 
+In particular, this seems to be driven by a large proportion of species detected at just one elevation (STATS). 
+The only tropical dataset at a regional scale showed a large mean range size with both methods, though as there is only one such dataset and it is from an island [@SarnEcon2012], no generalities can be drawn. 
 Absolute mean range size increases with distance from the equator (STATS). 
 However, scaled by the gradient size, a hump-shaped pattern emerges, with range size increasing with latitude in local datasets and decreasing with latitude in regional datasets. 
   
 ## Changes along the gradient  
-  
+Ant elevational range size does not increase with elevation universally. 
+Using the Steven's method [@McCaBrac2012; @Stevens1992], where the mean range size at each elevation is calculated as the mean elevational range of all species detected at that elevation, mean range size increases significantly with elevation in 9/16 datasets. 
+The fit was high among these datasets (*r^2^* mean: 0.82, median: 0.89), which included both regional and local scales as well as temperate and tropical gradients. 
+However, 7/16 datasets showed either no consistent change in mean range size with elevation or, in one case [@Fisher1998], a declining trend. 
+*Add midpoint method and quartile method* 
   
 # VI. Into the unknown: what data do we need?  
-
-  
-    
+Many hypotheses have been proposed as drivers of ant community structure, richness, and diversity along elevational gradients. 
+However, the consistent and reliable data needed to rigorously evaluate these hypotheses are lacking at a broad scale. 
+Habitat complexity, and in particular vegetation structure and leaf litter depth, has been suggested as a potential driver of ant diversity [@LassHoch2004; @Sarty2006; @PachVasc2011; @Bharti2013]. 
+Such data have not been widely collected across elevational gradients with ant species data. 
+Additionally, we know little of the basic biology for many species of ants. 
+Dietary, foraging, and nesting habits can vary dramatically within a genus or even within a species **CITE**. 
+Understanding how biotic interactions, such as competition for space or food resources, and changes in their strength across elevations affect ant communities relies on thoroughly detailing behavior across a wide taxonomic variety of ant species. 
+Finally, ant communities can vary substantially across seasons and years [@Bishop2014], variation that has rarely been accounted for. 
+A greater focus on seasonal and annual fluctuations will inform mechanistic approaches to understanding patterns of ant communities. 
   
 # Conclusion  
   

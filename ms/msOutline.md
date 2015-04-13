@@ -63,13 +63,13 @@ Turnover drops heavily, esp at sf level.
 ### Anything consistent?  
   
  
-# V. Natural history (**CUT**)  
-## Nesting  
-Ant nests may be either underground, for instance in the soil, in decaying wood, or under rocks, or arboreal such as nests on epiphytes, in tree trunks, or as carton nests. 
-Nesting strategies vary among ant species and, in some cases, within species. 
-For many ant species, such basic natural history is not known. 
-## Diet specialization  
-## Take home  
+~~# V. Natural history~~  
+~~## Nesting~~  
+~~Ant nests may be either underground, for instance in the soil, in decaying wood, or under rocks, or arboreal such as nests on epiphytes, in tree trunks, or as carton nests.~~ 
+~~Nesting strategies vary among ant species and, in some cases, within species.~~ 
+~~For many ant species, such basic natural history is not known.~~ 
+~~## Diet specialization~~  
+~~## Take home~~  
 
 # V. Range size  
 ## Mean across whole gradient  
@@ -82,9 +82,6 @@ Latitude: increases absolutely, but
 
 # VIII. Commonly suggested, seldom evaluated  
 Habitat complexity, litter depth, biotic interactions, diet, any and all natural history, changes through time
-## Habitat complexity  
-## Litter depth  
-## Changes through time  
 - Bishop et al 2014  
 - Dunn/Sanders/someone paper about queen release  
 

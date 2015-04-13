@@ -427,3 +427,8 @@ ggplot(over.df, aes(x=abs(Latsamp), y=mnRng/(MtnPeak-MtnBase), colour=Scale)) +
                                   y=(mnRng+seRng)/(MtnPeak-MtnBase), 
                                   yend=(mnRng-seRng)/(MtnPeak-MtnBase))) +
   facet_wrap(~Scale)
+
+ggplot(spRng.df, aes(x=HighEl-LowEl)) + geom_histogram() + facet_wrap(~Transect)
+
+ggplot(over.df, aes(x=abs(Latsamp), y=pr1el)) + geom_point()
+ggplot(over.df, aes(x=Zone, y=pr1el, fill=Scale)) + geom_boxplot()
