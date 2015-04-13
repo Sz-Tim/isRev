@@ -2,11 +2,15 @@
 # Tim Szewczyk
 # Created 2015 April 13
 
+<<<<<<< HEAD
 # This script estimates the change in mean elevational range size across an
 # elevational gradient with three methods (McCain & Bracy Knight 2012):
 # - Steven's: mean(el.range of all species at that el)
 # - Midpoint: mean(el.range of all species with range midpoint at that el)
 # - Quartile: mean(el.range of all species at that el w/ranges <25% gradient)
+=======
+
+>>>>>>> 2575f94ae7ccb3745b115bfd1f920322a0c0b111
 
 
 #######
@@ -37,9 +41,12 @@
   }
 
 
+<<<<<<< HEAD
 ###########
 ## Midpoint method
 ###########
 
 
 
+=======
+>>>>>>> 2575f94ae7ccb3745b115bfd1f920322a0c0b111
