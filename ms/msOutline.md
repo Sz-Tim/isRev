@@ -65,9 +65,9 @@ Turnover drops heavily, esp at sf level.
  
 ~~# V. Natural history~~  
 ~~## Nesting~~  
-~~Ant nests may be either underground, for instance in the soil, in decaying wood, or under rocks, or arboreal such as nests on epiphytes, in tree trunks, or as carton nests.~~ 
-~~Nesting strategies vary among ant species and, in some cases, within species.~~ 
-~~For many ant species, such basic natural history is not known.~~ 
+~~Ant nests may be either underground, for instance in the soil, in decaying wood, or under rocks, or arboreal such as nests on epiphytes, in tree trunks, or as carton nests. 
+Nesting strategies vary among ant species and, in some cases, within species. 
+For many ant species, such basic natural history is not known.~~ 
 ~~## Diet specialization~~  
 ~~## Take home~~  
 
@@ -84,6 +84,8 @@ Latitude: increases absolutely, but
 Habitat complexity, litter depth, biotic interactions, diet, any and all natural history, changes through time
 - Bishop et al 2014  
 - Dunn/Sanders/someone paper about queen release  
+- Particular parts of the world that need focus  
+- Local vs regional?  
 
 # IX. Conclusion  
 Patterns of ant richness are complex and varied. 
