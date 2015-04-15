@@ -13,32 +13,28 @@
   
 \newpage  
     
-# I. Introduction  
-## History or value of elevational studies generally  
+# Introduction  
 To disentangle the factors that shape species richness, it is essential to first thoroughly explore the patterns of richness [@Rahbek1995; @Lomolino2001]. 
 Elevational gradients provide useful study systems to investigate these patterns and drivers [@McCain2009; @McCain2010]. 
-Mountains, occurring on every continent, act as compact, globally replicated systems that vary across many characteristics hypothesized as richness drivers, including climate, history, and geography [@Rahbek1995; @Lomolino2001; @McCaGryt2010]. 
+Mountains, occurring on every continent, act as compact, globally replicated systems that vary across many characteristics that may drive richness, including climate, history, and geography [@Rahbek1995; @Lomolino2001; @McCaGryt2010]. 
 Detailing how communities change across elevational gradients, and across taxonomic levels, can yield insight into the underlying processes shaping biodiversity at a broad scale. 
   
-## Value of studying insects  
 Despite comprising the majority of animal species, insects have not received much focus in such macroecological studies [@DF2010]. 
-However, the astonishing array of insect diversity suggests that no picture of biodiversity would be complete without insects. 
+However, with the astonishing array of insect diversity, no picture of biodiversity would be complete without including insects. 
 Furthermore, understanding the processes underlying insect diversity may yield valuable insights into the processes that shape patterns biodiversity more broadly. 
-Ants have a number of advantages to global studies of diversity. 
+Ants have a number of advantages for global studies of diversity. 
 As predators, competitors, scavengers, and dispersers, they have major ecological impacts in a wide variety of systems [@HollWils1990]. 
 In contrast to many insect taxa, the individuals used for identification are wingless, restricting their movement from the nest and reducing the impact of accidentals. 
-Additionally, because of the historic interest in ants across many decades **CITE**, there is a firmer baseline for comparisons across time and ants have been relatively well-described taxonomically. 
+Additionally, because of the historic interest in ants across many decades **CITE**, they have been relatively well-described taxonomically and there is a firmer baseline for comparisons across time. 
 Nevertheless, we know little about the ranges and less about the basic natural history of many species [@Lanan2014]. 
   
-## Challenge  
-Understanding the patterns/distribution/characteristics of biodiversity necessitates a comprehensive, global perspective. 
-Here, I review the previous work on ant richness and communities along elevational gradients across the globe. 
+Understanding the distribution of biodiversity necessitates a comprehensive, global perspective. 
+Here, I review the work to date on ant richness and communities along elevational gradients across the globe. 
 Then, using well-sampled elevational datasets, I investigate patterns of ant richness and beta diversity across taxonomic resolutions. 
-Finally, I explore how ant nesting habits and dietary specialization varies across elevations. 
+Finally, I explore patterns of the elevational ranges of ant species. 
   
   
-# II. Datasets  
-## Literature search  
+# Datasets  
 To identify ant elevational distribution datasets at local spatial scales, I performed a literature search with Web of Knowledge and Google Scholar, using combinations of the keywords 'ant', 'elevation\*', 'altitud\*', 'gradient', 'diversity', and 'insect'. 
 This search primarily returned studies along discrete elevational transects with sampling sites interspersed along the gradient. 
 To identify ant elevational distribution datasets at regional spatial scales, I searched for publications with 'ants of' in the title. 
@@ -47,7 +43,6 @@ Such guides typically compile museum records and collections from many years spr
 The elevational range of each ant species was interpolated. 
 That is, each species was assumed present between the lowest and highest occurrence within a dataset. 
   
-## Sampling criteria  
 To restrict the analysis to robust, well-sampled datasets, I required that a dataset provide ant elevational data within a mountainous region or along a gradient and meet five *a priori* criteria: 
 (1) sufficient, even sampling effort with standardized methods across the gradient; 
 (2) sampling of at least 70% of the gradient; 
@@ -57,16 +52,14 @@ To restrict the analysis to robust, well-sampled datasets, I required that a dat
 These criteria, adapted from previous studies [@McCain2009; @McCain2010], are required to ensure the accurate description of the naturally occurring pattern [@McCoy1990; @McCoy2002; @McCain2005b; @Rahbek2005; @NB2008].
 The common richness patterns, however, differ primarily across the lower portion of the elevational gradient [@NB2008]. 
 Consequently, violations of the second criterion were allowed when the majority of the unsampled region was at high elevations where declining richness had been demonstrated. 
-  
-## Study descriptions    
+   
 A total of 68 candidate datasets were found (Appendix). 
-A number of publications used data from the literature, leaving 47 unique datasets that detailed ant distributions or richness within a single region or along a gradient. 
+A number of publications used data from the literature or sampled geographically disparate sites, leaving 47 unique datasets that detailed ant distributions or richness within a single region or along a gradient. 
 There were 20 that met all five *a priori* sampling criteria, and 16 of those provided species-level elevational range data. 
 Thus, the majority of published studies describing ant richness across elevations did not employ sampling regimes sufficient to confidently capture the underlying richness pattern. 
 Nevertheless, the robust datasets included local and regional scales, tropic and temperate zones, mainland and island gradients, and wet and arid climates (Appendix). 
   
-## Pattern definitions  
-I classified the ant elevational richness and beta diversity into five categories using definitions from the literature (Fig. 1; [@McCain2009; @McCain2010]. 
+I classified the ant elevational richness and beta diversity into five categories using definitions from the literature (Fig. 1)[@McCain2009; @McCain2010]. 
 In decreasing patterns, diversity is highest at the lowest elevation and declines steadily with increasing elevation. 
 In low plateau patterns, diversity is consistently high across at least the lowest 300m before declining monotonically. 
 Mid-peaks show highest diversity >300m from the mountain base and with at least 25% greater diversity than at the base. 
@@ -76,8 +69,8 @@ No pattern was recorded when none of these definitions were met and the richness
 Though more patterns are possible [@McCain2009], the datasets here were characterized well by these five patterns.  
   
   
-# III. Taxonomic richness patterns  
-## Species richness  
+# Taxonomic richness patterns  
+### Species richness  
 In the robust datasets, ant species richness most often peaks at intermediate elevations (14/20), though decreasing (3/20) and low plateau (3/20) patterns also occur (Fig. 1). 
 Regional and local scale datasets showed nearly identical species richness pattern distributions. 
 In the excluded datasets, the patterns were more variable. 
@@ -87,7 +80,7 @@ Some of these decreasing patterns, however, are likely an artefact of sampling b
 The majority did not sample within the lowest 400m, potentially failing to capture the portion of the gradient across which the common patterns differ the most. 
 Ant species richness, therefore, shows a variety of elevational patterns, with richness often highest at intermediate elevations. 
   
-## Genus richness  
+### Genus richness  
 In the 16 robust datasets with species-level elevational ranges, the number of genera across elevations typically mirrors the number of species, and the number of species increases quite predictably with the number of genera (stats: lme?). 
 Genus richness peaks at or below the elevation with the highest species richness. 
 The most speciose genus in each dataset comprises 7–31% of the total species richness along the gradient (mean ± SE: 0.200 ± 0.0157). 
@@ -98,7 +91,7 @@ That is, the most speciose genus does not appear to drive the overall richness p
 The elevation with highest species richness does, however, tend to coincide with the richness peak of the most speciose genus. 
 Therefore, though the general species richness pattern is not driven by one genus, some specific aspects may be. 
   
-## Subfamily richness  
+### Subfamily richness  
 The number of ant subfamilies shows less distinct patterns elevationally than the number of species or the number of genera, though they are generally coarsely similar to the species and genus richness patterns. 
 The most speciose subfamily along each gradient comprises 39–73% of the total species richness (mean ± SE: 0.545 ± 0.0204). 
 The proportion of species in the most speciose subfamily is highly variable across elevations and the pattern is not consistent among gradients. 
@@ -109,10 +102,10 @@ The elevational species richness pattern does not result from the richness patte
 The richness patterns within the non-dominant subfamilies are less clear due to the lower total number of species. 
 However, the subfamilies with enough species tend to follow the same overall trend as the total species richness pattern. 
   
-## Takehome  
+### Takehome  
 Paragraph that wraps up, summarizes, and synthesizes the richness pattern results.  
   
-# IV. Beta Diversity  
+# Beta Diversity  
 In a broad sense, beta diversity is quantifies the variation in the species composition across space or time [@Anderson2011]. 
 Species composition can vary, however, due to either the substitution or replacement of one species for another, called *turnover*, or due to the loss or addition of species, called *nestedness* [@Baselga2010; @Baselga2012; @Legendre2014]. 
 Turnover and nestedness are likely driven by different processes and understanding the the pattern of each across elevations may yield insight into the importance of ecological filtering, biotic interactions, and neutral processes [@Svenning2011]. 
@@ -121,7 +114,7 @@ To explore the change in ant communities across elevational gradients, I used th
 These indices allow for unbiased comparisons among communities of differing richness [@Baselga2012]. 
 I calculated each component using the species composition, genus composition, and subfamily composition at each elevation. 
   
-## Species  
+### Species  
 At the species-level, overall beta diversity between adjacent elevations is most often U-shaped (13/16), though it may also increase (2/16) or remain constant (1/16) across the gradient. 
 In these datasets, therefore, the change in species composition is generally lowest at middle elevations and greatest toward the summit or the base. 
 Patterns of nestedness mirror the pattern of overall beta diversity along most gradients **(12/16)**. 
@@ -135,7 +128,7 @@ This is consistent with the small elevational ranges of many ant species along g
 The higher species turnover along these tropical gradients suggests a possible role of biotic interactions in the species composition across elevations. 
 Along the majority of the gradients, however, nestedness dominates, consistent with the role of abiotic factors in determining the species composition. 
   
-## Genus  
+### Genus  
 Overall beta diversity between adjacent elevations at the genus-level is most commonly U-shaped (14/16), often with a low elevation truncation such that highest beta diversity occurs at high elevations. 
 In the Philippines [@Samson1997] and Costa Rica [@LongColw2011], beta diversity increases monotonically across elevations. 
 Turnover at the genus-level is typically lower than at the species-level. 
@@ -143,7 +136,7 @@ Along many gradients, genus turnover is nearly zero across the majority of eleva
 The primary exceptions are in the Philippines [@Samson1997], where turnover is higher than nestedness except at the highest elevations and increases to a peak at mid-to-upper elevations, and in the McPherson Range in Australia [@BurwNaka2011], where turnover decreases monotonically and is overtaken by nestedness at middle elevations. 
 With common interpretations of turnover and nestedness **CITE**, the high nestedness and low turnover along most gradients suggest that environmental filtering is more important than biotic interactions in determining the ant genus community across elevations. 
 
-## Subfamily    
+### Subfamily    
 At the subfamily level, overall beta diversity is low between adjacent elevations. 
 There is no turnover in the subfamily composition in any of the datasets. 
 Rather, all changes between adjacent elevations are due to nestedness as subfamilies are added or lost. 
@@ -151,7 +144,7 @@ Nestedness, and consequently overall beta diversity, commonly increases toward h
 Thus, there is a high degree of elevational overlap across subfamilies, and subfamilies are progressively excluded as elevation increases, likely due to environmental filtering. 
 With vanishingly little subfamily turnover, there is little evidence for competitive exclusion at the subfamily level. 
   
-## Comparison across taxonomic levels  
+### Comparison across taxonomic levels  
 Beta diversity decreases as taxonomic resolution decreases. 
 That is, species dissimilarity is higher than genus dissimilarity between adjacent elevations (stats for *Beta~genus~* and *Beta~species~*) which, in turn, is higher than subfamily dissimilarity (stats for *Beta~subfamily~* and *Beta~genus~*). 
 Turnover declines most dramatically at higher taxonomic levels and is essentially non-existent between ant subfamilies. 
@@ -159,11 +152,11 @@ Even in the tropical datasets, where species turnover is highest, the genus turn
 This is consistent with competitive exclusion between congeners across elevations, though heightened sensitivity to abiotic conditions and consequent elevational specialization could also produce this pattern. 
 Nevertheless, high species turnover is not universal among the tropical gradients and turnover is consistently low in the temperate datasets. 
   
-## Take home  
+### Take home  
 Paragraph that wraps up, summarizes, and synthesizes the beta diversity results.  
   
-# V. Range size  
-## Mean across gradient  
+# Range size  
+### Mean across gradient  
 The mean ant species elevational range is larger in the regional datasets than in the local scale datasats (STATS). 
 The mean elevational range is also larger in temperate zones (STATS). 
 However, this may partly be an artifact of the total gradient height. 
@@ -174,14 +167,14 @@ The only tropical dataset at a regional scale showed a large mean range size wit
 Absolute mean range size increases with distance from the equator (STATS). 
 However, scaled by the gradient size, a hump-shaped pattern emerges, with range size increasing with latitude in local datasets and decreasing with latitude in regional datasets. 
   
-## Changes along the gradient  
+### Changes along the gradient  
 Ant elevational range size does not increase with elevation universally. 
 Using the Steven's method [@McCaBrac2012; @Stevens1992], where the mean range size at each elevation is calculated as the mean elevational range of all species detected at that elevation, mean range size increases significantly with elevation in 9/16 datasets. 
 The fit was high among these datasets (*r^2^* mean: 0.82, median: 0.89), which included both regional and local scales as well as temperate and tropical gradients. 
 However, 7/16 datasets showed either no consistent change in mean range size with elevation or, in one case [@Fisher1998], a declining trend. 
 *Add midpoint method and quartile method* 
   
-# VI. Into the unknown: what data do we need?  
+# Into the unknown: what data do we need?  
 Many hypotheses have been proposed as drivers of ant community structure, richness, and diversity along elevational gradients. 
 However, the consistent and reliable data needed to rigorously evaluate these hypotheses are lacking at a broad scale. 
 Habitat complexity, and in particular vegetation structure and leaf litter depth, has been suggested as a potential driver of ant diversity [@LassHoch2004; @Sarty2006; @PachVasc2011; @Bharti2013]. 
