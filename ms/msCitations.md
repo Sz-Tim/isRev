@@ -6,13 +6,16 @@
 @BurwNaka2011
 @DF2010  
 @Fisher1998  
+@Ghalambor2006  
 @HollWils1990  
+@Janzen1967  
 @Lanan2014  
 @Legendre2014  
 @Lomolino2001  
 @LongColw2011  
 @McCain2005b  
 @McCain2009  
+@McCain2009b
 @McCain2010  
 @McCaGryt2010  
 @McCoy1990  
