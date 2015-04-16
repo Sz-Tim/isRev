@@ -43,3 +43,8 @@ Need to check with Mike Breed about:
 - Does feeding strategy (maybe generalized at the genus level) change along elevational gradients?  
   
 
+Rapaport's rule and range sizes in tropics vs temperate -- taxonomic patterns  
+Christy's mtn pass paper for removing influence of mtn gradient sizes  
+beta across entire gradient: tropics vs temperate  
+too much to do beta + turnover + nestedness  
+carabid elevational ranges (ecology)

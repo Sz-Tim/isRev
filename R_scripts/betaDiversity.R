@@ -22,13 +22,7 @@
   library(ggplot2); theme_set(theme_bw()); 
   library(xlsx); library(plyr); library(vegan); library(betapart)
   source("R_scripts/FuncsGen.R")
-  spRng.df <- read.xlsx("Sheets/ranges_spp.xlsx", 1)  # Species ranges
-  over.df <- read.xlsx("Sheets/datasetOverview.xlsx", 1)  # Dataset summaries
-  ivars.df <- read.xlsx("Sheets/intVars.xlsx", 1)  # Elev's sampled, env var's
-  Transects <- levels(spRng.df$Transect)  # Transects w/species range data
-  nTrans <- nlevels(spRng.df$Transect)
-  tvars.df <- droplevels(ivars.df[ivars.df$Transect %in% Transects, ])
-  Labels <- as.character(unique(tvars.df$Label))
+  loadAll()
 
 
 #########
@@ -120,5 +114,91 @@
   write.csv(pair.df, file="Sheets/spp_SorAdjSites.csv")
 
 
+########
+## Whole gradient calculations
+########
+
+  whole.df <- data.frame(Transect=Transects,
+                         Label=Labels,
+                         sp.sim=rep(NA, nTrans), 
+                         sp.sne=rep(NA, nTrans),
+                         sp.sor=rep(NA, nTrans),
+                         gen.sim=rep(NA, nTrans), 
+                         gen.sne=rep(NA, nTrans),
+                         gen.sor=rep(NA, nTrans),
+                         sf.sim=rep(NA, nTrans), 
+                         sf.sne=rep(NA, nTrans),
+                         sf.sor=rep(NA, nTrans))
+
+  for(tr in 1:nTrans) {
+    
+    # subset dataframes to transect
+    trans <- Transects[tr]
+    varTr <- droplevels(subset(tvars.df, tvars.df$Transect==trans))
+    els <- varTr$Elsamp[is.na(varTr$Elsamp)==FALSE]
+    spTr <- droplevels(subset(spRng.df, spRng.df$Transect==trans))
+    genTr <- droplevels(subset(genRng.df, genRng.df$Transect==trans))
+    sfTr <- droplevels(subset(sfRng.df, sfRng.df$Transect==trans))
+    
+    # presence-absence matrices
+    sp.pa <- matrix(nrow=length(els), ncol=nlevels(spTr$Binomial),
+                    dimnames=list(els, levels(spTr$Binomial)))
+    gen.pa <- matrix(nrow=length(els), ncol=nlevels(genTr$Genus),
+                    dimnames=list(els, levels(genTr$Genus)))
+    sf.pa <- matrix(nrow=length(els), ncol=nlevels(sfTr$Subfamily),
+                    dimnames=list(els, levels(sfTr$Subfamily)))
+    
+    # fill species PA matrix
+    for(e in 1:length(els)) {
+      for(s in 1:nlevels(spTr$Binomial)) {
+        r <- which(spTr$Binomial == levels(spTr$Binomial)[s])
+        el <- els[e]
+        sp.pa[e,s] <- ifelse((spTr$LowEl[r] <= el) & (spTr$HighEl[r] >= el),
+                             1, 
+                             0)
+      }
+    }
+    sp.pa <- sp.pa[rowSums(sp.pa) > 0, ]
+
+    # fill genus PA matrix
+    for(e in 1:length(els)) {
+      for(s in 1:nlevels(genTr$Genus)) {
+        r <- which(genTr$Genus == levels(genTr$Genus)[s])
+        el <- els[e]
+        gen.pa[e,s] <- ifelse((genTr$LowEl[r] <= el) & (genTr$HighEl[r] >= el),
+                             1, 
+                             0)
+      }
+    }
+    gen.pa <- gen.pa[rowSums(gen.pa) > 0, ]
+    
+    # fill subfamily PA matrix
+    for(e in 1:length(els)) {
+      for(s in 1:nlevels(sfTr$Subfamily)) {
+        r <- which(sfTr$Subfamily == levels(sfTr$Subfamily)[s])
+        el <- els[e]
+        sf.pa[e,s] <- ifelse((sfTr$LowEl[r] <= el) & (sfTr$HighEl[r] >= el),
+                             1, 
+                             0)
+      }
+    }
+    sf.pa <- sf.pa[rowSums(sf.pa) > 0, ]
+    
+    # gradient-wide dissimilarities
+    whole.df$sp.sim[tr] <- beta.multi(sp.pa)$beta.SIM
+    whole.df$sp.sne[tr] <- beta.multi(sp.pa)$beta.SNE
+    whole.df$sp.sor[tr] <- beta.multi(sp.pa)$beta.SOR
+    whole.df$gen.sim[tr] <- beta.multi(gen.pa)$beta.SIM
+    whole.df$gen.sne[tr] <- beta.multi(gen.pa)$beta.SNE
+    whole.df$gen.sor[tr] <- beta.multi(gen.pa)$beta.SOR
+    whole.df$sf.sim[tr] <- beta.multi(sf.pa)$beta.SIM
+    whole.df$sf.sne[tr] <- beta.multi(sf.pa)$beta.SNE
+    whole.df$sf.sor[tr] <- beta.multi(sf.pa)$beta.SOR
+  }
 
 
+########
+## Write csv
+########
+
+  write.csv(whole.df, file="multiSor.csv")

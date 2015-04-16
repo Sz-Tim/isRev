@@ -58,3 +58,18 @@
   t.test(spSorAdj.df$sim, genSorAdj.df$sim, paired=TRUE)
   t.test(spSorAdj.df$sne, genSorAdj.df$sne, paired=TRUE)
   t.test(spSorAdj.df$sor, genSorAdj.df$sor, paired=TRUE)
+
+  summary(lm(sor ~ sne, data=spSorAdj.df))
+    plot(sor ~ sne, data=spSorAdj.df, ylim=c(0,1), xlim=c(0,1));abline(b=1, a=0)
+  summary(lm(sor ~ sim, data=spSorAdj.df)) 
+    plot(sor ~ sim, data=spSorAdj.df, ylim=c(0,1), xlim=c(0,1));abline(b=1, a=0)
+
+  summary(lm(sor ~ sne, data=genSorAdj.df))
+  plot(sor ~ sne, data=genSorAdj.df, ylim=c(0,1), xlim=c(0,1));abline(b=1, a=0)
+  summary(lm(sor ~ sim, data=genSorAdj.df)) 
+  plot(sor ~ sim, data=genSorAdj.df, ylim=c(0,1), xlim=c(0,1));abline(b=1, a=0)
+
+  summary(lm(sor ~ sne, data=sfSorAdj.df))
+  plot(sor ~ sne, data=sfSorAdj.df, ylim=c(0,1), xlim=c(0,1));abline(b=1, a=0)
+  summary(lm(sor ~ sim, data=sfSorAdj.df)) 
+  plot(sor ~ sim, data=sfSorAdj.df, ylim=c(0,1), xlim=c(0,1));abline(b=1, a=0)

@@ -105,14 +105,14 @@ However, the subfamilies with enough species tend to follow the same overall tre
 ### Takehome  
 Paragraph that wraps up, summarizes, and synthesizes the richness pattern results.  
 - Richness patterns are qualitatively similar across taxonomic resolution  
-- Patterns become increasingly less clear as resolution decreases  
+- Patterns become increasingly less distinct as resolution decreases  
 - Species richness patterns are not driven by a single genus or subfamily  
 - Rather, taxonomic subsets tend to show qualitatively similar patterns  
 - Much variation among transects in details, but most often, the most speciose taxon dominates at high elevations  
 - So ant richness pattern isn't contingent on taxonomy... underlying drivers may be the same for all subtaxa...  
   
 # Beta Diversity  
-In a broad sense, beta diversity is quantifies the variation in the species composition across space or time [@Anderson2011]. 
+In a broad sense, beta diversity quantifies the variation in the species composition across space or time [@Anderson2011]. 
 Species composition can vary, however, due to either the substitution or replacement of one species for another, called *turnover*, or due to the loss or addition of species, called *nestedness* [@Baselga2010; @Baselga2012; @Legendre2014]. 
 Turnover and nestedness are likely driven by different processes and understanding the the pattern of each across elevations may yield insight into the importance of ecological filtering, biotic interactions, and neutral processes **CITE**[@Svenning2011]. 
 Differences in turnover and nestedness suggest variation in the ecological processes underlying the community composition. 
@@ -126,8 +126,9 @@ In these datasets, therefore, the change in species composition is generally low
 Along most gradients (12/16), most of the change is due to nestedness rather than turnover and turnover is, in fact, quite low (STATS). 
 The exceptions to this pattern are all in the tropics. 
 For instance, in Madagascar [@Fisher1998] and the Philippines [@Samson1997], overall beta diversity is high across the gradient, driven largely by the replacement of species across elevations. 
-This is consistent with the small elevational ranges of many ant species along gradients in the tropics (mean~temperate~ ± SE: 652m ± 68, mean~tropic~ ± SE: 381m ± 44; *t~13.5~* = 2.99; *P* = 0.01; figure?). 
+This is consistent with the small elevational ranges of many ant species along gradients in the tropics (mean~temperate~ ± SE: 652m ± 68, mean~tropic~ ± SE: 381m ± 44; *t~13.5~* = 2.99; *P* = 0.01; figure?). **OUT OF PLACE** 
 The higher species turnover along these tropical gradients suggests a possible role of biotic interactions in the species composition across elevations. 
+**JANZEN** 
 Along the majority of the gradients, however, nestedness dominates, consistent with the role of abiotic factors in determining the species composition. 
   
 ### Genus  
@@ -186,6 +187,7 @@ Dietary, foraging, and nesting habits can vary dramatically within a genus or ev
 Understanding how biotic interactions, such as competition for space or food resources, and changes in their strength across elevations affect ant communities relies on thoroughly detailing behavior across a wide taxonomic variety of ant species. 
 Finally, ant communities can vary substantially across seasons and years [@Bishop2014], variation that has rarely been accounted for. 
 A greater focus on seasonal and annual fluctuations will inform mechanistic approaches to understanding patterns of ant communities. 
+**Add Alex Smith, Machac**
   
 # Conclusion  
   
