@@ -97,18 +97,24 @@ The most speciose subfamily along each gradient comprises 39–73% of the total 
 The proportion of species in the most speciose subfamily is highly variable across elevations and the pattern is not consistent among gradients. 
 Across elevations, that proportion may be constant at low and middle elevations and then increase toward the peak (4/16), remain constant across the gradient (3/16), increase consistently across the gradient (3/16), increase to a plateau (3/16), remain constant at low and middle elevations and then decrease toward the peak (2/16), or be U-shaped (1/16). 
 Generally, the most speciose subfamily is distributed more broadly (GET RANGE DATA) and persists in higher elevations than species in the other subfamilies. 
-As with species richness patterns in the most speciose genus, the species richness patterns of the most speciose subfamilies tend to be remarkably similar to both the overall species richness pattern and the richness pattern of the remaining species. 
+As with species richness patterns of the most speciose genus, the species richness patterns of the most speciose subfamilies tend to be remarkably similar to both the overall species richness pattern and the richness pattern of the remaining species. 
 The elevational species richness pattern does not result from the richness pattern of the most speciose subfamily. 
 The richness patterns within the non-dominant subfamilies are less clear due to the lower total number of species. 
 However, the subfamilies with enough species tend to follow the same overall trend as the total species richness pattern. 
   
 ### Takehome  
 Paragraph that wraps up, summarizes, and synthesizes the richness pattern results.  
+- Richness patterns are qualitatively similar across taxonomic resolution  
+- Patterns become increasingly less clear as resolution decreases  
+- Species richness patterns are not driven by a single genus or subfamily  
+- Rather, taxonomic subsets tend to show qualitatively similar patterns  
+- Much variation among transects in details, but most often, the most speciose taxon dominates at high elevations  
+- So ant richness pattern isn't contingent on taxonomy... underlying drivers may be the same for all subtaxa...  
   
 # Beta Diversity  
 In a broad sense, beta diversity is quantifies the variation in the species composition across space or time [@Anderson2011]. 
 Species composition can vary, however, due to either the substitution or replacement of one species for another, called *turnover*, or due to the loss or addition of species, called *nestedness* [@Baselga2010; @Baselga2012; @Legendre2014]. 
-Turnover and nestedness are likely driven by different processes and understanding the the pattern of each across elevations may yield insight into the importance of ecological filtering, biotic interactions, and neutral processes [@Svenning2011]. 
+Turnover and nestedness are likely driven by different processes and understanding the the pattern of each across elevations may yield insight into the importance of ecological filtering, biotic interactions, and neutral processes **CITE**[@Svenning2011]. 
 Differences in turnover and nestedness suggest variation in the ecological processes underlying the community composition. 
 To explore the change in ant communities across elevational gradients, I used the Sørensen-family metrics in the R package *betapart* to calculate the overall beta diversity, turnover, and nestedness between adjacent sites along each gradient [@Baselga2010; @Baselga2012; @BaseOrme2012]. 
 These indices allow for unbiased comparisons among communities of differing richness [@Baselga2012]. 
@@ -117,10 +123,6 @@ I calculated each component using the species composition, genus composition, an
 ### Species  
 At the species-level, overall beta diversity between adjacent elevations is most often U-shaped (13/16), though it may also increase (2/16) or remain constant (1/16) across the gradient. 
 In these datasets, therefore, the change in species composition is generally lowest at middle elevations and greatest toward the summit or the base. 
-Patterns of nestedness mirror the pattern of overall beta diversity along most gradients **(12/16)**. 
-In these gradients, most of the change is due to nestedness rather than turnover and turnover is, in fact, quite low (STATS). 
-The exceptions to this trend are all in the tropics. 
-For instance, the high overall beta diversity in Madagascar [@Fisher1998] and the Philippines [@Samson1997] is driven largely by the replacement of species across elevations. 
 Along most gradients (12/16), most of the change is due to nestedness rather than turnover and turnover is, in fact, quite low (STATS). 
 The exceptions to this pattern are all in the tropics. 
 For instance, in Madagascar [@Fisher1998] and the Philippines [@Samson1997], overall beta diversity is high across the gradient, driven largely by the replacement of species across elevations. 
@@ -158,7 +160,7 @@ Paragraph that wraps up, summarizes, and synthesizes the beta diversity results.
 # Range size  
 ### Mean across gradient  
 The mean ant species elevational range is larger in the regional datasets than in the local scale datasats (STATS). 
-The mean elevational range is also larger in temperate zones (STATS). 
+The mean elevational range is also larger in temperate zones (STATS), consistent with other taxa [@Janzen1967; @Ghalambor2006; @McCain2009b]. 
 However, this may partly be an artifact of the total gradient height. 
 In fact, in the temperate datasets, the mean range size as a proportion of the gradient height in regional datasets is indistinguishable from the mean in local datasets. 
 However, mean range size is significantly smaller in tropical local datasets both absolutely and as a proportion of the gradient. 
