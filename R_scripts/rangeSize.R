@@ -105,3 +105,30 @@
     q.df$r[tr] <- summary(mod)$r.squared
   }
   q.df
+
+
+#########
+## Median range size
+#########
+
+  rng.df <- data.frame(Label=Labels,
+                       Transect=Transects,
+                       sp.mnRng=rep(NA, nTrans),
+                       gen.mnRng=rep(NA, nTrans),
+                       sf.mnRng=rep(NA, nTrans),
+                       sp.medRng=rep(NA, nTrans),
+                       gen.medRng=rep(NA, nTrans),
+                       sf.medRng=rep(NA, nTrans))
+
+  for(tr in 1:nTrans) {
+    transSpp <- subset(spRng.df, spRng.df$Transect==rng.df$Transect[tr])
+    transGen <- subset(genRng.df, genRng.df$Transect==rng.df$Transect[tr])    
+    transSf <- subset(sfRng.df, sfRng.df$Transect==rng.df$Transect[tr])
+  
+    rng.df$sp.mnRng[tr] <- mean(transSpp$HighEl - transSpp$LowEl)
+    rng.df$gen.mnRng[tr] <- mean(transGen$HighEl - transGen$LowEl)
+    rng.df$sf.mnRng[tr] <- mean(transSf$HighEl - transSf$LowEl)
+    rng.df$sp.medRng[tr] <- median(transSpp$HighEl - transSpp$LowEl)
+    rng.df$gen.medRng[tr] <- median(transGen$HighEl - transGen$LowEl)
+    rng.df$sf.medRng[tr] <- median(transSf$HighEl - transSf$LowEl)
+  }
