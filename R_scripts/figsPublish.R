@@ -13,12 +13,12 @@ source("R_scripts/FuncsGen.R")
 loadAll()
 
   #--- graphical parameters ---#
-  w <- 15  # width of pdf (inches)
-  h <- 12  # height of pdf (inches)
+  w <- 9  # width of pdf (inches)
+  h <- 8  # height of pdf (inches)
 
   theme_is <- theme(axis.title.x=element_text(size=rel(1.7), vjust=-0.3),
                     axis.text.x=element_text(size=rel(1.5)),
-                    axis.title.y=element_text(size=rel(1.7), vjust=1.2),
+                    axis.title.y=element_text(size=rel(1.7), vjust=1.5),
                     axis.text.y=element_text(size=rel(1.5)),
                     legend.title=element_text(size=rel(1.5)),
                     legend.key.size=unit(1, "cm"),
@@ -30,39 +30,44 @@ loadAll()
 #########
 
   #--- mean and median range size by latitude ---#
-  ggplot(over.df, aes(x=abs(Latsamp))) + 
-    theme_is +
-    geom_point(aes(y=sp.mnRng), size=4) + 
-    geom_segment(aes(xend=abs(Latsamp), 
-                     y=sp.mnRng+seRng, 
-                     yend=sp.mnRng-seRng), size=1) +
-    stat_smooth(aes(y=sp.mnRng), se=FALSE, method="lm", 
-                colour="black", size=1) +
-    geom_point(aes(y=sp.medRng), size=4, shape=1) +
-    stat_smooth(aes(y=sp.medRng), se=FALSE, method="lm", 
-                colour="black", size=1, linetype=2) +
-    labs(x="Degrees from equator", y="Elevational range (m)")
-
+  pdf("Plots/Figure1.pdf", width=w, height=h)
+    ggplot(over.df, aes(x=abs(Latsamp))) + 
+      theme_is +
+      geom_point(aes(y=sp.mnRng), size=4) + 
+      geom_segment(aes(xend=abs(Latsamp), 
+                       y=sp.mnRng+seRng, 
+                       yend=sp.mnRng-seRng), size=1) +
+      stat_smooth(aes(y=sp.mnRng), se=FALSE, method="lm", 
+                  colour="black", size=1) +
+      geom_point(aes(y=sp.medRng), size=4, shape=1) +
+      stat_smooth(aes(y=sp.medRng), se=FALSE, method="lm", 
+                  colour="black", size=1, linetype=2) +
+      labs(x="Degrees from equator", y="Elevational range (m)")
+  dev.off()
 
 #########
 ## Figure 2
 #########
 
   #--- sp.STB vs latitude ---#
-  ggplot(over.df, aes(x=abs(Latsamp), y=sp.STB)) + 
-    theme_is +
-    geom_point(size=4) +
-    stat_smooth(se=FALSE, method="lm", colour="black", size=1) +
-    labs(x="Degrees from equator", 
-         y=expression(paste('Standardized ', beta[' gradient'])))
+  pdf("Plots/Figure2a.pdf", width=w, height=h)
+    ggplot(over.df, aes(x=abs(Latsamp), y=sp.STB)) + 
+      theme_is +
+      geom_point(size=4) +
+      stat_smooth(se=FALSE, method="lm", colour="black", size=1) +
+      labs(x="Degrees from equator", 
+           y=expression(paste('Standardized ', beta[' gradient'])))
+  dev.off()
 
   #--- turnover proportion by taxonomy and zone ---#
-  ggplot(betaTax.df, aes(x=TaxLevel, y=Turnover/TotalBeta, fill=Zone)) +
-    ylim(0,1) + theme_is + 
-    theme(axis.text.x=element_text(size=rel(2))) +
-    geom_boxplot() + 
-    scale_fill_manual(name="", values=c("white", "gray70")) +
-    labs(x="", y=expression(paste('Proportion of ', beta,' due to turnover')))
+  pdf("Plots/Figure2b.pdf", width=w, height=h)
+    ggplot(betaTax.df, aes(x=TaxLevel, y=Turnover/TotalBeta, fill=Zone)) +
+      ylim(0,1) + theme_is + 
+      theme(axis.text.x=element_text(size=rel(2))) +
+      geom_boxplot() + 
+      scale_fill_manual(name="", values=c("white", "gray70")) +
+      labs(x="", y=expression(paste('Proportion of ', beta,' due to turnover')))
+  dev.off()
 
 
 #########
@@ -70,24 +75,28 @@ loadAll()
 #########
 
   #--- dominant genus predicting rest ---#
-  ggplot(tvars.df, aes(x=SmaxDivGen, y=S-SmaxDivGen)) +
-    theme_is +
-    stat_smooth(aes(group=Label), se=F, method="lm", 
-                colour="gray", size=1) +
-    stat_smooth(se=F, method="lm", colour="black", size=1.5) +  
-    geom_point(size=3) +
-    labs(x=expression('Richness'[' most speciose genus']), 
-         y=expression('Richness'[' remaining genera']))
+  pdf("Plots/Figure3a.pdf", width=w, height=h)
+    ggplot(tvars.df, aes(x=SmaxDivGen, y=S-SmaxDivGen)) +
+      theme_is +
+      stat_smooth(aes(group=Label), se=F, method="lm", 
+                  colour="gray", size=1) +
+      stat_smooth(se=F, method="lm", colour="black", size=1.5) +  
+      geom_point(size=3) +
+      labs(x=expression('Richness'[' most speciose genus']), 
+           y=expression('Richness'[' remaining genera']))
+  dev.off()
 
   #--- dominant genus predicting rest ---#
-  ggplot(tvars.df, aes(x=SmaxDivSF, y=S-SmaxDivSF)) +
-    theme_is +
-    stat_smooth(aes(group=Label), se=F, method="lm", 
-                colour="gray", size=1) +
-    stat_smooth(se=F, method="lm", colour="black", size=1.5) +  
-    geom_point(size=3) +
-    labs(x=expression('Richness'[' most speciose subfamily']), 
-         y=expression('Richness'[' remaining subfamilies']))
+  pdf("Plots/Figure3b.pdf", width=w, height=h)
+    ggplot(tvars.df, aes(x=SmaxDivSF, y=S-SmaxDivSF)) +
+      theme_is +
+      stat_smooth(aes(group=Label), se=F, method="lm", 
+                  colour="gray", size=1) +
+      stat_smooth(se=F, method="lm", colour="black", size=1.5) +  
+      geom_point(size=3) +
+      labs(x=expression('Richness'[' most speciose subfamily']), 
+           y=expression('Richness'[' remaining subfamilies']))
+  dev.off()
 
 
 #########

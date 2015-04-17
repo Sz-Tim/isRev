@@ -6,7 +6,7 @@
 # load all dataframes
 loadAll <- function() {
   
-  require(plyr); require(tidyr)
+  require(plyr)
   
   #--- data sources ---#
   spRng.df <<- read.xlsx("Sheets/ranges_spp.xlsx", 1)  # Species ranges
