@@ -18,7 +18,6 @@
   loadAll()
 
 
-
 ##########
 ## Species diversity within each genus
 ##########
@@ -118,6 +117,7 @@
 ###########
 ## Location of diversity peak
 ###########
+
   peak.df <- ddply(tvars.df, .(Transect, Label, mostDivGen), summarize, 
                    GenPeak=max(Gen, na.rm=TRUE),
                    GenPeakEl=Elsamp[which.max(Gen)],
@@ -128,3 +128,24 @@
                    mostDivSFPeak=max(SmaxDivSF, na.rm=TRUE),
                    mostDivSFPeakEl=Elsamp[which.max(SmaxDivSF)])
   write.csv(peak.df, file="peak.csv")
+
+
+#############
+## Predicting richness
+#############
+  
+  pred.df <- data.frame(Transect=Transects,
+                        Label=Labels,
+                        b=rep(NA, nTrans),
+                        p=rep(NA, nTrans),
+                        r=rep(NA, nTrans))
+
+  for(tr in 1:nTrans) {
+    varTr <- subset(tvars.df, tvars.df$Transect==Transects[tr])
+    mod <- lm((S-SmaxDivGen) ~ SmaxDivGen, data=varTr)
+    pred.df$b[tr] <- coef(mod)[2]
+    pred.df$p[tr] <- summary(mod)$coefficients[2,4]
+    pred.df$r[tr] <- summary(mod)$r.squared
+  }
+
+  write.csv(pred.df, file="predGen.csv")

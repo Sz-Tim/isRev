@@ -1,4 +1,83 @@
 # I. Introduction  
+# II. State of the data  
+# III. Range size  
+# IV. Composition & beta  
+# V. Dominant taxon  
+# VI. Richness  
+# VII. Into the future  
+# VIII. Conclusions  
+
+  
+---
+
+
+
+# Introduction  
+elevational gradients; value of insects; ant taxonomic ecology; mtn passes/rapoport's; beta diversity/turnover  
+### 
+### 
+### 
+### Challenge  
+  
+# II. State of the data  
+### i. Literature search  
+### ii. Criteria  
+### iii. Study descriptions  
+### iv. Pattern definitions  
+  
+# III. Range size  
+Figure: Mean & median range size and latitude; Rapaport test r^2^'s  
+### i. Species: Among gradients  
+### ii. Species: Along gradients  
+### iii. Genera?  
+### iv. Subfamilies?  
+### v. Wrap up and transition  
+  
+# IV. Composition & beta diversity  
+Figure: sp.STB & latitude; boxplot of grad.Tprop & zone (6 boxes); 
+### i. Beta background and methods  
+##### Definition, variation in composition  
+##### Whole gradient calculations, controlling for gradient size  
+##### Nestedness vs turnover  
+### ii. Species  
+##### Among gradients: Latitude  
+##### Along gradients: Generally highest at edges  
+##### Higher T for whole gradient, but N between adjacent elevations  
+### iii. Genera  
+##### Among gradients: Latitude  
+##### Along gradients: Generally highest at edges, esp. high elevations  
+##### T≈N for whole gradient, but higher N between adjacent elevations  
+### iv. Subfamilies  
+##### Among gradients: Latitude  
+##### Along gradients: Generally highest at edges, esp. high elevations  
+##### Higher N for whole gradient, no T between adjacent elevations  
+### v. Wrap up and transition  
+  
+# V. Dominant taxon  
+Figure: Genus & subfamily predictions (A, B)
+### i. Most speciose genus  
+### ii. Most speciose subfamily  
+### iii. Wrap up and transition  
+  
+# VI. Richness  
+Figure: Barplot with sp/gen/(sf) patterns categorized
+### i. Species  
+### ii. Genus  
+### iii. Subfamily  
+### iv. Wrap up and transition  
+  
+# VII. Into the future  
+
+# VIII. Conclusion  
+
+
+
+
+
+
+
+
+# I. Introduction  
 ## i. History/value of elevational gradients  
 ## ii. Value of insects  
 ## iii. Challenge  

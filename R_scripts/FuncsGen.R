@@ -6,7 +6,7 @@
 # load all dataframes
 loadAll <- function() {
   
-  require(plyr)
+  require(plyr); require(tidyr)
   
   #--- data sources ---#
   spRng.df <<- read.xlsx("Sheets/ranges_spp.xlsx", 1)  # Species ranges
@@ -37,6 +37,16 @@ loadAll <- function() {
   nTrans <<- nlevels(spRng.df$Transect)
   tvars.df <<- droplevels(ivars.df[ivars.df$Transect %in% Transects, ])
   Labels <<- as.character(unique(tvars.df$Label))
+  
+  betaTax.df <- data.frame(Transect=rep(over.df$Transect,3),
+                           Zone=rep(over.df$Zone,3),
+                           TaxLevel=rep(c("Species", "Genus", "Subfamily"),
+                                       each=nrow(over.df)),
+                           TotalBeta=with(over.df, c(sp.sor, gen.sor, sf.sor)),
+                           Turnover=with(over.df, c(sp.sim, gen.sim, sf.sim)),
+                           Nestedness=with(over.df, c(sp.sne, gen.sne, sf.sne)))
+  betaTax.df$TaxLevel <- factor(betaTax.df$TaxLevel,
+                                levels=c("Species", "Genus", "Subfamily"))
 }
 
 

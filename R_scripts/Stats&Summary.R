@@ -29,6 +29,10 @@
     # mn:0.545; se:0.0204; med:0.531; min:0.391; max:0.731
 
   #### ANALYSES ####
+  #--- most diverse genus ---#
+  divG.lme <- lmer((S-SmaxDivGen) ~ SmaxDivGen + (1|Label), data=tvars.df)
+  summary(divG.lme)
+  
   #--- log(S) ~ log(Gen) ---#
   lSlG.lme <- lmer(log(S) ~ log(Gen) + (1|Label), data=tvars.df)
   summary(lSlG.lme)

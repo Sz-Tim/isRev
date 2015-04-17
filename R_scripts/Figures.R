@@ -153,6 +153,15 @@
                                           'All but most diverse gn'='blue'))
   dev.off()
 
+  #--- genus: most diverse predicting rest ---#
+  pdf(file="Plots/MostDivPredRest_gen.pdf", width=w, height=h)
+    ggplot(tvars.df, aes(x=SmaxDivGen, y=S-SmaxDivGen)) +
+      stat_smooth(aes(group=Label), se=F, method="lm", colour="gray") +
+      stat_smooth(se=F, method="lm", colour="black", size=1) +  geom_point() +
+      labs(x=expression('S'['most speciose genus']), 
+           y=expression('S'['remaining genera']))
+  dev.off()
+
   #--- genus: most diverse as proportion ---#
   pdf(file="Plots/MostDivProp_gen.pdf", width=w, height=h)
     ggplot(tvars.df, aes(x=Elsamp, y=SmaxDivGen/S)) + facet_wrap(~Label) +
@@ -173,6 +182,15 @@
       scale_colour_manual(name="", values=c('Total diversity'='black',
                                       'Most diverse subfamily'='green',
                                       'All but most diverse subfamily'='blue'))
+  dev.off()
+
+  #--- subfamily: most diverse predicting rest ---#
+  pdf(file="Plots/MostDivPredRest_sf.pdf", width=w, height=h)
+    ggplot(tvars.df, aes(x=SmaxDivSF, y=S-SmaxDivSF)) +
+      stat_smooth(aes(group=Label), se=F, method="lm", colour="gray") +
+      stat_smooth(se=F, method="lm", colour="black", size=1) +  geom_point() +
+      labs(x=expression('S'['most speciose subfamily']), 
+           y=expression('S'['remaining subfamilies']))
   dev.off()
 
   #--- subfamily: most diverse as proportion ---#
@@ -432,3 +450,82 @@ ggplot(spRng.df, aes(x=HighEl-LowEl)) + geom_histogram() + facet_wrap(~Transect)
 
 ggplot(over.df, aes(x=abs(Latsamp), y=pr1el)) + geom_point()
 ggplot(over.df, aes(x=Zone, y=pr1el, fill=Scale)) + geom_boxplot()
+
+
+ggplot(over.df, aes(x=abs(Latsamp), y=sp.sor/Sites)) + geom_point() + ylim(0,.25)
+ggplot(over.df, aes(x=abs(Latsamp), y=sp.sne/Sites)) + geom_point() + ylim(0,.25)
+ggplot(over.df, aes(x=abs(Latsamp), y=sp.sim/Sites)) + geom_point() + ylim(0,.25)
+
+ggplot(over.df, aes(x=abs(Latsamp), y=gen.sor)) + geom_point() + ylim(0,1)
+ggplot(over.df, aes(x=abs(Latsamp), y=gen.sne)) + geom_point() + ylim(0,1)
+ggplot(over.df, aes(x=abs(Latsamp), y=gen.sim)) + geom_point() + ylim(0,1)
+
+ggplot(over.df, aes(x=abs(Latsamp), y=sf.sor)) + geom_point() + ylim(0,1)
+ggplot(over.df, aes(x=abs(Latsamp), y=sf.sne)) + geom_point() + ylim(0,1)
+ggplot(over.df, aes(x=abs(Latsamp), y=sf.sim)) + geom_point() + ylim(0,1)
+
+ggplot(over.df, aes(x=Zone, y=sp.sor/Sites)) + geom_boxplot() + ylim(0,0.2)
+ggplot(over.df, aes(x=Zone, y=sp.sne, fill=Scale)) + geom_boxplot() + ylim(0,1)
+ggplot(over.df, aes(x=Zone, y=sp.sim, fill=Scale)) + geom_boxplot() + ylim(0,1)
+
+ggplot(over.df, aes(x=Zone, y=gen.sor/Sites)) + geom_boxplot() + ylim(0,0.2)
+ggplot(over.df, aes(x=Zone, y=gen.sne, fill=Scale)) + geom_boxplot() + ylim(0,1)
+ggplot(over.df, aes(x=Zone, y=gen.sim, fill=Scale)) + geom_boxplot() + ylim(0,1)
+
+ggplot(over.df, aes(x=Zone, y=sf.sor/Sites)) + geom_boxplot() + ylim(0,0.2)
+ggplot(over.df, aes(x=Zone, y=sf.sne, fill=Scale)) + geom_boxplot() + ylim(0,1)
+ggplot(over.df, aes(x=Zone, y=sf.sim, fill=Scale)) + geom_boxplot() + ylim(0,1)
+
+
+ggplot(over.df, aes(x=Sites)) + facet_grid(.~Zone) +
+  geom_point(aes(y=sp.sor), size=4) + 
+  geom_point(aes(y=sp.sne), colour="red", size=4) + 
+  geom_point(aes(y=sp.sim), colour="blue", size=4)
+
+ggplot(over.df, aes(x=Zone, y=sp.sim/sp.sor)) + ylim(0,1) +
+  geom_hline(yintercept=0.5, linetype=2) +
+  geom_boxplot() + geom_point() + 
+  ggtitle("Gradient species turnover proportion")
+ggplot(over.df, aes(x=Zone, y=gen.sim/gen.sor)) + ylim(0,1) +
+  geom_hline(yintercept=0.5, linetype=2) +
+  geom_boxplot() + geom_point() + 
+  ggtitle("Gradient genus turnover proportion")
+ggplot(over.df, aes(x=Zone, y=sf.sim/sf.sor)) + ylim(0,1) +
+  geom_hline(yintercept=0.5, linetype=2) +
+  geom_boxplot() + geom_point() + 
+  ggtitle("Gradient subfamily turnover proportion") 
+
+ggplot(over.df, aes(x=Zone, y=sp.sne/sp.sor)) + ylim(0,1) +
+  geom_hline(yintercept=0.5, linetype=2) +
+  geom_boxplot() + geom_point() + 
+  ggtitle("Gradient species nestedness proportion")
+ggplot(over.df, aes(x=Zone, y=gen.sne/gen.sor)) + ylim(0,1) +
+  geom_hline(yintercept=0.5, linetype=2) +
+  geom_boxplot() + geom_point() + 
+  ggtitle("Gradient genus nestedness proportion")
+ggplot(over.df, aes(x=Zone, y=sf.sne/sf.sor)) + ylim(0,1) +
+  geom_hline(yintercept=0.5, linetype=2) +
+  geom_boxplot() + geom_point() + 
+  ggtitle("Gradient subfamily nestedness proportion")
+
+ggplot(over.df, aes(x=Zone, y=sp.STB)) + geom_boxplot() + geom_point()
+ggplot(over.df, aes(x=Zone, y=gen.STB)) + geom_boxplot() + geom_point()
+ggplot(over.df, aes(x=Zone, y=sf.STB)) + geom_boxplot() + geom_point()
+
+ggplot(over.df, aes(x=mnRng, y=sp.STB)) + geom_point()
+ggplot(over.df, aes(x=abs(Latsamp), y=sp.STB)) + geom_point() + 
+  stat_smooth(method="lm", se=FALSE, colour="black")
+ggplot(over.df, aes(x=abs(Latsamp), y=gen.STB)) + geom_point()
+ggplot(over.df, aes(x=abs(Latsamp), y=sf.STB)) + geom_point()
+
+ggplot(over.df, aes(x=abs(Latsamp), y=genPred.r, colour=Scale)) + geom_point(size=4) + ylim(0,1)
+ggplot(over.df, aes(x=abs(Latsamp), y=sfPred.r, colour=Scale)) + geom_point(size=4) + ylim(0,1)
+
+ggplot(over.df, aes(x=Zone, y=genPred.r, fill=Scale)) + geom_boxplot()
+ggplot(over.df, aes(x=Sites, y=genPred.r, colour=Zone)) + geom_point()
+
+ggplot(over.df, aes(x=Zone, y=sfPred.r, fill=Scale)) + geom_boxplot()
+ggplot(over.df, aes(x=Sites, y=sfPred.r, colour=Zone)) + geom_point()
+
+ggplot(betaTax.df, aes(x=TaxLevel, y=Turnover/TotalBeta, fill=Zone)) +
+  geom_boxplot()

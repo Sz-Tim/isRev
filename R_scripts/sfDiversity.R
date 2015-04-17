@@ -23,7 +23,6 @@
   tvars.df <- droplevels(ivars.df[ivars.df$Transect %in% Transects, ])
 
 
-
 ##########
 ## Species diversity within each subfamily
 ##########
@@ -145,3 +144,23 @@
   rownames(sf.bars) <- NULL
   sf.bars <- sf.bars[!is.na(sf.bars$Elsamp),]
   write.csv(sf.bars, file="Sheets/relDiversity_sf.csv")
+
+#############
+## Predicting richness
+#############
+
+  pred.df <- data.frame(Transect=Transects,
+                        Label=Labels,
+                        b=rep(NA, nTrans),
+                        p=rep(NA, nTrans),
+                        r=rep(NA, nTrans))
+
+  for(tr in 1:nTrans) {
+    varTr <- subset(tvars.df, tvars.df$Transect==Transects[tr])
+    mod <- lm((S-SmaxDivSF) ~ SmaxDivSF, data=varTr)
+    pred.df$b[tr] <- coef(mod)[2]
+    pred.df$p[tr] <- summary(mod)$coefficients[2,4]
+    pred.df$r[tr] <- summary(mod)$r.squared
+  }
+
+  write.csv(pred.df, file="predSF.csv")
