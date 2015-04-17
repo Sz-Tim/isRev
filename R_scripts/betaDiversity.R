@@ -197,8 +197,37 @@
   }
 
 
+
+########
+## Whole gradient Tuomisto (2010) version
+########
+
+  # Dbeta = (Stot)/mean(S.band)
+  # STB = (Dbeta - 1)/(nSites - 1)
+
+  STB.df <- data.frame(Transect=levels(over.df$Transect),
+                       nSites=over.df$Sites,
+                       sp.Dbeta=rep(NA, nrow(over.df)),
+                       sp.STB=rep(NA, nrow(over.df)),
+                       gen.Dbeta=rep(NA, nrow(over.df)),
+                       gen.STB=rep(NA, nrow(over.df)),
+                       sf.Dbeta=rep(NA, nrow(over.df)),
+                       sf.STB=rep(NA, nrow(over.df)))
+
+  for(tr in 1:nlevels(ivars.df$Transect)) {
+    varTr <- subset(ivars.df, ivars.df$Transect==levels(over.df$Transect)[tr])
+    STB.df$sp.Dbeta[tr] <- varTr$Stot[1]/mean(varTr$S, na.rm=T)
+    STB.df$sp.STB[tr] <- (STB.df$sp.Dbeta[tr]-1)/(STB.df$nSites[tr]-1)
+    STB.df$gen.Dbeta[tr] <- varTr$GenTot[1]/mean(varTr$Gen, na.rm=T)
+    STB.df$gen.STB[tr] <- (STB.df$gen.Dbeta[tr]-1)/(STB.df$nSites[tr]-1)
+    STB.df$sf.Dbeta[tr] <- varTr$SFTot[1]/mean(varTr$SF, na.rm=T)
+    STB.df$sf.STB[tr] <- (STB.df$sf.Dbeta[tr]-1)/(STB.df$nSites[tr]-1)
+  }
+
+
 ########
 ## Write csv
 ########
 
-  write.csv(whole.df, file="multiSor.csv")
+  write.csv(STB.df, file="STB.csv")
+#  write.csv(whole.df, file="multiSor.csv")

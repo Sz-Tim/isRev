@@ -48,3 +48,21 @@ Christy's mtn pass paper for removing influence of mtn gradient sizes
 beta across entire gradient: tropics vs temperate  
 too much to do beta + turnover + nestedness  
 carabid elevational ranges (ecology)
+
+# Notes from writing meeting 2015.04.16  
+Basic structure of intro is alright  
+. how to tie different parts together?  
+. what's interesting?  
+. play up biological differences between subfamilies?  
+. definitely a paragraph about subfamily differences (previous work)  
+	. include some natural history information here  
+	. these are variable, these aren't - treat as binomial even?  
+	. coarse way to look at evolutionary trajectories  
+. turnover within a genus/subfamily?  
+. LIDAR data could be useful? Spatial scale and resolution?
+. Mtn passes higher?  
+	  . Rap's rule  
+	  . turnover should be higher with smaller range size?  
+	  . taxonomic patterns  
+. Most diverse genus/sf predicting the rest - more robust way to do it  
+. Scale multisite metrics for number of sites  
