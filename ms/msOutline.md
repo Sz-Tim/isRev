@@ -8,7 +8,7 @@
 # VIII. Conclusions  
 
   
----
+---  
 
 
 
@@ -71,7 +71,7 @@ Figure: Barplot with sp/gen/(sf) patterns categorized
 # VIII. Conclusion  
 
 
-
+---  
 
 
 
