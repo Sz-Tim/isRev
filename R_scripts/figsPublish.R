@@ -76,7 +76,7 @@ loadAll()
                    arrow=arrow(angle=90, length=unit(0.2, "cm"), ends="both")) +
       stat_smooth(aes(y=sp.mnRng.1600, colour="1600m"), 
                   se=FALSE, method="lm", size=1) +
-      scale_colour_manual(name="Truncation",
+      scale_colour_manual(name="Gradient \nTruncation",
                           values=c("2000m"="gray20",
                                    "1800m"="gray50",
                                    "1600m"="gray80")) +
