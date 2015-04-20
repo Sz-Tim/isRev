@@ -122,7 +122,7 @@ I calculated each component using the species composition, genus composition, an
 ### Species  
 At the species level, gradient-wide beta diversity (Beta~st~) decreases significantly with latitude (Fig. 2a; *n*=20, *P*<0.001, *R^2^*=0.49). 
 Consistent with the smaller elevational ranges seen at lower latitudes, the species composition changes more rapidly across elevations at lower latitudes. 
-Along gradients, beta diversity is generally higher toward the mountain summit compared to the middle (15/16 gradients) and is most often also high at the mountain base (i.e., U-shaped: 13/16 gradients). 
+Along gradients, beta diversity between adjacent elevations is generally higher toward the mountain summit compared to the middle (15/16 gradients) and is most often also high at the mountain base (i.e., U-shaped: 13/16 gradients). 
 The proportion of gradient-wide beta diversity due to turnover does not vary significantly between tropical and temperate mountains (Fig. 2b; Wilcoxon rank sum test: *W*=41, *P*=0.26). 
 Overall, turnover constitutes a greater proportion of gradient-wide beta diversity than does nestedness at the species level (Fig. 2b; Paired t-test: *t~15~*=5.63, *P*<0.001). 
 That is, when all pairs of elevations are compared, it is common for communities at two different elevations to each have unique species. 
@@ -137,7 +137,7 @@ In contrast, turnover is quite high between adjacent elevations for a large port
 ### Genus  
 At the genus level, Beta~st~ declines with latitude (*n*=16, *P*=0.03, *R^2^*=0.25). 
 The genus composition changes more rapidly across elevations at lower latitudes, though the trend is weaker than at the species level. 
-All 16 gradients show high beta diversity toward the summit as the beta diversity elevational pattern is either U-shaped (14/16) or a monotonic increase (2/16). 
+All 16 gradients show high beta diversity between adjacent elevations toward the summit as the beta diversity elevational pattern is either U-shaped (14/16) or a monotonic increase (2/16). 
 The proportion of gradient-wide beta diversity at the genus level due to turnover is significantly higher in temperate regions (Fig. 2b; Wilcoxon rank sum test: *W*=49, *P*=0.042). 
 However, there is high variability in the genus turnover proportion among both temperate and tropical gradients; this apparent difference may be spurious. 
 At the gradient scale, genus turnover and genus nestedness are comparable along most gradients (Fig. 2b; Paired t-test: *t~15~*=-0.67, *P*=0.51). 
@@ -150,15 +150,14 @@ With common interpretations of turnover and nestedness **CITE**, the high nested
 
 ### Subfamily    
 At the subfamily level, Beta~st~ shows no relationship with latitude (*n*=16, *P*=0.15, *R^2^*=0.08). 
-The change in subfamily composition across elevations does not vary consistently across latitudes. 
-
-
-At the subfamily level, overall beta diversity is low between adjacent elevations. 
-There is no turnover in the subfamily composition in any of the datasets. 
-Rather, all changes between adjacent elevations are due to nestedness as subfamilies are added or lost. 
-Nestedness, and consequently overall beta diversity, commonly increases toward high elevations (12/16), though in some cases it is U-shaped (3/16) or high at the mountain base (1/16). 
-Thus, there is a high degree of elevational overlap across subfamilies, and subfamilies are progressively excluded as elevation increases, likely due to environmental filtering. 
-With vanishingly little subfamily turnover, there is little evidence for competitive exclusion at the subfamily level. 
+The change in subfamily composition across elevations does not vary consistently with latitude. 
+In contrast to species and genera, subfamily beta diversity between adjacent elevations most often increases monotonically toward the summit (12/16), though U-shaped patterns also occur (3/16) and even monotonic declines (1/16). 
+The proportion of gradient-wide beta diversity due to turnover at the subfamily level is not different between tropical and temperate mountains (Fig. 2b; Wilcoxon rank sum test: *W*=45; *P*=0.08) and in fact, nearly all of the change in subfamily composition is due to nestedness rather than turnover (Fig. 2b; Paired t-test: *t~15~*=-11.04, *P*<0.001). 
+That is, subfamilies rarely replace one another among sites, but rather the subfamily composition of each elevation is most often either identical to or a subset of the composition at other elevations. 
+Between adjacent elevations, there is no turnover along any gradient. 
+Thus, there is a high degree of elevational overlap among subfamilies. 
+Often, subfamilies are progressively excluded as elevation increases, likely due to environmental filtering. 
+With highly nested subfamily communities, there is little evidence for competitive exclusion across elevations at the subfamily level. 
   
 ### Comparison across taxonomic levels  
 Beta diversity decreases as taxonomic resolution decreases. 
