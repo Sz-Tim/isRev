@@ -98,6 +98,17 @@
   t.test(spSorAdj.df$sne, genSorAdj.df$sne, paired=TRUE)
   t.test(spSorAdj.df$sor, genSorAdj.df$sor, paired=TRUE)
 
+  #--- standardized beta ---#
+  beta.st <- lm(sp.STB ~ abs(Latsamp), data=over.df)
+  summary(beta.st)
+
+  #--- gradient-wide proportions ---#
+  wilcox.test(sp.sim/sp.sor ~ Zone, data=over.df)
+  t.test(over.df$sp.sim, over.df$sp.sne, paired=TRUE)
+
+  #--- adjacent bands ---#
+  t.test(spSorAdj.df$sim, spSorAdj.df$sne, paired=TRUE)
+
   summary(lm(sor ~ sne, data=spSorAdj.df))
     plot(sor ~ sne, data=spSorAdj.df, ylim=c(0,1), xlim=c(0,1));abline(b=1, a=0)
   summary(lm(sor ~ sim, data=spSorAdj.df)) 

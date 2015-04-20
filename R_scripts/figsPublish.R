@@ -94,7 +94,7 @@ loadAll()
       geom_point(size=4) +
       stat_smooth(se=FALSE, method="lm", colour="black", size=1) +
       labs(x="Degrees from equator", 
-           y=expression(paste('Standardized ', beta[' gradient'])))
+           y=expression(paste(beta[' st'])))
   dev.off()
 
   #--- turnover proportion by taxonomy and zone ---#
