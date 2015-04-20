@@ -159,16 +159,15 @@ Thus, there is a high degree of elevational overlap among subfamilies.
 Often, subfamilies are progressively excluded as elevation increases, likely due to environmental filtering. 
 With highly nested subfamily communities, there is little evidence for competitive exclusion across elevations at the subfamily level. 
   
-### Comparison across taxonomic levels  
-Beta diversity decreases as taxonomic resolution decreases. 
-That is, species dissimilarity is higher than genus dissimilarity between adjacent elevations (stats for *Beta~genus~* and *Beta~species~*) which, in turn, is higher than subfamily dissimilarity (stats for *Beta~subfamily~* and *Beta~genus~*). 
-Turnover declines most dramatically at higher taxonomic levels and is essentially non-existent between ant subfamilies. 
+Latitudinal trends in elevational beta diversity are contingent on taxonomic level. 
+Elevational community differences are most extreme between tropical ant species. 
+Furthermore, overall beta diversity between adjacent elevations declines in ants as taxonomic resolution decreases. 
+The species community dissimilarity is higher than the genus community dissimilarity (stats for *Beta~genus~* and *Beta~species~*) which, in turn, is higher than the subfamily community dissimilarity (stats for *Beta~subfamily~* and *Beta~genus~*). 
+In particular, turnover across elevations declines at higher taxonomic levels. 
+Communities become increasingly nested as the differences are due not to the replacement of one taxon with another, but to the loss of taxa. 
 Even in the tropical datasets, where species turnover is highest, the genus turnover is substantially lower. 
 This is consistent with competitive exclusion between congeners across elevations, though heightened sensitivity to abiotic conditions and consequent elevational specialization could also produce this pattern. 
 Nevertheless, high species turnover is not universal among the tropical gradients and turnover is consistently low in the temperate datasets. 
-  
-### Wrap up and transition  
-Paragraph that wraps up, summarizes, and synthesizes the beta diversity results.  
   
   
 # Dominant taxa  
