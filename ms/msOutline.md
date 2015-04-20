@@ -26,15 +26,37 @@ elevational gradients; value of insects; ant taxonomic ecology; mtn passes/rapop
 ### iv. Pattern definitions  
   
 # III. Range size  
-Figure: Mean & median range size and latitude; Rapaport test r^2^'s  
-### i. Species: Among gradients  
-### ii. Species: Along gradients  
-### iii. Genera?  
-### iv. Subfamilies?  
-### v. Wrap up and transition  
+Figure 1: Mean & median range size and latitude  
+### i. Brief methods  
+Expect that elevational ranges are broader in the tropics  
+Mountain passes are higher because of narrower thermal range  
+Comparisons among gradients may be sensitive to gradient height  
+Truncation method: only use gradients > height and truncate mtns to height  
+Three heights: 1600 (13), 1800 (12), 2000 (10)  
+All gradients (16)
+### ii. Among gradients  
+There is a strong latitudinal signal  
+Seen in the mean and median range sizes  
+Seen in all three truncations  
+More species in tropics detected at just one elevation  
+No trend in the mean elevational range of genera or subfamilies with any method  
+### iii. Along gradients  
+Elevational extension of Rapaport's rule is the expectation  
+However, no consistent trend  
+The Steven's method, which uses all spp at a given elevation, had strongest fit  
+But biased  
+The midpoint method, which uses only spp whose midpt is at that el, had no fit  
+The quartile method, which uses only spp whose range is < 1/4 mtn, had no fit  
+Ant species do not support elevational Rapaport's rule  
+### iv. Wrap up and transition  
+Thus, though no consistent pattern along a single gradient,
+elevational ranges of ant species are larger at temperate latitudes  
+Suggests that thermal tolerances of tropical species may be narrower  
+Alternatively, could be strong competition btw ant spp across elevations  
+Regardless, should lead to more intense changes in community comp across els  
   
 # IV. Composition & beta diversity  
-Figure: sp.STB & latitude; boxplot of grad.Tprop & zone (6 boxes); 
+Figure 2: sp.STB & latitude; boxplot of grad.Tprop & zone (6 boxes); 
 ### i. Beta background and methods  
 ##### Definition, variation in composition  
 ##### Whole gradient calculations, controlling for gradient size  
@@ -54,13 +76,13 @@ Figure: sp.STB & latitude; boxplot of grad.Tprop & zone (6 boxes);
 ### v. Wrap up and transition  
   
 # V. Dominant taxon  
-Figure: Genus & subfamily predictions (A, B)
+Figure 3: Genus & subfamily predictions (A, B)
 ### i. Most speciose genus  
 ### ii. Most speciose subfamily  
 ### iii. Wrap up and transition  
   
 # VI. Richness  
-Figure: Barplot with sp/gen/(sf) patterns categorized
+Figure 4: Barplot with sp/gen/(sf) patterns categorized
 ### i. Species  
 ### ii. Genus  
 ### iii. Subfamily  

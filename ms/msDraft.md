@@ -59,7 +59,7 @@ There were 20 that met all five *a priori* sampling criteria, and 16 of those pr
 Thus, the majority of published studies describing ant richness across elevations did not employ sampling regimes sufficient to confidently capture the underlying richness pattern. 
 Nevertheless, the robust datasets included local and regional scales, tropic and temperate zones, mainland and island gradients, and wet and arid climates (Appendix). 
   
-I classified the ant elevational richness and beta diversity into five categories using definitions from the literature (Fig. 1)[@McCain2009; @McCain2010]. 
+I classified the ant elevational richness and beta diversity into five categories using definitions from the literature [@McCain2009; @McCain2010]. 
 In decreasing patterns, diversity is highest at the lowest elevation and declines steadily with increasing elevation. 
 In low plateau patterns, diversity is consistently high across at least the lowest 300m before declining monotonically. 
 Mid-peaks show highest diversity >300m from the mountain base and with at least 25% greater diversity than at the base. 
@@ -70,37 +70,57 @@ Though more patterns are possible [@McCain2009], the datasets here were characte
   
   
 # Elevational range size  
-### Variation among gradients  
-The mean ant species elevational range is larger in the regional datasets than in the local scale datasats (STATS). 
-The mean elevational range is also larger in temperate zones (STATS), consistent with other taxa [@Janzen1967; @Ghalambor2006; @McCain2009b]. 
-However, this may partly be an artifact of the total gradient height. 
-In fact, in the temperate datasets, the mean range size as a proportion of the gradient height in regional datasets is indistinguishable from the mean in local datasets. 
-However, mean range size is significantly smaller in tropical local datasets both absolutely and as a proportion of the gradient. 
-In particular, this seems to be driven by a large proportion of species detected at just one elevation (STATS). 
-The only tropical dataset at a regional scale showed a large mean range size with both methods, though as there is only one such dataset and it is from an island [@SarnEcon2012], no generalities can be drawn. 
-Absolute mean range size increases with distance from the equator (STATS). 
-However, scaled by the gradient size, a hump-shaped pattern emerges, with range size increasing with latitude in local datasets and decreasing with latitude in regional datasets. 
+Seasonal temperature variation is higher in temperate locations than tropical locations. 
+Consequently, tropical organisms are expected to have narrower thermal tolerances [@Janzen1967]. 
+On mountains, where temperature declines quickly with elevation, this corresponds to smaller elevational ranges in tropical species [@Janzen1967; @Ghalambor2006; @McCain2009b]. 
+An increase in thermal tolerance or elevational range size across latitudes has been shown in both vertebrate and invertebrate taxa [@McCain2009b; @Sunday2011; @ShelTewk2014; @Sheldon2015]. 
+Because the largest possible elevational is the entire gradient, however, comparisons among gradients may be sensitive to gradient height [@McCain2009b]. 
+To minimize the influence of disparate gradient heights, I analysed truncated gradients [@McCain2009b] in addition to complete gradients (*n*=16). 
+All datasets were truncated at a certain height and gradients below this threshold were excluded. 
+Mean elevational ranges were then calculated along each truncated gradient. 
+Three truncation heights were used: 1600m (*n*=13), 1800m (*n*=12), and 2000m (*n*=10).
   
-### Variation along gradients  
-Ant elevational range size does not increase with elevation universally. 
-Using the Steven's method [@McCaBrac2012; @Stevens1992], where the mean range size at each elevation is calculated as the mean elevational range of all species detected at that elevation, mean range size increases significantly with elevation in 9/16 datasets. 
-The fit was high among these datasets (*r^2^* mean: 0.82, median: 0.89), which included both regional and local scales as well as temperate and tropical gradients. 
-However, 7/16 datasets showed either no consistent change in mean range size with elevation or, in one case [@Fisher1998], a declining trend. 
-*Add midpoint method and quartile method* 
+Mean elevational range significantly increases with latitude in all four sets of gradients (Fig. 1; all: *n*=16, *P*=0.009, *R^2^*=0.353; 1600m subset: *n*=13, *P*=0.021, *R^2^*=0.344; 1800m subset: *n*=12, *P*=0.012, *R^2^*=0.437 2000m subset: *n*=10, *P*=0.033, *R^2^*=0.384). 
+Ant elevational ranges do, therefore, appear to be larger in the tropics, consistent with other taxa [@McCain2009b; @ShelTewk2014; @Sheldon2015] and with the seasonality hypothesis [@Janzen1967]. 
+Additionally, there is a marginal decrease with latitude in the proportion of ant species detected in just one elevational band (*n*=16, *P*=0.05, *R^2^*=0.193). 
+However, this latitudinal trend in elevational range size does not hold at larger taxonomic scales. 
+Neither the mean genus elevational range nor the mean subfamily elevational range change across latitudes (genus: *n*=16, *P*=0.22; subfamily: *n*=16; *P*=0.40). 
+This suggests that, while individual species may be constrained by thermal tolerance, the variability in thermal tolerance among species within each genus is great enough to encompass the increased annual variation at high latitudes. 
   
-# Wrap up and transition  
+The elevational extension of Rapoport's rule predicts that the mean elevational range size will increase with elevation because of the increased climatic variability at higher elevations [@Stevens1992]. 
+However, ant elevational range size does not increase with elevation across all robust datasets. 
+Using the Steven's method [@McCaBrac2012; @Stevens1992], where the mean range size at each elevation is calculated as the mean elevational range of all species detected at that elevation, mean range size increases significantly with elevation in 9/16 datasets (overall *R^2^* mean: 0.51, median: 0.68). 
+The fit was high among these datasets (*R^2^* mean: 0.82, median: 0.89), which included both regional and local scales as well as temperate and tropical gradients. 
+However, large ranged species have a disproportionate influence on the mean and the overall pattern since they are included in the estimates at many elevations [@McCaBrac2012; @Gaston1998; @Rohde1993]. 
+The midpoint method, where mean range size at each elevation is calculated as the mean elevational range of all species whose midpoints occur at that elevation, and the quartile method, which uses only species with ranges < 1/4 of the gradient, have been suggested as less biased methods [@McCaBrac2012; @Rohde1993]. 
+With these methods, there is little evidence of a trend in ant species range size along elevational gradients (midpoint: *R^2^* mean: 0.15, median: 0.03; quartile: *R^2^* mean: 0.20, median: 0.14). 
   
+Thus, though ant elevational ranges do not show a consistent pattern along single elevational gradients, they do tend to increase with latitude. 
+This suggests that the thermal tolerances of tropical ant species are narrower than temperate species. 
+Alternatively, smaller elevational ranges are consistent with stronger interspecific competition in the tropics [@Pianka1966; @Willig2003], though of course these hypotheses are not mutually exclusive. 
+Regardless, the smaller elevational ranges in the tropics should lead to more pronounced changes in the ant community composition across elevational gradients. 
   
 # Species composition & beta diversity  
 In a broad sense, beta diversity quantifies the variation in the species composition across space or time [@Anderson2011]. 
-Species composition can vary, however, due to either the substitution or replacement of one species for another, called *turnover*, or due to the loss or addition of species, called *nestedness* [@Baselga2010; @Baselga2012; @Legendre2014]. 
-Turnover and nestedness are likely driven by different processes and understanding the the pattern of each across elevations may yield insight into the importance of ecological filtering, biotic interactions, and neutral processes **CITE**[@Svenning2011]. 
+Species composition can vary between sites, however, either due to the replacement of one species for another, called *turnover*, or due to the loss or addition of species, called *nestedness* [@Baselga2010; @Baselga2012; @Legendre2014]. 
+Total beta diversity can be partitioned into turnover and nestedness to compare the proportion of composition change resulting from species replacements or additions respectively [@Baselga2010]. 
+Turnover and nestedness are likely driven by different processes and understanding the pattern of each across elevations may yield insight into the importance of ecological filtering, biotic interactions, and neutral processes **CITE**[@Svenning2011]. 
 Differences in turnover and nestedness suggest variation in the ecological processes underlying the community composition. 
-To explore the change in ant communities across elevational gradients, I used the Sørensen-family metrics in the R package *betapart* to calculate the overall beta diversity, turnover, and nestedness between adjacent sites along each gradient [@Baselga2010; @Baselga2012; @BaseOrme2012]. 
+To compare gradient-wide beta diversity, I calculated beta as [@Tuomisto2010]:  
+
+D~beta~ = (total richness of gradient)/(average richness of sampled elevational bands)  
+
+Because this method is affected by the number of sampled elevational bands, I standardized D~beta~:  
+
+Beta~stan~ = (D~beta~ - 1)/(N - 1)  
+
+where *N* is the number of elevational bands [@Chao2012]. 
+To explore gradient-wide turnover and nestedness as well as the change in ant communities between adjacent sites along each gradient, I used the Sørensen-family metrics in the R package *betapart* to calculate beta diversity, turnover, and nestedness [@Baselga2010; @Baselga2012; @BaseOrme2012]. 
 These indices allow for unbiased comparisons among communities of differing richness [@Baselga2012]. 
 I calculated each component using the species composition, genus composition, and subfamily composition at each elevation. 
   
 ### Species  
+
 At the species-level, overall beta diversity between adjacent elevations is most often U-shaped (13/16), though it may also increase (2/16) or remain constant (1/16) across the gradient. 
 In these datasets, therefore, the change in species composition is generally lowest at middle elevations and greatest toward the summit or the base. 
 Along most gradients (12/16), most of the change is due to nestedness rather than turnover and turnover is, in fact, quite low (STATS). 

@@ -6,6 +6,7 @@
 @BurwNaka2011
 @DF2010  
 @Fisher1998  
+@Gaston1998  
 @Ghalambor2006  
 @HollWils1990  
 @Janzen1967  
@@ -21,8 +22,14 @@
 @McCoy1990  
 @McCoy2002  
 @NB2008  
+@Pianka1966  
 @Rahbek2005  
 @Rahbek1995  
+@Rohde1993  
 @Samson1997  
 @SarnEcon2012  
+@ShelTewk2014  
+@Sheldon2015  
+@Sunday2011  
 @Svenning2011  
+@Willig2003  
