@@ -80,7 +80,7 @@ All datasets were truncated at a certain height and gradients below this thresho
 Mean elevational ranges were then calculated along each truncated gradient. 
 Three truncation heights were used: 1600m (*n*=13), 1800m (*n*=12), and 2000m (*n*=10).
   
-Mean elevational range significantly increases with latitude in all four sets of gradients (Fig. 1; all: *n*=16, *P*=0.009, *R^2^*=0.353; 1600m subset: *n*=13, *P*=0.021, *R^2^*=0.344; 1800m subset: *n*=12, *P*=0.012, *R^2^*=0.437 2000m subset: *n*=10, *P*=0.033, *R^2^*=0.384). 
+Mean elevational range significantly increases with latitude in all four sets of gradients (Fig. 1; all: *n*=16, *P*=0.009, *R^2^*=0.353; 1600m subset: *n*=13, *P*=0.021, *R^2^*=0.344; 1800m subset: *n*=12, *P*=0.012, *R^2^*=0.437; 2000m subset: *n*=10, *P*=0.033, *R^2^*=0.384). 
 Ant elevational ranges do, therefore, appear to be larger in the tropics, consistent with other taxa [@McCain2009b; @ShelTewk2014; @Sheldon2015] and with the seasonality hypothesis [@Janzen1967]. 
 Additionally, there is a marginal decrease with latitude in the proportion of ant species detected in just one elevational band (*n*=16, *P*=0.05, *R^2^*=0.193). 
 However, this latitudinal trend in elevational range size does not hold at larger taxonomic scales. 
@@ -254,5 +254,20 @@ A variety of patterns have been observed, though mid-elevational peaks are most 
 The pattern distribution is similar for both species (black) and genus (gray) richness. 
 The subfamily richness patterns are less discernible due to the small number of subfamilies along many gradients.  
   
+  
+---  
+![Figure 1a.](pubFigs/Figure1a.pdf)  
+  
+![Figure 1b.](pubFigs/Figure1b.pdf)  
+  
+---    
+![Figure 2a.](pubFigs/Figure2a.pdf)  
+  
+![Figure 2b.](pubFigs/Figure2b.pdf)  
+
+---  
+![Figure 3a.](pubFigs/Figure3a.pdf)  
+    
+![Figure 3b.](pubFigs/Figure3b.pdf)  
   
 # References  

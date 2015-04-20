@@ -30,7 +30,7 @@ loadAll()
 #########
 
   #--- mean and median range size by latitude ---#
-  pdf("Plots/Figure1a.pdf", width=w, height=h)
+  pdf("ms/pubFigs/Figure1a.pdf", width=w, height=h)
     ggplot(over.df, aes(x=abs(Latsamp))) + 
       theme_is +
       geom_point(aes(y=sp.mnRng, shape="Mean"), size=4) + 
@@ -49,7 +49,7 @@ loadAll()
   dev.off()
 
   #--- mean range size on truncated mountains by latitude ---#
-  pdf("Plots/Figure1b.pdf", width=w, height=h)
+  pdf("ms/pubFigs/Figure1b.pdf", width=w, height=h)
     ggplot(over.df, aes(x=abs(Latsamp))) + 
       theme_is +
       geom_point(aes(y=sp.mnRng.2000, colour="2000m"), size=4) + 
@@ -88,7 +88,7 @@ loadAll()
 #########
 
   #--- sp.STB vs latitude ---#
-  pdf("Plots/Figure2a.pdf", width=w, height=h)
+  pdf("ms/pubFigs/Figure2a.pdf", width=w, height=h)
     ggplot(over.df, aes(x=abs(Latsamp), y=sp.STB)) + 
       theme_is +
       geom_point(size=4) +
@@ -98,7 +98,7 @@ loadAll()
   dev.off()
 
   #--- turnover proportion by taxonomy and zone ---#
-  pdf("Plots/Figure2b.pdf", width=w, height=h)
+  pdf("ms/pubFigs/Figure2b.pdf", width=w, height=h)
     ggplot(betaTax.df, aes(x=TaxLevel, y=Turnover/TotalBeta, fill=Zone)) +
       ylim(0,1) + theme_is + 
       theme(axis.text.x=element_text(size=rel(2))) +
@@ -113,7 +113,7 @@ loadAll()
 #########
 
   #--- dominant genus predicting rest ---#
-  pdf("Plots/Figure3a.pdf", width=w, height=h)
+  pdf("ms/pubFigs/Figure3a.pdf", width=w, height=h)
     ggplot(tvars.df, aes(x=SmaxDivGen, y=S-SmaxDivGen)) +
       theme_is +
       stat_smooth(aes(group=Label), se=F, method="lm", 
@@ -125,7 +125,7 @@ loadAll()
   dev.off()
 
   #--- dominant genus predicting rest ---#
-  pdf("Plots/Figure3b.pdf", width=w, height=h)
+  pdf("ms/pubFigs/Figure3b.pdf", width=w, height=h)
     ggplot(tvars.df, aes(x=SmaxDivSF, y=S-SmaxDivSF)) +
       theme_is +
       stat_smooth(aes(group=Label), se=F, method="lm", 
