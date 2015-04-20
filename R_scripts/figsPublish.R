@@ -13,12 +13,12 @@ source("R_scripts/FuncsGen.R")
 loadAll()
 
   #--- graphical parameters ---#
-  w <- 9  # width of pdf (inches)
-  h <- 8  # height of pdf (inches)
+  w <- 6  # width of pdf (inches)
+  h <- 5  # height of pdf (inches)
 
-  theme_is <- theme(axis.title.x=element_text(size=rel(1.7), vjust=-0.3),
+  theme_is <- theme(axis.title.x=element_text(size=rel(1.5), vjust=-0.3),
                     axis.text.x=element_text(size=rel(1.5)),
-                    axis.title.y=element_text(size=rel(1.7), vjust=1.5),
+                    axis.title.y=element_text(size=rel(1.5), vjust=1.5),
                     axis.text.y=element_text(size=rel(1.5)),
                     legend.title=element_text(size=rel(1.5)),
                     legend.key.size=unit(1, "cm"),
@@ -30,7 +30,7 @@ loadAll()
 #########
 
   #--- mean and median range size by latitude ---#
-  pdf("ms/pubFigs/Figure1a.pdf", width=w, height=h)
+  pdf("ms/pubFigs/Figure1a.pdf", width=w*1.25, height=h)
     ggplot(over.df, aes(x=abs(Latsamp))) + 
       theme_is +
       geom_point(aes(y=sp.mnRng, shape="Mean"), size=4) + 
@@ -49,7 +49,7 @@ loadAll()
   dev.off()
 
   #--- mean range size on truncated mountains by latitude ---#
-  pdf("ms/pubFigs/Figure1b.pdf", width=w, height=h)
+  pdf("ms/pubFigs/Figure1b.pdf", width=w*1.25, height=h)
     ggplot(over.df, aes(x=abs(Latsamp))) + 
       theme_is +
       geom_point(aes(y=sp.mnRng.2000, colour="2000m"), size=4) + 
@@ -98,7 +98,7 @@ loadAll()
   dev.off()
 
   #--- turnover proportion by taxonomy and zone ---#
-  pdf("ms/pubFigs/Figure2b.pdf", width=w, height=h)
+  pdf("ms/pubFigs/Figure2b.pdf", width=w*1.25, height=h)
     ggplot(betaTax.df, aes(x=TaxLevel, y=Turnover/TotalBeta, fill=Zone)) +
       ylim(0,1) + theme_is + 
       theme(axis.text.x=element_text(size=rel(2))) +
@@ -120,8 +120,8 @@ loadAll()
                   colour="gray", size=1) +
       stat_smooth(se=F, method="lm", colour="black", size=1.5) +  
       geom_point(size=3) +
-      labs(x=expression('Richness'[' most speciose genus']), 
-           y=expression('Richness'[' remaining genera']))
+      labs(x="Richness of most speciose genus", 
+           y=expression("Richness of remaining genera"))
   dev.off()
 
   #--- dominant genus predicting rest ---#
@@ -132,8 +132,8 @@ loadAll()
                   colour="gray", size=1) +
       stat_smooth(se=F, method="lm", colour="black", size=1.5) +  
       geom_point(size=3) +
-      labs(x=expression('Richness'[' most speciose subfamily']), 
-           y=expression('Richness'[' remaining subfamilies']))
+      labs(x="Richness of most speciose subfamily", 
+           y=expression("Richness of remaining subfamilies"))
   dev.off()
 
 

@@ -135,6 +135,8 @@ Species may be distributed individually, with overlapping ranges, rather than oc
 In contrast, turnover is quite high between adjacent elevations for a large portion of the gradient in several tropical datasets [@Fisher1998; @Samson1997; @LongColw2011], consistent with a high degree of elevational specialization as a result of competition or abiotic constraints. 
   
 ### Genus  
+
+
 Overall beta diversity between adjacent elevations at the genus-level is most commonly U-shaped (14/16), often with a low elevation truncation such that highest beta diversity occurs at high elevations. 
 In the Philippines [@Samson1997] and Costa Rica [@LongColw2011], beta diversity increases monotonically across elevations. 
 Turnover at the genus-level is typically lower than at the species-level. 
