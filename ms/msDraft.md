@@ -9,7 +9,7 @@
   
 **Abstract:** 150–250 words.  The abstract abstract is rather abstract.
   
-**Keywords:** 4–6 keywords. Formicidae, subfamily, genus, altitude, specialization, nesting    
+**Keywords:** 4–6 keywords. Formicidae, subfamily, genus, altitude, range size, beta diversity    
   
 \newpage  
     
@@ -120,31 +120,39 @@ These indices allow for unbiased comparisons among communities of differing rich
 I calculated each component using the species composition, genus composition, and subfamily composition at each elevation. 
   
 ### Species  
-At the species level, Beta~st~ decreases significantly with latitude (Fig. 2a; *n*=20, *P*<0.001, *R^2^*=0.49). 
+At the species level, gradient-wide beta diversity (Beta~st~) decreases significantly with latitude (Fig. 2a; *n*=20, *P*<0.001, *R^2^*=0.49). 
 Consistent with the smaller elevational ranges seen at lower latitudes, the species composition changes more rapidly across elevations at lower latitudes. 
 Along gradients, beta diversity is generally higher toward the mountain summit compared to the middle (15/16 gradients) and is most often also high at the mountain base (i.e., U-shaped: 13/16 gradients). 
 The proportion of gradient-wide beta diversity due to turnover does not vary significantly between tropical and temperate mountains (Fig. 2b; Wilcoxon rank sum test: *W*=41, *P*=0.26). 
-Further, turnover constitutes a greater proportion of gradient-wide beta diversity than does nestedness at the species level (Fig. 2b; Paired t-test: *t~15~*=5.63, *P*<0.001). 
-That is, the majority of the change in species composition across entire gradients occurs as species with non-overlapping ranges replace each other. 
+Overall, turnover constitutes a greater proportion of gradient-wide beta diversity than does nestedness at the species level (Fig. 2b; Paired t-test: *t~15~*=5.63, *P*<0.001). 
+That is, when all pairs of elevations are compared, it is common for communities at two different elevations to each have unique species. 
 At a finer spatial resolution, however, this is not the case. 
 Between adjacent elevational bands, nestedness dominates on most gradients (STATS). 
 This seemingly contradictory pattern emphasizes the importance of spatial scale to patterns of beta diversity. 
 Comparing sites across the entire gradient, species replace each other and the high elevation communities are distinct from the low elevation communities. 
 The high nestedness between adjacent elevations suggests that this replacement occurs gradually across elevations, however. 
-Species may be distributed individually, with overlapping ranges, rather than occurring as distinct communities. 
+Species may be distributed individually, with overlapping ranges, rather than occurring as distinct abutting communities. 
 In contrast, turnover is quite high between adjacent elevations for a large portion of the gradient in several tropical datasets [@Fisher1998; @Samson1997; @LongColw2011], consistent with a high degree of elevational specialization as a result of competition or abiotic constraints. 
   
 ### Genus  
-
-
-Overall beta diversity between adjacent elevations at the genus-level is most commonly U-shaped (14/16), often with a low elevation truncation such that highest beta diversity occurs at high elevations. 
-In the Philippines [@Samson1997] and Costa Rica [@LongColw2011], beta diversity increases monotonically across elevations. 
-Turnover at the genus-level is typically lower than at the species-level. 
-Along many gradients, genus turnover is nearly zero across the majority of elevations and the change in genus composition is instead due to nestedness. 
+At the genus level, Beta~st~ declines with latitude (*n*=16, *P*=0.03, *R^2^*=0.25). 
+The genus composition changes more rapidly across elevations at lower latitudes, though the trend is weaker than at the species level. 
+All 16 gradients show high beta diversity toward the summit as the beta diversity elevational pattern is either U-shaped (14/16) or a monotonic increase (2/16). 
+The proportion of gradient-wide beta diversity at the genus level due to turnover is significantly higher in temperate regions (Fig. 2b; Wilcoxon rank sum test: *W*=49, *P*=0.042). 
+However, there is high variability in the genus turnover proportion among both temperate and tropical gradients; this apparent difference may be spurious. 
+At the gradient scale, genus turnover and genus nestedness are comparable along most gradients (Fig. 2b; Paired t-test: *t~15~*=-0.67, *P*=0.51). 
+Thus, when all sites along a given gradient are compared pairwise, the difference in genus composition results from both the replacement of one genus for another and the loss of genera without replacement. 
+However, between elevationally adjacent sites, genera, like species, tend to be nested (STATS). 
+The ant genus communities differ due to the loss of genera between elevations rather than the replacement of one genus with another. 
+In fact, along many gradients, turnover at the genus level is nearly zero across the majority of elevations. 
 The primary exceptions are in the Philippines [@Samson1997], where turnover is higher than nestedness except at the highest elevations and increases to a peak at mid-to-upper elevations, and in the McPherson Range in Australia [@BurwNaka2011], where turnover decreases monotonically and is overtaken by nestedness at middle elevations. 
 With common interpretations of turnover and nestedness **CITE**, the high nestedness and low turnover along most gradients suggest that environmental filtering is more important than biotic interactions in determining the ant genus community across elevations. 
 
 ### Subfamily    
+At the subfamily level, Beta~st~ shows no relationship with latitude (*n*=16, *P*=0.15, *R^2^*=0.08). 
+The change in subfamily composition across elevations does not vary consistently across latitudes. 
+
+
 At the subfamily level, overall beta diversity is low between adjacent elevations. 
 There is no turnover in the subfamily composition in any of the datasets. 
 Rather, all changes between adjacent elevations are due to nestedness as subfamilies are added or lost. 
@@ -256,20 +264,20 @@ A variety of patterns have been observed, though mid-elevational peaks are most 
 The pattern distribution is similar for both species (black) and genus (gray) richness. 
 The subfamily richness patterns are less discernible due to the small number of subfamilies along many gradients.  
   
+    
   
----  
 ![Figure 1a.](pubFigs/Figure1a.pdf)  
   
-![Figure 1b.](pubFigs/Figure1b.pdf)  
+![Figure 1b.](pubFigs/Figure1b.pdf)     
   
----    
 ![Figure 2a.](pubFigs/Figure2a.pdf)  
   
 ![Figure 2b.](pubFigs/Figure2b.pdf)  
-
----  
+  
 ![Figure 3a.](pubFigs/Figure3a.pdf)  
     
 ![Figure 3b.](pubFigs/Figure3b.pdf)  
   
+---  
+    
 # References  

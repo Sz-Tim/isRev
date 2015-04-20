@@ -102,6 +102,7 @@ loadAll()
     ggplot(betaTax.df, aes(x=TaxLevel, y=Turnover/TotalBeta, fill=Zone)) +
       ylim(0,1) + theme_is + 
       theme(axis.text.x=element_text(size=rel(2))) +
+      geom_hline(yintercept=0.5, linetype=2, colour="gray") +
       geom_boxplot() + 
       scale_fill_manual(name="", values=c("white", "gray70")) +
       labs(x="", y=expression(paste('Proportion of ', beta,' due to turnover')))
