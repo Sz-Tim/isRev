@@ -133,6 +133,12 @@
                                    c("Species", "Genus")))
   fisher.test(spgen.patt)  # P=0.39
 
+  #--- log(S) ~ log(Gen) ---#
+  lSlG.lme <- lmer(log(S) ~ log(Gen) + (1|Label), data=tvars.df)
+  summary(lSlG.lme)
+  lSlG.anc <- lm(log(S) ~ log(Gen)*Label, data=tvars.df)
+  anova(lSlG.anc)
+
   #--- subfamily: patterns by zone ---#
   sf.patt <- matrix(c(1,4,0,4,1, 3,1,1,1,0), ncol=2, byrow=FALSE, 
                     dimnames=list(c("D","LP","LPMP","MP","None"), 
@@ -157,6 +163,12 @@
                                     c("Genus", "Subfamily")))
   fisher.test(gensf.patt)  # P=0.84
 
+  #--- log(S) ~ log(SF) ---#
+  lSlSF.lme <- lmer(log(S) ~ log(SF) + (1|Label), data=tvars.df)
+  summary(lSlSF.lme)
+  lSlSF.anc <- lm(log(S) ~ log(SF)*Label, data=tvars.df)
+  anova(lSlSF.anc)
+
 
 ############
 ## Taxonomic proportions
@@ -174,12 +186,22 @@
   # mn:0.545; se:0.0204; med:0.531; min:0.391; max:0.731
   
   #### ANALYSES ####
-  #--- most diverse genus ---#
+  #--- most diverse genus proportion by latitude ---#
+  summary(lm(maxDivGen/Stot ~ abs(Latsamp), data=over.df)) # P=0.15, R2=0.08
+
+  #--- most diverse genus predicting rest ---#
   divG.lme <- lmer((S-SmaxDivGen) ~ SmaxDivGen + (1|Label), data=tvars.df)
   summary(divG.lme)
+  divG.anc <- lm((S-SmaxDivGen) ~ SmaxDivGen*Label, data=tvars.df)
+  anova(divG.anc)  
   
-  #--- log(S) ~ log(Gen) ---#
-  lSlG.lme <- lmer(log(S) ~ log(Gen) + (1|Label), data=tvars.df)
-  summary(lSlG.lme)
-  lSlG.anc <- lm(log(S) ~ log(Gen)*Label, data=tvars.df)
-  anova(lSlG.anc)
+  #--- most diverse subfamily proportion by latitude ---#
+  summary(lm(maxDivSF/Stot ~ abs(Latsamp), data=over.df)) # P=0.38; R2=0.06
+
+  #--- most diverse subfamily predicting rest ---#
+  divSF.lme <- lmer((S-SmaxDivSF) ~ SmaxDivSF + (1|Label), data=tvars.df)
+  summary(divSF.lme)
+  divSF.anc <- lm((S-SmaxDivSF) ~ SmaxDivSF*Label, data=tvars.df)
+  anova(divSF.anc)    
+  
+
