@@ -114,7 +114,14 @@ loadAll()
 #########
 
   #--- richness patterns of each taxonomic level ---#
-
+  pdf("ms/pubFigs/Figure3.pdf", width=w*1.25, height=h)
+    ggplot(patt.barSUM, aes(x=Pattern, fill=Tax, y=num)) + 
+      theme_is + 
+      geom_bar(stat="identity", position="dodge", colour="black") +
+      scale_fill_manual(name="Taxonomic \nLevel", 
+                        values=c("gray10", "gray70", "white")) +
+      labs(x="Richness Pattern", y="Number of gradients")
+  dev.off()
 
 
 #########

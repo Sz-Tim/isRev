@@ -59,10 +59,11 @@ There were 20 that met all five *a priori* sampling criteria, and 16 of those pr
 Thus, the majority of published studies describing ant richness across elevations did not employ sampling regimes sufficient to confidently capture the underlying richness pattern. 
 Nevertheless, the robust datasets included local and regional scales, tropic and temperate zones, mainland and island gradients, and wet and arid climates (Appendix). 
   
-I classified the ant elevational richness and beta diversity into five categories using definitions from the literature [@McCain2009; @McCain2010]. 
+I classified the ant elevational richness into five categories using definitions from the literature [@McCain2009; @McCain2010]. 
 In decreasing patterns, diversity is highest at the lowest elevation and declines steadily with increasing elevation. 
 In low plateau patterns, diversity is consistently high across at least the lowest 300m before declining monotonically. 
 Mid-peaks show highest diversity >300m from the mountain base and with at least 25% greater diversity than at the base. 
+Low plateaus with mid-peaks have highest diversity at least 300m from the base with high diversity across the lowest 300m. 
 In increasing patterns, diversity increases with elevation. 
 U-shaped patterns show highest diversity toward the base and summit, with depressed diversity at intermediate elevations. 
 No pattern was recorded when none of these definitions were met and the richness showed no consistent pattern across elevations. 

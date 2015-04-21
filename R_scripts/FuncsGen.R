@@ -31,6 +31,19 @@ loadAll <- function() {
   taxcomp.df$SpG.sim <- spSorAdj.df$sim - genSorAdj.df$sim
   taxcomp.df$SpG.sne <- spSorAdj.df$sne - genSorAdj.df$sne
   taxcomp.df$SpG.sor <- spSorAdj.df$sor - genSorAdj.df$sor
+  patt.bars <- data.frame(Tax=rep(c("Species", "Genus", "Subfamily"), 
+                                  times=c(20,16,16)),
+                          Pattern=c(as.character(over.df$Pattern), 
+                                    as.character(
+                                      over.df$genPatt[!is.na(over.df$genPatt)]),
+                                    as.character(
+                                      over.df$sfPatt[!is.na(over.df$sfPatt)])))
+  patt.barSUM <- data.frame(Tax=rep(c("Species","Genus","Subfamily"), each=5),
+                            Pattern=rep(c("D","LP","LPMP","MP","None"), 3),
+                            num=c(3,3,0,14,0, 4,3,2,7,0, 4,5,1,5,1))
+  patt.barSUM$Tax <- factor(patt.barSUM$Tax, 
+                          levels=c("Species", "Genus", "Subfamily"))
+  
   
   #--- useful summary objects ---#
   Transects <<- levels(spRng.df$Transect)  # Transects w/species range data
