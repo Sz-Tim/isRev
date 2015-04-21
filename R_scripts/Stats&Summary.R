@@ -13,33 +13,6 @@
   loadAll()
 
 
-############
-## Taxonomic proportions
-############
-
-  #### SUMMARIES ####
-  #--- most diverse genus ---#
-  with(over.df, summary(maxDivGen/Stot, na.rm=TRUE)) 
-  with(over.df, se(maxDivGen/Stot))
-    # mn:0.200; se:0.0157; med:0.205; min:0.071; max:0.306;
-
-  #--- most diverse subfamily ---#
-  with(over.df, summary(maxDivSF/Stot, na.rm=TRUE)) 
-  with(over.df, se(maxDivSF/Stot))
-    # mn:0.545; se:0.0204; med:0.531; min:0.391; max:0.731
-
-  #### ANALYSES ####
-  #--- most diverse genus ---#
-  divG.lme <- lmer((S-SmaxDivGen) ~ SmaxDivGen + (1|Label), data=tvars.df)
-  summary(divG.lme)
-  
-  #--- log(S) ~ log(Gen) ---#
-  lSlG.lme <- lmer(log(S) ~ log(Gen) + (1|Label), data=tvars.df)
-  summary(lSlG.lme)
-  lSlG.anc <- lm(log(S) ~ log(Gen)*Label, data=tvars.df)
-  anova(lSlG.anc)
-
-
 ########
 ## Range sizes
 ########
@@ -131,3 +104,31 @@
   plot(sor ~ sne, data=sfSorAdj.df, ylim=c(0,1), xlim=c(0,1));abline(b=1, a=0)
   summary(lm(sor ~ sim, data=sfSorAdj.df)) 
   plot(sor ~ sim, data=sfSorAdj.df, ylim=c(0,1), xlim=c(0,1));abline(b=1, a=0)
+
+
+
+############
+## Taxonomic proportions
+############
+
+  #### SUMMARIES ####
+  #--- most diverse genus ---#
+  with(over.df, summary(maxDivGen/Stot, na.rm=TRUE)) 
+  with(over.df, se(maxDivGen/Stot))
+  # mn:0.200; se:0.0157; med:0.205; min:0.071; max:0.306;
+  
+  #--- most diverse subfamily ---#
+  with(over.df, summary(maxDivSF/Stot, na.rm=TRUE)) 
+  with(over.df, se(maxDivSF/Stot))
+  # mn:0.545; se:0.0204; med:0.531; min:0.391; max:0.731
+  
+  #### ANALYSES ####
+  #--- most diverse genus ---#
+  divG.lme <- lmer((S-SmaxDivGen) ~ SmaxDivGen + (1|Label), data=tvars.df)
+  summary(divG.lme)
+  
+  #--- log(S) ~ log(Gen) ---#
+  lSlG.lme <- lmer(log(S) ~ log(Gen) + (1|Label), data=tvars.df)
+  summary(lSlG.lme)
+  lSlG.anc <- lm(log(S) ~ log(Gen)*Label, data=tvars.df)
+  anova(lSlG.anc)

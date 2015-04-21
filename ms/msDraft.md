@@ -170,6 +170,32 @@ This is consistent with competitive exclusion between congeners across elevation
 Nevertheless, high species turnover is not universal among the tropical gradients and turnover is consistently low in the temperate datasets. 
   
   
+# Taxonomic richness patterns  
+### Species richness  
+In the robust datasets, ant species richness most often peaks at intermediate elevations (14/20), though decreasing (3/20) and low plateau (3/20) patterns also occur (Fig. 3). 
+Regional and local scale datasets showed nearly identical species richness pattern distributions. 
+In the excluded datasets, the patterns were more variable. 
+In addition to the mid-peaks, decreases, and low plateaus seen in the robust datasets, there were also gradients with increasing richness and no identifiable richness pattern. 
+Furthermore, decreasing patterns were nearly as common as mid-peaks in the excluded datasets. 
+Some of these decreasing patterns, however, are likely an artefact of sampling bias. 
+The majority did not sample within the lowest 400m, potentially failing to capture the portion of the gradient across which the common patterns differ the most. 
+Ant species richness, therefore, shows a variety of elevational patterns, with richness often highest at intermediate elevations. 
+  
+### Genus richness  
+In the 16 robust datasets with species-level elevational ranges, the number of genera across elevations typically mirrors the number of species, and the number of species increases quite predictably with the number of genera (stats: lme?). 
+Genus richness peaks at or below the elevation with the highest species richness. 
+  
+### Subfamily richness  
+The number of ant subfamilies shows less distinct patterns elevationally than the number of species or the number of genera, though they are generally coarsely similar to the species and genus richness patterns. 
+The richness patterns within the non-dominant subfamilies are less clear due to the lower total number of species. 
+However, the subfamilies with enough species tend to follow the same overall trend as the total species richness pattern. 
+  
+### Wrap up and transition  
+Paragraph that wraps up, summarizes, and synthesizes the richness pattern results.  
+- Richness patterns are qualitatively similar across taxonomic resolution  
+- Patterns become increasingly less distinct as resolution decreases  
+  
+  
 # Dominant taxa  
 ### Most speciose genus  
 The most speciose genus in each dataset comprises 7–31% of the total species richness along the gradient (mean ± SE: 20.0 ± 1.57%). 
@@ -193,33 +219,6 @@ The elevational species richness pattern does not result from the richness patte
 - Rather, taxonomic subsets tend to show qualitatively similar patterns  
 - Much variation among transects in details, but most often, the most speciose taxon dominates at high elevations  
 - So ant richness pattern isn't contingent on taxonomy... underlying drivers may be the same for all subtaxa...   
-  
-# Taxonomic richness patterns  
-### Species richness  
-In the robust datasets, ant species richness most often peaks at intermediate elevations (14/20), though decreasing (3/20) and low plateau (3/20) patterns also occur (Fig. 1). 
-Regional and local scale datasets showed nearly identical species richness pattern distributions. 
-In the excluded datasets, the patterns were more variable. 
-In addition to the mid-peaks, decreases, and low plateaus seen in the robust datasets, there were also gradients with increasing richness and no identifiable richness pattern. 
-Furthermore, decreasing patterns were nearly as common as mid-peaks in the excluded datasets. 
-Some of these decreasing patterns, however, are likely an artefact of sampling bias. 
-The majority did not sample within the lowest 400m, potentially failing to capture the portion of the gradient across which the common patterns differ the most. 
-Ant species richness, therefore, shows a variety of elevational patterns, with richness often highest at intermediate elevations. 
-  
-### Genus richness  
-In the 16 robust datasets with species-level elevational ranges, the number of genera across elevations typically mirrors the number of species, and the number of species increases quite predictably with the number of genera (stats: lme?). 
-Genus richness peaks at or below the elevation with the highest species richness. 
- 
-  
-### Subfamily richness  
-The number of ant subfamilies shows less distinct patterns elevationally than the number of species or the number of genera, though they are generally coarsely similar to the species and genus richness patterns. 
-The richness patterns within the non-dominant subfamilies are less clear due to the lower total number of species. 
-However, the subfamilies with enough species tend to follow the same overall trend as the total species richness pattern. 
-  
-### Wrap up and transition  
-Paragraph that wraps up, summarizes, and synthesizes the richness pattern results.  
-- Richness patterns are qualitatively similar across taxonomic resolution  
-- Patterns become increasingly less distinct as resolution decreases  
- 
   
 
 # Into the unknown: what data do we need?  

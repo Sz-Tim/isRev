@@ -75,18 +75,29 @@ Figure 2: sp.STB & latitude; boxplot of grad.Tprop & zone (6 boxes);
 ##### Higher N for whole gradient, no T between adjacent elevations  
 ### v. Wrap up and transition  
   
-# V. Dominant taxon  
-Figure 3: Genus & subfamily predictions (A, B)
-### i. Most speciose genus  
-### ii. Most speciose subfamily  
-### iii. Wrap up and transition  
-  
-# VI. Richness  
+# V. Richness  
 Figure 4: Barplot with sp/gen/(sf) patterns categorized
 ### i. Species  
 ### ii. Genus  
 ### iii. Subfamily  
 ### iv. Wrap up and transition  
+  
+# VI. Dominant taxon  
+Figure 3: Genus & subfamily predictions (A, B)
+### i. Most speciose genus  
+7-31%  
+no significant latitudinal pattern  
+S.rest ~ S.dom -- variable b/r, but good on average  
+S.peak ~ S.dompeak  
+richness pattern of dominant is nested within total pattern  
+### ii. Most speciose subfamily  
+39-73%  
+tropics?
+S.rest ~ S.dom -- much higher concordance than at genus level  
+S.peak?  
+overall pattern not driven by one subfamily  
+rest of species are distributed similarly  
+### iii. Wrap up and transition  
   
 # VII. Into the future  
 

@@ -110,11 +110,19 @@ loadAll()
 
 
 #########
-## Figure 3 
+## Figure 3
+#########
+
+  #--- richness patterns of each taxonomic level ---#
+
+
+
+#########
+## Figure 4 
 #########
 
   #--- dominant genus predicting rest ---#
-  pdf("ms/pubFigs/Figure3a.pdf", width=w, height=h)
+  pdf("ms/pubFigs/Figure4a.pdf", width=w, height=h)
     ggplot(tvars.df, aes(x=SmaxDivGen, y=S-SmaxDivGen)) +
       theme_is +
       stat_smooth(aes(group=Label), se=F, method="lm", 
@@ -126,7 +134,7 @@ loadAll()
   dev.off()
 
   #--- dominant genus predicting rest ---#
-  pdf("ms/pubFigs/Figure3b.pdf", width=w, height=h)
+  pdf("ms/pubFigs/Figure4b.pdf", width=w, height=h)
     ggplot(tvars.df, aes(x=SmaxDivSF, y=S-SmaxDivSF)) +
       theme_is +
       stat_smooth(aes(group=Label), se=F, method="lm", 
@@ -137,9 +145,3 @@ loadAll()
            y=expression("Richness of remaining subfamilies"))
   dev.off()
 
-
-#########
-## Figure 4
-#########
-
-  #--- richness patterns of each taxonomic level ---#
