@@ -111,9 +111,22 @@
 ###########
 
   #--- species: patterns by zone ---#
-  spp.patt <- matrix(c(3,1,9,0,2,5), ncol=2, byrow=FALSE, 
+  spp.patt <- matrix(c(3,1,9, 0,2,5), ncol=2, byrow=FALSE, 
                      dimnames=list(c("D","LP","MP"), c("Temperate","Tropic")))
   fisher.test(spp.patt) # P=0.30
+
+  #--- genus: patterns by zone ---#
+  gen.patt <- matrix(c(3,1,0,6, 1,2,2,1), ncol=2, byrow=FALSE, 
+                     dimnames=list(c("D","LP", "LPMP","MP"), 
+                                   c("Temperate","Tropic")))
+  fisher.test(gen.patt) # P=0.11
+
+
+  #--- subfamily: patterns by zone ---#
+  sf.patt <- matrix(c(1,4,0,4,1, 3,1,1,1,0), ncol=2, byrow=FALSE, 
+                    dimnames=list(c("D","LP","LPMP","MP","None"), 
+                                  c("Temperate","Tropic")))
+  fisher.test(sf.patt) # P=0.28
 
 ############
 ## Taxonomic proportions
