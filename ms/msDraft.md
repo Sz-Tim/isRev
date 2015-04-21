@@ -211,23 +211,24 @@ These genera include *Camponotus* [@Sabu2008], *Formica* [@Gregg1963; @Allred198
 The proportion of species within the most speciose genus does not vary predictably across latitudes (*n*=16, *P*=0.15, *R^2^*=0.08). 
 While the overall richness pattern is predicted well by the richness pattern of the most speciose genus (STATS), the overall pattern is not driven solely by a single genus. 
 Rather, the species richness pattern of the most speciose genus is generally similar to the richness pattern of the remaining species; the richness of the most speciose genus predicts the richness of the remaining genera quite well along most gradients (Fig. 4a; STATS), though there is a fair amount of variability in the slopes among gradients (STATS: slope ranges). 
-The majority of the non-dominant genera (at least in terms of richness) do not have enough species or are not widespread enough to reliably discern a richness pattern. 
+Many of the non-dominant genera (at least in terms of richness) do not have enough species or are not widespread enough to reliably discern a richness pattern. 
 Those that are, however, tend to show a qualitatively similar elevational richness pattern both to the overall pattern and to the most speciose genus. 
   
 ### Most speciose subfamily  
 The most speciose subfamily along each gradient comprises 39–73% of the total species richness (mean ± SE: 54.5 ± 2.04%). 
 The dominant subfamily in terms of richness is either Formicinae [@Gregg1963; @Allred1982; @WheeWhee1986; @Hellrigl2003; @Glaser2006] or Myrmicinae [@Sabu2008; @Karaman2011; @MoodFran1982; @VanPelt1983; @Samson1997; @Fisher1998; @ArauFern2003; @BurwNaka2011; @LongColw2011; @Lessard2007; @SarnEcon2012]. 
 There is no significant latitudinal trend in the proportion of species in the most speciose subfamily (*n*=16, *P*=0.38, *R^2^*=0.06). 
-Across elevations, that proportion may be constant at low and middle elevations and then increase toward the peak (4/16), remain constant across the gradient (3/16), increase consistently across the gradient (3/16), increase to a plateau (3/16), remain constant at low and middle elevations and then decrease toward the peak (2/16), or be U-shaped (1/16). 
-Generally, the most speciose subfamily is distributed more broadly (GET RANGE DATA) and persists in higher elevations than species in the other subfamilies. 
-As with species richness patterns of the most speciose genus, the species richness patterns of the most speciose subfamilies tend to be remarkably similar to both the overall species richness pattern and the richness pattern of the remaining species. 
-The elevational species richness pattern does not result from the richness pattern of the most speciose subfamily. 
+As with the most speciose genus, the species richness pattern within the most speciose subfamily tends to be remarkably similar to both the overall species richness pattern and the richness pattern of the remaining species (Fig. 4b; STATS). 
+The elevational species richness pattern does not result from the richness pattern of the most speciose subfamily, but rather the dominant subfamily shows the same richness pattern as the remaining subfamilies. 
+As with the richness patterns of individual genera, the richness pattern of each subfamily along a gradient is often qualitatively similar to the overall richness pattern and to the pattern of the most speciose subfamily. 
+The patterns are largely nested. 
   
 ### Wrap up and transition  
-- Species richness patterns are not driven by a single genus or subfamily  
-- Rather, taxonomic subsets tend to show qualitatively similar patterns  
-- Much variation among transects in details, but most often, the most speciose taxon dominates at high elevations  
-- So ant richness pattern isn't contingent on taxonomy... underlying drivers may be the same for all subtaxa...   
+Species richness patterns are not driven by a single genus or subfamily  
+Rather, taxonomic subsets tend to show qualitatively similar patterns  
+Much variation among transects in details, but most often, the most speciose taxon dominates at high elevations  
+Stronger predictions at the subfamily level than at the genus level. Why??  
+So ant richness pattern isn't contingent on taxonomy... underlying drivers may be the same for all subtaxa...   
   
 
 # Into the unknown: what data do we need?  
