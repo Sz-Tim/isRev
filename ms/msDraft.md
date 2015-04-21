@@ -267,23 +267,24 @@ The relationship is strong with all datasets combined (black line) and much less
 **Figure 4.** Robust patterns of ant species richness across elevational gradients. 
 A variety of patterns have been observed, though mid-elevational peaks are most common. 
 The pattern distribution is similar for both species (black) and genus (gray) richness. 
-The subfamily richness patterns are less discernible due to the small number of subfamilies along many gradients.  
+The subfamily (white) richness patterns are less discernible due to the small number of subfamilies along many gradients.  
   
     
   
-![Figure 1a.](pubFigs/Figure1a.pdf)  
+![Figure 1a.](pubFigs/Fig1a.eps)  
   
-![Figure 1b.](pubFigs/Figure1b.pdf)     
+![Figure 1b.](pubFigs/Fig1b.eps)     
   
-![Figure 2a.](pubFigs/Figure2a.pdf)  
+![Figure 2a.](pubFigs/Fig2a.eps)  
   
-![Figure 2b.](pubFigs/Figure2b.pdf)  
+![Figure 2b.](pubFigs/Fig2b.eps)  
   
-![Figure 3.](pubFigs/Figure3.pdf)  
+![Figure 3.](pubFigs/Fig3.eps)  
 
-![Figure 4a.](pubFigs/Figure4a.pdf)  
+![Figure 4a.](pubFigs/Fig4a.eps)  
     
-![Figure 4b.](pubFigs/Figure4b.pdf)  
+![Figure 4b.](pubFigs/Fig4b.eps)  
+  
   
 ---  
     
