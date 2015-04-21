@@ -106,6 +106,14 @@
   plot(sor ~ sim, data=sfSorAdj.df, ylim=c(0,1), xlim=c(0,1));abline(b=1, a=0)
 
 
+###########
+## Richness
+###########
+
+  #--- species: patterns by zone ---#
+  spp.patt <- matrix(c(3,1,9,0,2,5), ncol=2, byrow=FALSE, 
+                     dimnames=list(c("D","LP","MP"), c("Temperate","Tropic")))
+  fisher.test(spp.patt) # P=0.30
 
 ############
 ## Taxonomic proportions

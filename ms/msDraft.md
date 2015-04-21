@@ -95,6 +95,7 @@ However, large ranged species have a disproportionate influence on the mean and 
 The midpoint method, where mean range size at each elevation is calculated as the mean elevational range of all species whose midpoints occur at that elevation, and the quartile method, which uses only species with ranges < 1/4 of the gradient, have been suggested as less biased methods [@McCaBrac2012; @Rohde1993]. 
 With these methods, there is little evidence of a trend in ant species range size along elevational gradients (midpoint: *R^2^* mean: 0.15, median: 0.03; quartile: *R^2^* mean: 0.20, median: 0.14). 
   
+**Build more context in this paragraph** 
 Thus, though ant elevational ranges do not show a consistent pattern along single elevational gradients, they do tend to increase with latitude. 
 This suggests that the thermal tolerances of tropical ant species are narrower than temperate species. 
 Alternatively, smaller elevational ranges are consistent with stronger interspecific competition in the tropics [@Pianka1966; @Willig2003], though of course these hypotheses are not mutually exclusive. 
@@ -159,6 +160,7 @@ Thus, there is a high degree of elevational overlap among subfamilies.
 Often, subfamilies are progressively excluded as elevation increases, likely due to environmental filtering. 
 With highly nested subfamily communities, there is little evidence for competitive exclusion across elevations at the subfamily level. 
   
+**Build more context in this paragraph** 
 Latitudinal trends in elevational beta diversity are contingent on taxonomic level. 
 Elevational community differences are most extreme between tropical ant species. 
 Furthermore, overall beta diversity between adjacent elevations declines in ants as taxonomic resolution decreases. 
@@ -168,17 +170,17 @@ Communities become increasingly nested as the differences are due not to the rep
 Even in the tropical datasets, where species turnover is highest, the genus turnover is substantially lower. 
 This is consistent with competitive exclusion between congeners across elevations, though heightened sensitivity to abiotic conditions and consequent elevational specialization could also produce this pattern. 
 Nevertheless, high species turnover is not universal among the tropical gradients and turnover is consistently low in the temperate datasets. 
+**Smooth this transition**    
   
-  
-# Taxonomic richness patterns  
+# Richness patterns  
 ### Species richness  
-In the robust datasets, ant species richness most often peaks at intermediate elevations (14/20), though decreasing (3/20) and low plateau (3/20) patterns also occur (Fig. 3). 
-Regional and local scale datasets showed nearly identical species richness pattern distributions. 
+In the robust datasets, ant species richness most often peaks at intermediate elevations (14/20), though decreasing (3/20) and low plateau (3/20) patterns also occur (Fig. 3, black bars). 
+Despite strong latitudinal trends in range size and beta diversity, the richness pattern distribution of tropical gradients is not significantly different than that of temperate gradients (Fisher's Exact Test: *P*=0.30). 
 In the excluded datasets, the patterns were more variable. 
-In addition to the mid-peaks, decreases, and low plateaus seen in the robust datasets, there were also gradients with increasing richness and no identifiable richness pattern. 
+In addition to the mid-peaks, decreases, and low plateaus seen in the robust datasets, there were also gradients with increasing richness and with no identifiable pattern. 
 Furthermore, decreasing patterns were nearly as common as mid-peaks in the excluded datasets. 
 Some of these decreasing patterns, however, are likely an artefact of sampling bias. 
-The majority did not sample within the lowest 400m, potentially failing to capture the portion of the gradient across which the common patterns differ the most. 
+Of the excluded gradients that detected decreases, the majority did not sample within the lowest 400m, potentially failing to capture the portion of the gradient across which the common patterns differ the most. 
 Ant species richness, therefore, shows a variety of elevational patterns, with richness often highest at intermediate elevations. 
   
 ### Genus richness  
