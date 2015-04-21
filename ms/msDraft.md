@@ -176,7 +176,7 @@ Nevertheless, high species turnover is not universal among the tropical gradient
 # Richness patterns  
 ### Species richness  
 In the robust datasets, ant species richness most often peaks at intermediate elevations (14/20), though decreasing (3/20) and low plateau (3/20) patterns also occur (Fig. 3, black bars). 
-Despite strong latitudinal trends in range size and beta diversity, the richness pattern distribution of tropical gradients is not significantly different than that of temperate gradients (Fisher's Exact Test: *P*=0.30). 
+Despite strong latitudinal trends in range size and beta diversity, the richness pattern distribution of tropical gradients is not significantly different than that of temperate gradients (Fisher's Exact Test: *n*=20, *P*=0.30). 
 In the excluded datasets, the patterns were more variable. 
 In addition to the mid-peaks, decreases, and low plateaus seen in the robust datasets, there were also gradients with increasing richness and with no identifiable pattern. 
 Furthermore, decreasing patterns were nearly as common as mid-peaks in the excluded datasets. 
@@ -185,16 +185,20 @@ Of the excluded gradients that detected decreases, the majority did not sample w
 Ant species richness, therefore, shows a variety of elevational patterns, with richness often highest at intermediate elevations. 
   
 ### Genus richness  
-In the 16 robust datasets with species-level elevational ranges, the number of genera across elevations typically mirrors the number of species, and the number of species increases quite predictably with the number of genera (stats: lme?). 
-Genus richness peaks at or below the elevation with the highest species richness. 
+The number of genera across elevations typically mirrors the number of species, with the genus richness pattern the same as the species richness pattern in 11/16 gradients. 
+Moreover, the distribution of genus richness patterns does not differ significantly from the species richness patterns (Fig. 3, gray and black bars; Fisher's Exact Tests: *n~species~*=20, *n~genus~*=16, *P*=0.28; *n~species~*=16, *n~genus~*=16, *P*=0.39), though there is a tendency for the genus richness peaks to be less extreme, resulting in low plateaus with mid peaks that were not seen at the species level. 
+The distribution of genus richness patterns does not vary significantly between tropical and temperate datasets (Fisher's Exact Test: *n*=16, *P*=0.11). 
+The number of species increases quite predictably with the number of genera (STATS), lending further evidence that the richness patterns are nested taxonomically. 
   
 ### Subfamily richness  
-The number of ant subfamilies shows less distinct patterns elevationally than the number of species or the number of genera, though they are generally coarsely similar to the species and genus richness patterns. 
-The richness patterns within the non-dominant subfamilies are less clear due to the lower total number of species. 
-However, the subfamilies with enough species tend to follow the same overall trend as the total species richness pattern. 
-  
+The number of ant subfamilies shows less distinct patterns elevationally than the number of species or genera due to the smaller number of subfamilies, though they are generally coarsely similar to the species and genus richness patterns. 
+The distribution of subfamily richness patterns is not significantly different from that of the species richness patterns (Fig.3, white and black bars; Fisher's Exact Tests: *n~species~*=20, *n~subfamily~*=16, *P*=0.10; *n~species~*=16, *n~subfamily~*=16, *P*=0.20) nor from that of the genus richness (Fig. 3, gray and black bars; Fisher's Exact Test: *n*=16; *P*=0.84).
+Like the species and genus patterns, the distribution of subfamily richness patterns does not vary significantly between tropical and temperate gradients (Fisher's Exact Test: *n*=16, *P*=0.28).
+The number of subfamilies does predict the number of species (STATS), though of course less reliably than the number of genera. 
+    
 ### Wrap up and transition  
 Paragraph that wraps up, summarizes, and synthesizes the richness pattern results.  
+The underlying ecological or evolutionary factors that drive richness patterns appear to be affecting dynamics across taxonomic levels similarly.
 - Richness patterns are qualitatively similar across taxonomic resolution  
 - Patterns become increasingly less distinct as resolution decreases  
   
