@@ -65,7 +65,6 @@ In low plateau patterns, diversity is consistently high across at least the lowe
 Mid-peaks show highest diversity >300m from the mountain base and with at least 25% greater diversity than at the base. 
 Low plateaus with mid-peaks have highest diversity at least 300m from the base with high diversity across the lowest 300m. 
 In increasing patterns, diversity increases with elevation. 
-U-shaped patterns show highest diversity toward the base and summit, with depressed diversity at intermediate elevations. 
 No pattern was recorded when none of these definitions were met and the richness showed no consistent pattern across elevations. 
 Though more patterns are possible [@McCain2009], the datasets here were characterized well by these five patterns.  
   
@@ -171,7 +170,7 @@ Communities become increasingly nested as the differences are due not to the rep
 Even in the tropical datasets, where species turnover is highest, the genus turnover is substantially lower. 
 This is consistent with competitive exclusion between congeners across elevations, though heightened sensitivity to abiotic conditions and consequent elevational specialization could also produce this pattern. 
 Nevertheless, high species turnover is not universal among the tropical gradients and turnover is consistently low in the temperate datasets. 
-**Smooth this transition**    
+**Smooth this transition to connect ranges/beta diversity to richness more**    
   
 # Richness patterns  
 ### Species richness  
@@ -186,7 +185,7 @@ Ant species richness, therefore, shows a variety of elevational patterns, with r
   
 ### Genus richness  
 The number of genera across elevations typically mirrors the number of species, with the genus richness pattern the same as the species richness pattern in 11/16 gradients. 
-Moreover, the distribution of genus richness patterns does not differ significantly from the species richness patterns (Fig. 3, gray and black bars; Fisher's Exact Tests: *n~species~*=20, *n~genus~*=16, *P*=0.28; *n~species~*=16, *n~genus~*=16, *P*=0.39), though there is a tendency for the genus richness peaks to be less extreme, resulting in low plateaus with mid peaks that were not seen at the species level. 
+Moreover, the distribution of genus richness patterns does not differ significantly from the species richness patterns (Fig. 3, gray and black bars; Fisher's Exact Tests: *n~species~*=20, *n~genus~*=16, *P*=0.28; *n~species~*=16, *n~genus~*=16, *P*=0.39), though there is a tendency for the peak in genus richness to be less pronounced, resulting in several low plateaus with mid peaks that were not seen at the species level. 
 The distribution of genus richness patterns does not vary significantly between tropical and temperate datasets (Fisher's Exact Test: *n*=16, *P*=0.11). 
 The number of species increases quite predictably with the number of genera (STATS), lending further evidence that the richness patterns are nested taxonomically. 
   
@@ -219,21 +218,24 @@ The most speciose subfamily along each gradient comprises 39–73% of the total 
 The dominant subfamily in terms of richness is either Formicinae [@Gregg1963; @Allred1982; @WheeWhee1986; @Hellrigl2003; @Glaser2006] or Myrmicinae [@Sabu2008; @Karaman2011; @MoodFran1982; @VanPelt1983; @Samson1997; @Fisher1998; @ArauFern2003; @BurwNaka2011; @LongColw2011; @Lessard2007; @SarnEcon2012]. 
 There is no significant latitudinal trend in the proportion of species in the most speciose subfamily (*n*=16, *P*=0.38, *R^2^*=0.06). 
 As with the most speciose genus, the species richness pattern within the most speciose subfamily tends to be remarkably similar to both the overall species richness pattern and the richness pattern of the remaining species (Fig. 4b; STATS). 
-The elevational species richness pattern does not result from the richness pattern of the most speciose subfamily, but rather the dominant subfamily shows the same richness pattern as the remaining subfamilies. 
+The elevational species richness pattern is not simply the result of the most speciose subfamily. 
+Rather, the dominant subfamily shows the same richness pattern as the remaining subfamilies. 
 As with the richness patterns of individual genera, the richness pattern of each subfamily along a gradient is often qualitatively similar to the overall richness pattern and to the pattern of the most speciose subfamily. 
 The patterns are largely nested. 
   
 ### Wrap up and transition  
-Species richness patterns are not driven by a single genus or subfamily  
-Rather, taxonomic subsets tend to show qualitatively similar patterns  
-Much variation among transects in details, but most often, the most speciose taxon dominates at high elevations  
-Stronger predictions at the subfamily level than at the genus level. Why??  
-So ant richness pattern isn't contingent on taxonomy... underlying drivers may be the same for all subtaxa...   
+Ant species richness patterns across elevations are not, therefore, driven by a single genus or a single subfamily. 
+Despite often comprising a sizable proportion of species, the most speciose genus or subfamily along a gradient most often shows a similar richness pattern across elevations as the remaining species. 
+Though there is, of course, variability, the richness pattern within each genus or subfamily tends to be broadly similar to the whole. 
+Moreover, the number of genera tends to correspond with the number of species across elevations. 
+This suggests that the key factors shaping the richness of ants across a given elevational gradient may act on all ant taxa similarly, regardless of ecological differences. 
+In contrast to the dramatic latitudinal differences in beta diversity and elevational range size, ant species richness patterns do not appear to vary consistently with latitude. 
+Thus, while range sizes and changes in species composition are inherently tied to variation in species richness, they perhaps are not as directly related at the scale of elevational gradients. 
   
-
-# Into the unknown: what data do we need?  
-Many hypotheses have been proposed as drivers of ant community structure, richness, and diversity along elevational gradients. 
-However, the consistent and reliable data needed to rigorously evaluate these hypotheses are lacking at a broad scale. 
+  
+# Research gaps  
+Many hypotheses have been proposed as drivers of ant community structure, richness, and diversity along elevational gradients, ranging from current climate to area to competition to habitat structure **CITE**[@Pianka1966; @Willig2003]. 
+However, the consistent and reliable data needed to rigorously evaluate these varied hypotheses are lacking at a broad scale. 
 Habitat complexity, and in particular vegetation structure and leaf litter depth, has been suggested as a potential driver of ant diversity [@LassHoch2004; @Sarty2006; @PachVasc2011; @Bharti2013]. 
 Such data have not been widely collected across elevational gradients with ant species data. 
 Additionally, we know little of the basic biology for many species of ants. 
@@ -243,8 +245,11 @@ Finally, ant communities can vary substantially across seasons and years [@Bisho
 A greater focus on seasonal and annual fluctuations will inform mechanistic approaches to understanding patterns of ant communities. 
 **Add Alex Smith, Machac**
   
+  
 # Conclusion  
   
+  
+---  
   
 # Figure Legends  
 **Figure 1.** Elevational range sizes of ant species increases with latitude. 
@@ -259,33 +264,29 @@ That is, the differences in ant communities across elevations is more extreme in
 At 0.5 (dotted line), turnover and nestedness contribute equally to the change in community composition. 
 The ant communities differ primarily due to the sequential addition or loss of taxa across elevations rather than due to the replacement of one taxon with another.  
 
-**Figure 3.** Richness of the most speciose genus or subfamily predicts the richness of the remaining species. 
+**Figure 3.** Robust patterns of ant species richness across elevational gradients. 
+A variety of patterns have been observed, though mid-elevational peaks are most common. 
+The pattern distribution is similar for both species (black) and genus (gray) richness. 
+The subfamily (white) richness patterns are less discernible due to the small number of subfamilies along many gradients.  
+
+**Figure 4.** Richness of the most speciose genus or subfamily predicts the richness of the remaining species. 
 (a) The elevational richness pattern of the most speciose genus is nested within the richness pattern of the remaining species for most gradients. 
 The trend is apparent with all datasets combined (black line) and within each gradients (gray lines). 
 There is much variability in the slope of the relationship across gradients and, in one case, a negative relationship. 
 (b) The apparent nestedness of the richness patterns becomes stronger at the subfamily level. 
 The relationship is strong with all datasets combined (black line) and much less variable among transects (gray lines) compared to the genus level.  
 
-**Figure 4.** Robust patterns of ant species richness across elevational gradients. 
-A variety of patterns have been observed, though mid-elevational peaks are most common. 
-The pattern distribution is similar for both species (black) and genus (gray) richness. 
-The subfamily (white) richness patterns are less discernible due to the small number of subfamilies along many gradients.  
+
   
     
   
-![Figure 1a.](pubFigs/Fig1a.eps)  
+![Figure 1.](pubFigs/Fig1.eps)      
   
-![Figure 1b.](pubFigs/Fig1b.eps)     
-  
-![Figure 2a.](pubFigs/Fig2a.eps)  
-  
-![Figure 2b.](pubFigs/Fig2b.eps)  
+![Figure 2.](pubFigs/Fig2.eps)  
   
 ![Figure 3.](pubFigs/Fig3.eps)  
 
-![Figure 4a.](pubFigs/Fig4a.eps)  
-    
-![Figure 4b.](pubFigs/Fig4b.eps)  
+![Figure 4.](pubFigs/Fig4.eps)  
   
   
 ---  
