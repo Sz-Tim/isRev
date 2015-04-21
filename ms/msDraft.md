@@ -197,10 +197,11 @@ Like the species and genus patterns, the distribution of subfamily richness patt
 The number of subfamilies does predict the number of species (STATS), though of course less reliably than the number of genera. 
     
 ### Wrap up and transition  
-Paragraph that wraps up, summarizes, and synthesizes the richness pattern results.  
-The underlying ecological or evolutionary factors that drive richness patterns appear to be affecting dynamics across taxonomic levels similarly.
-- Richness patterns are qualitatively similar across taxonomic resolution  
-- Patterns become increasingly less distinct as resolution decreases  
+Ant richness, therefore, is commonly high at intermediate elevations at the species, genus, and subfamily levels. 
+Consequently, it appears that the underlying ecological or evolutionary factors driving richness are creating similar patterns at multiple taxonomic scales. 
+It may seem intuitive that the number of species would increase with the number of genera, though in fact the species community can be over- or underdispersed phylogenetically [@Webb2002], with the degree phylogenetic dispersion possibly arising from a balance between environmental filtering, neutral processes, and competition [@Webb2002; @Machac2011; @KembHubb2006]. 
+The similarity in richness patterns across taxonomic levels suggests that ant species across the many genera and subfamilies along each gradient may be responding similarly to the combination of processes affecting speciation and community assembly. 
+Nonetheless, given the disparate number of species within each ant genus or subfamily, the pattern of species richness across communities on an elevational gradient may simply result from the richness pattern of the most speciose genus or subfamily along the gradient. 
   
   
 # Dominant taxa  
@@ -278,9 +279,11 @@ The subfamily richness patterns are less discernible due to the small number of 
   
 ![Figure 2b.](pubFigs/Figure2b.pdf)  
   
-![Figure 3a.](pubFigs/Figure3a.pdf)  
+![Figure 3.](pubFigs/Figure3.pdf)  
+
+![Figure 4a.](pubFigs/Figure4a.pdf)  
     
-![Figure 3b.](pubFigs/Figure3b.pdf)  
+![Figure 4b.](pubFigs/Figure4b.pdf)  
   
 ---  
     

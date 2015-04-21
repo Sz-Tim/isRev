@@ -32,7 +32,7 @@ loadAll()
   #--- mean and median range size by latitude ---#
   pdf("ms/pubFigs/Figure1a.pdf", width=w*1.25, height=h)
     ggplot(over.df, aes(x=abs(Latsamp))) + 
-      theme_is +
+      theme_is + ylim(0,1100) +
       geom_point(aes(y=sp.mnRng, shape="Mean"), size=4) + 
       geom_segment(aes(xend=abs(Latsamp), 
                        y=sp.mnRng+seRng, 
@@ -51,7 +51,7 @@ loadAll()
   #--- mean range size on truncated mountains by latitude ---#
   pdf("ms/pubFigs/Figure1b.pdf", width=w*1.25, height=h)
     ggplot(over.df, aes(x=abs(Latsamp))) + 
-      theme_is +
+      theme_is + ylim(0,1100) +
       geom_point(aes(y=sp.mnRng.2000, colour="2000m"), size=4) + 
       geom_segment(aes(xend=abs(Latsamp), 
                        y=sp.mnRng.2000+sp.seRng.2000, 

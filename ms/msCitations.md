@@ -10,10 +10,12 @@
 @Ghalambor2006  
 @HollWils1990  
 @Janzen1967  
+@KembHubb2006  
 @Lanan2014  
 @Legendre2014  
 @Lomolino2001  
 @LongColw2011  
+@Machac2011  
 @McCain2005b  
 @McCain2009  
 @McCain2009b
@@ -32,4 +34,5 @@
 @Sheldon2015  
 @Sunday2011  
 @Svenning2011  
+@Webb2002  
 @Willig2003  
