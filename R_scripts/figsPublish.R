@@ -7,8 +7,8 @@
 ## Load libraries, functions, data
 #######
 
-library(ggplot2); theme_set(theme_bw()); library(grid); library(lme4)
-library(xlsx); library(plyr); library(vegan); library(betapart)
+library(ggplot2); theme_set(theme_bw()); library(grid); library(gridExtra)
+library(xlsx); library(plyr); library(vegan); library(betapart); library(lme4)
 source("R_scripts/FuncsGen.R")
 loadAll()
 
@@ -20,8 +20,8 @@ loadAll()
                     axis.text.x=element_text(size=rel(1.5)),
                     axis.title.y=element_text(size=rel(1.5), vjust=1.5),
                     axis.text.y=element_text(size=rel(1.5)),
-                    legend.title=element_text(size=rel(1.5)),
-                    legend.key.size=unit(1, "cm"),
+                    legend.title=element_text(size=rel(1.5), vjust=0.3),
+                    legend.key.size=unit(0.75, "cm"),
                     legend.text=element_text(size=rel(1.5))) 
 
 
@@ -29,8 +29,8 @@ loadAll()
 ## Figure 1
 #########
 
-  #--- mean and median range size by latitude ---#
-  ggplot(over.df, aes(x=abs(Latsamp))) + 
+  #--- 1a. mean and median range size by latitude ---#
+  f1a <- ggplot(over.df, aes(x=abs(Latsamp))) + 
     theme_is + ylim(0,1100) +
     geom_point(aes(y=sp.mnRng, shape="Mean"), size=4) + 
     geom_segment(aes(xend=abs(Latsamp), 
@@ -42,13 +42,13 @@ loadAll()
     geom_point(aes(y=sp.medRng, shape="Median"), size=4) +
     stat_smooth(aes(y=sp.medRng), se=FALSE, method="lm", 
                 colour="black", size=1, linetype=2) +
+    annotate("text", x=12, y=1000, label="a.", size=10) + 
     scale_shape_manual(name="", values=c("Mean"=19,
                                          "Median"=1)) + 
     labs(x="Degrees from equator", y="Elevational range (m)")
-  ggsave("ms/pubFigs/Fig1a.eps", width=w*1.25, height=h)
 
-  #--- mean range size on truncated mountains by latitude ---#
-  ggplot(over.df, aes(x=abs(Latsamp))) + 
+  #--- 1b. mean range size on truncated mountains by latitude ---#
+  f1b <- ggplot(over.df, aes(x=abs(Latsamp))) + 
     theme_is + ylim(0,1100) +
     geom_point(aes(y=sp.mnRng.2000, colour="2000m"), size=4) + 
     geom_segment(aes(xend=abs(Latsamp), 
@@ -74,74 +74,95 @@ loadAll()
                  arrow=arrow(angle=90, length=unit(0.2, "cm"), ends="both")) +
     stat_smooth(aes(y=sp.mnRng.1600, colour="1600m"), 
                 se=FALSE, method="lm", size=1) +
+    annotate("text", x=12, y=1000, label="b.", size=10) + 
     scale_colour_manual(name="Gradient \nTruncation",
                         values=c("2000m"="gray20",
                                  "1800m"="gray50",
                                  "1600m"="gray80")) +
     labs(x="Degrees from equator", y="Elevational range (m)")
-  ggsave("ms/pubFigs/Fig1b.eps", width=w*1.25, height=h)
+
+
+  #--- save figure ---#
+  fig1 <- arrangeGrob(f1a, f1b, ncol=2)
+  ggsave("ms/pubFigs/Fig1.eps", fig1, width=w*2.5, height=h)
 
 #########
 ## Figure 2
 #########
 
   #--- sp.STB vs latitude ---#
-  ggplot(over.df, aes(x=abs(Latsamp), y=sp.STB)) + 
+  fig2 <- ggplot(over.df, aes(x=abs(Latsamp), y=sp.STB)) + 
     theme_is +
     geom_point(size=4) +
     stat_smooth(se=FALSE, method="lm", colour="black", size=1) +
     labs(x="Degrees from equator", 
          y=expression(paste(beta[' st'])))
-  ggsave("ms/pubFigs/Fig2a.eps", width=w, height=h)
-
-  #--- turnover proportion by taxonomy and zone ---#
-  ggplot(betaTax.df, aes(x=TaxLevel, y=Turnover/TotalBeta, fill=Zone)) +
-    ylim(0,1) + theme_is + 
-    theme(axis.text.x=element_text(size=rel(2))) +
-    geom_hline(yintercept=0.5, linetype=2, colour="gray") +
-    geom_boxplot() + 
-    scale_fill_manual(name="", values=c("white", "gray70")) +
-    labs(x="", y=expression(paste('Proportion of ', beta,' due to turnover')))
-  ggsave("ms/pubFigs/Fig2b.eps", width=w*1.25, height=h)
+  
+  #--- save figure ---#
+  ggsave("ms/pubFigs/Fig2.eps", fig2, width=w, height=h)
 
 
 #########
 ## Figure 3
 #########
 
+  #--- turnover proportion by taxonomy and zone ---#
+  fig3 <- ggplot(betaTax.df, aes(x=TaxLevel, y=Turnover/TotalBeta, fill=Zone)) +
+    ylim(0,1) + theme_is + 
+    theme(axis.text.x=element_text(size=rel(2))) +
+    geom_hline(yintercept=0.5, linetype=2, colour="gray") +
+    geom_boxplot() + 
+    scale_fill_manual(name="", values=c("white", "gray70")) +
+    labs(x="", y=expression(paste('Proportion of ', beta,' due to turnover')))
+  
+  
+  #--- save figure ---#
+  ggsave("ms/pubFigs/Fig3.eps", fig3, width=w*1.25, height=h)
+
+
+#########
+## Figure 4
+#########
+
   #--- richness patterns of each taxonomic level ---#
-  ggplot(patt.barSUM, aes(x=Pattern, fill=Tax, y=num)) + 
-    theme_is + 
+  fig4 <- ggplot(patt.barSUM, aes(x=Pattern, fill=Tax, y=num)) + 
+    theme_is +
     geom_bar(stat="identity", position="dodge", colour="black") +
     scale_fill_manual(name="Taxonomic \nLevel", 
                       values=c("gray10", "gray70", "white")) +
     labs(x="Richness Pattern", y="Number of gradients")
-  ggsave("ms/pubFigs/Fig3.eps", width=w*1.25, height=h)
+
+  #--- save figure ---#
+  ggsave("ms/pubFigs/Fig4.eps", fig4, width=w*1.25, height=h)
 
 
 #########
-## Figure 4 
+## Figure 5 
 #########
 
   #--- dominant genus predicting rest ---#
-  ggplot(tvars.df, aes(x=SmaxDivGen, y=S-SmaxDivGen)) +
+  f5a <- ggplot(tvars.df, aes(x=SmaxDivGen, y=S-SmaxDivGen)) +
     theme_is +
     stat_smooth(aes(group=Label), se=F, method="lm", 
                 colour="gray", size=1) +
     stat_smooth(se=F, method="lm", colour="black", size=1.5) +  
     geom_point(size=3) +
+    annotate("text", x=5, y=190, label="a.", size=10) + 
     labs(x="Richness of most speciose genus", 
          y=expression("Richness of remaining genera"))
-  ggsave("ms/pubFigs/Fig4a.eps", width=w, height=h)
 
   #--- dominant genus predicting rest ---#
-  ggplot(tvars.df, aes(x=SmaxDivSF, y=S-SmaxDivSF)) +
+  f5b <- ggplot(tvars.df, aes(x=SmaxDivSF, y=S-SmaxDivSF)) +
     theme_is +
     stat_smooth(aes(group=Label), se=F, method="lm", 
                 colour="gray", size=1) +
     stat_smooth(se=F, method="lm", colour="black", size=1.5) +  
     geom_point(size=3) +
+    annotate("text", x=18, y=95, label="b.", size=10) + 
     labs(x="Richness of most speciose subfamily", 
          y=expression("Richness of remaining subfamilies"))
-  ggsave("ms/pubFigs/Fig4b.eps", width=w, height=h)
+
+  #--- save figure ---#
+  fig5 <- arrangeGrob(f5a, f5b, ncol=2)
+  ggsave("ms/pubFigs/Fig5.eps", fig5, width=w*2, height=h)
 

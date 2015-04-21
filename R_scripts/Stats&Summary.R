@@ -37,6 +37,8 @@
   #--- species ranges by latitude ---#
   lat.rng.sp.all <- lm(over.df$sp.mnRng ~ abs(over.df$Latsamp))
   summary(lat.rng.sp.all) # t.14=3.03, P=0.009, R2=0.353
+  lat.rng.sp.med <- lm(over.df$sp.medRng ~ abs(over.df$Latsamp))
+  summary(lat.rng.sp.med) # t.14=2.22, P=0.04, R2=0.208
   lat.rng.sp.1600 <- lm(over.df$sp.mnRng.1600 ~ abs(over.df$Latsamp))
   summary(lat.rng.sp.1600) # t.11=2.70, P=0.021, R2=0.344
   lat.rng.sp.1800 <- lm(over.df$sp.mnRng.1800 ~ abs(over.df$Latsamp))

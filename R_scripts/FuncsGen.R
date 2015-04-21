@@ -139,5 +139,3 @@ band.bar <- function(range.df, els) {
   stud <- data.frame(trans, elevations, subf, gen, sp, rng, el.lo, el.hi)
   return(stud)
 }
-
-

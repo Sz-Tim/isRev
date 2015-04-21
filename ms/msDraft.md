@@ -251,25 +251,28 @@ A greater focus on seasonal and annual fluctuations will inform mechanistic appr
   
 ---  
   
+  
 # Figure Legends  
 **Figure 1.** Elevational range sizes of ant species increases with latitude. 
-(a) Both the mean (solid; ± 1 standard error) and median (open) elevational range increases with distance from the equator (STATS). 
+(a) Both the mean (solid; ± 1 standard error) and median (open) elevational range increases with distance from the equator (mean: *n*=16, *P*=0.009, *R^2^*=0.353; median: *n*=16, *P*=0.04, *R^2^*=0.208). 
 (b) This trend does not appear to be driven by the height of the mountain. 
-The mean elevational range size increases with latitude with all three truncation heights (STATS).  
+The mean elevational range size increases with latitude with all three truncation heights (1600m subset: black, *n*=13, *P*=0.021, *R^2^*=0.344; 1800m subset: dark gray, *n*=12, *P*=0.012, *R^2^*=0.437; 2000m subset: light gray) *n*=10, *P*=0.033, *R^2^*=0.384).  
 
-**Figure 2.** Gradient-wide beta diversity decreases with latitude and turnover decreases with taxonomic resolution. 
-(a) Total beta diversity across each elevational gradient, standardized for the number of sampled elevations, declines with latitude (STATS). 
+**Figure 2.** Gradient-wide beta diversity decreases with latitude.
+Total beta diversity across each elevational gradient, standardized for the number of sampled elevations, declines with latitude (STATS). 
 That is, the differences in ant communities across elevations is more extreme in the tropics. 
-(b) In both temperate (white) and tropic (gray) gradients, the proportion of beta diversity due to turnover decreases at higher taxonomic levels. 
+
+**Figure 3.** Proportion of gradient-wide beta diversity due to turnover decreases with taxonomic resolution. 
+In both temperate (white) and tropic (gray) gradients, the proportion of beta diversity due to turnover decreases at higher taxonomic levels. 
 At 0.5 (dotted line), turnover and nestedness contribute equally to the change in community composition. 
 The ant communities differ primarily due to the sequential addition or loss of taxa across elevations rather than due to the replacement of one taxon with another.  
 
-**Figure 3.** Robust patterns of ant species richness across elevational gradients. 
+**Figure 4.** Robust patterns of ant species richness across elevational gradients. 
 A variety of patterns have been observed, though mid-elevational peaks are most common. 
 The pattern distribution is similar for both species (black) and genus (gray) richness. 
 The subfamily (white) richness patterns are less discernible due to the small number of subfamilies along many gradients.  
 
-**Figure 4.** Richness of the most speciose genus or subfamily predicts the richness of the remaining species. 
+**Figure 5.** Richness of the most speciose genus or subfamily predicts the richness of the remaining species. 
 (a) The elevational richness pattern of the most speciose genus is nested within the richness pattern of the remaining species for most gradients. 
 The trend is apparent with all datasets combined (black line) and within each gradients (gray lines). 
 There is much variability in the slope of the relationship across gradients and, in one case, a negative relationship. 
@@ -287,6 +290,8 @@ The relationship is strong with all datasets combined (black line) and much less
 ![Figure 3.](pubFigs/Fig3.eps)  
 
 ![Figure 4.](pubFigs/Fig4.eps)  
+
+![Figure 5.](pubFigs/Fig5.eps)
   
   
 ---  
