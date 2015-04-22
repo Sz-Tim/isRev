@@ -237,11 +237,12 @@ However, the consistent and reliable data needed to rigorously evaluate these va
 Habitat complexity, and in particular vegetation structure and leaf litter depth, has been suggested as a potential driver of ant diversity [@LassHoch2004; @Sarty2006; @PachVasc2011; @Bharti2013]. 
 Such data have not been widely collected across elevational gradients with ant species data. 
 Additionally, we know little of the basic biology for many species of ants. 
-Dietary, foraging, and nesting habits can vary dramatically within a genus or even within a species **CITE**. 
+Dietary, foraging, and nesting habits can vary dramatically within a genus and even within a species **CITE**. 
 Understanding how biotic interactions, such as competition for space or food resources, and changes in their strength across elevations affect ant communities relies on thoroughly detailing behavior across a wide taxonomic variety of ant species. 
 Finally, ant communities can vary substantially across seasons and years [@Bishop2014], variation that has rarely been accounted for. 
 A greater focus on seasonal and annual fluctuations will inform mechanistic approaches to understanding patterns of ant communities. 
-**Add Alex Smith, Machac**
+Finally, a recent phylogenetic analysis of tropical ants across elevations found that the ant communities were phylogenetically clustered, suggesting a strong role of environmental filtering [@Smith2014]. 
+Increased focus on phylogenetic patterns may help to disentangle the interplay of ecological and evolutionary processes in shaping ant communities [@Machac2011; @Smith2014]. 
   
   
 # Conclusion  

@@ -14,9 +14,9 @@
 
 # Introduction  
 elevational gradients; value of insects; ant taxonomic ecology; mtn passes/rapoport's; beta diversity/turnover  
-### 
-### 
-### 
+### Elevational gradients, ranges, and community compositon  
+### Value of insects  
+### Ant taxonomic ecology  
 ### Challenge  
   
 # II. State of the data  
