@@ -75,7 +75,7 @@ Consequently, tropical organisms are expected to have narrower thermal tolerance
 On mountains, where temperature declines quickly with elevation, this corresponds to smaller elevational ranges in tropical species [@Janzen1967; @Ghalambor2006; @McCain2009b]. 
 An increase in thermal tolerance or elevational range size across latitudes has been shown in both vertebrate and invertebrate taxa [@McCain2009b; @Sunday2011; @ShelTewk2014; @Sheldon2015]. 
 Because the largest possible elevational is the entire gradient, however, comparisons among gradients may be sensitive to gradient height [@McCain2009b]. 
-To minimize the influence of disparate gradient heights, I analysed truncated gradients [@McCain2009b] in addition to complete gradients (*n*=16). 
+To minimize the influence of disparate gradient heights, I analysed truncated gradients [@McCain2009b] in addition to complete gradients (*n~complete~*=16). 
 All datasets were truncated at a certain height and gradients below this threshold were excluded. 
 Mean elevational ranges were then calculated along each truncated gradient. 
 Three truncation heights were used: 1600m (*n*=13), 1800m (*n*=12), and 2000m (*n*=10).
@@ -121,11 +121,11 @@ These indices allow for unbiased comparisons among communities of differing rich
 I calculated each component using the species composition, genus composition, and subfamily composition at each elevation. 
   
 ### Species  
-At the species level, gradient-wide beta diversity (Beta~st~) decreases significantly with latitude (Fig. 2a; *n*=20, *P*<0.001, *R^2^*=0.49). 
+At the species level, gradient-wide beta diversity (Beta~st~) decreases significantly with latitude (Fig. 2; *n*=20, *P*<0.001, *R^2^*=0.49). 
 Consistent with the smaller elevational ranges seen at lower latitudes, the species composition changes more rapidly across elevations at lower latitudes. 
 Along gradients, beta diversity between adjacent elevations is generally higher toward the mountain summit compared to the middle (15/16 gradients) and is most often also high at the mountain base (i.e., U-shaped: 13/16 gradients). 
-The proportion of gradient-wide beta diversity due to turnover does not vary significantly between tropical and temperate mountains (Fig. 2b; Wilcoxon rank sum test: *W*=41, *P*=0.26). 
-Overall, turnover constitutes a greater proportion of gradient-wide beta diversity than does nestedness at the species level (Fig. 2b; Paired t-test: *t~15~*=5.63, *P*<0.001). 
+The proportion of gradient-wide beta diversity due to turnover does not vary significantly between tropical and temperate mountains (Fig. 3; Wilcoxon rank sum test: *W*=41, *P*=0.26). 
+Overall, turnover constitutes a greater proportion of gradient-wide beta diversity than does nestedness at the species level (Fig. 3; Paired t-test: *t~15~*=5.63, *P*<0.001). 
 That is, when all pairs of elevations are compared, it is common for communities at two different elevations to each have unique species. 
 At a finer spatial resolution, however, this is not the case. 
 Between adjacent elevational bands, nestedness dominates on most gradients (STATS). 
@@ -139,9 +139,9 @@ In contrast, turnover is quite high between adjacent elevations for a large port
 At the genus level, Beta~st~ declines with latitude (*n*=16, *P*=0.03, *R^2^*=0.25). 
 The genus composition changes more rapidly across elevations at lower latitudes, though the trend is weaker than at the species level. 
 All 16 gradients show high beta diversity between adjacent elevations toward the summit as the beta diversity elevational pattern is either U-shaped (14/16) or a monotonic increase (2/16). 
-The proportion of gradient-wide beta diversity at the genus level due to turnover is significantly higher in temperate regions (Fig. 2b; Wilcoxon rank sum test: *W*=49, *P*=0.042). 
+The proportion of gradient-wide beta diversity at the genus level due to turnover is significantly higher in temperate regions (Fig. 3; Wilcoxon rank sum test: *W*=49, *P*=0.042). 
 However, there is high variability in the genus turnover proportion among both temperate and tropical gradients; this apparent difference may be spurious. 
-At the gradient scale, genus turnover and genus nestedness are comparable along most gradients (Fig. 2b; Paired t-test: *t~15~*=-0.67, *P*=0.51). 
+At the gradient scale, genus turnover and genus nestedness are comparable along most gradients (Fig. 3; Paired t-test: *t~15~*=-0.67, *P*=0.51). 
 Thus, when all sites along a given gradient are compared pairwise, the difference in genus composition results from both the replacement of one genus for another and the loss of genera without replacement. 
 However, between elevationally adjacent sites, genera, like species, tend to be nested (STATS). 
 The ant genus communities differ due to the loss of genera between elevations rather than the replacement of one genus with another. 
@@ -153,7 +153,7 @@ With common interpretations of turnover and nestedness **CITE**, the high nested
 At the subfamily level, Beta~st~ shows no relationship with latitude (*n*=16, *P*=0.15, *R^2^*=0.08). 
 The change in subfamily composition across elevations does not vary consistently with latitude. 
 In contrast to species and genera, subfamily beta diversity between adjacent elevations most often increases monotonically toward the summit (12/16), though U-shaped patterns also occur (3/16) and even monotonic declines (1/16). 
-The proportion of gradient-wide beta diversity due to turnover at the subfamily level is not different between tropical and temperate mountains (Fig. 2b; Wilcoxon rank sum test: *W*=45; *P*=0.08) and in fact, nearly all of the change in subfamily composition is due to nestedness rather than turnover (Fig. 2b; Paired t-test: *t~15~*=-11.04, *P*<0.001). 
+The proportion of gradient-wide beta diversity due to turnover at the subfamily level is not different between tropical and temperate mountains (Fig. 2b; Wilcoxon rank sum test: *W*=45; *P*=0.08) and in fact, nearly all of the change in subfamily composition is due to nestedness rather than turnover (Fig. 3; Paired t-test: *t~15~*=-11.04, *P*<0.001). 
 That is, subfamilies rarely replace one another among sites, but rather the subfamily composition of each elevation is most often either identical to or a subset of the composition at other elevations. 
 Between adjacent elevations, there is no turnover along any gradient. 
 Thus, there is a high degree of elevational overlap among subfamilies. 
@@ -174,7 +174,7 @@ Nevertheless, high species turnover is not universal among the tropical gradient
   
 # Richness patterns  
 ### Species richness  
-In the robust datasets, ant species richness most often peaks at intermediate elevations (14/20), though decreasing (3/20) and low plateau (3/20) patterns also occur (Fig. 3, black bars). 
+In the robust datasets, ant species richness most often peaks at intermediate elevations (14/20), though decreasing (3/20) and low plateau (3/20) patterns also occur (Fig. 4, black bars). 
 Despite strong latitudinal trends in range size and beta diversity, the richness pattern distribution of tropical gradients is not significantly different than that of temperate gradients (Fisher's Exact Test: *n*=20, *P*=0.30). 
 In the excluded datasets, the patterns were more variable. 
 In addition to the mid-peaks, decreases, and low plateaus seen in the robust datasets, there were also gradients with increasing richness and with no identifiable pattern. 
@@ -185,17 +185,16 @@ Ant species richness, therefore, shows a variety of elevational patterns, with r
   
 ### Genus richness  
 The number of genera across elevations typically mirrors the number of species, with the genus richness pattern the same as the species richness pattern in 11/16 gradients. 
-Moreover, the distribution of genus richness patterns does not differ significantly from the species richness patterns (Fig. 3, gray and black bars; Fisher's Exact Tests: *n~species~*=20, *n~genus~*=16, *P*=0.28; *n~species~*=16, *n~genus~*=16, *P*=0.39), though there is a tendency for the peak in genus richness to be less pronounced, resulting in several low plateaus with mid peaks that were not seen at the species level. 
+Moreover, the distribution of genus richness patterns does not differ significantly from the species richness patterns (Fig. 4, gray and black bars; Fisher's Exact Tests: *n~species~*=20, *n~genus~*=16, *P*=0.28; *n~species~*=16, *n~genus~*=16, *P*=0.39), though there is a tendency for the peak in genus richness to be less pronounced, resulting in several low plateaus with mid peaks that were not seen at the species level. 
 The distribution of genus richness patterns does not vary significantly between tropical and temperate datasets (Fisher's Exact Test: *n*=16, *P*=0.11). 
 The number of species increases quite predictably with the number of genera (STATS), lending further evidence that the richness patterns are nested taxonomically. 
   
 ### Subfamily richness  
 The number of ant subfamilies shows less distinct patterns elevationally than the number of species or genera due to the smaller number of subfamilies, though they are generally coarsely similar to the species and genus richness patterns. 
-The distribution of subfamily richness patterns is not significantly different from that of the species richness patterns (Fig.3, white and black bars; Fisher's Exact Tests: *n~species~*=20, *n~subfamily~*=16, *P*=0.10; *n~species~*=16, *n~subfamily~*=16, *P*=0.20) nor from that of the genus richness (Fig. 3, gray and black bars; Fisher's Exact Test: *n*=16; *P*=0.84).
+The distribution of subfamily richness patterns is not significantly different from that of the species richness patterns (Fig.4, white and black bars; Fisher's Exact Tests: *n~species~*=20, *n~subfamily~*=16, *P*=0.10; *n~species~*=16, *n~subfamily~*=16, *P*=0.20) nor from that of the genus richness (Fig. 4, gray and black bars; Fisher's Exact Test: *n*=16; *P*=0.84).
 Like the species and genus patterns, the distribution of subfamily richness patterns does not vary significantly between tropical and temperate gradients (Fisher's Exact Test: *n*=16, *P*=0.28).
 The number of subfamilies does predict the number of species (STATS), though of course less reliably than the number of genera. 
-    
-### Wrap up and transition  
+  
 Ant richness, therefore, is commonly high at intermediate elevations at the species, genus, and subfamily levels. 
 Consequently, it appears that the underlying ecological or evolutionary factors driving richness are creating similar patterns at multiple taxonomic scales. 
 It may seem intuitive that the number of species would increase with the number of genera, though in fact the species community can be over- or underdispersed phylogenetically [@Webb2002], with the degree phylogenetic dispersion possibly arising from a balance between environmental filtering, neutral processes, and competition [@Webb2002; @Machac2011; @KembHubb2006]. 
@@ -209,7 +208,7 @@ The most speciose genus in each dataset comprises 7–31% of the total species r
 These genera include *Camponotus* [@Sabu2008], *Formica* [@Gregg1963; @Allred1982; @WheeWhee1986; @Hellrigl2003; @Glaser2006], *Lasius* [@Karaman2011], *Pheidole* [@MoodFran1982; @VanPelt1983; @Samson1997; @Fisher1998; @ArauFern2003; @BurwNaka2011; @LongColw2011], *Stenamma* [@Lessard2007], and *Strumigenys* [@SarnEcon2012]. 
 The proportion of species within the most speciose genus does not vary predictably across latitudes (*n*=16, *P*=0.15, *R^2^*=0.08). 
 While the overall richness pattern is predicted well by the richness pattern of the most speciose genus (STATS), the overall pattern is not driven solely by a single genus. 
-Rather, the species richness pattern of the most speciose genus is generally similar to the richness pattern of the remaining species; the richness of the most speciose genus predicts the richness of the remaining genera quite well along most gradients (Fig. 4a; STATS), though there is a fair amount of variability in the slopes among gradients (STATS: slope ranges). 
+Rather, the species richness pattern of the most speciose genus is generally similar to the richness pattern of the remaining species; the richness of the most speciose genus predicts the richness of the remaining genera quite well along most gradients (Fig. 5a; STATS), though there is a fair amount of variability in the slopes among gradients (STATS: slope ranges). 
 Many of the non-dominant genera (at least in terms of richness) do not have enough species or are not widespread enough to reliably discern a richness pattern. 
 Those that are, however, tend to show a qualitatively similar elevational richness pattern both to the overall pattern and to the most speciose genus. 
   
@@ -217,13 +216,12 @@ Those that are, however, tend to show a qualitatively similar elevational richne
 The most speciose subfamily along each gradient comprises 39–73% of the total species richness (mean ± SE: 54.5 ± 2.04%). 
 The dominant subfamily in terms of richness is either Formicinae [@Gregg1963; @Allred1982; @WheeWhee1986; @Hellrigl2003; @Glaser2006] or Myrmicinae [@Sabu2008; @Karaman2011; @MoodFran1982; @VanPelt1983; @Samson1997; @Fisher1998; @ArauFern2003; @BurwNaka2011; @LongColw2011; @Lessard2007; @SarnEcon2012]. 
 There is no significant latitudinal trend in the proportion of species in the most speciose subfamily (*n*=16, *P*=0.38, *R^2^*=0.06). 
-As with the most speciose genus, the species richness pattern within the most speciose subfamily tends to be remarkably similar to both the overall species richness pattern and the richness pattern of the remaining species (Fig. 4b; STATS). 
+As with the most speciose genus, the species richness pattern within the most speciose subfamily tends to be remarkably similar to both the overall species richness pattern and the richness pattern of the remaining species (Fig. 5b; STATS). 
 The elevational species richness pattern is not simply the result of the most speciose subfamily. 
 Rather, the dominant subfamily shows the same richness pattern as the remaining subfamilies. 
 As with the richness patterns of individual genera, the richness pattern of each subfamily along a gradient is often qualitatively similar to the overall richness pattern and to the pattern of the most speciose subfamily. 
 The patterns are largely nested. 
   
-### Wrap up and transition  
 Ant species richness patterns across elevations are not, therefore, driven by a single genus or a single subfamily. 
 Despite often comprising a sizable proportion of species, the most speciose genus or subfamily along a gradient most often shows a similar richness pattern across elevations as the remaining species. 
 Though there is, of course, variability, the richness pattern within each genus or subfamily tends to be broadly similar to the whole. 
@@ -253,26 +251,26 @@ A greater focus on seasonal and annual fluctuations will inform mechanistic appr
   
   
 # Figure Legends  
-**Figure 1.** Elevational range sizes of ant species increases with latitude. 
+**Fig. 1** Elevational range sizes of ant species increases with latitude. 
 (a) Both the mean (solid; ± 1 standard error) and median (open) elevational range increases with distance from the equator (mean: *n*=16, *P*=0.009, *R^2^*=0.353; median: *n*=16, *P*=0.04, *R^2^*=0.208). 
 (b) This trend does not appear to be driven by the height of the mountain. 
 The mean elevational range size increases with latitude with all three truncation heights (1600m subset: black, *n*=13, *P*=0.021, *R^2^*=0.344; 1800m subset: dark gray, *n*=12, *P*=0.012, *R^2^*=0.437; 2000m subset: light gray) *n*=10, *P*=0.033, *R^2^*=0.384).  
 
-**Figure 2.** Gradient-wide beta diversity decreases with latitude.
-Total beta diversity across each elevational gradient, standardized for the number of sampled elevations, declines with latitude (STATS). 
-That is, the differences in ant communities across elevations is more extreme in the tropics. 
+**Fig. 2** Gradient-wide beta diversity decreases with latitude.
+Total beta diversity across each elevational gradient, standardized for the number of sampled elevations, declines with latitude (*n*=20, *P*<0.001, *R^2^*=0.49). 
+That is, the differences among ant species communities across elevations is more extreme in the tropics.  
 
-**Figure 3.** Proportion of gradient-wide beta diversity due to turnover decreases with taxonomic resolution. 
+**Fig. 3** Proportion of gradient-wide beta diversity due to turnover decreases with taxonomic resolution. 
 In both temperate (white) and tropic (gray) gradients, the proportion of beta diversity due to turnover decreases at higher taxonomic levels. 
 At 0.5 (dotted line), turnover and nestedness contribute equally to the change in community composition. 
 The ant communities differ primarily due to the sequential addition or loss of taxa across elevations rather than due to the replacement of one taxon with another.  
 
-**Figure 4.** Robust patterns of ant species richness across elevational gradients. 
-A variety of patterns have been observed, though mid-elevational peaks are most common. 
-The pattern distribution is similar for both species (black) and genus (gray) richness. 
-The subfamily (white) richness patterns are less discernible due to the small number of subfamilies along many gradients.  
+**Fig. 4** Robust patterns of ant elevational richness patterns across taxonomic scales. 
+A variety of species richness patterns occur, though mid-elevational peaks are most common. 
+The pattern distribution is similar for both species (black) and genus (gray) richness (Fisher's Exact Test: *n~species~*=20, *n~genus~*=16, *P*=0.28). 
+Though the subfamily (white) richness patterns are less discernible due to the small number of subfamilies along many gradients, the distribution of patterns is not significantly different (Fisher's Exat Tests: *n~species~*=20, *n~subfamily~*=16, *P*=0.10; *n~genus~*=16, *n~subfamily~*=16, *P*=0.84).  
 
-**Figure 5.** Richness of the most speciose genus or subfamily predicts the richness of the remaining species. 
+**Fig 5** Richness of the most speciose genus or subfamily predicts the richness of the remaining species. 
 (a) The elevational richness pattern of the most speciose genus is nested within the richness pattern of the remaining species for most gradients. 
 The trend is apparent with all datasets combined (black line) and within each gradients (gray lines). 
 There is much variability in the slope of the relationship across gradients and, in one case, a negative relationship. 
