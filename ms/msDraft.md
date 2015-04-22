@@ -25,13 +25,21 @@ Furthermore, understanding the processes underlying insect diversity may yield v
 Ants have a number of advantages for global studies of diversity. 
 As predators, competitors, scavengers, and dispersers, they have major ecological impacts in a wide variety of systems [@HollWils1990]. 
 In contrast to many insect taxa, the individuals used for identification are wingless, restricting their movement from the nest and reducing the impact of accidentals. 
-Additionally, because of the historic interest in ants across many decades **CITE**, they have been relatively well-described taxonomically and there is a firmer baseline for comparisons across time. 
+Additionally, because of the historic interest across many decades **CITE**, ants are relatively well-described taxonomically compared to other insect taxa. 
 Nevertheless, we know little about the ranges and less about the basic natural history of many species [@Lanan2014]. 
   
+Ants are an incredibly diverse taxon by nearly any ecological metric. 
+Dietary breadth ranges from the specialist predator species in the subfamily Amblyoponinae to generalist omnivores in the subfamily Myrmicinae. 
+Nesting habits are variable, with differences in site preferences among genera, among species, and even variability within species **CITE**. 
+Ant species may differ in worker body size **CITE**, colony size **CITE**, colony structure **CITE**, levels of aggression **CITE**, number of queens **CITE**, and degree of polymorphism **CITE** among other traits. 
+Given this range of biological characteristics, it seems reasonable to expect that factors shaping the distribution of species to vary among subfamilies or genera. 
+Additionally, the species richness within subfamilies is hugely variable. 
+In such a diverse and numerically disparate taxon as ants, any patterns of species richness and compositional change may be driven primarily by the most speciose subfamily or genus rather than reflecting the tendencies of each subtaxon. 
+  
 Understanding the distribution of biodiversity necessitates a comprehensive, global perspective. 
-Here, I review the work to date on ant richness and communities along elevational gradients across the globe. 
-Then, using well-sampled elevational datasets, I investigate patterns of ant richness and beta diversity across taxonomic resolutions. 
-Finally, I explore patterns of the elevational ranges of ant species. 
+Here, I review the work to date on ant communities across elevations with specific regard to elevational range sizes, community composition, and species richness. 
+Using well-sampled elevational datasets, I investigate these patterns at the species, genus, and subfamily level. 
+**Final wrap up sentence** 
   
   
 # Datasets  
