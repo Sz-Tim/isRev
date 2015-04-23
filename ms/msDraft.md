@@ -14,6 +14,8 @@
 \newpage  
     
 # Introduction  
+
+
 To disentangle the factors that shape species richness, it is essential to first thoroughly explore the patterns of richness [@Rahbek1995; @Lomolino2001]. 
 Elevational gradients provide useful study systems to investigate these patterns and drivers [@McCain2009; @McCain2010]. 
 Mountains, occurring on every continent, act as compact, globally replicated systems that vary across many characteristics that may drive richness, including climate, history, and geography [@Rahbek1995; @Lomolino2001; @McCaGryt2010]. 

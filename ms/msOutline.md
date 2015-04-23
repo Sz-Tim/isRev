@@ -16,6 +16,8 @@
 elevational gradients; value of insects; ant taxonomic ecology; mtn passes/rapoport's; beta diversity/turnover  
 ### Elevational gradients, ranges, and community compositon  
 
+
+
 ### Value of insects  
 Keep more or less as is I think  
 ### Ant taxonomic ecology  
@@ -28,7 +30,7 @@ Huge variation in number of species among subfamilies
 Is the overall pattern swamped by one taxon?  
 **Braid this in with spp/genus/sf similarities and differences**  
 ### Challenge  
-Understanding distr of biodiversity necessitates...  
+Understanding distribution of biodiversity necessitates...  
 Here, I review the work to date on ant communities across elevations  
 with specific regard to:  
 . elevational range sizes  
