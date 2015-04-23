@@ -1,4 +1,4 @@
-# Range size and ant community structure across elevations  
+# Range size and ant communities across elevations  
 **Author:** Tim Szewczyk^1^ 
   
 **Affiliation:** University of Colorado-Boulder, Department of Ecology and Evolutionary Biology  
