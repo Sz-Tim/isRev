@@ -14,12 +14,11 @@
 \newpage  
     
 # Introduction  
-
-
-To disentangle the factors that shape species richness, it is essential to first thoroughly explore the patterns of richness [@Rahbek1995; @Lomolino2001]. 
+Patterns of species richness and compositional change are directly determined by the distribution and delineation of species ranges. 
+Discovering the patterns of overlapping ranges, the locations and dynamics of range boundaries, and the processes that drive them is a key step in understanding broad scale biodiversity patterns. 
 Elevational gradients provide useful study systems to investigate these patterns and drivers [@McCain2009; @McCain2010]. 
 Mountains, occurring on every continent, act as compact, globally replicated systems that vary across many characteristics that may drive richness, including climate, history, and geography [@Rahbek1995; @Lomolino2001; @McCaGryt2010]. 
-Detailing how communities change across elevational gradients, and across taxonomic levels, can yield insight into the underlying processes shaping biodiversity at a broad scale. 
+Detailing how communities change across elevational gradients and at different taxonomic levels can yield insight into processes affecting species diversity across spatial and temporal scales.  
   
 Despite comprising the majority of animal species, insects have not received much focus in such macroecological studies **CITE**[@DF2010]. 
 However, with the astonishing array of insect diversity, no picture of biodiversity would be complete without including insects. 
