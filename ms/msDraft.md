@@ -257,7 +257,7 @@ Increased focus on phylogenetic patterns may help to disentangle the interplay o
 # Conclusion  
 In summary, ant elevational ranges are narrowest at tropical latitudes, leading to higher gradient-wide beta diversity and high species turnover. 
 This trend becomes increasingly less distinct at higher taxonomic levels where elevational ranges become broader and communities become increasingly nested. 
-The elevational species richness patterns, a conglomerate property of ant subfamilies and genera as a whole rather than just of the most speciose subtaxon, do not appear to be directly related to turnover. 
+The elevational species richness patterns, which do not appear to be directly related to turnover, are a conglomerate property across subfamilies and genera rather than just a function of the most speciose subtaxon. 
 The broad similarity of richness patterns along a given gradient, including among species, within and among genera, and within and among subfamilies, suggests that despite large biological differences, similar factors may influence the elevational distribution of ant species across many genera and subfamilies. 
 
   
