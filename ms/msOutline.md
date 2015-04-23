@@ -15,7 +15,13 @@
 # Introduction  
 elevational gradients; value of insects; ant taxonomic ecology; mtn passes/rapoport's; beta diversity/turnover  
 ### Elevational gradients, ranges, and community compositon  
-
+The distribution and delineation of species ranges by definition influences patterns of species richness.  
+Species richness is the overlap of species ranges  
+Compositional change is driven by the dynamics of range boundaries  
+Elevational gradients are valuable study systems  
+Mountains act as replicated systems  
+Bring in ants somehow... 
+Detailing how communities change across elevational gradients and at different taxonomic levels can yield insight into the dynamic processes that shape biodiversity at a broad scale.  
 
 
 ### Value of insects  
@@ -123,7 +129,11 @@ rest of species are distributed similarly
 # VII. Into the future  
 
 # VIII. Conclusion  
-
+Recap of results:  
+Ant elevational ranges are narrowest at tropical latitudes, leading to higher gradient-wide beta diversity and high species turnover. 
+This trend becomes increasingly less distinct at higher taxonomic levels and community compositions are nested. 
+The elevational richness patterns, driven by ant species as a whole rather than by a single genus or subfamily, do not appear to be directly related to turnover. 
+The broad similarity of richness patterns along a given gradient, including species richness, genus richness, or richness within genera or subfamilies, suggests that, despite large biological differences, similar factors may influence the elevational distribution of ant species across many genera and subfamilies.
 
 ---  
 

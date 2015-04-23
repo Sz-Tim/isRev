@@ -21,7 +21,7 @@ Elevational gradients provide useful study systems to investigate these patterns
 Mountains, occurring on every continent, act as compact, globally replicated systems that vary across many characteristics that may drive richness, including climate, history, and geography [@Rahbek1995; @Lomolino2001; @McCaGryt2010]. 
 Detailing how communities change across elevational gradients, and across taxonomic levels, can yield insight into the underlying processes shaping biodiversity at a broad scale. 
   
-Despite comprising the majority of animal species, insects have not received much focus in such macroecological studies [@DF2010]. 
+Despite comprising the majority of animal species, insects have not received much focus in such macroecological studies **CITE**[@DF2010]. 
 However, with the astonishing array of insect diversity, no picture of biodiversity would be complete without including insects. 
 Furthermore, understanding the processes underlying insect diversity may yield valuable insights into the processes that shape patterns biodiversity more broadly. 
 Ants have a number of advantages for global studies of diversity. 
@@ -34,9 +34,9 @@ Ants are an incredibly diverse taxon by nearly any ecological metric.
 Dietary breadth ranges from the specialist predator species in the subfamily Amblyoponinae to generalist omnivores in the subfamily Myrmicinae. 
 Nesting habits are variable, with differences in site preferences among genera, among species, and even variability within species **CITE**. 
 Ant species may differ in worker body size **CITE**, colony size **CITE**, colony structure **CITE**, levels of aggression **CITE**, number of queens **CITE**, and degree of polymorphism **CITE** among other traits. 
-Given this range of biological characteristics, it seems reasonable to expect that factors shaping the distribution of species to vary among subfamilies or genera. 
-Additionally, the species richness within subfamilies is hugely variable. 
-In such a diverse and numerically disparate taxon as ants, any patterns of species richness and compositional change may be driven primarily by the most speciose subfamily or genus rather than reflecting the tendencies of each subtaxon. 
+Given this tremendous range of biological characteristics, it seems reasonable to expect that factors shaping the distribution of species vary among subfamilies or genera. 
+Additionally, species richness is hugely disparate among subfamilies. 
+In such a diverse and numerically heterogeneous taxon as ants, any patterns of species richness and compositional change may be driven primarily by the most speciose subfamily or genus rather than reflecting the tendencies of each subtaxon. 
   
 Understanding the distribution of biodiversity necessitates a comprehensive, global perspective. 
 Here, I review the work to date on ant communities across elevations with specific regard to elevational range sizes, community composition, and species richness. 
