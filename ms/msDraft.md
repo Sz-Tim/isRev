@@ -105,18 +105,14 @@ However, this latitudinal trend in elevational range size does not hold at large
 Neither the mean genus elevational range nor the mean subfamily elevational range change across latitudes (genus: *n*=16, *P*=0.22; subfamily: *n*=16; *P*=0.40). 
 This suggests that, while individual species may be constrained by thermal tolerance, the variability in thermal tolerance among species within each genus is great enough to encompass the increased annual variation at high latitudes. 
   
-Because high elevations, like high latitudes, also experience increased climatic variability, the mean elevational range size may increase with elevation according to the elevational extension of Rapoport's rule [@Stevens1992]. 
-To the contrary, ant elevational range size does not increase with elevation consistently. 
-Using the Steven's method [@McCaBrac2012; @Stevens1992], where the mean range size at each elevation is estimated as the average range of all species detected at that elevation, mean range size increases significantly with elevation in 9/16 (56%) datasets (overall *R^2^* mean: 0.51, median: 0.68). 
-The fit was high among these datasets (*R^2^* mean: 0.82, median: 0.89), which included both regional and local scales as well as temperate and tropical gradients. 
-However, large ranged species have a disproportionate influence on the means and the overall pattern since they are included in the estimates at many elevations [@McCaBrac2012; @Gaston1998; @Rohde1993]. 
-The midpoint method, where mean range size at each elevation is estimated as the average range of all species whose midpoints occur at that elevation, and the quartile method, which uses only species with ranges < 1/4 of the gradient, have been suggested as less biased alternatives to the Steven's method [@McCaBrac2012; @Rohde1993]. 
-With these methods, there is little evidence of a trend in ant species range size along elevational gradients (midpoint: *R^2^* mean: 0.15, median: 0.03; quartile: *R^2^* mean: 0.20, median: 0.14). 
+Because high elevations, like high latitudes, also experience increased climatic variability, the mean elevational range size may increase with elevation [@Stevens1992]. 
+To avoid the disproportionate influence and non-independence of large-ranged species [@McCaBrac2012; @Gaston1998; @Rohde1993], I estimated mean range size at each elevation using both the midpoint method, where mean range size is estimated as the average range of all species whose midpoints occur at that elevation, and the quartile method, which uses only species with ranges < 1/4 of the gradient. [@McCaBrac2012; @Rohde1993]. 
+Contrary to expectations, there is little evidence of a consistent trend in ant species range size along elevational gradients using either method (midpoint: increase with *P*< 0.05 in 2/16 gradients, *R^2^* mean: 0.15, median: 0.03; quartile: increase with *P*< 0.05 in 3/16 gradients, *R^2^* mean: 0.20, median: 0.14). 
   
 Thus, though ant elevational ranges do not show a consistent pattern along single elevational gradients, they do tend to increase with latitude. 
-This suggests that the thermal tolerances of tropical ant species are narrower than temperate species. 
-Alternatively, smaller elevational ranges are consistent with stronger interspecific competition in the tropics [@Pianka1966; @Willig2003], though of course these hypotheses are not mutually exclusive. 
-Regardless, the smaller elevational ranges in the tropics should lead to more pronounced changes in the ant community composition across elevational gradients. 
+This suggests that the thermal tolerances of tropical ant species are, in fact, narrower than temperate species. 
+Alternatively, smaller elevational ranges are also consistent with stronger interspecific competition in the tropics [@Pianka1966; @Willig2003], though of course these hypotheses are not mutually exclusive. 
+Regardless, the smaller elevational ranges in the tropics should lead to more pronounced changes in the ant community composition across tropical elevational gradients. 
   
 # Species composition & beta diversity  
 In a broad sense, beta diversity quantifies the variation in the species composition across space or time [@Anderson2011]. 

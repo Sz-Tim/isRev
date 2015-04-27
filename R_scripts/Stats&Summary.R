@@ -57,13 +57,13 @@
   #--- proportion of species at only one elevation ---#
   summary(lm(over.df$pr1el ~ abs(over.df$Latsamp)))
 
-  #--- Steven's method ---#
+  #--- Rapoport's Rule ---#
   summary(over.df$stevens.r)
   sum(over.df$stevens.p < 0.05, na.rm=TRUE)
   summary(over.df$mp.r)
-  sum(over.df$mp.p < 0.05, na.rm=TRUE)
+  sum(over.df$mp.p < 0.05 & over.df$mp.b > 0, na.rm=TRUE)
   summary(over.df$quart.r)
-  sum(over.df$quart.p < 0.05, na.rm=TRUE)
+  sum(over.df$quart.p < 0.05 & over.df$quart.b < 0, na.rm=TRUE)
 
 #######
 ## Beta diversity
