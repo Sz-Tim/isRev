@@ -156,12 +156,12 @@ The genus composition changes more rapidly across elevations at lower latitudes,
 The proportion of gradient-wide beta diversity at the genus level due to turnover is significantly higher in temperate regions (Fig. 3; Wilcoxon rank sum test: *W*=49, *P*=0.042). 
 However, there is high variability in the genus turnover proportion among both temperate and tropical gradients; this apparent difference may be spurious. 
 At the gradient scale, genus turnover and genus nestedness are comparable along most gradients (Fig. 3; Paired t-test: *t~15~*=-0.67, *P*=0.51). 
-Thus, when all sites along a given gradient are compared pairwise, the difference in genus composition results from both the replacement of one genus for another and the loss of genera without replacement. 
-However, between elevationally adjacent sites, genera, like species, tend to be nested (STATS). 
-The ant genus communities differ due to the loss of genera between elevations rather than the replacement of one genus with another. 
-In fact, along many gradients, turnover at the genus level is nearly zero across the majority of elevations. 
-The primary exceptions are in the Philippines [@Samson1997], where turnover is higher than nestedness except at the highest elevations and increases to a peak at mid-to-upper elevations, and in the McPherson Range in Australia [@BurwNaka2011], where turnover decreases monotonically and is overtaken by nestedness at middle elevations. 
-With common interpretations of turnover and nestedness **CITE**, the high nestedness and low turnover along most gradients suggest that environmental filtering is more important than biotic interactions in determining the ant genus community across elevations. 
+When all elevations along a given gradient are compared pairwise, the difference in genus composition results from both the replacement of one genus for another and the loss of genera without replacement. 
+  
+However, between elevationally adjacent sites, ant genera, like ant species, tend to be nested (STATS) and adjacent communities differ due to the loss of genera between elevations rather than the replacement of one genus with another. 
+In fact, along many gradients, turnover at the genus level is nearly zero between the majority of adjacent elevations. 
+The primary exceptions are in the Philippines [@Samson1997], where turnover is higher than nestedness except at the highest elevations, and in the McPherson Range in Australia [@BurwNaka2011], where turnover is higher than nestedness along the lower half of the gradient. 
+With common interpretations of turnover and nestedness **CITE**, the high nestedness with low turnover along most gradients suggests that environmental filtering is more important than biotic interactions in determining the ant genus communities across elevations. 
 
 ### Subfamily    
 At the subfamily level, $\beta_{st}$ shows no relationship with latitude (*n*=16, *P*=0.15, *R^2^*=0.08). 

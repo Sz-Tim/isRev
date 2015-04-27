@@ -26,8 +26,14 @@ Range size increases with latitude, consistent with either/both thermal toleranc
 Beta diversity can be broken into turnover and nestedness  
 This is how I estimated beta, turnover, and nestedness at each scale  
 ### Species patterns  
+Gradient-wide  
+Adjacent  
 ### Genus patterns  
+Gradient-wide  
+Adjacent  
 ### Subfamily patterns  
+Gradient-wide  
+Adjacent  
 ### Subconclusion  
 
 # V. Richness  
