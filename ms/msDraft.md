@@ -12,13 +12,21 @@
 **Keywords:** 4–6 keywords. Formicidae, subfamily, genus, altitude, range size, beta diversity    
   
 \newpage  
-    
+  
+**Stray sentences**
+Along tropical elevational gradients, ant species typically have small elevational ranges with many species detected at just one elevation [@LongColw2011; @Olson1994; @Samson1997; @Fisher1998; @Bruhl1999]. 
+Several analyses have reported support for the elevational extension of Rapoport's Rule, finding that high elevation ant species tend to have broader elevational ranges compared to low elevation species [@Olson1994; @Sanders2002; @Lessard2007]. 
+In contrast, ant species ranges were largest at low elevations in Costa Rica [@LongColw2011]. 
+However, a recent review found little support for this hypothesis across an array of taxa when accounting for biases in estimating the mean range size [@McCaBrac2012]. 
+While elevational trends in ant communities and range sizes have been demonstrated in several systems (e.g., )[@BurwNaka2011; @Fisher1998; @Lessard2007; @LongColw2011; @MunyFoor2012]. 
+  
 # Introduction  
-Patterns of species richness and compositional change are directly determined by the distribution and delineation of species ranges. 
-Discovering the patterns of overlapping ranges, the locations and dynamics of range boundaries, and the processes that drive them is a key step in understanding broad scale biodiversity patterns. 
+Patterns of species richness and community composition are directly determined by the distribution and delineation of species ranges. 
+Ants are no exception. 
+Discovering the patterns of overlapping ranges, the dynamics of range boundaries, and the underlying determinants is a key step in understanding the macroscale distribution of ant diversity. 
 Elevational gradients provide useful study systems to investigate these patterns and drivers [@McCain2009; @McCain2010]. 
-Mountains, occurring on every continent, act as compact, globally replicated systems that vary across many characteristics that may drive richness, including climate, history, and geography [@Rahbek1995; @Lomolino2001; @McCaGryt2010]. 
-Detailing how communities change across elevational gradients and at different taxonomic levels can yield insight into processes affecting species diversity across spatial and temporal scales.  
+Mountains, occurring on every continent, act as compact, globally replicated systems that vary across many characteristics that may affect richness, including climate, history, and geography [@Rahbek1995; @Lomolino2001; @McCaGryt2010]. 
+Detailing how ant communities change along elevational gradients, and at different taxonomic levels, can yield insight into processes affecting ant species diversity across spatiotemporal scales.  
   
 Despite comprising the majority of animal species, insects have not received much focus in such macroecological studies [@DF2010]. 
 However, with the astonishing array of insect diversity, no picture of biodiversity would be complete without including insects. 
@@ -78,11 +86,13 @@ Though more patterns are possible [@McCain2009], the datasets here were characte
   
   
 # Elevational range size  
-Seasonal temperature variation is higher in temperate locations than tropical locations. 
-Consequently, tropical organisms are expected to have narrower thermal tolerances [@Janzen1967]. 
-On mountains, where temperature declines quickly with elevation, this corresponds to smaller elevational ranges in tropical species [@Janzen1967; @Ghalambor2006; @McCain2009b]. 
-An increase in thermal tolerance or elevational range size across latitudes has been shown in both vertebrate and invertebrate taxa [@McCain2009b; @Sunday2011; @ShelTewk2014; @Sheldon2015]. 
-Because the largest possible elevational is the entire gradient, however, comparisons among gradients may be sensitive to gradient height [@McCain2009b]. 
+Temperatures vary across seasons more dramatically in temperate locations than in tropical locations. 
+Consequently, tropical organisms experience a narrower range of temperatures annually and are expected to have narrower thermal tolerances [@Janzen1967]. 
+On mountains, where temperature declines rapidly with elevation, this results in smaller elevational ranges in tropical species [@Janzen1967; @Ghalambor2006; @McCain2009b]. 
+Latitudinal trends in thermal tolerances and elevational range sizes have been shown in both vertebrate and invertebrate taxa [@McCain2009b; @Sunday2011; @ShelTewk2014; @Sheldon2015]. 
+Specifically in ants, small elevational range sizes have been noted along several tropical mountains, with many species detected at just one elevation [@LongColw2011; @Olson1994; @Samson1997; @Fisher1998; @Bruhl1999]. 
+  
+However, because the largest possible elevational range size is the entire gradient, comparisons among gradients may be sensitive to gradient height [@McCain2009b]. 
 To minimize the influence of disparate gradient heights, I analysed truncated gradients [@McCain2009b] in addition to complete gradients (*n~complete~*=16). 
 All datasets were truncated at a certain height and gradients below this threshold were excluded. 
 Mean elevational ranges were then calculated along each truncated gradient. 
@@ -90,17 +100,17 @@ Three truncation heights were used: 1600m (*n*=13), 1800m (*n*=12), and 2000m (*
   
 Mean elevational range significantly increases with latitude in all four sets of gradients (Fig. 1; all: *n*=16, *P*=0.009, *R^2^*=0.353; 1600m subset: *n*=13, *P*=0.021, *R^2^*=0.344; 1800m subset: *n*=12, *P*=0.012, *R^2^*=0.437; 2000m subset: *n*=10, *P*=0.033, *R^2^*=0.384). 
 Ant elevational ranges do, therefore, appear to be larger in the tropics, consistent with other taxa [@McCain2009b; @ShelTewk2014; @Sheldon2015] and with the seasonality hypothesis [@Janzen1967]. 
-Additionally, there is a marginal decrease with latitude in the proportion of ant species detected in just one elevational band (*n*=16, *P*=0.05, *R^2^*=0.193). 
+Additionally, there is a marginal latitudinal decline in the proportion of species detected in a single elevational band (*n*=16, *P*=0.05, *R^2^*=0.193). 
 However, this latitudinal trend in elevational range size does not hold at larger taxonomic scales. 
 Neither the mean genus elevational range nor the mean subfamily elevational range change across latitudes (genus: *n*=16, *P*=0.22; subfamily: *n*=16; *P*=0.40). 
 This suggests that, while individual species may be constrained by thermal tolerance, the variability in thermal tolerance among species within each genus is great enough to encompass the increased annual variation at high latitudes. 
   
-The elevational extension of Rapoport's rule predicts that the mean elevational range size will increase with elevation because of the increased climatic variability at higher elevations [@Stevens1992]. 
-However, ant elevational range size does not increase with elevation across all robust datasets. 
-Using the Steven's method [@McCaBrac2012; @Stevens1992], where the mean range size at each elevation is calculated as the mean elevational range of all species detected at that elevation, mean range size increases significantly with elevation in 9/16 datasets (overall *R^2^* mean: 0.51, median: 0.68). 
+Because high elevations, like high latitudes, also experience increased climatic variability, the mean elevational range size may increase with elevation according to the elevational extension of Rapoport's rule [@Stevens1992]. 
+To the contrary, ant elevational range size does not increase with elevation consistently. 
+Using the Steven's method [@McCaBrac2012; @Stevens1992], where the mean range size at each elevation is estimated as the average range of all species detected at that elevation, mean range size increases significantly with elevation in 9/16 (56%) datasets (overall *R^2^* mean: 0.51, median: 0.68). 
 The fit was high among these datasets (*R^2^* mean: 0.82, median: 0.89), which included both regional and local scales as well as temperate and tropical gradients. 
-However, large ranged species have a disproportionate influence on the mean and the overall pattern since they are included in the estimates at many elevations [@McCaBrac2012; @Gaston1998; @Rohde1993]. 
-The midpoint method, where mean range size at each elevation is calculated as the mean elevational range of all species whose midpoints occur at that elevation, and the quartile method, which uses only species with ranges < 1/4 of the gradient, have been suggested as less biased methods [@McCaBrac2012; @Rohde1993]. 
+However, large ranged species have a disproportionate influence on the means and the overall pattern since they are included in the estimates at many elevations [@McCaBrac2012; @Gaston1998; @Rohde1993]. 
+The midpoint method, where mean range size at each elevation is estimated as the average range of all species whose midpoints occur at that elevation, and the quartile method, which uses only species with ranges < 1/4 of the gradient, have been suggested as less biased alternatives to the Steven's method [@McCaBrac2012; @Rohde1993]. 
 With these methods, there is little evidence of a trend in ant species range size along elevational gradients (midpoint: *R^2^* mean: 0.15, median: 0.03; quartile: *R^2^* mean: 0.20, median: 0.14). 
   
 Thus, though ant elevational ranges do not show a consistent pattern along single elevational gradients, they do tend to increase with latitude. 

@@ -1,6 +1,5 @@
 # Introduction  
 ### Ranges, diversity, and mountains  
-### Expansion for ants  
 ### Value of insects  
 ### Ant taxonomic ecology  
 ### Challenge  
@@ -10,7 +9,11 @@
 ### Study descriptions  
 ### Pattern definitions  
 # III. Range size  
-### Brief methods  
+### Background and methods  
+Tropical species should have smaller ranges because of seasonal consistency  
+Average range size is sensitive to gradient height, so truncation methods  
+Elevational range increases with latitude for spp, but not genera or sf's  
+Range size doesn't increase consistently along a single gradient  
 ### Among gradients  
 ### Along gradients  
 ### Subconclusion  
