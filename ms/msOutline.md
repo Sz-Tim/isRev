@@ -1,9 +1,34 @@
-# I. Introduction  
+# Introduction  
+### Ranges, diversity, and mountains  
+### Expansion for ants  
+### Value of insects  
+### Ant taxonomic ecology  
+### Challenge  
 # II. State of the data  
+### Literature search  
+### Criteria  
+### Study descriptions  
+### Pattern definitions  
 # III. Range size  
+### Brief methods  
+### Among gradients  
+### Along gradients  
+### Subconclusion  
 # IV. Composition & beta  
-# V. Dominant taxon  
-# VI. Richness  
+### Beta background and methods  
+### Species patterns  
+### Genus patterns  
+### Subfamily patterns  
+### Subconclusion  
+# V. Richness  
+### Species  
+### Genus  
+### Subfamily  
+### Subconclusion  
+# VI. Dominant taxon  
+### Most speciose genus  
+### Most speciose subfamily  
+### Subconclusion  
 # VII. Into the future  
 # VIII. Conclusions  
 
@@ -14,6 +39,8 @@
 
 # Introduction  
 elevational gradients; value of insects; ant taxonomic ecology; mtn passes/rapoport's; beta diversity/turnover  
+
+
 ### Elevational gradients, ranges, and community compositon  
 The distribution and delineation of species ranges by definition influences patterns of species richness.  
 Species richness is the overlap of species ranges  
@@ -22,8 +49,6 @@ Elevational gradients are valuable study systems
 Mountains act as replicated systems  
 Bring in ants somehow... 
 Detailing how communities change across elevational gradients and at different taxonomic levels can yield insight into the dynamic processes that shape biodiversity at a broad scale.  
-
-
 ### Value of insects  
 Keep more or less as is I think  
 ### Ant taxonomic ecology  
@@ -136,106 +161,4 @@ The elevational richness patterns, driven by ant species as a whole rather than 
 The broad similarity of richness patterns along a given gradient, including species richness, genus richness, or richness within genera or subfamilies, suggests that, despite large biological differences, similar factors may influence the elevational distribution of ant species across many genera and subfamilies.
 
 ---  
-
-
-
-
-
-# I. Introduction  
-## i. History/value of elevational gradients  
-## ii. Value of insects  
-## iii. Challenge  
   
-
-# II. State of the data  
-## i. Methods of finding data  
-## ii. Criteria for well-sampled studies  
-## iii. Study descriptions  
-## iv. Pattern definitions    
-  
-# III. Taxonomic patterns  
-## i. Species  
-### Well-sampled vs poorly sampled  
-  
-## ii. Genera  
-### Diversity of genera  
-### Diversity within genera  
-### Diversity of most-speciose genus vs rest 
-
-## iii. Subfamilies  
-### Diversity of subfamilies  
-### Diversity within subfamilies  
-### Diversity of most-speciose subfamily vs rest  
-  
-
-# IV. Beta diversity    
-Split by components or by taxonomy?  
-How does this square with small range sizes? How is nestedness so high?  
-## i. Species  
-### Total beta diversity  
-U, I, flat. 
-Mostly U-shaped though. 
-Opposite of ecotone expectations - generally low at middle elevations.  
-### Turnover vs Nestedness  
-Nestedness is often U-shaped, highest at the base and peak. 
-Nestedness is highest at high elevations - environmental filtering? 
-Turnover is more variable: D, LP, HP, MP, I, U.  
-### Differences among mountain types/climates?  
-  
-## ii. Genus  
-worth it to look within genera?  
-### Total beta diversity  
-U, I, flat (but flat maybe a U). 
-Mostly U or truncated U with a dip at middle elevations.   
-### Turnover vs Nestedness  
-Nestedness is often U-shaped, highest at the base and peak. 
-Nestedness makes up a larger component at most elevations along most transects. 
-Turnover is generally low, but somewhat variable.  
-### Differences among mountain types/climates?  
-
-## i. Subfamily  
-### Total beta diversity  
-### Turnover vs Nestedness  
-### Differences among mountain types/climates?  
-  
-## iv. Comparison across taxonomic levels (spp vs gen)   
-### All are generally higher at the spp than gen level  
-Beta decreases as taxonomic resolution decreases. 
-Turnover drops heavily, esp at sf level.  
-### Several sites where turnover is much higher  
-### Anything consistent?  
-  
- 
-~~# V. Natural history~~  
-~~## Nesting~~  
-~~Ant nests may be either underground, for instance in the soil, in decaying wood, or under rocks, or arboreal such as nests on epiphytes, in tree trunks, or as carton nests. 
-Nesting strategies vary among ant species and, in some cases, within species. 
-For many ant species, such basic natural history is not known.~~ 
-~~## Diet specialization~~  
-~~## Take home~~  
-
-# V. Range size  
-## Mean across whole gradient  
-Larger at regional scale than local scale.  
-Larger in temperate than tropics. 
-Both absolute and as a proportion of the gradient for temp vs tropic, but complicated with scale... 
-Latitude: increases absolutely, but  
-## Changes along the gradient  
-    
-
-# VIII. Commonly suggested, seldom evaluated  
-Habitat complexity, litter depth, biotic interactions, diet, any and all natural history, changes through time
-- Bishop et al 2014  
-- Dunn/Sanders/someone paper about queen release  
-- Particular parts of the world that need focus  
-- Local vs regional?  
-
-# IX. Conclusion  
-Patterns of ant richness are complex and varied. 
-Good foundation, much to uncover.   
-  
-  
-  
-  
-  one ring to rule them all?
-  all sf's or all genera seem to behave similarly...
