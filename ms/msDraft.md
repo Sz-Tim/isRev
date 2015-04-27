@@ -19,6 +19,7 @@ Several analyses have reported support for the elevational extension of Rapoport
 In contrast, ant species ranges were largest at low elevations in Costa Rica [@LongColw2011]. 
 However, a recent review found little support for this hypothesis across an array of taxa when accounting for biases in estimating the mean range size [@McCaBrac2012]. 
 While elevational trends in ant communities and range sizes have been demonstrated in several systems (e.g., )[@BurwNaka2011; @Fisher1998; @Lessard2007; @LongColw2011; @MunyFoor2012]. 
+Nevertheless, high species turnover is not universal among the tropical gradients and turnover is consistently low in the temperate datasets. 
   
 # Introduction  
 Patterns of species richness and community composition are directly determined by the distribution and delineation of species ranges. 
@@ -114,6 +115,7 @@ This suggests that the thermal tolerances of tropical ant species are, in fact, 
 Alternatively, smaller elevational ranges are also consistent with stronger interspecific competition in the tropics [@Pianka1966; @Willig2003], though of course these hypotheses are not mutually exclusive. 
 Regardless, the smaller elevational ranges in the tropics should lead to more pronounced changes in the ant community composition across tropical elevational gradients. 
   
+  
 # Species composition & beta diversity  
 In a broad sense, beta diversity quantifies the variation in the species composition across space or time [@Anderson2011]. 
 That variation can occur either through the replacement of one species for another, called *turnover*, or through the loss or addition of species, called *nestedness* [@Baselga2010; @Baselga2012; @Legendre2014]. 
@@ -159,30 +161,28 @@ At the gradient scale, genus turnover and genus nestedness are comparable along 
 When all elevations along a given gradient are compared pairwise, the difference in genus composition results from both the replacement of one genus for another and the loss of genera without replacement. 
   
 However, between elevationally adjacent sites, ant genera, like ant species, tend to be nested (STATS) and adjacent communities differ due to the loss of genera between elevations rather than the replacement of one genus with another. 
-In fact, along many gradients, turnover at the genus level is nearly zero between the majority of adjacent elevations. 
+Along many gradients, turnover at the genus level is nearly zero between the majority of adjacent elevations. 
 The primary exceptions are in the Philippines [@Samson1997], where turnover is higher than nestedness except at the highest elevations, and in the McPherson Range in Australia [@BurwNaka2011], where turnover is higher than nestedness along the lower half of the gradient. 
 With common interpretations of turnover and nestedness **CITE**, the high nestedness with low turnover along most gradients suggests that environmental filtering is more important than biotic interactions in determining the ant genus communities across elevations. 
 
 ### Subfamily    
 At the subfamily level, $\beta_{st}$ shows no relationship with latitude (*n*=16, *P*=0.15, *R^2^*=0.08). 
 The change in subfamily composition across elevations does not vary consistently with latitude. 
-In contrast to species and genera, subfamily beta diversity between adjacent elevations most often increases monotonically toward the summit (12/16), though U-shaped patterns also occur (3/16) and even monotonic declines (1/16). 
 The proportion of gradient-wide beta diversity due to turnover at the subfamily level is not different between tropical and temperate mountains (Fig. 2b; Wilcoxon rank sum test: *W*=45; *P*=0.08) and in fact, nearly all of the change in subfamily composition is due to nestedness rather than turnover (Fig. 3; Paired t-test: *t~15~*=-11.04, *P*<0.001). 
 That is, subfamilies rarely replace one another among sites, but rather the subfamily composition of each elevation is most often either identical to or a subset of the composition at other elevations. 
-Between adjacent elevations, there is no turnover along any gradient. 
-Thus, there is a high degree of elevational overlap among subfamilies. 
+  
+Between adjacent elevations, there is no subfamily turnover along any gradient. 
+Instead, there is a high degree of elevational overlap among subfamilies, resulting in subfamily communities that are subsets across elevations. 
 Often, subfamilies are progressively excluded as elevation increases, likely due to environmental filtering. 
 With highly nested subfamily communities, there is little evidence for competitive exclusion across elevations at the subfamily level. 
   
-Latitudinal trends in elevational beta diversity are contingent on taxonomic level. 
-Elevational community differences are most extreme between tropical ant species. 
-Furthermore, overall beta diversity between adjacent elevations declines in ants as taxonomic resolution decreases. 
-The species community dissimilarity is higher than the genus community dissimilarity (stats for *Beta~genus~* and *Beta~species~*) which, in turn, is higher than the subfamily community dissimilarity (stats for *Beta~subfamily~* and *Beta~genus~*). 
-In particular, turnover across elevations declines at higher taxonomic levels. 
+Thus, latitudinal trends in elevational beta diversity are contingent on taxonomic level. 
+Community differences across elevations are most extreme between tropical ant species. 
+Furthermore, beta diversity between adjacent elevations declines as taxonomic resolution decreases. 
+The species dissimilarity is higher than genus dissimilarity (stats for *Beta~genus~* and *Beta~species~*) which, in turn, is higher than subfamily dissimilarity (stats for *Beta~subfamily~* and *Beta~genus~*). 
+Most dramatically, turnover across elevations declines at higher taxonomic levels irrespective of latitude. 
 Communities become increasingly nested as the differences are due not to the replacement of one taxon with another, but to the loss of taxa. 
-Even in the tropical datasets, where species turnover is highest, the genus turnover is substantially lower. 
-This is consistent with competitive exclusion between congeners across elevations, though heightened sensitivity to abiotic conditions and consequent elevational specialization could also produce this pattern. 
-Nevertheless, high species turnover is not universal among the tropical gradients and turnover is consistently low in the temperate datasets. 
+This may occur because of competitive exclusion between congeners across elevations, though heightened sensitivity to abiotic conditions at the species level and consequent elevational specialization could also produce this pattern. 
   
   
 # Richness patterns  
