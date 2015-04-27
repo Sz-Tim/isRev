@@ -44,7 +44,11 @@ Adjacent
 
 # VI. Dominant taxon  
 ### Most speciose genus  
+Which genera and in what proportion?  
+Nestedness of patterns 
 ### Most speciose subfamily  
+Which subfamilies and in what proportion?  
+Nestedness of patterns  
 ### Subconclusion  
 
 # VII. Into the future  
