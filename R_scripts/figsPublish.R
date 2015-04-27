@@ -91,15 +91,32 @@ loadAll()
 #########
 
   #--- sp.STB vs latitude ---#
-  fig2 <- ggplot(over.df, aes(x=abs(Latsamp), y=sp.STB)) + 
+  fig2 <- ggplot(over.df, aes(x=abs(Latsamp))) + 
     theme_is +
-    geom_point(size=4) +
-    stat_smooth(se=FALSE, method="lm", colour="black", size=1) +
+    stat_smooth(aes(y=sp.STB), se=FALSE, 
+                method="lm", size=1.5, colour="black") +
+    stat_smooth(aes(y=gen.STB), se=FALSE, 
+                method="lm", size=1.5, colour="black") +
+    stat_smooth(aes(y=sf.STB), se=FALSE, 
+                method="lm", size=1.5, colour="black") +
+    stat_smooth(aes(y=sp.STB), se=FALSE, 
+                method="lm", size=1, colour="black") +
+    stat_smooth(aes(y=gen.STB), se=FALSE, 
+                method="lm", size=1, colour="gray70") +
+    stat_smooth(aes(y=sf.STB), se=FALSE, 
+                method="lm", size=1, colour="white") +
+    geom_point(aes(y=sp.STB, fill="Species"), size=4, pch=21) +
+    geom_point(aes(y=gen.STB, fill="Genus"), size=4, pch=21) +
+    geom_point(aes(y=sf.STB, fill="Subfamily"), size=4, pch=21) +
+    scale_fill_manual(name="Taxonomic \nLevel",
+                        values=c("Species"="black",
+                                 "Genus"="gray70",
+                                 "Subfamily"="white")) +
     labs(x="Degrees from equator", 
          y=expression(paste(beta[' st'])))
   
   #--- save figure ---#
-  ggsave("ms/pubFigs/Fig2.eps", fig2, width=w, height=h)
+  ggsave("ms/pubFigs/Fig2.eps", fig2, width=w*1.25, height=h)
 
 
 #########
