@@ -63,7 +63,7 @@
   summary(over.df$mp.r)
   sum(over.df$mp.p < 0.05 & over.df$mp.b > 0, na.rm=TRUE)
   summary(over.df$quart.r)
-  sum(over.df$quart.p < 0.05 & over.df$quart.b < 0, na.rm=TRUE)
+  sum(over.df$quart.p < 0.05 & over.df$quart.b > 0, na.rm=TRUE)
 
 #######
 ## Beta diversity
