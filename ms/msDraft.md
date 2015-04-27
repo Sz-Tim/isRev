@@ -116,17 +116,19 @@ Regardless, the smaller elevational ranges in the tropics should lead to more pr
   
 # Species composition & beta diversity  
 In a broad sense, beta diversity quantifies the variation in the species composition across space or time [@Anderson2011]. 
-Species composition can vary between sites, however, either due to the replacement of one species for another, called *turnover*, or due to the loss or addition of species, called *nestedness* [@Baselga2010; @Baselga2012; @Legendre2014]. 
-Total beta diversity can be partitioned into turnover and nestedness to compare the proportion of composition change resulting from species replacements or additions respectively [@Baselga2010]. 
-Turnover and nestedness are likely driven by different processes and understanding the pattern of each across elevations may yield insight into the importance of ecological filtering, biotic interactions, and neutral processes **CITE**[@Svenning2011]. 
-Differences in turnover and nestedness suggest variation in the ecological processes underlying the community composition. 
-To compare gradient-wide beta diversity, I calculated beta as [@Tuomisto2010]:  
+That variation can occur either through the replacement of one species for another, called *turnover*, or through the loss or addition of species, called *nestedness* [@Baselga2010; @Baselga2012; @Legendre2014]. 
+Total beta diversity can be partitioned into turnover and nestedness to compare the proportion of compositional change resulting from the replacement or addition of species, respectively [@Baselga2010]. 
+Turnover and nestedness are likely driven by different processes. 
+Understanding the pattern of each across elevations can clarify the importance of ecological filtering, biotic interactions, and neutral processes **CITE**[@Svenning2011]. 
+  
+To compare gradient-wide beta diversity, I calculated overall beta diversity as [@Tuomisto2010]:  
 
-D~beta~ = (total richness of gradient)/(average richness of sampled elevational bands)  
+$$D_\beta = \frac{S_\gamma}{\bar{S}_\alpha}$$  
 
-Because this method is affected by the number of sampled elevational bands, I standardized D~beta~:  
+where $S_\gamma$ is the total richness along the gradient and $\bar{S}_\alpha$ is the average richness of the sampled elevational bands. 
+Because this method is affected by the number of sampled elevational bands, I standardized $D_\beta$ as:  
 
-Beta~st~ = (D~beta~ - 1)/(N - 1)  
+$$\beta_{st} = \frac{D_\beta - 1}{N - 1}$$  
 
 where *N* is the number of elevational bands [@Chao2012]. 
 To explore gradient-wide turnover and nestedness as well as the change in ant communities between adjacent sites along each gradient, I used the Sørensen-family metrics in the R package *betapart* to calculate beta diversity, turnover, and nestedness [@Baselga2010; @Baselga2012; @BaseOrme2012]. 

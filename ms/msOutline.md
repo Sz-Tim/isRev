@@ -3,36 +3,46 @@
 ### Value of insects  
 ### Ant taxonomic ecology  
 ### Challenge  
+
 # II. State of the data  
 ### Literature search  
 ### Criteria  
 ### Study descriptions  
 ### Pattern definitions  
+
 # III. Range size  
 ### Background and methods  
 Tropical species should have smaller ranges because of seasonal consistency  
 Average range size is sensitive to gradient height, so truncation methods  
-Elevational range increases with latitude for spp, but not genera or sf's  
-Range size doesn't increase consistently along a single gradient  
 ### Among gradients  
+Elevational range increases with latitude for spp, but not genera or sf's  
 ### Along gradients  
+Range size doesn't increase consistently along a single gradient  
 ### Subconclusion  
+Range size increases with latitude, consistent with either/both thermal tolerances or/and competition intensity  
+
 # IV. Composition & beta  
 ### Beta background and methods  
+Beta diversity can be broken into turnover and nestedness  
+This is how I estimated beta, turnover, and nestedness at each scale  
 ### Species patterns  
 ### Genus patterns  
 ### Subfamily patterns  
 ### Subconclusion  
+
 # V. Richness  
 ### Species  
 ### Genus  
 ### Subfamily  
 ### Subconclusion  
+
 # VI. Dominant taxon  
 ### Most speciose genus  
 ### Most speciose subfamily  
 ### Subconclusion  
+
 # VII. Into the future  
+
 # VIII. Conclusions  
 
   
