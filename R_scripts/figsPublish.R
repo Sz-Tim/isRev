@@ -13,8 +13,8 @@ source("R_scripts/FuncsGen.R")
 loadAll()
 
   #--- graphical parameters ---#
-  w <- 6  # width of eps (inches)
-  h <- 5  # height of eps (inches)
+  w <- 6  # width of png (inches)
+  h <- 5  # height of png (inches)
 
   theme_is <- theme(axis.title.x=element_text(size=rel(1.5), vjust=-0.3),
                     axis.text.x=element_text(size=rel(1.5)),
@@ -84,7 +84,7 @@ loadAll()
 
   #--- save figure ---#
   fig1 <- arrangeGrob(f1a, f1b, ncol=2)
-  ggsave("ms/pubFigs/Fig1.eps", fig1, width=w*2.5, height=h)
+  ggsave("ms/pubFigs/Fig1.png", fig1, width=w*2.5, height=h)
 
 #########
 ## Figure 2
@@ -116,7 +116,7 @@ loadAll()
          y=expression(paste(beta[' st'])))
   
   #--- save figure ---#
-  ggsave("ms/pubFigs/Fig2.eps", fig2, width=w*1.25, height=h)
+  ggsave("ms/pubFigs/Fig2.png", fig2, width=w*1.25, height=h)
 
 
 #########
@@ -134,7 +134,7 @@ loadAll()
   
   
   #--- save figure ---#
-  ggsave("ms/pubFigs/Fig3.eps", fig3, width=w*1.25, height=h)
+  ggsave("ms/pubFigs/Fig3.png", fig3, width=w*1.25, height=h)
 
 
 #########
@@ -150,7 +150,7 @@ loadAll()
     labs(x="Richness Pattern", y="Number of gradients")
 
   #--- save figure ---#
-  ggsave("ms/pubFigs/Fig4.eps", fig4, width=w*1.25, height=h)
+  ggsave("ms/pubFigs/Fig4.png", fig4, width=w*1.25, height=h)
 
 
 #########
@@ -181,5 +181,5 @@ loadAll()
 
   #--- save figure ---#
   fig5 <- arrangeGrob(f5a, f5b, ncol=2)
-  ggsave("ms/pubFigs/Fig5.eps", fig5, width=w*2, height=h)
+  ggsave("ms/pubFigs/Fig5.png", fig5, width=w*2, height=h)
 

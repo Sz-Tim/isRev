@@ -296,20 +296,17 @@ The trend is apparent with all datasets combined (black line) and within each gr
 There is much variability in the slope of the relationship across gradients and, in one case, a negative relationship. 
 (b) The apparent nestedness of the richness patterns becomes stronger at the subfamily level. 
 The relationship is strong with all datasets combined (black line) and much less variable among transects (gray lines) compared to the genus level.  
-
-
   
-    
   
-![Figure 1.](pubFigs/Fig1.eps)      
+![Figure 1.](pubFigs/Fig1.png)      
   
-![Figure 2.](pubFigs/Fig2.eps)  
+![Figure 2.](pubFigs/Fig2.png)  
   
-![Figure 3.](pubFigs/Fig3.eps)  
+![Figure 3.](pubFigs/Fig3.png)  
 
-![Figure 4.](pubFigs/Fig4.eps)  
+![Figure 4.](pubFigs/Fig4.png)  
 
-![Figure 5.](pubFigs/Fig5.eps)
+![Figure 5.](pubFigs/Fig5.png)
   
   
 ---  
