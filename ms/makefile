@@ -6,7 +6,7 @@ supportFiles/isRev.bib: ~/Dropbox/Thesis/Manuscripts/MendeleyBibTex/InSoc_Review
 	cp ~/Dropbox/Thesis/Manuscripts/MendeleyBibTex/InSoc_Review.bib supportFiles/isRev.bib
 
 output/msDraft.docx: msDraft.md supportFiles/isRev.bib  
-	pandoc -H supportFiles/format.sty -V fontsize=12pt --bibliography supportFiles/isRev.bib --csl=supportFiles/insectes-sociaux.csl --reference-docx=supportFiles/refTemplate.docx msDraft.md -o output/msDraft.docx
+	pandoc --bibliography supportFiles/isRev.bib --csl=supportFiles/insectes-sociaux.csl --reference-docx=supportFiles/refTemplate.docx msDraft.md -o output/msDraft.docx
 
 output/msDraft.pdf: msDraft.md supportFiles/isRev.bib  
 	pandoc -H supportFiles/format.sty -V fontsize=12pt --bibliography supportFiles/isRev.bib --csl=supportFiles/insectes-sociaux.csl msDraft.md -o output/msDraft.pdf
