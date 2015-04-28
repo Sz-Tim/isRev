@@ -6,13 +6,8 @@
 **E-mail:** timothy.szewczyk@colorado.edu  
 **Telephone:** ??  
 **Fax:** ??  
-  
-**Abstract:** 150–250 words.  The abstract abstract is rather abstract.
-  
-**Keywords:** 4–6 keywords. Formicidae, subfamily, genus, altitude, range size, beta diversity    
-  
-\newpage  
-  
+**Abstract:** 150–250 words.  The abstract abstract is rather abstract.  
+**Keywords:** 4–6 keywords. Formicidae, subfamily, genus, altitude, range size, beta diversity  
 **Stray sentences**
 Along tropical elevational gradients, ant species typically have small elevational ranges with many species detected at just one elevation [@LongColw2011; @Olson1994; @Samson1997; @Fisher1998; @Bruhl1999]. 
 Several analyses have reported support for the elevational extension of Rapoport's Rule, finding that high elevation ant species tend to have broader elevational ranges compared to low elevation species [@Olson1994; @Sanders2002; @Lessard2007]. 
@@ -20,6 +15,8 @@ In contrast, ant species ranges were largest at low elevations in Costa Rica [@L
 However, a recent review found little support for this hypothesis across an array of taxa when accounting for biases in estimating the mean range size [@McCaBrac2012]. 
 While elevational trends in ant communities and range sizes have been demonstrated in several systems (e.g., )[@BurwNaka2011; @Fisher1998; @Lessard2007; @LongColw2011; @MunyFoor2012]. 
 Nevertheless, high species turnover is not universal among the tropical gradients and turnover is consistently low in the temperate datasets. 
+  
+\newpage  
   
 # Introduction  
 Patterns of species richness and community composition are directly determined by the distribution and delineation of species ranges. 
@@ -187,44 +184,48 @@ This may occur because of competitive exclusion between congeners across elevati
   
 # Richness patterns  
 ### Species richness  
-In the robust datasets, ant species richness most often peaks at intermediate elevations (14/20), though decreasing (3/20) and low plateau (3/20) patterns also occur (Fig. 4, black bars). 
+Ant species richness shows a variety of patterns across elevational gradients. 
+In the robust datasets, species richness most often peaks at intermediate elevations (14/20), though decreasing (3/20) and low plateau (3/20) patterns also occur (Fig. 4, black bars). 
 Despite strong latitudinal trends in range size and beta diversity, the richness pattern distribution of tropical gradients is not significantly different than that of temperate gradients (Fisher's Exact Test: *n*=20, *P*=0.30). 
-In the excluded datasets, the patterns were more variable. 
-In addition to the mid-peaks, decreases, and low plateaus seen in the robust datasets, there were also gradients with increasing richness and with no identifiable pattern. 
-Furthermore, decreasing patterns were nearly as common as mid-peaks in the excluded datasets. 
-Some of these decreasing patterns, however, are likely an artefact of sampling bias. 
-Of the excluded gradients that detected decreases, the majority did not sample within the lowest 400m, potentially failing to capture the portion of the gradient across which the common patterns differ the most. 
-Ant species richness, therefore, shows a variety of elevational patterns, with richness often highest at intermediate elevations. 
+In the excluded datasets, the patterns are more variable, with mid-peaks, decreases, low plateaus, increases, and no identifiable pattern reported. 
+Furthermore, decreasing patterns were roughly as common as mid-peaks in these datasets. 
+This is likely an artefact of sampling bias, however. 
+Of the excluded gradients detecting decreases, the majority did not sample within the lowest 400m, failing to capture the portion of the gradient where the common patterns differ the most. 
+At the species level, therefore, ant elevational richness is variable among mountain ranges, though frequently highest at intermediate elevations. 
   
 ### Genus richness  
-The number of genera across elevations typically mirrors the number of species, with the genus richness pattern the same as the species richness pattern in 11/16 gradients. 
-Moreover, the distribution of genus richness patterns does not differ significantly from the species richness patterns (Fig. 4, gray and black bars; Fisher's Exact Tests: *n~species~*=20, *n~genus~*=16, *P*=0.28; *n~species~*=16, *n~genus~*=16, *P*=0.39), though there is a tendency for the peak in genus richness to be less pronounced, resulting in several low plateaus with mid peaks that were not seen at the species level. 
+The number of genera across elevations typically mirrors the number of species; the genus richness pattern is the same as the species richness pattern in 11/16 gradients. 
+Moreover, the distribution of genus richness patterns does not differ significantly from the species richness patterns (Fig. 4, black and gray bars; Fisher's Exact Tests: *n~species~*=20, *n~genus~*=16, *P*=0.28; *n~species~*=16, *n~genus~*=16, *P*=0.39), though there is a tendency for the peak in genus richness to be less pronounced, resulting in several low plateaus with mid-peaks that do not occur at the species level. 
 The distribution of genus richness patterns does not vary significantly between tropical and temperate datasets (Fisher's Exact Test: *n*=16, *P*=0.11). 
-The number of species increases quite predictably with the number of genera (STATS), lending further evidence that the richness patterns are nested taxonomically. 
+The number of species increases quite predictably with the number of genera (STATS), lending further evidence that ant richness patterns are similar across taxonomic scales. 
   
 ### Subfamily richness  
-The number of ant subfamilies shows less distinct patterns elevationally than the number of species or genera due to the smaller number of subfamilies, though they are generally coarsely similar to the species and genus richness patterns. 
-The distribution of subfamily richness patterns is not significantly different from that of the species richness patterns (Fig.4, white and black bars; Fisher's Exact Tests: *n~species~*=20, *n~subfamily~*=16, *P*=0.10; *n~species~*=16, *n~subfamily~*=16, *P*=0.20) nor from that of the genus richness (Fig. 4, gray and black bars; Fisher's Exact Test: *n*=16; *P*=0.84).
-Like the species and genus patterns, the distribution of subfamily richness patterns does not vary significantly between tropical and temperate gradients (Fisher's Exact Test: *n*=16, *P*=0.28).
-The number of subfamilies does predict the number of species (STATS), though of course less reliably than the number of genera. 
+The richness pattern of ant subfamilies along each gradient is coarsely similar to the species and genus richness patterns, though the patterns are less distinct due to the smaller number of subfamilies. 
+The distribution of subfamily richness patterns is not significantly different from that of the species richness patterns (Fig.4, black and white bars; Fisher's Exact Tests: *n~species~*=20, *n~subfamily~*=16, *P*=0.10; *n~species~*=16, *n~subfamily~*=16, *P*=0.20) nor from that of the genus richness patterns (Fig. 4, gray and white bars; Fisher's Exact Test: *n*=16; *P*=0.84).
+As at the species and genus levels, the distribution of subfamily richness patterns does not vary significantly between tropical and temperate gradients (Fisher's Exact Test: *n*=16, *P*=0.28).
+The number of subfamilies does predict the number of species (STATS), though less reliably than the number of genera. 
   
-Ant richness, therefore, is commonly high at intermediate elevations at the species, genus, and subfamily levels. 
+Ant richness, therefore, is often high at intermediate elevations whether measured at the species, genus, or subfamily levels. 
 Consequently, it appears that the underlying ecological or evolutionary factors driving richness are creating similar patterns at multiple taxonomic scales. 
-It may seem intuitive that the number of species would increase with the number of genera, though in fact the species community can be over- or underdispersed phylogenetically [@Webb2002], with the degree phylogenetic dispersion possibly arising from a balance between environmental filtering, neutral processes, and competition [@Webb2002; @Machac2011; @KembHubb2006]. 
-The similarity in richness patterns across taxonomic levels suggests that ant species across the many genera and subfamilies along each gradient may be responding similarly to the combination of processes affecting speciation and community assembly. 
+While it may seem intuitive that the number of species would increase with the number of genera, in fact species communities can be over- or under-dispersed phylogenetically [@Webb2002], with the degree phylogenetic dispersion likely arising from the interplay of environmental filtering, neutral processes, and competition [@Webb2002; @Machac2011; @KembHubb2006]. 
+The similarity in richness patterns across taxonomic levels suggests that species across the many genera and subfamilies of ants along each gradient may be responding similarly to the combination of processes affecting speciation and community assembly. 
 Nonetheless, given the disparate number of species within each ant genus or subfamily, the pattern of species richness across communities on an elevational gradient may simply result from the richness pattern of the most speciose genus or subfamily along the gradient. 
   
   
 # Dominant taxa  
 ### Most speciose genus  
-The most speciose genus in each dataset comprises 7–31% of the total species richness along the gradient (mean ± SE: 20.0 ± 1.57%). 
+The taxonomic composition is highly variable among gradients. 
+The most speciose genus along each gradient comprises 7–31% of the total species richness of that gradient (mean ± SE: 20.0 ± 1.57%). 
 These genera include *Camponotus* [@Sabu2008], *Formica* [@Gregg1963; @Allred1982; @WheeWhee1986; @Hellrigl2003; @Glaser2006], *Lasius* [@Karaman2011], *Pheidole* [@MoodFran1982; @VanPelt1983; @Samson1997; @Fisher1998; @ArauFern2003; @BurwNaka2011; @LongColw2011], *Stenamma* [@Lessard2007], and *Strumigenys* [@SarnEcon2012]. 
-The proportion of species within the most speciose genus does not vary predictably across latitudes (*n*=16, *P*=0.15, *R^2^*=0.08). 
+The proportion of total species richness within the most speciose genus does not vary predictably across latitudes (*n*=16, *P*=0.15, *R^2^*=0.08). 
   
-While the overall richness pattern is predicted well by the richness pattern of the most speciose genus (STATS), the overall pattern is not driven solely by a single genus. 
-Rather, the species richness pattern of the most speciose genus is generally similar to the richness pattern of the remaining species; the richness of the most speciose genus predicts the richness of the remaining genera quite well along most gradients (Fig. 5a; STATS), though there is a fair amount of variability in the slopes among gradients (STATS: slope ranges). 
-Many of the non-dominant genera (at least in terms of richness) do not have enough species or are not widespread enough to reliably discern a richness pattern. 
+The species richness of the most speciose genus, of course, strongly predicts richness across elevations (STATS). 
+However, the overall pattern is not driven solely by this single genus. 
+Instead, the species richness pattern of the most speciose genus is typically similar to the richness pattern of the remaining species. 
+Along most gradients, the richness of the most speciose genus predicts the richness of the remaining genera quite well (Fig. 5a; STATS), though the relationship is variable among gradients (STATS: slope ranges). 
+Many of the non-dominant genera are neither speciose nor widespread enough to reliably discern a species richness pattern. 
 Those that are, however, tend to show a qualitatively similar elevational richness pattern both to the overall pattern and to the most speciose genus. 
+The total elevational richness pattern appears, therefore, to emerge as a cumulative property of ant genera, each of which is broadly similar in its distribution of species. 
   
 ### Most speciose subfamily  
 The most speciose subfamily along each gradient comprises 39–73% of the total species richness (mean ± SE: 54.5 ± 2.04%). 
