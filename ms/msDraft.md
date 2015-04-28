@@ -214,7 +214,7 @@ Nonetheless, given the disparate number of species within each ant genus or subf
   
 # Dominant taxa  
 ### Most speciose genus  
-The taxonomic composition is highly variable among gradients. 
+The richness distribution among genera is highly variable. 
 The most speciose genus along each gradient comprises 7–31% of the total species richness of that gradient (mean ± SE: 20.0 ± 1.57%). 
 These genera include *Camponotus* [@Sabu2008], *Formica* [@Gregg1963; @Allred1982; @WheeWhee1986; @Hellrigl2003; @Glaser2006], *Lasius* [@Karaman2011], *Pheidole* [@MoodFran1982; @VanPelt1983; @Samson1997; @Fisher1998; @ArauFern2003; @BurwNaka2011; @LongColw2011], *Stenamma* [@Lessard2007], and *Strumigenys* [@SarnEcon2012]. 
 The proportion of total species richness within the most speciose genus does not vary predictably across latitudes (*n*=16, *P*=0.15, *R^2^*=0.08). 
@@ -225,18 +225,17 @@ Instead, the species richness pattern of the most speciose genus is typically si
 Along most gradients, the richness of the most speciose genus predicts the richness of the remaining genera quite well (Fig. 5a; STATS), though the relationship is variable among gradients (STATS: slope ranges). 
 Many of the non-dominant genera are neither speciose nor widespread enough to reliably discern a species richness pattern. 
 Those that are, however, tend to show a qualitatively similar elevational richness pattern both to the overall pattern and to the most speciose genus. 
-The total elevational richness pattern appears, therefore, to emerge as a cumulative property of ant genera, each of which is broadly similar in its distribution of species. 
   
 ### Most speciose subfamily  
+The richness distribution among subfamilies is highly variable. 
 The most speciose subfamily along each gradient comprises 39–73% of the total species richness (mean ± SE: 54.5 ± 2.04%). 
-The dominant subfamily in terms of richness is either Formicinae [@Gregg1963; @Allred1982; @WheeWhee1986; @Hellrigl2003; @Glaser2006] or Myrmicinae [@Sabu2008; @Karaman2011; @MoodFran1982; @VanPelt1983; @Samson1997; @Fisher1998; @ArauFern2003; @BurwNaka2011; @LongColw2011; @Lessard2007; @SarnEcon2012]. 
-There is no significant latitudinal trend in the proportion of species in the most speciose subfamily (*n*=16, *P*=0.38, *R^2^*=0.06). 
+One of two subfamilies are dominant: Formicinae [@Gregg1963; @Allred1982; @WheeWhee1986; @Hellrigl2003; @Glaser2006] or Myrmicinae [@Sabu2008; @Karaman2011; @MoodFran1982; @VanPelt1983; @Samson1997; @Fisher1998; @ArauFern2003; @BurwNaka2011; @LongColw2011; @Lessard2007; @SarnEcon2012]. 
+There is no latitudinal trend in the proportion of species in the most speciose subfamily (*n*=16, *P*=0.38, *R^2^*=0.06). 
   
-As with the most speciose genus, the species richness pattern within the most speciose subfamily tends to be remarkably similar to both the overall species richness pattern and the richness pattern of the remaining species (Fig. 5b; STATS). 
-The elevational species richness pattern is not simply the result of the most speciose subfamily. 
+As with the dominant genus, the species richness within the most speciose subfamily is remarkably similar across elevations both to the richness of all species (STATS) and to the richness of species in non-dominant subfamilies (Fig. 5b; STATS). 
+Thus, the total species richness pattern is not simply a product of the most speciose subfamily. 
 Rather, the dominant subfamily shows the same richness pattern as the remaining subfamilies. 
-As with the richness patterns of individual genera, the richness pattern of each subfamily along a gradient is often qualitatively similar to the overall richness pattern and to the pattern of the most speciose subfamily. 
-The patterns are largely nested. 
+Furthermore, the richness pattern of each subfamily is often qualitatively similar to the overall richness pattern and to the pattern of the most speciose subfamily. 
   
 Ant species richness patterns across elevations are not, therefore, driven by a single genus or a single subfamily. 
 Despite often comprising a sizable proportion of species, the most speciose genus or subfamily along a gradient most often shows a similar richness pattern across elevations as the remaining species. 
