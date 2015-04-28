@@ -237,13 +237,11 @@ Thus, the total species richness pattern is not simply a product of the most spe
 Rather, the dominant subfamily shows the same richness pattern as the remaining subfamilies. 
 Furthermore, the richness pattern of each subfamily is often qualitatively similar to the overall richness pattern and to the pattern of the most speciose subfamily. 
   
-Ant species richness patterns across elevations are not, therefore, driven by a single genus or a single subfamily. 
-Despite often comprising a sizable proportion of species, the most speciose genus or subfamily along a gradient most often shows a similar richness pattern across elevations as the remaining species. 
-Though there is, of course, variability, the richness pattern within each genus or subfamily tends to be broadly similar to the whole. 
-Moreover, the number of genera tends to correspond with the number of species across elevations. 
-This suggests that the key factors shaping the richness of ants across a given elevational gradient may act on all ant taxa similarly, regardless of ecological differences. 
-In contrast to the dramatic latitudinal differences in beta diversity and elevational range size, ant species richness patterns do not appear to vary consistently with latitude. 
-Thus, while range sizes and changes in species composition are inherently tied to variation in species richness, they perhaps are not as directly related at the scale of elevational gradients. 
+Ant species richness patterns across elevations are not, therefore, driven by a single subtaxon, but rather emerge from the nested richness patterns of each genus and subfamily. 
+The richness pattern within each genus or subfamily tends to be broadly similar to that of the whole. 
+Moreover, the number of genera and, to a lesser extent, the number of subfamilies tend to correspond with the number of species across elevations. 
+This suggests that the key factors shaping the richness of ants across a given elevational gradient may act on the majority of ant taxa similarly, regardless of ecological differences. 
+Thus, while range sizes and changes in species composition are inherently tied to variation in species richness, they perhaps are not as directly relevant to richness patterns at the scale of elevational gradients. 
   
   
 # Research gaps  
