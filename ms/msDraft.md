@@ -225,7 +225,7 @@ Many of the non-dominant genera are neither speciose nor widespread enough to re
 Those that are, however, tend to show a qualitatively similar elevational richness pattern both to the overall pattern and to that of the most speciose genus. 
   
 ### Most speciose subfamily  
-The numerical dominance of the most speciose subfamily is highily variable among mountain ranges. 
+The numerical dominance of the most speciose subfamily is highly variable among mountain ranges. 
 The most speciose subfamily along each gradient comprises 39–73% of the total species richness (mean ± SE: 54.5 ± 2.04%). 
 Along a given gradient, one of two subfamilies are dominant: Formicinae [@Gregg1963; @Allred1982; @WheeWhee1986; @Hellrigl2003; @Glaser2006] or Myrmicinae [@Sabu2008; @Karaman2011; @MoodFran1982; @VanPelt1983; @Samson1997; @Fisher1998; @ArauFern2003; @BurwNaka2011; @LongColw2011; @Lessard2007; @SarnEcon2012]. 
 There is no latitudinal trend in the proportion of species contained within the most speciose subfamily (*n*=16, *P*=0.38, *R^2^*=0.06). 
