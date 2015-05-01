@@ -130,13 +130,13 @@ loadAll()
     theme(axis.text.x=element_text(size=rel(2))) +
     geom_hline(yintercept=0.5, linetype=2, colour="gray40") +
     geom_boxplot() + 
-    annotate("text", label="Higher \nturnover", x=3.25, y=0.56, 
+    annotate("text", label="Higher \nturnover", x=3.15, y=0.56, 
              angle=90, hjust=0) +
-    annotate("text", label="Higher \nnestedness", x=3.25, y=0.47, 
+    annotate("text", label="Higher \nnestedness", x=3.15, y=0.47, 
              angle=90, hjust=1.1) +
-    annotate("segment", x=3.46, xend=3.46, y=0.55, yend=0.8,
+    annotate("segment", x=3.46, xend=3.46, y=0.55, yend=0.9,
              arrow=arrow(angle=35, length=unit(0.22, "cm"), ends="last")) + 
-    annotate("segment", x=3.46, xend=3.46, y=0.45, yend=0.2,
+    annotate("segment", x=3.46, xend=3.46, y=0.45, yend=0.1,
              arrow=arrow(angle=35, length=unit(0.22, "cm"), ends="last")) + 
     scale_fill_manual(name="", values=c("white", "gray70")) +
     labs(x="", y=expression(paste(beta,' proportion due to turnover')))
