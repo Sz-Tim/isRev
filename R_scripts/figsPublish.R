@@ -16,13 +16,14 @@ loadAll()
   w <- 6  # width of png (inches)
   h <- 5  # height of png (inches)
 
-  theme_is <- theme(axis.title.x=element_text(size=rel(1.5), vjust=-0.3),
-                    axis.text.x=element_text(size=rel(1.5)),
-                    axis.title.y=element_text(size=rel(1.5), vjust=1.5),
-                    axis.text.y=element_text(size=rel(1.5)),
-                    legend.title=element_text(size=rel(1.5), vjust=0.3),
+  theme_is <- theme(axis.title.x=element_text(size=25, vjust=-0.3),
+                    axis.text.x=element_text(size=25),
+                    axis.title.y=element_text(size=25, vjust=1.5),
+                    axis.text.y=element_text(size=25),
+                    legend.title=element_text(size=25, vjust=0.3),
+                    legend.key=element_rect(colour=NA),
                     legend.key.size=unit(0.75, "cm"),
-                    legend.text=element_text(size=rel(1.5))) 
+                    legend.text=element_text(size=25)) 
 
 
 #########
@@ -32,14 +33,14 @@ loadAll()
   #--- 1a. mean and median range size by latitude ---#
   f1a <- ggplot(over.df, aes(x=abs(Latsamp))) + 
     theme_is + ylim(0,1100) +
-    geom_point(aes(y=sp.mnRng, shape="Mean"), size=4) + 
+    geom_point(aes(y=sp.mnRng, shape="Mean"), size=5) + 
     geom_segment(aes(xend=abs(Latsamp), 
                      y=sp.mnRng+seRng, 
                      yend=sp.mnRng-seRng), size=1,
                  arrow=arrow(angle=90, length=unit(0.2, "cm"), ends="both")) +
     stat_smooth(aes(y=sp.mnRng), se=FALSE, method="lm", 
                 colour="black", size=1) +
-    geom_point(aes(y=sp.medRng, shape="Median"), size=4) +
+    geom_point(aes(y=sp.medRng, shape="Median"), size=5) +
     stat_smooth(aes(y=sp.medRng), se=FALSE, method="lm", 
                 colour="black", size=1, linetype=2) +
     annotate("text", x=12, y=1000, label="a.", size=10) + 
@@ -50,35 +51,35 @@ loadAll()
   #--- 1b. mean range size on truncated mountains by latitude ---#
   f1b <- ggplot(over.df, aes(x=abs(Latsamp))) + 
     theme_is + ylim(0,1100) +
-    geom_point(aes(y=sp.mnRng.2000, colour="2000m"), size=4) + 
+    stat_smooth(aes(y=sp.mnRng.2000, colour="2000m"), 
+                se=FALSE, method="lm", size=1.5) +
+    stat_smooth(aes(y=sp.mnRng.1800, colour="1800m"),
+                se=FALSE, method="lm", size=1.5) +
+    stat_smooth(aes(y=sp.mnRng.1600, colour="1600m"), 
+                se=FALSE, method="lm", size=1.5) +
     geom_segment(aes(xend=abs(Latsamp), 
                      y=sp.mnRng.2000+sp.seRng.2000, 
-                     yend=sp.mnRng.2000-sp.seRng.2000,
-                     colour="2000m"), size=1,
-                 arrow=arrow(angle=90, length=unit(0.2, "cm"), ends="both")) +
-    stat_smooth(aes(y=sp.mnRng.2000, colour="2000m"), 
-                se=FALSE, method="lm", size=1) +
-    geom_point(aes(y=sp.mnRng.1800, colour="1800m"), size=4) + 
+                     yend=sp.mnRng.2000-sp.seRng.2000), 
+                 colour="black", size=1,
+                 arrow=arrow(angle=90, length=unit(0.22, "cm"), ends="both")) +
     geom_segment(aes(xend=abs(Latsamp), 
                      y=sp.mnRng.1800+sp.seRng.1800, 
-                     yend=sp.mnRng.1800-sp.seRng.1800, 
-                     colour="1800m"), size=1,
-                 arrow=arrow(angle=90, length=unit(0.2, "cm"), ends="both")) +
-    stat_smooth(aes(y=sp.mnRng.1800, colour="1800m"), 
-                se=FALSE, method="lm", size=1) +
-    geom_point(aes(y=sp.mnRng.1600, colour="1600m"), size=4) + 
+                     yend=sp.mnRng.1800-sp.seRng.1800), 
+                 colour="gray40", size=1,
+                 arrow=arrow(angle=90, length=unit(0.22, "cm"), ends="both")) +
     geom_segment(aes(xend=abs(Latsamp), 
                      y=sp.mnRng.1600+sp.seRng.1600, 
-                     yend=sp.mnRng.1600-sp.seRng.1600, 
-                     colour="1600m"), size=1,
-                 arrow=arrow(angle=90, length=unit(0.2, "cm"), ends="both")) +
-    stat_smooth(aes(y=sp.mnRng.1600, colour="1600m"), 
-                se=FALSE, method="lm", size=1) +
+                     yend=sp.mnRng.1600-sp.seRng.1600), 
+                 colour="gray70", size=1,
+                 arrow=arrow(angle=90, length=unit(0.22, "cm"), ends="both")) +
+    geom_point(aes(y=sp.mnRng.2000, colour="2000m"), size=5) + 
+    geom_point(aes(y=sp.mnRng.1800, colour="1800m"), size=5) + 
+    geom_point(aes(y=sp.mnRng.1600, colour="1600m"), size=5) + 
     annotate("text", x=12, y=1000, label="b.", size=10) + 
     scale_colour_manual(name="Gradient \nTruncation",
-                        values=c("2000m"="gray20",
-                                 "1800m"="gray50",
-                                 "1600m"="gray80")) +
+                      values=c("2000m"="black",
+                               "1800m"="gray45",
+                               "1600m"="gray70")) +
     labs(x="Degrees from equator", y="Elevational range (m)")
 
 
@@ -127,10 +128,18 @@ loadAll()
   fig3 <- ggplot(betaTax.df, aes(x=TaxLevel, y=Turnover/TotalBeta, fill=Zone)) +
     ylim(0,1) + theme_is + 
     theme(axis.text.x=element_text(size=rel(2))) +
-    geom_hline(yintercept=0.5, linetype=2, colour="gray") +
+    geom_hline(yintercept=0.5, linetype=2, colour="gray40") +
     geom_boxplot() + 
+    annotate("text", label="Higher \nturnover", x=3.25, y=0.56, 
+             angle=90, hjust=0) +
+    annotate("text", label="Higher \nnestedness", x=3.25, y=0.47, 
+             angle=90, hjust=1.1) +
+    annotate("segment", x=3.46, xend=3.46, y=0.55, yend=0.8,
+             arrow=arrow(angle=35, length=unit(0.22, "cm"), ends="last")) + 
+    annotate("segment", x=3.46, xend=3.46, y=0.45, yend=0.2,
+             arrow=arrow(angle=35, length=unit(0.22, "cm"), ends="last")) + 
     scale_fill_manual(name="", values=c("white", "gray70")) +
-    labs(x="", y=expression(paste('Proportion of ', beta,' due to turnover')))
+    labs(x="", y=expression(paste(beta,' proportion due to turnover')))
   
   
   #--- save figure ---#
