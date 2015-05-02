@@ -16,14 +16,14 @@ loadAll()
   w <- 6  # width of png (inches)
   h <- 5  # height of png (inches)
 
-  theme_is <- theme(axis.title.x=element_text(size=25, vjust=-0.3),
-                    axis.text.x=element_text(size=25),
-                    axis.title.y=element_text(size=25, vjust=1.5),
-                    axis.text.y=element_text(size=25),
-                    legend.title=element_text(size=25, vjust=0.3),
+  theme_is <- theme(axis.title.x=element_text(size=20, vjust=-0.3),
+                    axis.text.x=element_text(size=20),
+                    axis.title.y=element_text(size=20, vjust=1.5),
+                    axis.text.y=element_text(size=20),
+                    legend.title=element_text(size=20, vjust=0.3),
                     legend.key=element_rect(colour=NA),
                     legend.key.size=unit(0.75, "cm"),
-                    legend.text=element_text(size=25)) 
+                    legend.text=element_text(size=20)) 
 
 
 #########
@@ -121,7 +121,7 @@ loadAll()
 
 
 #########
-## Figure 3
+## Figure 3  --- GET RID OF GRIDLINES
 #########
 
   #--- turnover proportion by taxonomy and zone ---#
