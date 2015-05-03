@@ -85,7 +85,7 @@ loadAll()
 
   #--- save figure ---#
   fig1 <- arrangeGrob(f1a, f1b, ncol=2)
-  ggsave("ms/pubFigs/Fig1.png", fig1, width=w*2.5, height=h)
+  ggsave("ms/pubFigs/Fig1.png", fig1, width=w*2.5, height=h, dpi=500)
 
 #########
 ## Figure 2
@@ -117,7 +117,7 @@ loadAll()
          y=expression(paste(beta[' st'])))
   
   #--- save figure ---#
-  ggsave("ms/pubFigs/Fig2.png", fig2, width=w*1.25, height=h)
+  ggsave("ms/pubFigs/Fig2.png", fig2, width=w*1.25, height=h, dpi=500)
 
 
 #########
@@ -143,7 +143,7 @@ loadAll()
   
   
   #--- save figure ---#
-  ggsave("ms/pubFigs/Fig3.png", fig3, width=w*1.25, height=h)
+  ggsave("ms/pubFigs/Fig3.png", fig3, width=w*1.25, height=h, dpi=500)
 
 
 #########
@@ -159,7 +159,7 @@ loadAll()
     labs(x="Richness Pattern", y="Number of gradients")
 
   #--- save figure ---#
-  ggsave("ms/pubFigs/Fig4.png", fig4, width=w*1.25, height=h)
+  ggsave("ms/pubFigs/Fig4.png", fig4, width=w*1.25, height=h, dpi=500)
 
 
 #########
@@ -190,5 +190,5 @@ loadAll()
 
   #--- save figure ---#
   fig5 <- arrangeGrob(f5a, f5b, ncol=2)
-  ggsave("ms/pubFigs/Fig5.png", fig5, width=w*2, height=h)
+  ggsave("ms/pubFigs/Fig5.png", fig5, width=w*2, height=h, dpi=500)
 
