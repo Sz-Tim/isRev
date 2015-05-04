@@ -1,4 +1,6 @@
 @Allred1982  
+@AndeMcSh2001  
+@Andersen1997  
 @Anderson2011  
 @ArauFern2003  
 @Baselga2010  
@@ -7,7 +9,9 @@
 @Beck2012  
 @Brehm2013  
 @Bruhl1999  
-@BurwNaka2011
+@BurwNaka2011  
+@Cerda2013  
+@Cushman1993  
 @DF2010  
 @Fisher1998  
 @Gaston1998  
@@ -15,9 +19,11 @@
 @Glaser2006  
 @Gregg1963  
 @Hellrigl2003  
+@HollWils1977  
 @HollWils1990  
 @Janzen1967  
 @Karaman2011  
+@KaspVarg1995  
 @KembHubb2006  
 @Lanan2014  
 @Legendre2014  
@@ -32,6 +38,7 @@
 @McCaGryt2010  
 @McCoy1990  
 @McCoy2002  
+@McGlynn2012  
 @MoodFran1982  
 @NB2008  
 @Pianka1966  
@@ -50,3 +57,4 @@
 @Webb2002  
 @WheeWhee1986  
 @Willig2003  
+@Wilson1953  

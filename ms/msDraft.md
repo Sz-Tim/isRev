@@ -37,8 +37,8 @@ Nevertheless, we know little about the ranges and less about the basic natural h
   
 Ants are an incredibly diverse taxon by nearly any ecological metric. 
 Dietary breadth ranges from specialist predators in the subfamily Amblyoponinae to generalist omnivores in the subfamily Myrmicinae. 
-Nesting habits and structures are highly varied, with differences in site preferences among genera, among species, and even variability within species [@HollWils1990; AndeMcSh2001]. 
-Ant species differ in worker body size [@Cushman1993], degree of polymorphism [@Wilson1953], colony size [@KaspVarg1995], caste ratios [@McGlynn2012], level of aggression or dominance [@Andersen1997; @Cerda2013], and number of queens [@HollWils1977] among many other traits. 
+Nesting habits and structures are highly varied, with differences in site preferences among genera, among species, and even variability within species [@HollWils1990; @AndeMcSh2001]. 
+Ant species differ in worker body size [@Cushman1993], degree of polymorphism [@Wilson1953], colony size [@KaspVarg1995], caste ratios [@McGlynn2012], level of aggression and dominance [@Andersen1997; @Cerda2013], and number of queens [@HollWils1977] among many other traits. 
 Given this tremendous range of biological characteristics, it seems reasonable to expect that factors shaping the distribution of species vary among subfamilies or genera. 
 Additionally, species richness is hugely disparate among subfamilies. 
 In such a diverse and numerically heterogeneous taxon as ants, patterns of species richness and compositional change may be driven primarily by the most speciose subfamily or genus rather than reflecting the tendencies of each subtaxon. 
@@ -90,7 +90,7 @@ Latitudinal trends in thermal tolerances and elevational range sizes have been d
 While ants have not been evaluated comprehensively, small elevational range sizes have been noted along several tropical mountains, with many species detected at only one elevation [@LongColw2011; @Olson1994; @Samson1997; @Fisher1998; @Bruhl1999]. 
   
 Because the largest possible elevational range size is the entire gradient, comparisons among gradients may be sensitive to gradient height [@McCain2009b]. 
-To minimize the influence of disparate gradient heights, I analysed truncated gradients [@McCain2009b] in addition to complete gradients (*n~complete~*=16). 
+To minimize the influence of disparate gradient heights, I analysed truncated gradients [@McCain2009b] in addition to complete gradients (*n*=16). 
 For each of three truncation heights (1600m: *n*=13; 1800m: *n*=12; 2000m: *n*=10), I excluded gradients shorter than the threshold. 
 The remaining datasets were truncated at the threshold such that only the lowest 1600m, 1800m, or 2000m were included. 
 Mean elevational ranges were then calculated along each truncated gradient. 
@@ -249,7 +249,7 @@ However, the consistent and reliable data needed to rigorously evaluate many of 
 Habitat complexity, and in particular vegetation structure or leaf litter depth, has been suggested as a driver of ant diversity [@LassHoch2004; @Sarty2006; @PachVasc2011; @Bharti2013]. 
 Such data have not been widely collected across elevational gradients with ant species data. 
 Additionally, we know little of the basic biology for many species of ants. 
-Dietary, foraging, and nesting habits can vary dramatically within a genus and even within a species **CITE**. 
+Dietary, foraging, and nesting habits can vary dramatically within a genus and even within a species [@HollWils1990]. 
 Understanding how biotic interactions, such as competition for space or food resources, and changes in their strength across elevations affect ant communities relies on thoroughly detailing behavior across a wide taxonomic variety of ant species. 
 Finally, ant communities can vary substantially across seasons and years [@Bishop2014], variation that has rarely been accounted for. 
 A greater focus on seasonal and annual fluctuations will inform mechanistic approaches to understanding patterns of ant communities. 
