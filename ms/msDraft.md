@@ -142,7 +142,7 @@ Overall, turnover constitutes a greater proportion of gradient-wide beta diversi
 That is, when all pairs of elevations are compared, communities at two different elevations each commonly have distinct species. 
   
 This is not the case, however, at a narrower spatial resolution. 
-Rather, nestedness dominates between adjacent elevations along most gradients (STATS). 
+Rather, nestedness tends to be higher than turnover between adjacent elevations along most gradients. 
 This seemingly contradictory pattern emphasizes the importance of spatial scale to patterns of beta diversity. 
 Comparing sites across the entire gradient, species replace each other and high elevation communities are distinct from low elevation communities. 
 But this replacement occurs gradually across elevations. 
@@ -157,7 +157,7 @@ However, there is high variability in the genus turnover proportion among both t
 At the gradient scale, genus turnover and genus nestedness are typically comparable (Fig. 3; Paired t-test: *t~15~*=-0.67, *P*=0.51). 
 When all elevations along a given gradient are compared pairwise, the difference in genus composition results from both the replacement of one genus for another and the loss of genera without replacement. 
   
-However, between elevationally adjacent sites, ant genera, like ant species, tend to be nested (STATS) and adjacent communities differ due to the loss of genera between elevations rather than the replacement of one genus with another. 
+However, between elevationally adjacent sites, ant genera, like ant species, tend to be nested; adjacent communities differ due to the loss of genera between elevations rather than the replacement of one genus with another. 
 Along many gradients, turnover at the genus level is nearly zero between the majority of adjacent elevations. 
 The primary exceptions are in the Philippines [@Samson1997], where turnover is higher than nestedness except at the highest elevations, and in the McPherson Range in Australia [@BurwNaka2011], where turnover is higher than nestedness along the lower half of the gradient. 
 
@@ -196,13 +196,13 @@ At the species level, therefore, ant elevational richness is variable among moun
 The number of genera across elevations typically mirrors the number of species; the genus richness pattern is the same as the species richness pattern in 11/16 gradients. 
 Moreover, the distribution of genus richness patterns does not differ significantly from the species richness patterns (Fig. 4, black and gray bars; Fisher's Exact Tests: *n~species~*=20, *n~genus~*=16, *P*=0.28; *n~species~*=16, *n~genus~*=16, *P*=0.39), though there is a tendency for the peak in genus richness to be less pronounced, resulting in several low plateaus with mid-peaks not seen at the species level. 
 The distribution of genus richness patterns does not vary significantly between tropical and temperate datasets (Fisher's Exact Test: *n*=16, *P*=0.11). 
-The number of species increases quite predictably with the number of genera (STATS), lending further evidence that ant richness patterns are similar at the species and genus scales. 
+The log number of species increases quite predictably with the log number of genera (*R^2^* mean: 0.96), lending further evidence that ant richness patterns are similar at the species and genus scales. 
   
 ### Subfamily richness  
 The richness pattern of ant subfamilies along each gradient is coarsely similar to the species and genus richness patterns, though the patterns are less distinct due to the smaller number of subfamilies. 
-The distribution of subfamily richness patterns is not significantly different from that of the species richness patterns (Fig.4, black and white bars; Fisher's Exact Tests: *n~species~*=20, *n~subfamily~*=16, *P*=0.10; *n~species~*=16, *n~subfamily~*=16, *P*=0.20) nor from that of the genus richness patterns (Fig. 4, gray and white bars; Fisher's Exact Test: *n*=16; *P*=0.84).
+The distribution of subfamily richness patterns is not significantly different from that of the species richness patterns (Fig.4, black and white bars; Fisher's Exact Tests: *n~species~*=20, *n~subfamily~*=16, *P*=0.10; *n~species~*=16, *n~subfamily~*=16, *P*=0.20) nor from that of the genus richness patterns (Fig. 4, gray and white bars; Fisher's Exact Test: *n*=16, *P*=0.84).
 As at the species and genus levels, the distribution of subfamily richness patterns does not vary significantly between tropical and temperate gradients (Fisher's Exact Test: *n*=16, *P*=0.28).
-The number of subfamilies does predict the number of species (STATS), though less reliably than does the number of genera. 
+The log number of subfamilies does predict the log number of species, though less reliably than does the number of genera (*R^2^* mean: 0.79). 
   
 Ant richness, therefore, is often high at intermediate elevations whether measured at the species, genus, or subfamily level. 
 Consequently, it appears that the underlying ecological or evolutionary factors driving richness are creating similar patterns at multiple taxonomic scales. 
@@ -218,10 +218,10 @@ The most speciose genus along each gradient comprises 7–31% of the total speci
 These genera include *Camponotus* [@Sabu2008], *Formica* [@Gregg1963; @Allred1982; @WheeWhee1986; @Hellrigl2003; @Glaser2006], *Lasius* [@Karaman2011], *Pheidole* [@MoodFran1982; @VanPelt1983; @Samson1997; @Fisher1998; @ArauFern2003; @BurwNaka2011; @LongColw2011], *Stenamma* [@Lessard2007], and *Strumigenys* [@SarnEcon2012]. 
 The proportion of species within the most speciose genus does not vary predictably across latitudes (*n*=16, *P*=0.15, *R^2^*=0.08). 
   
-The species richness of the most speciose genus, of course, strongly predicts richness across elevations (STATS). 
+The species richness of the most speciose genus, of course, strongly predicts richness across elevations (*R^2* mean: 0.79). 
 However, the overall pattern is not driven solely by this single genus. 
 Instead, the species richness pattern of the most speciose genus is typically similar to the richness pattern of the remaining species. 
-Along most gradients, the richness of the most speciose genus predicts the richness of the remaining genera quite well (Fig. 5a; STATS), though the relationship is variable among gradients (STATS: slope ranges). 
+Along most gradients, the richness of the most speciose genus predicts the richness of the remaining genera quite well (Fig. 5a; *R^2^* mean: 0.69), though the relationship is variable among gradients (*b* mean: 3.5, range: -0.9–10.8). 
 Many of the non-dominant genera are neither speciose nor widespread enough to reliably discern a species richness pattern. 
 Those that are, however, tend to show a qualitatively similar elevational richness pattern both to the overall pattern and to that of the most speciose genus. 
   
@@ -231,7 +231,7 @@ The most speciose subfamily along each gradient comprises 39–73% of the total 
 Along a given gradient, one of two subfamilies are dominant: Formicinae [@Gregg1963; @Allred1982; @WheeWhee1986; @Hellrigl2003; @Glaser2006] or Myrmicinae [@Sabu2008; @Karaman2011; @MoodFran1982; @VanPelt1983; @Samson1997; @Fisher1998; @ArauFern2003; @BurwNaka2011; @LongColw2011; @Lessard2007; @SarnEcon2012]. 
 There is no latitudinal trend in the proportion of species contained within the most speciose subfamily (*n*=16, *P*=0.38, *R^2^*=0.06). 
   
-As with the dominant genus, the species richness within the most speciose subfamily is remarkably similar across elevations both to the richness of all species (STATS) and to the richness of species in non-dominant subfamilies (Fig. 5b; STATS). 
+As with the dominant genus, the species richness within the most speciose subfamily is remarkably similar across elevations both to the richness of all species (*R^2^* mean: 0.97) and to the richness of species in non-dominant subfamilies (Fig. 5b; *R^2^* mean: 0.81). 
 Thus, the total species richness pattern is not simply a product of the most speciose subfamily. 
 Rather, the dominant subfamily shows the same richness pattern as the remaining subfamilies. 
 Furthermore, the richness pattern of each subfamily is often qualitatively similar to the overall richness pattern and to the pattern of the most speciose subfamily. 

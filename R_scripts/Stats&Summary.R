@@ -90,7 +90,14 @@
   t.test(over.df$sf.sim, over.df$sf.sne, paired=TRUE)
 
   #--- adjacent bands ---#
-  t.test(spSorAdj.df$sim, spSorAdj.df$sne, paired=TRUE)
+  t.test(spSorAdj.df$sim, spSorAdj.df$sne, paired=TRUE) # all trans together
+  mns <- tapply(spSorAdj.df$sne-spSorAdj.df$sim, spSorAdj.df$Label, mean)
+  mean(mns)
+  mean(mns) + qt(0.975, 15)*sd(mns)/sqrt(16)
+  mean(mns) - qt(0.975, 15)*sd(mns)/sqrt(16)
+  summary(aov(sne ~ sim + Error(Label/El1/sim), spSorAdj.df)) # I think?
+  summary(aov(sne ~ sim + Error(Label/El1/sim), genSorAdj.df)) # I think?
+  summary(aov(sne ~ sim + Error(Label/El1/sim), sfSorAdj.df)) # I think?
 
   summary(lm(sor ~ sne, data=spSorAdj.df))
     plot(sor ~ sne, data=spSorAdj.df, ylim=c(0,1), xlim=c(0,1));abline(b=1, a=0)
@@ -136,10 +143,18 @@
   fisher.test(spgen.patt)  # P=0.39
 
   #--- log(S) ~ log(Gen) ---#
-  lSlG.lme <- lmer(log(S) ~ log(Gen) + (1|Label), data=tvars.df)
-  summary(lSlG.lme)
-  lSlG.anc <- lm(log(S) ~ log(Gen)*Label, data=tvars.df)
-  anova(lSlG.anc)
+  lSlG.df <- data.frame(Label=Labels, 
+                        b=rep(NA, nTrans),
+                        p=rep(NA, nTrans),
+                        r=rep(NA, nTrans))
+  for(tr in 1:nTrans) {
+    t.df <- subset(tvars.df, tvars.df$Label==Labels[tr])
+    mod <- lm(log(S) ~ log(Gen), data=t.df)
+    lSlG.df$b[tr] <- coef(mod)[2]
+    lSlG.df$p[tr] <- summary(mod)$coefficients[2,4]
+    lSlG.df$r[tr] <- summary(mod)$r.squared
+  }
+  mean(lSlG.df$r)  # 0.96
 
   #--- subfamily: patterns by zone ---#
   sf.patt <- matrix(c(1,4,0,4,1, 3,1,1,1,0), ncol=2, byrow=FALSE, 
@@ -166,10 +181,18 @@
   fisher.test(gensf.patt)  # P=0.84
 
   #--- log(S) ~ log(SF) ---#
-  lSlSF.lme <- lmer(log(S) ~ log(SF) + (1|Label), data=tvars.df)
-  summary(lSlSF.lme)
-  lSlSF.anc <- lm(log(S) ~ log(SF)*Label, data=tvars.df)
-  anova(lSlSF.anc)
+  lSlSF.df <- data.frame(Label=Labels, 
+                        b=rep(NA, nTrans),
+                        p=rep(NA, nTrans),
+                        r=rep(NA, nTrans))
+  for(tr in 1:nTrans) {
+    t.df <- subset(tvars.df, tvars.df$Label==Labels[tr])
+    mod <- lm(log(S) ~ log(SF), data=t.df)
+    lSlSF.df$b[tr] <- coef(mod)[2]
+    lSlSF.df$p[tr] <- summary(mod)$coefficients[2,4]
+    lSlSF.df$r[tr] <- summary(mod)$r.squared
+  }
+  mean(lSlSF.df$r)  # 0.79
 
 
 ############
@@ -192,18 +215,43 @@
   summary(lm(maxDivGen/Stot ~ abs(Latsamp), data=over.df)) # P=0.15, R2=0.08
 
   #--- most diverse genus predicting rest ---#
-  divG.lme <- lmer((S-SmaxDivGen) ~ SmaxDivGen + (1|Label), data=tvars.df)
-  summary(divG.lme)
-  divG.anc <- lm((S-SmaxDivGen) ~ SmaxDivGen*Label, data=tvars.df)
-  anova(divG.anc)  
+  mean(over.df$genPred.r, na.rm=TRUE) # 0.69
+  summary(over.df$genPred.b)  # mean=3.5, range=-0.91-10.8)
+  sum(over.df$genPred.p < 0.05, na.rm=TRUE)  # 14/16
+
+  #--- most diverse genus predicting all ---#
+  g.df <- data.frame(Label=Labels, 
+                     b=rep(NA, nTrans),
+                     p=rep(NA, nTrans),
+                     r=rep(NA, nTrans))
+  for(tr in 1:nTrans) {
+    t.df <- subset(tvars.df, tvars.df$Label==Labels[tr])
+    mod <- lm(log(S+1) ~ log(SmaxDivGen+1), data=t.df)
+    g.df$b[tr] <- coef(mod)[2]
+    g.df$p[tr] <- summary(mod)$coefficients[2,4]
+    g.df$r[tr] <- summary(mod)$r.squared
+  }
+  mean(g.df$r)  # 0.79
   
   #--- most diverse subfamily proportion by latitude ---#
   summary(lm(maxDivSF/Stot ~ abs(Latsamp), data=over.df)) # P=0.38; R2=0.06
 
   #--- most diverse subfamily predicting rest ---#
-  divSF.lme <- lmer((S-SmaxDivSF) ~ SmaxDivSF + (1|Label), data=tvars.df)
-  summary(divSF.lme)
-  divSF.anc <- lm((S-SmaxDivSF) ~ SmaxDivSF*Label, data=tvars.df)
-  anova(divSF.anc)    
-  
+  mean(over.df$sfPred.r, na.rm=TRUE) # 0.81  
+  summary(over.df$sfPred.b)  # mean=0.77, range=0.3-1.3)
+  sum(over.df$sfPred.p < 0.05, na.rm=TRUE)  # 16/16 
+
+  #--- most diverse subfamily predicting all ---#
+  sf.df <- data.frame(Label=Labels, 
+                     b=rep(NA, nTrans),
+                     p=rep(NA, nTrans),
+                     r=rep(NA, nTrans))
+  for(tr in 1:nTrans) {
+    t.df <- subset(tvars.df, tvars.df$Label==Labels[tr])
+    mod <- lm(log(S+1) ~ log(SmaxDivSF+1), data=t.df)
+    sf.df$b[tr] <- coef(mod)[2]
+    sf.df$p[tr] <- summary(mod)$coefficients[2,4]
+    sf.df$r[tr] <- summary(mod)$r.squared
+  }
+  mean(sf.df$r)  # 0.97
 
