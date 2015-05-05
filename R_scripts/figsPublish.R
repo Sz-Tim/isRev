@@ -23,7 +23,8 @@ loadAll()
                     legend.title=element_text(size=20, vjust=0.3),
                     legend.key=element_rect(colour=NA),
                     legend.key.size=unit(0.75, "cm"),
-                    legend.text=element_text(size=20)) 
+                    legend.text=element_text(size=20),
+                    panel.grid=element_blank()) 
 
 
 #########
