@@ -114,17 +114,19 @@ Regardless, the smaller elevational ranges in the tropics should lead to more pr
   
   
 # Species composition & beta diversity  
-In a broad sense, beta diversity quantifies the variation in the species composition across space or time [@Anderson2011]. 
+Beta diversity was originally defined as the ratio of regional diversity ($\gamma$) to local diversity ($\alpha$) where $\beta = \frac{\gamma}{\alpha}$ [@Whittaker1960]. 
+Over the ensuing decades, variations and indices for estimating beta diversity have proliferated [@Tuomisto2010]. 
+In a broad sense, however, beta diversity quantifies the variation in the species composition across space or time [@Anderson2011]. 
 That variation can occur either through the replacement of one species for another, called *turnover*, or through the loss or addition of species, called *nestedness* [@Baselga2010; @Baselga2012; @Legendre2014]. 
 Total beta diversity can be partitioned into turnover and nestedness to compare the proportion of compositional change resulting from the replacement or addition of species, respectively [@Baselga2010]. 
 Turnover and nestedness are likely driven by different processes. 
 Understanding the elevational pattern of each can clarify the importance of ecological filtering, biotic interactions, and neutral processes in structuring ant communities **CITE**[@Svenning2011]. 
   
-To compare gradient-wide beta diversity, I calculated overall beta diversity as [@Tuomisto2010]:  
+To summarize and compare the total variation in ant communities across entire elevational gradients, I calculated gradient-wide beta diversity as:  
 
-$$D_\beta = \frac{\gamma}{\bar{\alpha}}$$  
+$$D_\beta = \frac{\gamma_{grad}}{\bar{\alpha_{grad}}}$$  
 
-where $\gamma$ is the total richness along the gradient and $\bar{\alpha}$ is the average richness of the sampled elevational bands. 
+where $\gamma$ is the total richness along the gradient and $\bar{\alpha}$ is the average richness of the sampled elevational bands [@Tuomisto2010]. 
 Because this method is affected by the number of sampled elevational bands, I standardized $D_\beta$ as:  
 
 $$\beta_{st} = \frac{D_\beta - 1}{N - 1}$$  
@@ -150,7 +152,7 @@ Species are more often distributed individually, with overlapping ranges, rather
 In exception, turnover is quite high between adjacent elevations for a large portion of several tropical gradients [@Fisher1998; @Samson1997; @LongColw2011], consistent with a high degree of elevational specialization resulting from some combination of competition and abiotic constraints. 
   
 ### Genus  
-At the genus level, $\beta_{st}$ declines with latitude (Fig. 2, gray; *n*=16, *P*=0.03, *R^2^*=0.25). 
+At the genus level, gradient-wide $\beta_{st}$ declines with latitude (Fig. 2, gray; *n*=16, *P*=0.03, *R^2^*=0.25). 
 The genus composition changes more rapidly across elevations at low latitudes, though the trend is weaker than at the species level. 
 The proportion of gradient-wide genus beta diversity due to turnover is significantly higher in temperate regions (Fig. 3; Wilcoxon rank sum test: *W*=49, *P*=0.042). 
 However, there is high variability in the genus turnover proportion among both temperate and tropical gradients; this apparent difference may be spurious. 

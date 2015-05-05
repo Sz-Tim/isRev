@@ -11,6 +11,7 @@
 @Bruhl1999  
 @BurwNaka2011  
 @Cerda2013  
+@Chao2012  
 @Cushman1993  
 @DF2010  
 @Fisher1998  
@@ -53,8 +54,10 @@
 @Sheldon2015  
 @Sunday2011  
 @Svenning2011  
+@Tuomisto2010  
 @VanPelt1983  
 @Webb2002  
 @WheeWhee1986  
+@Whittaker1960  
 @Willig2003  
 @Wilson1953  
