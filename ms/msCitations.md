@@ -38,7 +38,6 @@
 @McCain2009b
 @McCain2010  
 @McCaGryt2010  
-@McCoy1990  
 @McCoy2002  
 @McGlynn2012  
 @MoodFran1982  
