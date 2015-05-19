@@ -26,7 +26,7 @@ Nonetheless, given the disparate number of species within each ant genus or subf
 Patterns of species richness and community composition are directly determined by the overlap and delineation of species ranges. 
 Ants are no exception. 
 Discovering the patterns of overlapping ranges, the dynamics of range boundaries, and the underlying determinants is a key step in understanding the macro-scale distribution of ant diversity. 
-In this review and meta-analysis, I **develop models for understanding the global distribution patterns of ants**, using elevational gradients as a tool for comprehending alpha and beta patterns of species richness and community structure. 
+In this review and meta-analysis, I use elevational gradients as a tool for comprehending patterns of ant community structure, community variation, and species richness. 
   
 Elevational gradients provide a rich system for studies of community patterns [@McCain2009; @McCain2010]. 
 Mountains act as compact, globally replicated systems, occurring on every continent and varying in many characteristics that may affect richness, including climate, history, and geography [@Rahbek1995; @Lomolino2001; @McCaGryt2010]. 
@@ -94,16 +94,16 @@ Tropical species are predicted to have smaller elevational ranges on average tha
 This is because seasonal temperature variation is more dramatic in temperate locations than in tropical locations. 
 Tropical organisms experience a narrower range of temperatures annually and are consequently expected to have narrower thermal tolerances [@Janzen1967]. 
 Latitudinal trends in thermal tolerances and elevational range sizes exist in both vertebrate and invertebrate taxa [@McCain2009b; @Sunday2011; @ShelTewk2014; @Sheldon2015]. 
-While ants have not been evaluated comprehensively, small elevational range sizes have been noted along several tropical mountains, with many species detected at only one elevation [@LongColw2011; @Olson1994; @Samson1997; @Fisher1998; @Bruhl1999]. 
+While ants have not been evaluated comprehensively, small elevational range sizes have been noted along several tropical mountains, with many species detected at only one sampled elevation [@LongColw2011; @Olson1994; @Samson1997; @Fisher1998; @Bruhl1999]. 
   
-To minimize the influence of mountain height on the average elevational range size, I analyzed truncated gradients [@McCain2009b] in addition to complete gradients (*n*=16). 
+To minimize the influence of mountain height on the average elevational range size when comparing elevational gradients across latitudes, I analyzed truncated gradients [@McCain2009b] in addition to complete gradients (*n*=16). 
 For each of three truncation heights (1600m: *n*=13; 1800m: *n*=12; 2000m: *n*=10), I excluded gradients shorter than the threshold. 
 The remaining datasets were truncated at the threshold such that only the lowest 1600m, 1800m, or 2000m were included. 
-Mean elevational ranges were then calculated for each truncated gradient. 
+The mean elevational range was then calculated for each truncated gradient. 
   
 At the species level, mean elevational range significantly increases with latitude in all four sets of gradients (Fig. 1; all: *n*=16, *P*=0.009, *R^2^*=0.353; 1600m subset: *n*=13, *P*=0.021, *R^2^*=0.344; 1800m subset: *n*=12, *P*=0.012, *R^2^*=0.437; 2000m subset: *n*=10, *P*=0.033, *R^2^*=0.384). 
-These data show that ant species elevational ranges are larger in the tropics, consistent with other taxa [@McCain2009b; @ShelTewk2014; @Sheldon2015] and with the seasonality hypothesis [@Janzen1967]. 
-Interestingly, this latitudinal trend in elevational range size does not hold at higher taxonomic levels. 
+These data show that ant species elevational ranges are smaller in the tropics, consistent with other taxa [@McCain2009b; @ShelTewk2014; @Sheldon2015] and with the seasonality hypothesis [@Janzen1967]. 
+Interestingly, this latitudinal trend in elevational range size does not hold at higher taxonomic levels in ants. 
 Neither the mean genus elevational range size nor the mean subfamily elevational range size changes across latitudes (genus: *n*=16, *P*=0.22; subfamily: *n*=16; *P*=0.40). 
 This suggests that, though individual species may be constrained by thermal tolerance, the variability in thermal tolerance among congeners encompasses the increased annual variation at high latitudes. 
   
@@ -111,7 +111,7 @@ Mean elevational range size may increase with elevation along each gradient beca
 To avoid the disproportionate influence and non-independence of large-ranged species, I estimated mean range size at each elevation using two methods [@McCaBrac2012; @Gaston1998; @Rohde1993]. 
 With the midpoint method, the mean range size at each elevation is estimated as the average range size of all species whose midpoints occur at that elevation. 
 With the quartile method, only species with ranges < 1/4 of the gradient are used. 
-In these datasets, there is little evidence that the mean ant species range size increases along elevational gradients using either method (Midpoint: SLR *b*>0 with *P*<0.05 in 2/16 gradients, *R^2^* mean: 0.15, median: 0.03; Quartile: SLR *b*>0 with *P*<0.05 in 3/16 gradients, *R^2^* mean: 0.20, median: 0.14).  
+In these datasets, there is little evidence that the mean ant species range size increases along elevational gradients using either method (Midpoint linear regressions: *b*>0 with *P*<0.05 in 2/16 gradients, *R^2^* mean: 0.15, median: 0.03; Quartile linear regressions: *b*>0 with *P*<0.05 in 3/16 gradients, *R^2^* mean: 0.20, median: 0.14).  
   
 In summary, though ant elevational range sizes do not show a consistent pattern along single elevational gradients, they do tend to increase with latitude. 
 The thermal tolerances of tropical ant species may, in fact, be narrower than those of temperate species. 
@@ -283,7 +283,7 @@ References marked with an asterisk (*) did not provide species-level range data.
   
 # Figure Legends  
 **Fig. 1** Ant species elevational range sizes increase with latitude. 
-(a) Both the mean (solid; ± 1 standard error) and median (open) elevational range size increases with distance from the equator (mean: *n*=16, *P*=0.009, *R^2^*=0.353; median: *n*=16, *P*=0.04, *R^2^*=0.208). 
+(a) Both the mean (solid; ± 1 standard error) and median (open) elevational range size increases with distance from the equator along complete gradients (mean: *n*=16, *P*=0.009, *R^2^*=0.353; median: *n*=16, *P*=0.04, *R^2^*=0.208). 
 (b) This trend does not appear to be driven by the height of the mountain. 
 The mean elevational range size increases with latitude with all three truncation heights (1600m subset: black, *n*=13, *P*=0.021, *R^2^*=0.344; 1800m subset: dark gray, *n*=12, *P*=0.012, *R^2^*=0.437; 2000m subset: light gray, *n*=10, *P*=0.033, *R^2^*=0.384).  
 
