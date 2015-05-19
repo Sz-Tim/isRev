@@ -216,7 +216,7 @@
 
   #--- most diverse genus predicting rest ---#
   mean(over.df$genPred.r, na.rm=TRUE) # 0.69
-  summary(over.df$genPred.b)  # mean=3.5, range=-0.91-10.8)
+  summary(over.df$genPred.b)  # mean=3.5, sd=2.9, range=-0.91-10.8
   sum(over.df$genPred.p < 0.05, na.rm=TRUE)  # 14/16
 
   #--- most diverse genus predicting all ---#
