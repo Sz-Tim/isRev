@@ -6,8 +6,8 @@
 **E-mail:** timothy.szewczyk@colorado.edu  
 **Telephone:** ??  
 **Fax:** ??  
-**Abstract:** 150–250 words.  The abstract abstract is rather abstract.  
-**Keywords:** 4–6 keywords. Formicidae, subfamily, genus, altitude, range size, beta diversity  
+**Abstract:** Understanding the patterns of species ranges, community structure, and species richness is a key step in uncovering the underlying ecological and evolutionary processes. Here, I explore patterns of ant communities along elevational gradients across the globe. With 20 robust ant elevational datasets, 16 of which include species-level elevational distribution data, I investigate elevational range sizes, community variation and structure, and richness at the species, genus, and subfamily levels. With these datasets, I show that ant elevational range sizes are smaller in the tropics and increase with latitude. Gradient-wide beta diversity and turnover correspondingly increase with latitude. These patterns dissolve at higher taxonomic levels where ant communities are highly nested. Ant elevational range size does not increase consistently with elevation. Unlike beta diversity, elevational patterns of richness do not show a latitudinal trend. Richness is typically highest at intermediate elevations and patterns are qualitatively similar across taxonomic levels. The richness pattern along an elevational gradient is not driven by a single genus or subfamily, but rather emerges from the roughly congruent patterns of each subtaxon. Despite incredible biological variability, the species richness of many ant genera and subfamilies appear to be driven by similar processes.    
+**Keywords:** Formicidae, richness, taxonomic level, altitude, range size, beta diversity  
 **Stray sentences**
 Along tropical elevational gradients, ant species typically have small elevational ranges with many species detected at just one elevation [@LongColw2011; @Olson1994; @Samson1997; @Fisher1998; @Bruhl1999]. 
 Several analyses have reported support for the elevational extension of Rapoport's Rule, finding that high elevation ant species tend to have broader elevational ranges compared to low elevation species [@Olson1994; @Sanders2002; @Lessard2007]. 
@@ -198,7 +198,7 @@ This taxonomic trend may occur because competition is most intense among congene
 ### Species richness  
 Ant species richness shows a variety of patterns across elevational gradients. 
 In the robust datasets, mid-peaks are most common (14/20), though decreasing (3/20) and low plateau (3/20) patterns also occur (Fig. 4, black bars). 
-Despite strong latitudinal trends in range size and beta diversity, the richness pattern distribution of tropical gradients is not significantly different than that of temperate gradients (Fisher's Exact Test: *n*=20, *P*=0.30). 
+Despite strong latitudinal trends in range size and beta diversity, the richness pattern distribution of tropical gradients is not significantly different from that of temperate gradients (Fisher's Exact Test: *n*=20, *P*=0.30). 
 At the species level, ant elevational richness varies among mountain ranges, but is frequently highest at intermediate elevations. 
   
 ### Genus richness  
@@ -232,7 +232,7 @@ The proportion of species within the most speciose genus in a regional community
 The species richness of the most speciose genus strongly predicts richness across elevations (*R^2* mean: 0.79). 
 This single genus does not solely drive the overall pattern. 
 Instead, the species richness pattern of the most speciose genus typically mirrors the richness pattern of the remaining species. 
-The richness of the most speciose genus predicts the richness of the remaining genera quite well on average (Fig. 5a; *R^2^* mean: 0.69), though the relationship varies among gradients (*b* mean: 3.5, sd: 2.9, range: -0.9–10.8). 
+The richness of the most speciose genus predicts the richness of the remaining genera quite well on average (Fig. 5a; *R^2^* mean: 0.69), though the relationship varies among gradients (*b* mean: 3.5, standard deviation: 2.9, range: -0.9–10.8). 
 Many of the non-dominant genera are neither speciose nor widespread enough to reliably reveal a species richness pattern. 
 Those that are tend to show an elevational richness pattern that is qualitatively similar to the overall pattern for that gradient and to that of the most speciose genus on the gradient. 
   
@@ -274,12 +274,14 @@ The richness patterns along a given gradient are broadly similar among species, 
 Similar factors likely influence the elevational distribution of ant species across many genera and subfamilies despite dramatic biological differences. 
 Thus, while range sizes and changes in species composition are inherently linked to variation in species richness, they are not as directly relevant to richness patterns at the scale of elevational gradients. 
   
-  
----  
+# Acknowledgments
+I am indebted to the authors whose work is reanalyzed here. 
+I would also like to thank Dr. Christy McCain, Dr. Michael Breed, Kevin Bracy Knight, Holly D’Oench, and Helen McCreery for their insightful comments and helpful advice.
   
 # Table Caption  
 **Table 1** Robust datasets used for analyses. 
 References marked with an asterisk (*) did not provide species-level range data. 
+D = decreasing; LP = low plateau; MP = mid-peak.
   
 # Figure Legends  
 **Fig. 1** Ant species elevational range sizes increase with latitude. 
@@ -303,7 +305,7 @@ Though the subfamily (white, *n*=16) richness patterns are less discernible due 
 
 **Fig 5** Richness of the most speciose genus or subfamily predicts the richness of the remaining species. 
 (a) The elevational richness pattern of the most speciose genus is nested within the richness pattern of the remaining species for most gradients. 
-The trend is apparent with all datasets combined (black line) and within each gradients (gray lines). 
+The trend is apparent with all datasets combined (black line) and within each gradient (gray lines). 
 There is, however, much variability in the slope of the relationship among gradients.
 (b) The nestedness of the richness patterns becomes stronger at the subfamily level. 
 The relationship is strong with all datasets combined (black line) and much less variable among transects (gray lines) compared to the genus level.  
