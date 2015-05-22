@@ -155,7 +155,7 @@ loadAll()
 
   #--- richness patterns of each taxonomic level ---#
   fig4 <- ggplot(patt.barSUM, aes(x=Pattern, fill=Tax, y=num)) + 
-    theme_is +
+    theme_is + ylim(0,15) + 
     geom_bar(stat="identity", position="dodge", colour="black") +
     scale_fill_manual(name="Taxonomic \nLevel", 
                       values=c("gray10", "gray70", "white")) +
