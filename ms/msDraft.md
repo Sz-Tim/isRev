@@ -1,4 +1,4 @@
-# Range size and ant communities across elevations  
+# Ant communities and range sizes across elevations  
 **Author:** Tim Szewczyk^1^ 
   
 **Affiliation:** University of Colorado-Boulder, Department of Ecology and Evolutionary Biology  
@@ -6,19 +6,24 @@
 **E-mail:** timothy.szewczyk@colorado.edu  
 **Telephone:** 303-735-0441  
 **Fax:** 303-735-0128  
-**Abstract:** Understanding the patterns of species ranges, community structure, and species richness is a key step in uncovering the underlying ecological and evolutionary processes. Here, I explore patterns of ant communities along elevational gradients across the globe. With 20 robust ant elevational datasets, 16 of which include species-level elevational distribution data, I investigate elevational range sizes, community variation and structure, and richness at the species, genus, and subfamily levels. With these datasets, I show that ant elevational range sizes are smaller in the tropics and increase with latitude. Gradient-wide beta diversity and turnover correspondingly increase with latitude. These patterns dissolve at higher taxonomic levels where ant communities are highly nested. Ant elevational range size does not increase consistently with elevation. Unlike beta diversity, elevational patterns of richness do not show a latitudinal trend. Richness is typically highest at intermediate elevations and patterns are qualitatively similar across taxonomic levels. The richness pattern along an elevational gradient is not driven by a single genus or subfamily, but rather emerges from the roughly congruent patterns of each subtaxon. Despite incredible biological variability, the species richness of many ant genera and subfamilies appear to be driven by similar processes.    
+**Abstract:** 
+Identifying the patterns of species ranges, community structure, and species richness is a key step in uncovering the underlying ecological and evolutionary processes. 
+Here, I explore patterns of ant communities along elevational gradients across the globe. 
+I investigate elevational range sizes, community variation and structure, and richness at the species, genus, and subfamily levels using 20 robust ant elevational datasets, 16 of which include species-level elevational distribution data. 
+With these datasets, I show that ant elevational range sizes are smaller in the tropics and increase with latitude. 
+Gradient-wide beta diversity and turnover correspondingly increase with latitude. 
+These patterns dissolve at higher taxonomic levels where ant communities are highly nested. 
+Ant elevational range size does not increase consistently with elevation. 
+Unlike beta diversity, elevational patterns of richness do not show a latitudinal trend. 
+Richness is typically highest at intermediate elevations and patterns are qualitatively similar across taxonomic levels. 
+The richness pattern along an elevational gradient is not driven by a single genus or subfamily, but rather emerges from the roughly congruent patterns of each subtaxon. 
+Despite incredible biological variability, the elevational species richness patterns of many ant genera and subfamilies appear to be driven by similar processes.
+  
 **Keywords:** Formicidae, richness, taxonomic level, altitude, range size, beta diversity  
-**Stray sentences**
-Along tropical elevational gradients, ant species typically have small elevational ranges with many species detected at just one elevation [@LongColw2011; @Olson1994; @Samson1997; @Fisher1998; @Bruhl1999]. 
-Several analyses have reported support for the elevational extension of Rapoport's Rule, finding that high elevation ant species tend to have broader elevational ranges compared to low elevation species [@Olson1994; @Sanders2002; @Lessard2007]. 
-In contrast, ant species ranges were largest at low elevations in Costa Rica [@LongColw2011]. 
-However, a recent review found little support for this hypothesis across an array of taxa when accounting for biases in estimating the mean range size [@McCaBrac2012]. 
-While elevational trends in ant communities and range sizes have been demonstrated in several systems (e.g., )[@BurwNaka2011; @Fisher1998; @Lessard2007; @LongColw2011; @MunyFoor2012]. 
-Nevertheless, high species turnover is not universal among the tropical gradients and turnover is consistently low in the temperate datasets. 
-With common interpretations of turnover and nestedness **CITE**, the high nestedness with low turnover along most gradients suggests that environmental filtering is more important than biotic interactions in determining the ant genus communities across elevations.  
-Moreover, the number of genera and, to a lesser extent, the number of subfamilies tend to correspond with the number of species across elevations. 
-Additionally, neither the richness patterns nor the proportional dominance of the most speciose subtaxon show latitudinal trends. 
-Nonetheless, given the disparate number of species within each ant genus or subfamily, the pattern of species richness may simply result from the richness pattern of the most speciose genus or subfamily along the gradient. 
+
+# Acknowledgments
+I am indebted to the authors whose work is reanalyzed here. 
+I would also like to thank Dr. Christy McCain, Dr. Michael Breed, Kevin Bracy Knight, Holly D’Oench, and Helen McCreery for their insightful comments and helpful advice.
   
 \newpage  
   
@@ -273,9 +278,6 @@ The richness patterns along a given gradient are broadly similar among species, 
 Similar factors likely influence the elevational distribution of ant species across many genera and subfamilies despite dramatic biological differences. 
 Thus, while range sizes and changes in species composition are inherently linked to variation in species richness, they are not as directly relevant to richness patterns at the scale of elevational gradients. 
   
-# Acknowledgments
-I am indebted to the authors whose work is reanalyzed here. 
-I would also like to thank Dr. Christy McCain, Dr. Michael Breed, Kevin Bracy Knight, Holly D’Oench, and Helen McCreery for their insightful comments and helpful advice.
   
 # Table Caption  
 **Table 1** Robust datasets used for analyses. 
@@ -286,28 +288,28 @@ D = decreasing; LP = low plateau; MP = mid-peak.
 **Fig. 1** Ant species elevational range sizes increase with latitude. 
 (a) Both the mean (solid; ± 1 standard error) and median (open) elevational range size increases with distance from the equator along complete gradients (mean: *n*=16, *P*=0.009, *R^2^*=0.353; median: *n*=16, *P*=0.04, *R^2^*=0.208). 
 (b) This trend does not appear to be driven by the height of the mountain. 
-The mean elevational range size increases with latitude with all three truncation heights (1600m subset: black, *n*=13, *P*=0.021, *R^2^*=0.344; 1800m subset: dark gray, *n*=12, *P*=0.012, *R^2^*=0.437; 2000m subset: light gray, *n*=10, *P*=0.033, *R^2^*=0.384).  
+The mean elevational range size increases with latitude with all three truncation heights (1600m subset: black, *n*=13, *P*=0.021, *R^2^*=0.344; 1800m subset: dark gray, *n*=12, *P*=0.012, *R^2^*=0.437; 2000m subset: light gray, *n*=10, *P*=0.033, *R^2^*=0.384)  
 
 **Fig. 2** Gradient-wide beta diversity decreases with latitude.
 Total species beta diversity across each elevational gradient, standardized for the number of sampled elevations, declines with latitude (black; *n*=20, *P*<0.001, *R^2^*=0.49). 
-This pattern diminishes at broader taxonomic scales with a weaker trend for genus beta diversity (gray; *n*=16, *P*=0.03, *R^2^*=0.25) and no trend for subfamily beta diversity (white; *n*=16, *P*=0.15, *R^2^*=0.08). 
+This pattern diminishes at broader taxonomic scales with a weaker trend for genus beta diversity (gray; *n*=16, *P*=0.03, *R^2^*=0.25) and no trend for subfamily beta diversity (white; *n*=16, *P*=0.15, *R^2^*=0.08) 
 
 **Fig. 3** Proportion of gradient-wide beta diversity due to turnover decreases with taxonomic resolution. 
 In both temperate (white) and tropical (gray) gradients, the proportion of beta diversity due to turnover (i.e., replacement) rather than nestedness decreases at higher taxonomic levels. 
-At 0.5 (dotted line), turnover and nestedness contribute equally to the change in community composition. 
+At 0.5 (dotted line), turnover and nestedness contribute equally to the change in community composition 
 
 **Fig. 4** Robust patterns of ant elevational richness patterns across taxonomic scales. 
 Observed patterns included declines (D), low plateaus (LP), low plateaus with mid-peaks (LPMP), mid-peaks (MP), and no pattern (None). 
 A variety of species richness patterns (black, *n*=20) occur, though mid-elevational peaks are most common. 
 The pattern distribution is similar for both species (black) and genus (gray, *n*=16) richness (Fisher's Exact Test: *n~species~*=20, *n~genus~*=16, *P*=0.28). 
-Though the subfamily (white, *n*=16) richness patterns are less discernible due to the small number of subfamilies along many gradients, the distribution of patterns is not significantly different (Fisher's Exact Tests: *n~species~*=20, *n~subfamily~*=16, *P*=0.10; *n~genus~*=16, *n~subfamily~*=16, *P*=0.84).  
+Though the subfamily (white, *n*=16) richness patterns are less discernible due to the small number of subfamilies along many gradients, the distribution of patterns is not significantly different (Fisher's Exact Tests: *n~species~*=20, *n~subfamily~*=16, *P*=0.10; *n~genus~*=16, *n~subfamily~*=16, *P*=0.84)  
 
 **Fig 5** Richness of the most speciose genus or subfamily predicts the richness of the remaining species. 
 (a) The elevational richness pattern of the most speciose genus is nested within the richness pattern of the remaining species for most gradients. 
 The trend is apparent with all datasets combined (black line) and within each gradient (gray lines). 
 There is, however, much variability in the slope of the relationship among gradients.
 (b) The nestedness of the richness patterns becomes stronger at the subfamily level. 
-The relationship is strong with all datasets combined (black line) and much less variable among transects (gray lines) compared to the genus level.  
+The relationship is strong with all datasets combined (black line) and much less variable among transects (gray lines) compared to the genus level  
   
   
 ![Figure 1.](pubFigs/Fig1.eps)      
