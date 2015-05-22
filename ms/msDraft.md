@@ -2,10 +2,10 @@
 **Author:** Tim Szewczyk^1^ 
   
 **Affiliation:** University of Colorado-Boulder, Department of Ecology and Evolutionary Biology  
-**Address:** ??  
+**Address:** UCB 334, University of Colorado-Boulder, Boulder CO 80309  
 **E-mail:** timothy.szewczyk@colorado.edu  
-**Telephone:** ??  
-**Fax:** ??  
+**Telephone:** 303-735-0441  
+**Fax:** 303-735-0128  
 **Abstract:** Understanding the patterns of species ranges, community structure, and species richness is a key step in uncovering the underlying ecological and evolutionary processes. Here, I explore patterns of ant communities along elevational gradients across the globe. With 20 robust ant elevational datasets, 16 of which include species-level elevational distribution data, I investigate elevational range sizes, community variation and structure, and richness at the species, genus, and subfamily levels. With these datasets, I show that ant elevational range sizes are smaller in the tropics and increase with latitude. Gradient-wide beta diversity and turnover correspondingly increase with latitude. These patterns dissolve at higher taxonomic levels where ant communities are highly nested. Ant elevational range size does not increase consistently with elevation. Unlike beta diversity, elevational patterns of richness do not show a latitudinal trend. Richness is typically highest at intermediate elevations and patterns are qualitatively similar across taxonomic levels. The richness pattern along an elevational gradient is not driven by a single genus or subfamily, but rather emerges from the roughly congruent patterns of each subtaxon. Despite incredible biological variability, the species richness of many ant genera and subfamilies appear to be driven by similar processes.    
 **Keywords:** Formicidae, richness, taxonomic level, altitude, range size, beta diversity  
 **Stray sentences**
@@ -26,20 +26,19 @@ Nonetheless, given the disparate number of species within each ant genus or subf
 Patterns of species richness and community composition are directly determined by the overlap and delineation of species ranges. 
 Ants are no exception. 
 Discovering the patterns of overlapping ranges, the dynamics of range boundaries, and the underlying determinants is a key step in understanding the macro-scale distribution of ant diversity. 
-In this review and meta-analysis, I use elevational gradients as a tool for comprehending patterns of ant community structure, community variation, and species richness. 
+In this review and meta-analysis, I investigate patterns of ant community structure, community variation, and species richness along elevational gradients. 
   
 Elevational gradients provide a rich system for studies of community patterns [@McCain2009; @McCain2010]. 
 Mountains act as compact, globally replicated systems, occurring on every continent and varying in many characteristics that may affect richness, including climate, history, and geography [@Rahbek1995; @Lomolino2001; @McCaGryt2010]. 
-Detailing how ant communities change along elevational gradients may yield insight into processes affecting ant species diversity across spatiotemporal scales. 
-Ants have the added advantage of allowing community studies at different trophic and taxonomic levels. 
+Detailing how ant communities change along elevational gradients may yield insight into processes affecting ant species diversity across spatiotemporal scales.  
   
 Despite comprising the majority of animal species, insects have received relatively little focus in macroecological studies [@DF2010; @Beck2012]. 
 Given the astonishing array of insect diversity, a complete picture of biodiversity requires their inclusion. 
 Ants have a number of advantages for global studies of diversity. 
 As predators, competitors, scavengers, and dispersers, they have major ecological impacts in nearly all terrestrial ecosystems [@HollWils1990]. 
-In contrast to many insect taxa, the individuals used for identification are wingless. 
+In contrast to many other insect taxa, the individuals used for identification are wingless. 
 Consequently, their movement is restricted, reducing the impact of windblown accidentals captured at elevations at which they cannot long survive. 
-Additionally, because of historic interest, ant taxonomy is relatively well known when compared to other insect taxa. 
+Additionally, as a result of long-standing interest, ant taxonomy is relatively well known when compared to other insect taxa. 
   
 Ants are an incredibly diverse taxon by nearly any ecological metric. 
 Dietary breadth ranges from the specialist predators in the subfamily Amblyoponinae to the generalist omnivores in the subfamilies Myrmicinae and Formicinae. 
@@ -160,7 +159,7 @@ This seemingly contradictory pattern illustrates the importance of spatial scale
 In comparisons of sites across the entire gradient, species gradually replace each other and high elevation communities are distinct from low elevation communities. 
 Species are more often distributed individually with overlapping ranges rather than occurring as distinct abutting communities. 
 A fascinating exception is that several tropical datasets have high turnover between adjacent elevations over a large portion of the gradient [@Fisher1998; @Samson1997; @LongColw2011]. 
-This is consistent with strong abiotic constraints, competition, or a combination producing a high degree of elevational specialization in tropical species. 
+Though undersampling could potentially produce this pattern [@Beck2013], it is also consistent with strong abiotic constraints, competition, or a combination producing a high degree of elevational specialization in tropical species. 
   
 ### Genus level  
 At the genus level, gradient-wide beta diversity ($\beta_{st}$) also declines with latitude (Fig. 2, gray; *n*=16, *P*=0.03, *R^2^*=0.25). 
@@ -218,7 +217,7 @@ Ant richness is often high at intermediate elevations.
 This is true at the species, genus, or subfamily level. 
 The underlying ecological or evolutionary factors driving richness may create similar patterns all multiple taxonomic levels. 
 While it may seem intuitive that the number of species would increase with the number of genera, in fact species communities can be phylogenetically over- or under-dispersed [@Webb2002]. 
-The degree phylogenetic dispersion likely arises from the interplay of environmental filtering, neutral processes, and competition [@Webb2002; @Machac2011; @KembHubb2006]. 
+The degree of phylogenetic dispersion likely arises from the interplay of environmental filtering, neutral processes, and competition [@Webb2002; @Machac2011; @KembHubb2006]. 
 The similarity in richness patterns across taxonomic levels suggests that species across the many genera and subfamilies of ants along each gradient respond similarly to the combination of processes affecting speciation and community assembly. 
   
   
@@ -252,7 +251,7 @@ This suggests that the key factors shaping the richness of ants across a given e
   
   
 # Research gaps  
-Sampling within the lowest 400m is critical to reliably detect the underlying pattern because elevational richness patterns tend to differ primarily at the mountain base [@DF2010]. 
+Sampling within the lowest 400m is critical to reliably detect the underlying pattern because elevational richness patterns tend to differ primarily towards the mountain base [@DF2010]. 
 Additionally, though a multitude of hypotheses have been proposed as drivers of ant community structure and diversity along elevational gradients [e.g., @LongColw2011; @Samson1997; @Botes2006], the data required to rigorously evaluate many of these hypotheses are lacking at a broad scale.
 In particular, habitat complexity, such as vegetation structure or leaf litter depth, has been suggested as a driver of ant diversity [@LassHoch2004; @Sarty2006; @PachVasc2011; @Bharti2013]. 
 Such data have not been widely collected across elevational gradients with ant species data. 
