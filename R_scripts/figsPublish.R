@@ -115,7 +115,9 @@ loadAll()
                                  "Genus"="gray70",
                                  "Subfamily"="white")) +
     labs(x="Degrees from equator", 
-         y=expression(paste(beta[' st'])))
+         y=expression(paste('Gradient-wide ', beta, ' diversity (', 
+                            beta['st'], 
+                            ')')))
   
   #--- save figure ---#
   ggsave("ms/pubFigs/Fig2.eps", fig2, width=w*1.25, height=h)
