@@ -130,6 +130,7 @@ loadAll()
   #--- turnover proportion by taxonomy and zone ---#
   fig3 <- ggplot(betaTax.df, aes(x=TaxLevel, y=Turnover/TotalBeta, fill=Zone)) +
     ylim(0,1) + theme_is + 
+    theme(axis.title.y=element_text(size=10, vjust=1.1)) +
     theme(legend.key.size=unit(0.5, "cm")) +
     geom_hline(yintercept=0.5, linetype=2, colour="gray40") +
     geom_boxplot() + 
